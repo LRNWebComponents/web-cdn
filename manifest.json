@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.3.0",
-  "$built": "2017-02-10T22:42:09.760Z",
+  "$built": "2017-02-15T19:31:04.954Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -489,6 +489,40 @@
                 "sha512": {
                   "base64": "F4ciEGKnrN69yTEkXzhoRxUUy2pjIXfw/LWZ1JFQueToGbLQlp1ELkVKhsRWMGTnpjrgBap2qQ1nYtPypyriHw==",
                   "hex": "1787221062a7acdebdc931245f3868471514cb6a632177f0fcb599d49150b9e4e819b2d0969d442e454a86c4563064e7a63ae005aa76a90d6762d3f2a72ae21f"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "byu-card": {
+      "source": "github:byuweb/byu-card",
+      "aliases": {},
+      "versions": [
+        {
+          "name": "unstable",
+          "ref": "master",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-card/tarball/master",
+          "git_sha": "727e2febe7622eb21b18901caf7ba471feca7937",
+          "link": "https://github.com/byuweb/byu-card/tree/master",
+          "resources": {
+            "my-component.js": {
+              "entrypoint": false,
+              "size": 1398,
+              "gzip_size": 646,
+              "hashes": {
+                "sha256": {
+                  "base64": "w6VFdT9TSsmvkKMS/Fy1M0GN5LJ8oOUgEFa9bsM1IkE=",
+                  "hex": "c3a545753f534ac9af90a312fc5cb533418de4b27ca0e5201056bd6ec3352241"
+                },
+                "sha384": {
+                  "base64": "IO+u1KPB/Ukio165ZzAJ93+zAYapY3BW88L6jx6YpE2DvZNd723WUowkm3nT6Y4U",
+                  "hex": "20efaed4a3c1fd4922a35eb9673009f77fb30186a9637056f3c2fa8f1e98a44d83bd935def6dd6528c249b79d3e98e14"
+                },
+                "sha512": {
+                  "base64": "zh9o37v4L+5PKnZPA1i+beFsy494hYwInw4an++q36c37TWV/6ExolOuyWEDoFJFI3b1JxNlaQVU1gMfPaR1cQ==",
+                  "hex": "ce1f68dfbbf82fee4f2a764f0358be6de16ccb8f78858c089f0e1a9fefaadfa737ed3595ffa131a253aec96103a052452376f5271365690554d6031f3da47571"
                 }
               }
             }
