@@ -43,13 +43,12 @@
   width: 23%;
   margin: 15px 1%; }
 
-:host img {
-  width: 100%;
-  padding: 0px; }
-
-:host h1, :host h2, :host h3, :host div, :host p {
+#card-content ::slotted(*) {
   width: 100%;
   padding: 10px 15px; }
+
+#card-content ::slotted(img) {
+  padding: 0; }
 
 @media screen and (max-width: 1024px) {
   :host[columns='2'] .card, :host[columns='3'] .card, :host[columns='4'] .card {
@@ -74,12 +73,12 @@
 
 <!-- Use the id "title" for title -->
 
-<div class="card">
+<!--<div class="card">-->
 
 		<slot id="card-content">
 		</slot>
 
-</div>
+<!--</div>-->
 
 
 
