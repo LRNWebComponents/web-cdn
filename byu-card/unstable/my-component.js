@@ -27,22 +27,6 @@
   max-width: 700px;
   margin-bottom: 20px; }
 
-:host[columns='2'] {
-  min-width: 250px;
-  width: 45%;
-  margin: 15px 2.5%; }
-
-:host[columns='3'] {
-  min-width: 250px;
-  width: 30%;
-  margin: 15px 2%; }
-
-:host.columns-4,
-:host[columns='4'] {
-  min-width: 250px;
-  width: 23%;
-  margin: 15px 1%; }
-
 #card-content ::slotted(*) {
   width: 100%;
   padding: 10px 15px; }
@@ -68,17 +52,11 @@
   color: #444; }
 </style>
 
-<div>My Custom Card Component</div>
-
-
 <!-- Use the id "title" for title -->
+<slot id="card-content">
 
-<!--<div class="card">-->
+</slot>
 
-		<slot id="card-content">
-		</slot>
-
-<!--</div>-->
 
 
 
