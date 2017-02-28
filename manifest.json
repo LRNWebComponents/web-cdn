@@ -1,6 +1,6 @@
 {
-  "$cdn-version": "0.4.0",
-  "$built": "2017-02-28T07:42:03.652Z",
+  "$cdn-version": "0.4.2",
+  "$built": "2017-02-28T07:58:02.833Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -20,6 +20,7 @@
           "git_sha": "38d6b66980fc2a94b5e629564a8980cc01f6dc5b",
           "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/v1.0.1",
           "last_updated": "2017-01-14T05:40:58+00:00",
+          "messages": [],
           "resources": {
             "demo.js": {
               "entrypoint": true,
@@ -41,8 +42,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         },
         {
           "name": "1.0.0",
@@ -51,6 +51,7 @@
           "git_sha": "bab571b9596eeaea13fc11dfb215615b837bba3c",
           "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/v1.0.0",
           "last_updated": "2017-01-14T05:37:03+00:00",
+          "messages": [],
           "resources": {
             "demo.js": {
               "entrypoint": true,
@@ -72,8 +73,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         },
         {
           "name": "2.0.3",
@@ -82,6 +82,7 @@
           "git_sha": "a165fca7fdb5cacb47daa8c3698e8603bb543e1a",
           "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/2.0.3",
           "last_updated": "2017-02-02T22:52:19+00:00",
+          "messages": [],
           "resources": {
             "demo.js": {
               "entrypoint": true,
@@ -123,8 +124,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         },
         {
           "name": "2.0.2",
@@ -133,6 +133,7 @@
           "git_sha": "a28a4b90114424aea2003bbe4343e6c280aeae5a",
           "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/2.0.2",
           "last_updated": "2017-02-02T22:51:51+00:00",
+          "messages": [],
           "resources": {
             "demo.js": {
               "entrypoint": true,
@@ -174,8 +175,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         },
         {
           "name": "2.0.1",
@@ -184,6 +184,7 @@
           "git_sha": "de4be2a306dcdeffffc634878ed57596d9fc9e85",
           "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/2.0.1",
           "last_updated": "2017-02-01T04:38:31+00:00",
+          "messages": [],
           "resources": {
             "demo.js": {
               "entrypoint": true,
@@ -244,8 +245,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         },
         {
           "name": "2.0.0",
@@ -254,6 +254,7 @@
           "git_sha": "00f3c6b200c7a97c8ccf5ce6b53540af5db435af",
           "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/2.0.0",
           "last_updated": "2017-01-14T05:44:42+00:00",
+          "messages": [],
           "resources": {
             "demo.js": {
               "entrypoint": true,
@@ -314,8 +315,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         },
         {
           "name": "1.1.0",
@@ -324,6 +324,7 @@
           "git_sha": "288536ecb4a4f0a6c128db208a4d5b46a012ba91",
           "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/1.1.0",
           "last_updated": "2017-01-14T05:41:53+00:00",
+          "messages": [],
           "resources": {
             "demo.js": {
               "entrypoint": true,
@@ -383,8 +384,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         },
         {
           "name": "unstable",
@@ -393,6 +393,7 @@
           "git_sha": "e29514150f12fb849fd97a7da5963d716846fcfc",
           "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/master",
           "last_updated": "2017-02-08T21:16:36+00:00",
+          "messages": [],
           "resources": {
             "demo.js": {
               "entrypoint": true,
@@ -434,8 +435,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         }
       ]
     },
@@ -452,8 +452,9 @@
           "git_sha": "eb67402e5ab69be262338feb768f69c81622c406",
           "link": "https://github.com/byuweb/2017-components/tree/byu-footer",
           "last_updated": "2017-01-18T15:24:38+00:00",
+          "experimental": true,
           "messages": [
-            "There is no valid .cdn-config.yml present"
+            "There is no longer a valid .cdn-config.yml present"
           ]
         },
         {
@@ -463,6 +464,8 @@
           "git_sha": "9273a8cb20ad58e501687af6ff04f21cac0cc2e3",
           "link": "https://github.com/byuweb/2017-components/tree/byu-header",
           "last_updated": "2017-02-15T17:07:02+00:00",
+          "experimental": true,
+          "messages": [],
           "resources": {
             "bootstrap.js": {
               "entrypoint": true,
@@ -522,8 +525,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         },
         {
           "name": "byu-menu",
@@ -532,8 +534,9 @@
           "git_sha": "e3d0a4949d7fe5a10c3bc26c9a90abac46546426",
           "link": "https://github.com/byuweb/2017-components/tree/byu-menu",
           "last_updated": "2017-02-09T21:45:50+00:00",
+          "experimental": true,
           "messages": [
-            "There is no valid .cdn-config.yml present"
+            "There is no longer a valid .cdn-config.yml present"
           ]
         },
         {
@@ -543,6 +546,8 @@
           "git_sha": "80a9880e3b1806d5d9ab79445236ed3a5a954ae8",
           "link": "https://github.com/byuweb/2017-components/tree/firefox-compatibility",
           "last_updated": "2017-02-09T21:51:00+00:00",
+          "experimental": true,
+          "messages": [],
           "resources": {
             "bootstrap.js": {
               "entrypoint": true,
@@ -602,8 +607,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         },
         {
           "name": "unstable",
@@ -612,6 +616,7 @@
           "git_sha": "9c891f5e65faa62988ee9dfc16e050ab438e2834",
           "link": "https://github.com/byuweb/2017-components/tree/master",
           "last_updated": "2017-02-24T23:17:57+00:00",
+          "messages": [],
           "resources": {
             "components.es5.js": {
               "entrypoint": false,
@@ -765,8 +770,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         },
         {
           "name": "new-build-chain",
@@ -775,6 +779,8 @@
           "git_sha": "c1ce34df9bb4181618f5742748666ab23d6f8124",
           "link": "https://github.com/byuweb/2017-components/tree/new-build-chain",
           "last_updated": "2017-02-24T22:21:52+00:00",
+          "experimental": true,
+          "messages": [],
           "resources": {
             "components.es5.js": {
               "entrypoint": false,
@@ -928,8 +934,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         },
         {
           "name": "scss-reconstruction",
@@ -938,6 +943,8 @@
           "git_sha": "9c891f5e65faa62988ee9dfc16e050ab438e2834",
           "link": "https://github.com/byuweb/2017-components/tree/scss-reconstruction",
           "last_updated": "2017-02-24T23:17:57+00:00",
+          "experimental": true,
+          "messages": [],
           "resources": {
             "components.es5.js": {
               "entrypoint": false,
@@ -1091,8 +1098,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         }
       ]
     },
@@ -1109,6 +1115,7 @@
           "git_sha": "7e6204efb60b1a4089b59edff8817c4ccc3f42a7",
           "link": "https://github.com/byuweb/byu-card/tree/master",
           "last_updated": "2017-02-24T22:03:56+00:00",
+          "messages": [],
           "resources": {
             "my-component.js": {
               "entrypoint": false,
@@ -1129,8 +1136,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         }
       ]
     },
@@ -1147,6 +1153,7 @@
           "git_sha": "9149986e6c91ce94be1d8abe3ae246c93a9e4fad",
           "link": "https://github.com/byuweb/byu-calendar-tile/tree/master",
           "last_updated": "2017-02-27T17:50:17+00:00",
+          "messages": [],
           "resources": {
             "components.es5.js": {
               "entrypoint": false,
@@ -1300,8 +1307,7 @@
                 }
               }
             }
-          },
-          "messages": []
+          }
         }
       ]
     }
