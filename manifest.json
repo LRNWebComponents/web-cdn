@@ -1,6 +1,6 @@
 {
-  "$cdn-version": "0.4.2",
-  "$built": "2017-03-01T21:31:30.974Z",
+  "$cdn-version": "0.5.0",
+  "$built": "2017-03-01T22:22:25.662Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1468,6 +1468,324 @@
                 "sha512": {
                   "base64": "JqsM6MSNxdyeqpynEDtiP9TmRFtXH3O+wpwACfQhHXOyicex+Wkw9/NYSTZqKGDNB1zd6+mmKP91W3dozD8zow==",
                   "hex": "26ab0ce8c48dc5dc9eaa9ca7103b623fd4e6445b571f73bec29c0009f4211d73b289c7b1f96930f7f35849366a2860cd075cddebe9a628ff755b7768cc3f33a3"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "polyfills": {
+      "source": "npm:skatejs-web-components",
+      "aliases": {
+        "5.x.x": "5.2.1",
+        "5.0.x": "5.0.2",
+        "5.1.x": "5.1.0",
+        "5.2.x": "5.2.1",
+        "latest": "5.2.1"
+      },
+      "versions": [
+        {
+          "name": "5.0.0",
+          "ref": "5.0.0",
+          "tarball_url": "https://registry.npmjs.org/skatejs-web-components/-/skatejs-web-components-5.0.0.tgz",
+          "git_sha": "c350ec9614d88cc1331602f4827ecc7210d3286d",
+          "link": "https://www.npmjs.com/package/skatejs-web-components",
+          "last_updated": "2016-11-18T04:08:42+00:00",
+          "messages": [],
+          "resources": {
+            "polyfills.js": {
+              "entrypoint": true,
+              "description": "Polyfill bundle",
+              "size": 197160,
+              "gzip_size": 47117,
+              "hashes": {
+                "sha256": {
+                  "base64": "E5+MQZa/gxpE000C3mOQ99T6doIGBbijfPB7zkbiIX4=",
+                  "hex": "139f8c4196bf831a44d34d02de6390f7d4fa76820605b8a37cf07bce46e2217e"
+                },
+                "sha384": {
+                  "base64": "AxcdjeaTeh6rAneEK2HCawtCNcUzFrry4Fen2LnperN6qfQdf/CArI1i6TekGqTh",
+                  "hex": "03171d8de6937a1eab0277842b61c26b0b4235c53316baf2e057a7d8b9e97ab37aa9f41d7ff080ac8d62e937a41aa4e1"
+                },
+                "sha512": {
+                  "base64": "yfahbB3K7IH+NrrIjk2MaEyWNJNE4l5CGUGSm9UNOAE42rkqw5M1WJ5nKkCDRGgc/t/qlbYlI4XkE/7Uesh8Vg==",
+                  "hex": "c9f6a16c1dcaec81fe36bac88e4d8c684c96349344e25e421941929bd50d380138dab92ac39335589e672a408344681cfedfea95b6252385e413fed47ac87c56"
+                }
+              }
+            },
+            "polyfills.min.js": {
+              "entrypoint": true,
+              "description": "Minified Polyfill bundle",
+              "size": 80991,
+              "gzip_size": 22289,
+              "hashes": {
+                "sha256": {
+                  "base64": "SZbWAlKn7qaEx0e4xxZcfKIn+rXfRAPuTkYUE2UX+8M=",
+                  "hex": "4996d60252a7eea684c747b8c7165c7ca227fab5df4403ee4e4614136517fbc3"
+                },
+                "sha384": {
+                  "base64": "ROQ7WAv1utMQSMasIaP49OxuAMKtLmBd2jN5oq+M2+nfQhNB+cmlFHJCh2IPCxaj",
+                  "hex": "44e43b580bf5bad31048c6ac21a3f8f4ec6e00c2ad2e605dda3379a2af8cdbe9df421341f9c9a514724287620f0b16a3"
+                },
+                "sha512": {
+                  "base64": "iO6+2ZaQiorV2DX1rx1mnQDB2br1p2zwXZZqTOIVH68BtKSuvsNWww6uiU7Mu0NlHmn+KFF/bHhQYrM6L4kIcQ==",
+                  "hex": "88eebed996908a8ad5d835f5af1d669d00c1d9baf5a76cf05d966a4ce2151faf01b4a4aebec356c30eae894eccbb43651e69fe28517f6c785062b33a2f890871"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "5.0.1",
+          "ref": "5.0.1",
+          "tarball_url": "https://registry.npmjs.org/skatejs-web-components/-/skatejs-web-components-5.0.1.tgz",
+          "git_sha": "1ecc31b93cb7a98cebe9b9d244ca1fb89d6bd89d",
+          "link": "https://www.npmjs.com/package/skatejs-web-components",
+          "last_updated": "2016-12-12T12:22:06+00:00",
+          "messages": [],
+          "resources": {
+            "polyfills.js": {
+              "entrypoint": true,
+              "description": "Polyfill bundle",
+              "size": 203472,
+              "gzip_size": 48397,
+              "hashes": {
+                "sha256": {
+                  "base64": "6Ptq+kH/UpLZ0us2OrR3vmisqAoRIRYxvRYJA7KsJfA=",
+                  "hex": "e8fb6afa41ff5292d9d2eb363ab477be68aca80a11211631bd160903b2ac25f0"
+                },
+                "sha384": {
+                  "base64": "SD8sj90+xcMcTGCG7PTS4Ls/woMW9SxLSoxZSfhOioxAajwI9nPPsmcXmD7gZhax",
+                  "hex": "483f2c8fdd3ec5c31c4c6086ecf4d2e0bb3fc28316f52c4b4a8c5949f84e8a8c406a3c08f673cfb26717983ee06616b1"
+                },
+                "sha512": {
+                  "base64": "iBcc9GDwfs5epLjNWz9P/1H+HbttwyRA3Oio0vJPfdCAuOwitsiWkjisdEaJQUJ+V8w+DC1yVcsDgFW44DtwVQ==",
+                  "hex": "88171cf460f07ece5ea4b8cd5b3f4fff51fe1dbb6dc32440dce8a8d2f24f7dd080b8ec22b6c8969238ac74468941427e57cc3e0c2d7255cb038055b8e03b7055"
+                }
+              }
+            },
+            "polyfills.min.js": {
+              "entrypoint": true,
+              "description": "Minified Polyfill bundle",
+              "size": 83571,
+              "gzip_size": 23072,
+              "hashes": {
+                "sha256": {
+                  "base64": "v69L+CCuLvwZPKUFp+ayS6faQZQ7R/phRHpeotr4M18=",
+                  "hex": "bfaf4bf820ae2efc193ca505a7e6b24ba7da41943b47fa61447a5ea2daf8335f"
+                },
+                "sha384": {
+                  "base64": "6FKHk+9NFeMjvSDww6Gj7d2NbAF/wtcRI22NrRjzGjtNqV1w0FfFNLNxGS02rxWH",
+                  "hex": "e8528793ef4d15e323bd20f0c3a1a3eddd8d6c017fc2d711236d8dad18f31a3b4da95d70d057c534b371192d36af1587"
+                },
+                "sha512": {
+                  "base64": "1WajVl4ipgx27iVRU3THZV+/PnHT9JrM7gYS68vED27ENRH9b8O/liOqbBcBdfmu6AKFqydE9p6uotW/tIxdmA==",
+                  "hex": "d566a3565e22a60c76ee25515374c7655fbf3e71d3f49accee0612ebcbc40f6ec43511fd6fc3bf9623aa6c170175f9aee80285ab2744f69eaea2d5bfb48c5d98"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "5.0.2",
+          "ref": "5.0.2",
+          "tarball_url": "https://registry.npmjs.org/skatejs-web-components/-/skatejs-web-components-5.0.2.tgz",
+          "git_sha": "d8ab64abbeca82daa2a2f1635f87da7620c58cb4",
+          "link": "https://www.npmjs.com/package/skatejs-web-components",
+          "last_updated": "2017-01-22T21:53:57+00:00",
+          "messages": [],
+          "resources": {
+            "polyfills.js": {
+              "entrypoint": true,
+              "description": "Polyfill bundle",
+              "size": 278270,
+              "gzip_size": 61364,
+              "hashes": {
+                "sha256": {
+                  "base64": "KhYm9lecmLqIlYFqiqjeFtbr8MEAjMfa9DIFPJt3oJ0=",
+                  "hex": "2a1626f6579c98ba8895816a8aa8de16d6ebf0c1008cc7daf432053c9b77a09d"
+                },
+                "sha384": {
+                  "base64": "nHhPwIhvbr29L58UsGJtFTrjlRPEHG5wCRoTPEmD0KDDnT2oz6TZ/wmqLz3nQqF8",
+                  "hex": "9c784fc0886f6ebdbd2f9f14b0626d153ae39513c41c6e70091a133c4983d0a0c39d3da8cfa4d9ff09aa2f3de742a17c"
+                },
+                "sha512": {
+                  "base64": "PjCEJyEe6AFVHGmZ5iTY9HK4n+W02ay5EOOxzP9UGyPS3ctLcmqLLaCROTOfll5UQjE/H9YoUpagLF+WfYpEAg==",
+                  "hex": "3e308427211ee801551c6999e624d8f472b89fe5b4d9acb910e3b1ccff541b23d2ddcb4b726a8b2da09139339f965e5442313f1fd6285296a02c5f967d8a4402"
+                }
+              }
+            },
+            "polyfills.min.js": {
+              "entrypoint": true,
+              "description": "Minified Polyfill bundle",
+              "size": 106923,
+              "gzip_size": 26780,
+              "hashes": {
+                "sha256": {
+                  "base64": "cjoz/7k1cF1ezoGoryT7Kknjh/LDsIRy00Kt9x95bGU=",
+                  "hex": "723a33ffb935705d5ece81a8af24fb2a49e387f2c3b08472d342adf71f796c65"
+                },
+                "sha384": {
+                  "base64": "0iKcZjeKMJOnjB1zpBcXARO4ODSsycqzMkqeDhiwMoeWIAdA8gzEksJAfxVym4E9",
+                  "hex": "d2229c66378a3093a78c1d73a417170113b83834acc9cab3324a9e0e18b0328796200740f20cc492c2407f15729b813d"
+                },
+                "sha512": {
+                  "base64": "i4T41ZB+ZaBsscW09qbC9LJF1iCNVIhtYxj3cfLKufPcXCU3LaFLy4D7kzU0Z68+UBsmSIKnSm2HaqLRf9zffg==",
+                  "hex": "8b84f8d5907e65a06cb1c5b4f6a6c2f4b245d6208d54886d6318f771f2cab9f3dc5c25372da14bcb80fb93353467af3e501b264882a74a6d876aa2d17fdcdf7e"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "5.1.0",
+          "ref": "5.1.0",
+          "tarball_url": "https://registry.npmjs.org/skatejs-web-components/-/skatejs-web-components-5.1.0.tgz",
+          "git_sha": "1686e76c742850dadff1e5ecce3b499d7b0d38a3",
+          "link": "https://www.npmjs.com/package/skatejs-web-components",
+          "last_updated": "2017-01-23T01:52:55+00:00",
+          "messages": [],
+          "resources": {
+            "polyfills.js": {
+              "entrypoint": true,
+              "description": "Polyfill bundle",
+              "size": 326363,
+              "gzip_size": 70909,
+              "hashes": {
+                "sha256": {
+                  "base64": "gNXqD9A71q8vQwymZcstipJwF/uESMM3HpwSP+LenSY=",
+                  "hex": "80d5ea0fd03bd6af2f430ca665cb2d8a927017fb8448c3371e9c123fe2de9d26"
+                },
+                "sha384": {
+                  "base64": "geqGocYk4FDVfa4yzZAxZ1WV6t5Bk8IiPu02IVqUgB7z4iszUNZZ3Xxv02Hiw5De",
+                  "hex": "81ea86a1c624e050d57dae32cd9031675595eade4193c2223eed36215a94801ef3e22b3350d659dd7c6fd361e2c390de"
+                },
+                "sha512": {
+                  "base64": "UmmesFoP6YNubTQxoaWGjjcIgx2vtBfZMAfNCU6TIfHU1SoeoipxpEE4NqidHUoKderbJcgyh+/rTCYNJw8wyg==",
+                  "hex": "52699eb05a0fe9836e6d3431a1a5868e3708831dafb417d93007cd094e9321f1d4d52a1ea22a71a4413836a89d1d4a0a75eadb25c83287efeb4c260d270f30ca"
+                }
+              }
+            },
+            "polyfills.min.js": {
+              "entrypoint": true,
+              "description": "Minified Polyfill bundle",
+              "size": 129479,
+              "gzip_size": 31969,
+              "hashes": {
+                "sha256": {
+                  "base64": "/jpk/gpS/mMq5vBJLLZs5PSmCjDrX5L7xB5UHtCIsF4=",
+                  "hex": "fe3a64fe0a52fe632ae6f0492cb66ce4f4a60a30eb5f92fbc41e541ed088b05e"
+                },
+                "sha384": {
+                  "base64": "DEY/O5RYIkTcFOdqjPFBDpLtlBeK0Qjacuf730sl+G8ABMxynqD7V7hRDpq5uAs4",
+                  "hex": "0c463f3b94582244dc14e76a8cf1410e92ed94178ad108da72e7fbdf4b25f86f0004cc729ea0fb57b8510e9ab9b80b38"
+                },
+                "sha512": {
+                  "base64": "3ntXH5+FzFlGxOBsW7RYi9pGFGc/Ateqa8bRVI+x7BmaREQ6+OsjFN4cXRER4mSXhcyg+IJiQqGqe3hV1UkLeQ==",
+                  "hex": "de7b571f9f85cc5946c4e06c5bb4588bda4614673f02d7aa6bc6d1548fb1ec199a44443af8eb2314de1c5d1111e2649785cca0f8826242a1aa7b7855d5490b79"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "5.2.0",
+          "ref": "5.2.0",
+          "tarball_url": "https://registry.npmjs.org/skatejs-web-components/-/skatejs-web-components-5.2.0.tgz",
+          "git_sha": "a29473c61118b471737f175d592cd40ca2a48418",
+          "link": "https://www.npmjs.com/package/skatejs-web-components",
+          "last_updated": "2017-02-16T23:08:30+00:00",
+          "messages": [],
+          "resources": {
+            "polyfills.js": {
+              "entrypoint": true,
+              "description": "Polyfill bundle",
+              "size": 337712,
+              "gzip_size": 73727,
+              "hashes": {
+                "sha256": {
+                  "base64": "YciwKSw69+Ux1rqfzzG7YTU49zrR5ZkzykQntXA+Mbw=",
+                  "hex": "61c8b0292c3af7e531d6ba9fcf31bb613538f73ad1e59933ca4427b5703e31bc"
+                },
+                "sha384": {
+                  "base64": "0IQ8UXjwUWc6rJ0Dv3LLJSDmxIMBnlOoPlG4QyWsy7frFiIhC5JAuqHJV17uqPup",
+                  "hex": "d0843c5178f051673aac9d03bf72cb2520e6c483019e53a83e51b84325accbb7eb1622210b9240baa1c9575eeea8fba9"
+                },
+                "sha512": {
+                  "base64": "Y0iWOsNC0KQ9f24j2j9fFdyoauaB3bkcT51hMcGeNNYPIW7D1T8f0xPDo285Kr1+g7S7rQgoo69PxTbErhW0Yg==",
+                  "hex": "6348963ac342d0a43d7f6e23da3f5f15dca86ae681ddb91c4f9d6131c19e34d60f216ec3d53f1fd313c3a36f392abd7e83b4bbad0828a3af4fc536c4ae15b462"
+                }
+              }
+            },
+            "polyfills.min.js": {
+              "entrypoint": true,
+              "description": "Minified Polyfill bundle",
+              "size": 133338,
+              "gzip_size": 32809,
+              "hashes": {
+                "sha256": {
+                  "base64": "jpHbZ3DtIlHZ/gzikhjpG8ZNFU4tE4CYh3NBJLGQJBk=",
+                  "hex": "8e91db6770ed2251d9fe0ce29218e91bc64d154e2d13809887734124b1902419"
+                },
+                "sha384": {
+                  "base64": "nPva8R4HhdW1f2iZMGwLJo/mT2DPGPbmQX4DwBCQG08NiV3SRtYaDvetXERGsQov",
+                  "hex": "9cfbdaf11e0785d5b57f6899306c0b268fe64f60cf18f6e6417e03c010901b4f0d895dd246d61a0ef7ad5c4446b10a2f"
+                },
+                "sha512": {
+                  "base64": "gTDGQpzedO65CvQx9JCZjXt84Dybl9Dlv/r3K0GaL4omuvoFA5jUUGi/ZH3Yq+gzGHObQOlzhTKTpA0pLVQdXQ==",
+                  "hex": "8130c6429cde74eeb90af431f490998d7b7ce03c9b97d0e5bffaf72b419a2f8a26bafa050398d45068bf647dd8abe83318739b40e973853293a40d292d541d5d"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "5.2.1",
+          "ref": "5.2.1",
+          "tarball_url": "https://registry.npmjs.org/skatejs-web-components/-/skatejs-web-components-5.2.1.tgz",
+          "git_sha": "5f21e2a4d6b19178a781574b862f8284e9cd021b",
+          "link": "https://www.npmjs.com/package/skatejs-web-components",
+          "last_updated": "2017-02-22T11:21:07+00:00",
+          "messages": [],
+          "resources": {
+            "polyfills.js": {
+              "entrypoint": true,
+              "description": "Polyfill bundle",
+              "size": 338222,
+              "gzip_size": 73885,
+              "hashes": {
+                "sha256": {
+                  "base64": "giNl0t5s9DHRyHoC3gfOIXRRXsBsmNdj9HNikJQGlJ8=",
+                  "hex": "822365d2de6cf431d1c87a02de07ce2174515ec06c98d763f47362909406949f"
+                },
+                "sha384": {
+                  "base64": "5f+o6q2+NpD6S0tClE6wfk5dFyKsjHh09pcH9G8RqfElL5MPm8K7eqVBgxmDeApy",
+                  "hex": "e5ffa8eaadbe3690fa4b4b42944eb07e4e5d1722ac8c7874f69707f46f11a9f1252f930f9bc2bb7aa541831983780a72"
+                },
+                "sha512": {
+                  "base64": "YxoVOmPkYjL2Es0yRR9IXtf/3ICDfo/7laWs2ZWLR6/Dta9XfjAG2LJ5o8Y0l2RkWo1517jtoIPH4y2f3pJhrw==",
+                  "hex": "631a153a63e46232f612cd32451f485ed7ffdc80837e8ffb95a5acd9958b47afc3b5af577e3006d8b279a3c6349764645a8d79d7b8eda083c7e32d9fde9261af"
+                }
+              }
+            },
+            "polyfills.min.js": {
+              "entrypoint": true,
+              "description": "Minified Polyfill bundle",
+              "size": 133717,
+              "gzip_size": 32834,
+              "hashes": {
+                "sha256": {
+                  "base64": "gv1mpb1B3TAn58gW2b9THzLP9RBHDM3I2eFkq5NCRKI=",
+                  "hex": "82fd66a5bd41dd3027e7c816d9bf531f32cff510470ccdc8d9e164ab934244a2"
+                },
+                "sha384": {
+                  "base64": "5IQj4pxQXk15uWSp36GzTq8xJLuQOazVi1R6I0hlYpuZHCxn9ABgTLyCNFpkK/F1",
+                  "hex": "e48423e29c505e4d79b964a9dfa1b34eaf3124bb9039acd58b547a234865629b991c2c67f400604cbc82345a642bf175"
+                },
+                "sha512": {
+                  "base64": "bI7bOXSXrH4bRJ5JVTgKV5H3xD/jrLTYHn2jBuVPTeZfxPElPLwWDPe3g0UwLZ2ZRbmabNl01Z0hp7V7eJlZ5w==",
+                  "hex": "6c8edb397497ac7e1b449e4955380a5791f7c43fe3acb4d81e7da306e54f4de65fc4f1253cbc160cf7b78345302d9d9945b99a6cd974d59d21a7b57b789959e7"
                 }
               }
             }
