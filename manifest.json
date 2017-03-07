@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-03-07T07:20:38.053Z",
+  "$built": "2017-03-07T07:26:33.712Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1325,14 +1325,15 @@
           "name": "new-build-chain",
           "ref": "new-build-chain",
           "tarball_url": "https://api.github.com/repos/byuweb/2017-components/tarball/new-build-chain",
-          "git_sha": "28bbb05c3b5513bafc4f0f35d9478a976991e083",
+          "git_sha": "c78c6cea9f6d17e418596b24d66efefd7c272c9f",
           "link": "https://github.com/byuweb/2017-components/tree/new-build-chain",
-          "last_updated": "2017-03-07T07:20:00+00:00",
+          "last_updated": "2017-03-07T07:26:00+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
             "2017-core-components.js": {
-              "entrypoint": false,
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle",
               "size": 6544,
               "gzip_size": 2487,
               "hashes": {
@@ -1351,7 +1352,8 @@
               }
             },
             "2017-core-components.min.js": {
-              "entrypoint": false,
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle",
               "size": 1863,
               "gzip_size": 909,
               "hashes": {
