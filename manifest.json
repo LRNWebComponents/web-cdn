@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-03-08T00:06:31.670Z",
+  "$built": "2017-03-08T06:36:22.871Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1325,9 +1325,9 @@
           "name": "new-build-chain",
           "ref": "new-build-chain",
           "tarball_url": "https://api.github.com/repos/byuweb/2017-components/tarball/new-build-chain",
-          "git_sha": "c78c6cea9f6d17e418596b24d66efefd7c272c9f",
+          "git_sha": "d3768434d97f78ccf558b58642dc338bb7434f20",
           "link": "https://github.com/byuweb/2017-components/tree/new-build-chain",
-          "last_updated": "2017-03-07T07:26:00+00:00",
+          "last_updated": "2017-03-08T06:30:42+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -1539,6 +1539,25 @@
                 "sha512": {
                   "base64": "vJoNE5UWxrCe27aJpPSuAT+N44IaiBJhOT/m4Hxj+vnszwD5FOrtkzR/pd1Ffbd305itatdFhhOkiC7x330axA==",
                   "hex": "bc9a0d139516c6b09edbb689a4f4ae013f8de3821a881261393fe6e07c63faf9eccf00f914eaed93347fa5dd457db777d398ad6ad7458613a4882ef1df7d1ac4"
+                }
+              }
+            },
+            "site.min.css": {
+              "entrypoint": false,
+              "size": 834,
+              "gzip_size": 391,
+              "hashes": {
+                "sha256": {
+                  "base64": "W9RVdBL8SPUSOAOYLXaRWUT8U+TSO9ArABy7xdGW8WM=",
+                  "hex": "5bd4557412fc48f5123803982d76915944fc53e4d23bd02b001cbbc5d196f163"
+                },
+                "sha384": {
+                  "base64": "m2JSbDkxB9da4iWZb348Z8HCP/d9mImVBFtb5Ua8s8W+P3M0B8MJkj0dZmS2grdw",
+                  "hex": "9b62526c393107d75ae225996f7e3c67c1c23ff77d988995045b5be546bcb3c5be3f733407c309923d1d6664b682b770"
+                },
+                "sha512": {
+                  "base64": "l7TgUHctz8zc+TydpLkkutPqQtS91QanLnUi0gpZ55Zq36X7ob23G4N9xdtY2CBmcAJQbj8Umg+Ne2acaOfsYg==",
+                  "hex": "97b4e050772dcfccdcf93c9da4b924bad3ea42d4bdd506a72e7522d20a59e7966adfa5fba1bdb71b837dc5db58d820667002506e3f149a0f8d7b669c68e7ec62"
                 }
               }
             }
