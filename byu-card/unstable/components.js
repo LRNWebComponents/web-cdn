@@ -81,7 +81,7 @@ exports = module.exports = __webpack_require__(2)();
 
 
 // module
-exports.push([module.i, ":host{display:inline-block;background-color:#fff;padding:0;-moz-box-shadow:0 8px 12px rgba(0,0,0,.2);-webkit-box-shadow:0 8px 12px rgba(0,0,0,.2);box-shadow:0 8px 12px rgba(0,0,0,.2);vertical-align:top;min-width:250px;width:30%;max-width:700px;margin-bottom:20px}#card-content::slotted(*){width:100%;padding:10px 15px}#card-content::slotted(img){padding:0}:host.picture-left #inner-top .profile-image{order:1}:host[theme=blue] .profile-image{background:#002e5d}:host[theme=gray] .profile-image{background:gray}#card-content::slotted(*){color:#444}", ""]);
+exports.push([module.i, "#card-content ::slotted(*){width:100%;padding:10px 15px}#card-content ::slotted(img),:host{padding:0}:host{display:inline-block;background-color:#fff;-moz-box-shadow:0 8px 12px rgba(0,0,0,.2);-webkit-box-shadow:0 8px 12px rgba(0,0,0,.2);box-shadow:0 8px 12px rgba(0,0,0,.2);vertical-align:top;min-width:250px;width:30%;max-width:700px;margin-bottom:20px}:host(:hover){-moz-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);-webkit-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);box-shadow:0 10px 18px 0 rgba(0,0,0,.3)}#card-content::slotted(*){width:100%;padding:20px}#card-content::slotted(ul){padding-left:40px}#card-content::slotted(img){padding:0}:host.picture-left #inner-top .profile-image{order:1}:host[theme=blue] .profile-image{background:#002e5d}:host[theme=gray] .profile-image{background:gray}#card-content::slotted(*){color:#444}", ""]);
 
 // exports
 
