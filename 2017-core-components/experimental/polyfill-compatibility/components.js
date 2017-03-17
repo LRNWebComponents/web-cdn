@@ -532,7 +532,7 @@ class ByuSearch extends HTMLElement {
     attributeChangedCallback(name, oldValue, newValue) {
         switch (name) {
             case 'placeholder':
-                this.shadowRoot.querySelector('input').setAttribute('placeholder', newValue);
+                applyPlaceholder(this);
                 break;
             case 'value':
                 store.set(this, getInputValue(this));
@@ -556,6 +556,7 @@ class ByuSearch extends HTMLElement {
                 .addEventListener('submit', this._formSubmitHandler);
 
             if (this.hasAttribute('value')) this.value = this.getAttribute('value');
+            applyPlaceholder(this);
         });
     }
 
@@ -578,6 +579,14 @@ class ByuSearch extends HTMLElement {
         return this;
     }
 
+    set placeholder(value) {
+        this.setAttribute('placeholder', value);
+    }
+
+    get placeholder() {
+        return this.getAttribute('placeholder');
+    }
+
     search() {
         if (this.hasAttribute('onsearch')) evalInContext.call(this, this.getAttribute('onsearch'));
 
@@ -594,6 +603,13 @@ class ByuSearch extends HTMLElement {
         }
     }
 
+}
+
+function applyPlaceholder(element) {
+    if (!element.shadowRoot) return;
+    let input = element.shadowRoot.querySelector('input');
+    if (!input) return;
+    input.setAttribute('placeholder', element.placeholder);
 }
 
 function evalInContext(string) {
@@ -1240,7 +1256,7 @@ module.exports = "<style>" + __webpack_require__(11) + "</style> <slot name=\"ac
 /* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__(12) + "</style> <link rel=\"stylesheet\" href=\"../../bower_components/font-awesome/css/font-awesome.min.css\"> <h2 class=\"header\"> <slot name=\"header\"></slot> </h2> <div class=\"content\"> <slot id=\"defaultContent\"></slot> </div>";
+module.exports = "<style>" + __webpack_require__(12) + "</style> <h2 class=\"header\"> <slot name=\"header\"></slot> </h2> <div class=\"content\"> <slot id=\"defaultContent\"></slot> </div>";
 
 /***/ }),
 /* 25 */

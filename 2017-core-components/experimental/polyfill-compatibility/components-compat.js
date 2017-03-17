@@ -667,7 +667,7 @@
                 value: function attributeChangedCallback(name, oldValue, newValue) {
                     switch (name) {
                         case 'placeholder':
-                            this.shadowRoot.querySelector('input').setAttribute('placeholder', newValue);
+                            applyPlaceholder(this);
                             break;
                         case 'value':
                             store.set(this, getInputValue(this));
@@ -705,6 +705,7 @@
                         _this13.shadowRoot.querySelector('form').addEventListener('submit', _this13._formSubmitHandler);
 
                         if (_this13.hasAttribute('value')) _this13.value = _this13.getAttribute('value');
+                        applyPlaceholder(_this13);
                     });
                 }
             }, {
@@ -741,10 +742,25 @@
                     if (input) input.value = value;
                     return this;
                 }
+            }, {
+                key: 'placeholder',
+                set: function set(value) {
+                    this.setAttribute('placeholder', value);
+                },
+                get: function get() {
+                    return this.getAttribute('placeholder');
+                }
             }]);
 
             return ByuSearch;
         }(HTMLElement);
+
+        function applyPlaceholder(element) {
+            if (!element.shadowRoot) return;
+            var input = element.shadowRoot.querySelector('input');
+            if (!input) return;
+            input.setAttribute('placeholder', element.placeholder);
+        }
 
         function evalInContext(string) {
             return eval(string);
@@ -1414,7 +1430,7 @@
     /* 24 */
     /***/function (module, exports, __webpack_require__) {
 
-        module.exports = "<style>" + __webpack_require__(12) + "</style> <link rel=\"stylesheet\" href=\"../../bower_components/font-awesome/css/font-awesome.min.css\"> <h2 class=\"header\"> <slot name=\"header\"></slot> </h2> <div class=\"content\"> <slot id=\"defaultContent\"></slot> </div>";
+        module.exports = "<style>" + __webpack_require__(12) + "</style> <h2 class=\"header\"> <slot name=\"header\"></slot> </h2> <div class=\"content\"> <slot id=\"defaultContent\"></slot> </div>";
 
         /***/
     },
