@@ -1,0 +1,1506 @@
+/******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+/******/
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// identity function for calling harmony imports with the correct context
+/******/ 	__webpack_require__.i = function(value) { return value; };
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 40);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports) {
+
+/*
+	MIT License http://www.opensource.org/licenses/mit-license.php
+	Author Tobias Koppers @sokra
+*/
+// css base code, injected by the css-loader
+module.exports = function() {
+	var list = [];
+
+	// return the list of modules as css string
+	list.toString = function toString() {
+		var result = [];
+		for(var i = 0; i < this.length; i++) {
+			var item = this[i];
+			if(item[2]) {
+				result.push("@media " + item[2] + "{" + item[1] + "}");
+			} else {
+				result.push(item[1]);
+			}
+		}
+		return result.join("");
+	};
+
+	// import a list of modules into the list
+	list.i = function(modules, mediaQuery) {
+		if(typeof modules === "string")
+			modules = [[null, modules, ""]];
+		var alreadyImportedModules = {};
+		for(var i = 0; i < this.length; i++) {
+			var id = this[i][0];
+			if(typeof id === "number")
+				alreadyImportedModules[id] = true;
+		}
+		for(i = 0; i < modules.length; i++) {
+			var item = modules[i];
+			// skip already imported module
+			// this implementation is not 100% perfect for weird media query combinations
+			//  when a module is imported multiple times with different media queries.
+			//  I hope this will never occur (Hey this way we have smaller bundles)
+			if(typeof item[0] !== "number" || !alreadyImportedModules[item[0]]) {
+				if(mediaQuery && !item[2]) {
+					item[2] = mediaQuery;
+				} else if(mediaQuery) {
+					item[2] = "(" + item[2] + ") and (" + mediaQuery + ")";
+				}
+				list.push(item);
+			}
+		}
+	};
+	return list;
+};
+
+
+/***/ }),
+/* 1 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__utils_templating__ = __webpack_require__(39);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__utils_templating__["a"]; });
+/**
+ * Created by ThatJoeMoore on 2/14/17
+ */
+
+
+
+
+
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_byu_web_component_utils__ = __webpack_require__(1);
+
+
+const template = __webpack_require__(23);
+
+
+class BYUFooterActionButton extends HTMLElement {
+
+    constructor() {
+        super();
+        this.attachShadow({mode: 'open'});
+    }
+
+    connectedCallback() {
+        __WEBPACK_IMPORTED_MODULE_0_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-footer-action-button', template);
+    }
+}
+
+window.customElements.define('byu-footer-action-button', BYUFooterActionButton);
+window.BYUFooterActionButton = BYUFooterActionButton;
+
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_byu_web_component_utils__ = __webpack_require__(1);
+
+const template = __webpack_require__(24);
+
+
+class BYUFooterColumn extends HTMLElement {
+
+    constructor() {
+        super();
+        this.attachShadow({mode: 'open'});
+    }
+
+    connectedCallback() {
+        __WEBPACK_IMPORTED_MODULE_0_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-footer-column', template);
+    }
+}
+
+window.customElements.define('byu-footer-column', BYUFooterColumn);
+window.BYUFooterColumn = BYUFooterColumn;
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_html__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(1);
+
+
+
+
+
+class BYUFooter extends HTMLElement {
+
+    constructor() {
+        super();
+        this.attachShadow({mode: 'open'});
+    }
+
+    connectedCallback() {
+        __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-footer', __WEBPACK_IMPORTED_MODULE_0__template_html__, () => {
+            // always show the current year in the copyright message
+            var currentYear = this.shadowRoot.querySelector("#currentYear");
+            currentYear.innerHTML = new Date().getFullYear();
+        });
+    }
+}
+
+window.customElements.define('byu-footer', BYUFooter);
+window.BYUFooter = BYUFooter;
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_ejs_html__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_ejs_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__template_ejs_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_deep_equal__ = __webpack_require__(19);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_deep_equal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_deep_equal__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__icons_transformicons__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__icons_transformicons___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__icons_transformicons__);
+
+
+
+
+
+
+
+
+const ATTR_MOBILE_MAX_WIDTH = 'mobile-max-width';
+const ATTR_MOBILE_VIEW = 'mobile-view';
+const ATTR_MENU_OPEN = 'menu-open';
+
+const DEFAULT_MOBILE_WIDTH = '1024px';
+
+class BYUHeader extends HTMLElement {
+
+    constructor() {
+        super();
+        this._shadowRoot = this.attachShadow({mode: 'open'});
+    }
+
+    _render() {
+        let state = {
+            mobile: this.inMobileView
+        };
+        if (!__WEBPACK_IMPORTED_MODULE_2_deep_equal__(state, this._renderState)) {
+            let tmpl = __WEBPACK_IMPORTED_MODULE_0__template_ejs_html__(state);
+            this._renderState = state;
+
+            __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */])(this, 'byu-header', tmpl, () => {
+                this._addSlotListeners();
+                this._notifyChildrenOfMobileState();
+                this._addButtonListeners();
+            });
+        }
+    }
+
+    _addButtonListeners() {
+        if (!this.inMobileView) {
+            this.menuOpen = false;
+            return;
+        }
+        let menuButton = this.shadowRoot.querySelector('.mobile-menu-button');
+        menuButton.addEventListener('click', () => this._toggleMenu())
+    }
+
+    _toggleMenu() {
+        this.menuOpen = !this.menuOpen;
+    }
+
+    _addSlotListeners() {
+        this._findAllSlots().forEach(each => {
+            each.addEventListener('slotchange', event => {
+                this._notifyChildrenOfMobileState();
+            });
+        })
+    }
+
+    _notifyChildrenOfMobileState() {
+        let kids = this._findAllDistributedChildren();
+        if (this.inMobileView) {
+            kids.forEach(each => {
+                each.setAttribute(ATTR_MOBILE_VIEW, '');
+                each.classList.add(ATTR_MOBILE_VIEW);
+            });
+        } else {
+            kids.forEach(each => {
+                each.removeAttribute(ATTR_MOBILE_VIEW);
+                each.classList.remove(ATTR_MOBILE_VIEW);
+            });
+        }
+    }
+
+    _findAllSlots() {
+        let slots = this._shadowRoot.querySelectorAll('slot');
+        let arr = [];
+        for (let i = 0; i < slots.length; ++i) {
+            arr.push(slots[i]);
+        }
+        return arr;
+    }
+
+    _findAllDistributedChildren() {
+        return this._findAllSlots().map(s => s.assignedNodes().filter(n => n instanceof HTMLElement))
+            .reduce((agg, each) => agg.concat(each), []);
+    }
+
+    connectedCallback() {
+        //This is a hack to ensure that the right defaults get applied.
+        this.mobileMaxWidth = this.mobileMaxWidth;
+        this._applyMobileWidth();
+        this._render();
+    }
+
+    static get observedAttributes() {
+        return [ATTR_MOBILE_MAX_WIDTH, ATTR_MOBILE_VIEW, ATTR_MENU_OPEN];
+    }
+
+    attributeChangedCallback(attr, oldValue, newValue) {
+        switch (attr) {
+            case ATTR_MOBILE_MAX_WIDTH:
+                this._applyMobileWidth();
+                return;
+            case ATTR_MOBILE_VIEW:
+                this._render();
+                return;
+            case ATTR_MENU_OPEN:
+                this._applyMenuOpen();
+                return;
+        }
+    }
+
+    _applyMenuOpen() {
+        let menu = this.shadowRoot.querySelector('#mobileMenu');
+        if (!menu) return;
+        if (this.menuOpen) {
+            menu.style.maxHeight = menu.scrollHeight + 'px';
+            __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__icons_transformicons__["transform"])(this.shadowRoot.querySelector('.mobile-menu-button'));
+        } else {
+            menu.style.maxHeight = null;
+            __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_3__icons_transformicons__["revert"])(this.shadowRoot.querySelector('.mobile-menu-button'));
+        }
+    }
+
+    get mobileMaxWidth() {
+        return this.getAttribute(ATTR_MOBILE_MAX_WIDTH);
+    }
+
+    set mobileMaxWidth(val) {
+        if (val) {
+            this.setAttribute(ATTR_MOBILE_MAX_WIDTH, val);
+        } else {
+            this.setAttribute(ATTR_MOBILE_MAX_WIDTH, DEFAULT_MOBILE_WIDTH);
+        }
+    }
+
+    get inMobileView() {
+        return this.hasAttribute(ATTR_MOBILE_VIEW);
+    }
+
+    set inMobileView(val) {
+        if (val) {
+            this.setAttribute(ATTR_MOBILE_VIEW, '');
+        } else {
+            this.removeAttribute(ATTR_MOBILE_VIEW);
+        }
+    }
+
+    get menuOpen() {
+        return this.hasAttribute(ATTR_MENU_OPEN);
+    }
+
+    set menuOpen(val) {
+        if (val) {
+            this.setAttribute(ATTR_MENU_OPEN, '');
+        } else {
+            this.removeAttribute(ATTR_MENU_OPEN);
+        }
+    }
+
+    _applyMobileWidth() {
+        let desiredQuery = this.mobileMediaQuery;
+        let q = this._mobileQuery;
+        if (q) {
+            if (q.media === desiredQuery) {
+                //Nothing has changed, bail!
+                return;
+            } else {
+                q.removeListener(this._mobileQueryListener);
+                this._mobileQuery = null;
+            }
+        }
+        this._mobileQuery = q = window.matchMedia(desiredQuery);
+        this._mobileQueryListener = this._handleMobileChange.bind(this);
+
+        q.addListener(this._mobileQueryListener);
+        this._mobileQueryListener(q);
+    }
+
+    _handleMobileChange(mql) {
+        this.inMobileView = mql.matches;
+    }
+
+    get mobileMediaQuery() {
+        return `(max-width: ${this.mobileMaxWidth})`;
+    }
+
+}
+
+window.customElements.define('byu-header', BYUHeader);
+window.BYUHeader = BYUHeader;
+
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_html__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(1);
+
+
+
+
+class BYUMenu extends HTMLElement {
+
+    constructor() {
+        super(); // always call super first
+        this.attachShadow({mode: 'open'});
+    }
+
+    connectedCallback() {
+        __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-menu', __WEBPACK_IMPORTED_MODULE_0__template_html__, () => {
+            this._addSlotListeners();
+        });
+    }
+
+    _maybeAddMoreMenu() {
+        // if there are more than 6 links add the extras to a "more" dropdown
+        const slot = this.shadowRoot.querySelector("#slot");
+
+        let allLinks = slot.assignedNodes().filter(function (element) {
+            return element instanceof HTMLElement
+        });
+
+        if (allLinks.length > 6) {
+            this.setAttribute('has-extra-links', '');
+
+            let extras = allLinks.slice(5);
+            let dropdown = this.shadowRoot.querySelector("#extraLinksDropdown");
+            for (let i = 0; i < extras.length; i++) {
+                let listItem = document.createElement("li");
+                //listItem.appendChild(extras[i]);
+                listItem.appendChild(extras[i].cloneNode());
+                dropdown.appendChild(listItem);
+            }
+        } else {
+            this.removeAttribute('has-extra-links');
+        }
+    }
+
+    _addSlotListeners() {
+        this.shadowRoot.querySelector('#slot')
+            .addEventListener('slotchange', e => this._maybeAddMoreMenu())
+    }
+}
+
+window.customElements.define('byu-menu', BYUMenu);
+window.BYUMenu = BYUMenu;
+
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_html__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(1);
+/**
+ *  @license
+ *    Copyright 2016 Brigham Young University
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
+ **/
+
+
+
+
+
+const store = new WeakMap();
+
+class ByuSearch extends HTMLElement {
+
+    static get observedAttributes() {
+        return ['placeholder', 'value'];
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+        switch (name) {
+            case 'placeholder':
+                this.shadowRoot.querySelector('input').setAttribute('placeholder', newValue);
+                break;
+            case 'value':
+                store.set(this, getInputValue(this));
+                break;
+        }
+    }
+
+    constructor() {
+        super(); // always call super first
+
+        this.attachShadow({mode: 'open'});
+    }
+
+    connectedCallback() {
+        __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-search', __WEBPACK_IMPORTED_MODULE_0__template_html__, () => {
+            let input = getInputElement(this, true);
+            if (input) input.addEventListener('input', inputHandler);
+
+            this._formSubmitHandler = formSubmitHandler(this);
+            this.shadowRoot.querySelector('form')
+                .addEventListener('submit', this._formSubmitHandler);
+
+            if (this.hasAttribute('value')) this.value = this.getAttribute('value');
+        });
+    }
+
+    disconnectedCallback() {
+        let input = getInputElement(this, true);
+        if (input) input.removeEventListener('input', inputHandler);
+
+        this.shadowRoot.querySelector('form')
+            .removeEventListener('submit', this._formSubmitHandler);
+    }
+
+    get value() {
+        return store.get(this);
+    }
+
+    set value(value) {
+        store.set(this, '' + value);
+        let input = getInputElement(this, true);
+        if (input) input.value = value;
+        return this;
+    }
+
+    search() {
+        if (this.hasAttribute('onsearch')) evalInContext.call(this, this.getAttribute('onsearch'));
+
+        if (this.hasAttribute('action')) {
+            let form = this.shadowRoot.querySelector('form');
+            let value = this.value;
+            let action = this.getAttribute('action').toString().replace(/\$1/g, value);
+            form.setAttribute('action', action);
+            form.setAttribute('method', this.hasAttribute('method')
+                ? this.getAttribute('method')
+                : 'GET');
+            if (this.hasAttribute('target')) form.setAttribute('target', this.getAttribute('target'));
+            form.submit();
+        }
+    }
+
+}
+
+function evalInContext(string) {
+    return eval(string);
+}
+
+function getInputValue(component) {
+    var input = getInputElement(component, true);
+    return input ? input.value : '';
+}
+
+function getInputElement(component, flatten) {
+    var elements = component.shadowRoot.querySelector("#search").assignedNodes({flatten: flatten});
+    for (var i = 0; i < elements.length; i++) {
+        if (elements[i].tagName === 'INPUT') return elements[i];
+    }
+    return null;
+}
+
+function getParentComponent(el) {
+    while (!(el instanceof ByuSearch)) el = el.host ? el.host : el.parentNode;
+    return el;
+}
+
+function inputHandler(e) {
+    var el = e.target;
+    var component = el.tagName === 'byu-search' ? el : getParentComponent(el);
+    component.value = e.target.value;
+}
+
+function formSubmitHandler(searchElement) {
+    return function(e) {
+        if (e) e.preventDefault();
+        searchElement.search();
+    };
+}
+
+window.customElements.define('byu-search', ByuSearch);
+window.ByuSearch = ByuSearch;
+
+
+
+/***/ }),
+/* 8 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_byu_web_component_utils__ = __webpack_require__(1);
+
+const template = __webpack_require__(28);
+
+
+class BYUSocialMediaLinks extends HTMLElement {
+
+    constructor() {
+        super();
+        this.attachShadow({mode: 'open'});
+    }
+
+    connectedCallback() {
+        __WEBPACK_IMPORTED_MODULE_0_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-social-media-links', template, () => {
+            var idArr = ['facebook', 'instagram', 'twitter', 'googleplus', 'linkedin', 'youtube'];
+            var classArr = ['fa-facebook', 'fa-instagram', 'fa-twitter', 'fa-google-plus', 'fa-linkedin', 'fa-youtube-play'];
+
+            for (var i = 0; i < idArr.length; i++) {
+                const slotId = this.shadowRoot.querySelector("#" + idArr[i]);
+                var link = slotId.assignedNodes();
+
+                if (link.length > 0) {
+                    link[0].classList.add("fa");
+                    link[0].classList.add(classArr[i]);
+                }
+            }
+        });
+    }
+}
+
+window.customElements.define('byu-social-media-links', BYUSocialMediaLinks);
+window.BYUSocialMediaLinks = BYUSocialMediaLinks;
+
+
+/***/ }),
+/* 9 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_html__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__template_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__template_html__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(1);
+/**
+ * Created by ThatJoeMoore on 11/7/16.
+ */
+
+
+
+
+
+class ByuUserInfo extends HTMLElement {
+
+    constructor() {
+        super();
+
+        this.attachShadow({mode: 'open'});
+    }
+
+    connectedCallback() {
+        __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-user-info', __WEBPACK_IMPORTED_MODULE_0__template_html__, () => {
+            this._addSlotListeners();
+            this._addAriaAttributes();
+        });
+    }
+
+    _addSlotListeners() {
+        this._setHasUser();
+        const userSlot = this.shadowRoot.querySelector('#user-name');
+        userSlot.addEventListener('slotchange', e => {
+            this._setHasUser();
+        });
+    }
+
+    _setHasUser() {
+        const userSlot = this.shadowRoot.querySelector('#user-name');
+        if (userSlot.assignedNodes().length > 0) {
+            this.setAttribute('has-user', '');
+        }
+        else {
+            this.removeAttribute('has-user');
+        }
+    }
+
+    _addAriaAttributes() {
+        this.setAttribute('role', 'button');
+    }
+
+}
+
+window.customElements.define('byu-user-info', ByuUserInfo);
+window.ByuUserInfo = ByuUserInfo;
+
+
+
+/***/ }),
+/* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
+ * Created by ThatJoeMoore on 2/24/17
+ */
+
+
+(function (root, factory) {
+    if (true) {
+        // AMD module
+        !(__WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+				__WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+    } else if (typeof exports === 'object') {
+        // CommonJS-like environment (i.e. Node)
+        module.exports = factory();
+    } else {
+        // Browser global
+        root.transformicons = factory();
+    }
+}(this || window, function () {
+
+    // ####################
+    // MODULE TRANSFORMICON
+    // ####################
+    'use strict';
+
+    var
+        tcon = {}, // static class
+        _transformClass = 'tcon-transform',
+
+        // const
+        DEFAULT_EVENTS = {
+            transform : ['click'],
+            revert : ['click']
+        };
+
+    // ##############
+    // private methods
+    // ##############
+
+    /**
+     * Normalize a selector string, a single DOM element or an array of elements into an array of DOM elements.
+     * @private
+     *
+     * @param {(string|element|array)} elements - Selector, DOM element or Array of DOM elements
+     * @returns {array} Array of DOM elements
+     */
+    var getElementList = function (elements) {
+        if (typeof elements === 'string') {
+            return Array.prototype.slice.call(document.querySelectorAll(elements));
+        } else if (typeof elements === 'undefined' || elements instanceof Array) {
+            return elements;
+        } else {
+            return [elements];
+        }
+    };
+
+    /**
+     * Normalize a string with eventnames separated by spaces or an array of eventnames into an array of eventnames.
+     * @private
+     *
+     * @param {(string|array)} elements - String with eventnames separated by spaces or array of eventnames
+     * @returns {array} Array of eventnames
+     */
+    var getEventList = function (events) {
+        if (typeof events === 'string') {
+            return events.toLowerCase().split(' ');
+        } else {
+            return events;
+        }
+    };
+
+    /**
+     * Attach or remove transformicon events to one or more elements.
+     * @private
+     *
+     * @param {(string|element|array)} elements - Selector, DOM element or Array of DOM elements to be toggled
+     * @param {object} [events] - An Object containing one or more special event definitions
+     * @param {boolean} [remove=false] - Defines wether the listeners should be added (default) or removed.
+     */
+    var setListeners = function (elements, events, remove) {
+        var
+            method = (remove ? 'remove' : 'add') + 'EventListener',
+            elementList = getElementList(elements),
+            currentElement = elementList.length,
+            eventLists = {};
+
+        // get events or use defaults
+        for (var prop in DEFAULT_EVENTS) {
+            eventLists[prop] = (events && events[prop]) ? getEventList(events[prop]) : DEFAULT_EVENTS[prop];
+        }
+
+        // add or remove all events for all occasions to all elements
+        while(currentElement--) {
+            for (var occasion in eventLists) {
+                var currentEvent = eventLists[occasion].length;
+                while(currentEvent--) {
+                    elementList[currentElement][method](eventLists[occasion][currentEvent], handleEvent);
+                }
+            }
+        }
+    };
+
+    /**
+     * Event handler for transform events.
+     * @private
+     *
+     * @param {object} event - event object
+     */
+    var handleEvent = function (event) {
+        tcon.toggle(event.currentTarget);
+    };
+
+    // ##############
+    // public methods
+    // ##############
+
+    /**
+     * Add transformicon behavior to one or more elements.
+     * @public
+     *
+     * @param {(string|element|array)} elements - Selector, DOM element or Array of DOM elements to be toggled
+     * @param {object} [events] - An Object containing one or more special event definitions
+     * @param {(string|array)} [events.transform] - One or more events that trigger the transform. Can be an Array or string with events seperated by space.
+     * @param {(string|array)} [events.revert] - One or more events that trigger the reversion. Can be an Array or string with events seperated by space.
+     * @returns {transformicon} transformicon instance for chaining
+     */
+    tcon.add = function (elements, events) {
+        setListeners(elements, events);
+        return tcon;
+    };
+
+    /**
+     * Remove transformicon behavior from one or more elements.
+     * @public
+     *
+     * @param {(string|element|array)} elements - Selector, DOM element or Array of DOM elements to be toggled
+     * @param {object} [events] - An Object containing one or more special event definitions
+     * @param {(string|array)} [events.transform] - One or more events that trigger the transform. Can be an Array or string with events seperated by space.
+     * @param {(string|array)} [events.revert] - One or more events that trigger the reversion. Can be an Array or string with events seperated by space.
+     * @returns {transformicon} transformicon instance for chaining
+     */
+    tcon.remove = function (elements, events) {
+        setListeners(elements, events, true);
+        return tcon;
+    };
+
+    /**
+     * Put one or more elements in the transformed state.
+     * @public
+     *
+     * @param {(string|element|array)} elements - Selector, DOM element or Array of DOM elements to be transformed
+     * @returns {transformicon} transformicon instance for chaining
+     */
+    tcon.transform = function (elements) {
+        getElementList(elements).forEach(function(element) {
+            element.classList.add(_transformClass);
+        });
+        return tcon;
+    };
+
+    /**
+     * Revert one or more elements to the original state.
+     * @public
+     *
+     * @param {(string|element|array)} elements - Selector, DOM element or Array of DOM elements to be reverted
+     * @returns {transformicon} transformicon instance for chaining
+     */
+    tcon.revert = function (elements) {
+        getElementList(elements).forEach(function(element) {
+            element.classList.remove(_transformClass);
+        });
+        return tcon;
+    };
+
+    /**
+     * Toggles one or more elements between transformed and original state.
+     * @public
+     *
+     * @param {(string|element|array)} elements - Selector, DOM element or Array of DOM elements to be toggled
+     * @returns {transformicon} transformicon instance for chaining
+     */
+    tcon.toggle = function (elements) {
+        getElementList(elements).forEach(function(element) {
+            tcon[element.classList.contains(_transformClass) ? 'revert' : 'transform'](element);
+        });
+        return tcon;
+    };
+
+    return tcon;
+}));
+
+/***/ }),
+/* 11 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, ":host {\n  background-color: #767676;\n  font-family: \"Vitesse A\", \"Vitesse B\", Georgia, serif;\n  font-size: 20px !important;\n  color: #fff;\n  display: inline-block;\n  text-align: center;\n  line-height: 2.2em;\n  height: 45px;\n  width: auto;\n  min-width: 125px;\n  margin: 10px 0 20px 0;\n  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.35);\n  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.35);\n  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.35); }\n\n::slotted(*) {\n  font-family: \"Vitesse A\", \"Vitesse B\", Georgia, serif !important;\n  font-weight: 400 !important;\n  color: #fff !important;\n  display: inline-block;\n  position: relative;\n  height: 100%;\n  width: 100%;\n  margin: 0 20px;\n  left: -20px;\n  cursor: pointer;\n  vertical-align: middle !important; }\n\n::slotted(a) {\n  text-decoration: none !important; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 12 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, ":host {\n  padding: 0 15px; }\n\n.header {\n  width: 100%; }\n\n.header ::slotted(*) {\n  font-family: \"Vitesse A\", \"Vitesse B\", Georgia, serif !important;\n  text-transform: uppercase !important;\n  color: #002e5d !important;\n  font-size: 20px !important;\n  border-bottom: 1px solid #c5c5c5 !important;\n  padding-bottom: 3px !important;\n  white-space: nowrap !important;\n  font-weight: 400 !important;\n  width: 100%;\n  display: inline-block; }\n\n.content ::slotted(:not(byu-footer-action-button)) {\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-size: 13px;\n  font-weight: 400;\n  color: #767676 !important;\n  position: relative;\n  top: -11px;\n  line-height: 1.42857143; }\n\n.content ::slotted(a) {\n  line-height: 35px;\n  text-decoration: none !important;\n  outline: none !important; }\n\n.content ::slotted(a:hover) {\n  cursor: pointer;\n  color: #002e5d !important; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 13 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, ".blue-footer {\n  background-color: #002e5d;\n  text-align: center;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif;\n  font-weight: 400;\n  font-size: 12px;\n  color: white;\n  height: 80px;\n  display: table;\n  width: 100%; }\n\n.inner-wrapper {\n  display: table-cell;\n  vertical-align: middle; }\n\n.university-logo {\n  width: 380px;\n  max-width: 100vw; }\n\n.secondary-footer {\n  height: auto;\n  background-color: #e6e6e6;\n  text-align: center; }\n\n.secondary-footer ::slotted(*) {\n  display: inline-block;\n  text-align: left;\n  vertical-align: top; }\n\n@media (max-width: 767px) {\n  .secondary-footer ::slotted(*) {\n    width: 80%; }\n  .secondary-footer ::slotted(*:last-child) {\n    padding-bottom: 30px; }\n  .secondary-footer ::slotted(*:first-child) {\n    padding-top: 10px; } }\n\n@media (min-width: 768px) and (max-width: 1199px) {\n  .secondary-footer ::slotted(*) {\n    width: 40%; }\n  .secondary-footer ::slotted(*:nth-child(n+3)) {\n    padding-bottom: 30px; }\n  .secondary-footer ::slotted(*:nth-child(-n+2)) {\n    padding-top: 10px; } }\n\n@media (min-width: 1200px) {\n  .secondary-footer ::slotted(*) {\n    width: 20%;\n    padding-top: 10px;\n    padding-bottom: 30px; } }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 14 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, "/*Variables*/\n.tcon {\n  appearance: none;\n  border: none;\n  cursor: pointer;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 1.5em;\n  transition: 0.15s;\n  user-select: none;\n  width: 1.5em;\n  background: transparent;\n  outline: none;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-tap-highlight-color: transparent; }\n  .tcon > * {\n    display: block; }\n  .tcon:hover, .tcon:focus {\n    outline: none; }\n  .tcon::-moz-focus-inner {\n    border: 0; }\n\n.tcon-menu__lines {\n  display: inline-block;\n  height: 0.21429em;\n  width: 1.5em;\n  border-radius: 0.10714em;\n  transition: 0.15s;\n  background: white;\n  position: relative; }\n  .tcon-menu__lines::before, .tcon-menu__lines::after {\n    display: inline-block;\n    height: 0.21429em;\n    width: 1.5em;\n    border-radius: 0.10714em;\n    transition: 0.15s;\n    background: white;\n    content: '';\n    position: absolute;\n    left: 0;\n    transform-origin: 0.10714em center;\n    width: 100%; }\n  .tcon-menu__lines::before {\n    top: 0.375em; }\n  .tcon-menu__lines::after {\n    top: -0.375em; }\n  .tcon-transform .tcon-menu__lines {\n    transform: scale3d(0.8, 0.8, 0.8); }\n\n.tcon-menu--xbutterfly {\n  width: auto; }\n  .tcon-menu--xbutterfly .tcon-menu__lines::before, .tcon-menu--xbutterfly .tcon-menu__lines::after {\n    transform-origin: 50% 50%;\n    transition: top .15s .3s ease, transform .15s ease; }\n  .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines {\n    background: transparent; }\n    .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::before, .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::after {\n      top: 0;\n      transition: top .15s ease, transform .15s .25s ease;\n      width: 1.5em; }\n    .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::before {\n      transform: rotate3d(0, 0, 1, 45deg); }\n    .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::after {\n      transform: rotate3d(0, 0, 1, -45deg); }\n\n.tcon-visuallyhidden {\n  border: 0;\n  clip: rect(0 0 0 0);\n  height: 1px;\n  margin: -1px;\n  overflow: hidden;\n  padding: 0;\n  position: absolute;\n  width: 1px; }\n  .tcon-visuallyhidden:active, .tcon-visuallyhidden:focus {\n    clip: auto;\n    height: auto;\n    margin: 0;\n    overflow: visible;\n    position: static;\n    width: auto; }\n\n.byu-header-actions ::slotted(*) {\n  text-decoration: none !important;\n  font-size: 13px !important;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n  text-transform: uppercase !important;\n  color: white !important;\n  cursor: pointer !important;\n  margin-left: 4px;\n  margin-right: 4px; }\n\n:host([mobile-view]) .byu-header-actions ::slotted(*) {\n  text-decoration: none !important;\n  font-size: 13px !important;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n  text-transform: uppercase !important;\n  color: white !important;\n  cursor: pointer !important;\n  color: #002e5d !important;\n  height: 35px !important;\n  display: table-cell;\n  vertical-align: middle !important;\n  text-align: center !important;\n  padding: 0 6px !important;\n  display: block;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 18px 33px !important;\n  line-height: 12px;\n  text-align: left !important;\n  height: auto !important;\n  background-color: #c5c5c5;\n  margin-right: 0;\n  margin-left: 0; }\n\n:host([mobile-view]) .byu-header > div > * {\n  margin-right: 0; }\n\n/* MOBILE */\n#mobileMenu {\n  max-height: 0;\n  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1); }\n\n.root-wrapper {\n  font-family: \"Vitesse Book\" !important;\n  font-size: 18px; }\n  .root-wrapper .byu-header-primary {\n    background-color: #002e5d;\n    color: #ffffff;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: space-between;\n    align-items: center;\n    padding-left: 16px;\n    flex: 1;\n    height: 55px; }\n    .root-wrapper .byu-header-primary .byu-header-title, .root-wrapper .byu-header-primary .byu-header-title ::slotted(*) {\n      white-space: nowrap;\n      overflow: hidden;\n      -ms-text-overflow: ellipsis;\n      text-overflow: ellipsis;\n      flex: 1;\n      font-family: \"Vitesse A\", \"Vitesse B\", Georgia, serif !important;\n      font-size: 22px;\n      color: #fff; }\n      .root-wrapper .byu-header-primary .byu-header-title a, .root-wrapper .byu-header-primary .byu-header-title ::slotted(*) a {\n        color: #fff; }\n  .root-wrapper .byu-logo {\n    height: 48px;\n    width: 92px; }\n\n#mobileMenu {\n  overflow: hidden; }\n\n/* FULL SIZE */\n:host(:not([mobile-view])) .byu-header-primary > *, :host(:not([mobile-view])) .byu-header-secondary > * {\n  margin-right: 16px; }\n\n:host(:not([mobile-view])) .navbar-wrapper {\n  background-color: white;\n  width: 100%; }\n\n:host(:not([mobile-view])) .root-wrapper {\n  background-color: #002e5d;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  align-items: center; }\n  :host(:not([mobile-view])) .root-wrapper.no-nav {\n    height: 48px; }\n  :host(:not([mobile-view])) .root-wrapper .nav-expand {\n    display: none; }\n  :host(:not([mobile-view])) .root-wrapper .byu-header-secondary {\n    color: #ffffff;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: space-between;\n    align-items: center;\n    height: 55px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 15 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, ":host {\n  display: block;\n  width: 100%;\n  height: auto;\n  background: #ffffff;\n  opacity: 0.88;\n  border-bottom: 1px solid #ccc; }\n\n.outer-nav {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: nowrap;\n  align-items: center;\n  justify-content: flex-start;\n  padding: 0; }\n\n.inner-nav {\n  width: 100%;\n  display: table; }\n\n.inner-nav ::slotted(*) {\n  display: table;\n  width: 16.66%; }\n\n.extra-links, .inner-nav ::slotted(*) {\n  text-decoration: none !important;\n  font-size: 13px !important;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n  text-transform: uppercase !important;\n  color: white !important;\n  cursor: pointer !important;\n  color: #002e5d !important;\n  height: 35px !important;\n  display: table-cell;\n  vertical-align: middle !important;\n  text-align: center !important;\n  padding: 0 6px !important; }\n\n:host(:not(.mobile-view)) .extra-links:hover, :host(:not(.mobile-view)) .inner-nav ::slotted(*:hover) {\n  background-color: #c5c5c5 !important; }\n\n:host(:not(.mobile-view)) .inner-nav ::slotted(*.selected) {\n  background: #e6e6e6 !important; }\n\n.extra-links {\n  display: none;\n  cursor: pointer; }\n  .extra-links .extra-links-dropdown {\n    display: none;\n    position: absolute;\n    background-color: white;\n    z-index: 10;\n    min-width: 115px;\n    margin-top: 10px; }\n    .extra-links .extra-links-dropdown ul {\n      list-style-type: none;\n      padding: 0; }\n  .extra-links:hover .extra-links-dropdown {\n    display: block; }\n\n:host([has-extra-links]) .extra-links {\n  display: block; }\n  :host([has-extra-links]) .extra-links .extra-links-dropdown {\n    display: block; }\n\n:host(.mobile-view) .outer-nav {\n  flex-direction: column; }\n\n:host(.mobile-view) .inner-nav {\n  display: block; }\n\n:host(.mobile-view) #slot {\n  display: flex;\n  flex-direction: column; }\n\n:host(.mobile-view) .inner-nav ::slotted(*) {\n  text-decoration: none !important;\n  font-size: 13px !important;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n  text-transform: uppercase !important;\n  color: white !important;\n  cursor: pointer !important;\n  color: #002e5d !important;\n  height: 35px !important;\n  display: table-cell;\n  vertical-align: middle !important;\n  text-align: center !important;\n  padding: 0 6px !important;\n  display: block;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 18px 33px !important;\n  line-height: 12px;\n  text-align: left !important;\n  height: auto !important; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 16 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, ":host {\n  display: inline-block; }\n\n#search-icon {\n  width: 1em;\n  height: 1em; }\n\nbutton {\n  background-color: var(--byu-search-color, #767676);\n  border: 1px solid var(--byu-search-color, #767676);\n  color: #FFF;\n  padding-left: 10px;\n  padding-right: 10px; }\n\nform {\n  display: flex;\n  align-items: stretch;\n  align-content: center; }\n\nform #search-container {\n  flex: 1; }\n\nform #search-container input,\n#search-container ::slotted(input) {\n  padding: 5px 10px;\n  border: 1px solid var(--byu-search-color, #767676);\n  border-right: none; }\n\n:host(.mobile-view) {\n  width: 100%;\n  height: 35px; }\n  :host(.mobile-view) form #search-container input,\n  :host(.mobile-view) #search-container ::slotted(input) {\n    padding: 5px 10px;\n    border: 1px solid var(--byu-search-color, #767676);\n    border-right: none;\n    width: 100%;\n    height: 35px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 17 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, "::slotted(a) {\n  text-decoration: none !important; }\n\n::slotted(.fa) {\n  text-decoration: none !important;\n  color: #002e5d !important;\n  font-size: 25px !important;\n  line-height: 40px !important;\n  border: 1px solid #fff !important;\n  width: 40px !important;\n  height: 40px !important;\n  text-align: center !important;\n  border-radius: 20px !important;\n  margin: 0 5px 5px 0 !important;\n  cursor: pointer; }\n\n::slotted(.fa:hover) {\n  background-color: #fff !important; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 18 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(0)();
+// imports
+
+
+// module
+exports.push([module.i, "img {\n  height: 20px;\n  width: 20px;\n  margin: 7px; }\n\n.slot-wrapper ::slotted(*) {\n  text-decoration: none !important;\n  font-size: 13px !important;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n  text-transform: uppercase !important;\n  color: white !important;\n  cursor: pointer !important; }\n\n.has-user, .no-user {\n  display: flex;\n  flex-direction: row;\n  align-items: center; }\n\n/* NON MOBILE */\n:host(:not([mobile-view])) {\n  color: white;\n  cursor: pointer; }\n  :host(:not([mobile-view])) .slot-wrapper ::slotted(*) {\n    text-decoration: none !important;\n    font-size: 13px !important;\n    font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n    font-weight: 400 !important;\n    text-transform: uppercase !important;\n    color: white !important;\n    cursor: pointer !important; }\n  :host(:not([mobile-view])) .mobile {\n    display: none; }\n  :host(:not([mobile-view])) img {\n    margin: 7px; }\n\n/* MOBILE */\n:host([mobile-view]) {\n  text-decoration: none !important;\n  font-size: 13px !important;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n  text-transform: uppercase !important;\n  color: white !important;\n  cursor: pointer !important;\n  color: #002e5d !important;\n  height: 35px !important;\n  display: table-cell;\n  vertical-align: middle !important;\n  text-align: center !important;\n  padding: 0 6px !important;\n  display: block;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 18px 33px !important;\n  line-height: 12px;\n  text-align: left !important;\n  height: auto !important;\n  padding-left: 0 !important;\n  border-bottom: solid 1px #c5c5c5; }\n  :host([mobile-view]) .not-mobile {\n    display: none; }\n  :host([mobile-view]) .has-user .name {\n    order: 2;\n    flex: 1; }\n  :host([mobile-view]) .has-user img {\n    order: 1;\n    margin: 7px; }\n  :host([mobile-view]) .has-user .logout {\n    order: 3; }\n  :host([mobile-view]) .slot-wrapper ::slotted(*) {\n    color: #002e5d !important; }\n\n:host(:not([has-user])) .has-user {\n  display: none; }\n\n:host([has-user]) .no-user {\n  display: none; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 19 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var pSlice = Array.prototype.slice;
+var objectKeys = __webpack_require__(21);
+var isArguments = __webpack_require__(20);
+
+var deepEqual = module.exports = function (actual, expected, opts) {
+  if (!opts) opts = {};
+  // 7.1. All identical values are equivalent, as determined by ===.
+  if (actual === expected) {
+    return true;
+
+  } else if (actual instanceof Date && expected instanceof Date) {
+    return actual.getTime() === expected.getTime();
+
+  // 7.3. Other pairs that do not both pass typeof value == 'object',
+  // equivalence is determined by ==.
+  } else if (!actual || !expected || typeof actual != 'object' && typeof expected != 'object') {
+    return opts.strict ? actual === expected : actual == expected;
+
+  // 7.4. For all other Object pairs, including Array objects, equivalence is
+  // determined by having the same number of owned properties (as verified
+  // with Object.prototype.hasOwnProperty.call), the same set of keys
+  // (although not necessarily the same order), equivalent values for every
+  // corresponding key, and an identical 'prototype' property. Note: this
+  // accounts for both named and indexed properties on Arrays.
+  } else {
+    return objEquiv(actual, expected, opts);
+  }
+}
+
+function isUndefinedOrNull(value) {
+  return value === null || value === undefined;
+}
+
+function isBuffer (x) {
+  if (!x || typeof x !== 'object' || typeof x.length !== 'number') return false;
+  if (typeof x.copy !== 'function' || typeof x.slice !== 'function') {
+    return false;
+  }
+  if (x.length > 0 && typeof x[0] !== 'number') return false;
+  return true;
+}
+
+function objEquiv(a, b, opts) {
+  var i, key;
+  if (isUndefinedOrNull(a) || isUndefinedOrNull(b))
+    return false;
+  // an identical 'prototype' property.
+  if (a.prototype !== b.prototype) return false;
+  //~~~I've managed to break Object.keys through screwy arguments passing.
+  //   Converting to array solves the problem.
+  if (isArguments(a)) {
+    if (!isArguments(b)) {
+      return false;
+    }
+    a = pSlice.call(a);
+    b = pSlice.call(b);
+    return deepEqual(a, b, opts);
+  }
+  if (isBuffer(a)) {
+    if (!isBuffer(b)) {
+      return false;
+    }
+    if (a.length !== b.length) return false;
+    for (i = 0; i < a.length; i++) {
+      if (a[i] !== b[i]) return false;
+    }
+    return true;
+  }
+  try {
+    var ka = objectKeys(a),
+        kb = objectKeys(b);
+  } catch (e) {//happens when one is a string literal and the other isn't
+    return false;
+  }
+  // having the same number of owned properties (keys incorporates
+  // hasOwnProperty)
+  if (ka.length != kb.length)
+    return false;
+  //the same set of keys (although not necessarily the same order),
+  ka.sort();
+  kb.sort();
+  //~~~cheap key test
+  for (i = ka.length - 1; i >= 0; i--) {
+    if (ka[i] != kb[i])
+      return false;
+  }
+  //equivalent values for every corresponding key, and
+  //~~~possibly expensive deep test
+  for (i = ka.length - 1; i >= 0; i--) {
+    key = ka[i];
+    if (!deepEqual(a[key], b[key], opts)) return false;
+  }
+  return typeof a === typeof b;
+}
+
+
+/***/ }),
+/* 20 */
+/***/ (function(module, exports) {
+
+var supportsArgumentsClass = (function(){
+  return Object.prototype.toString.call(arguments)
+})() == '[object Arguments]';
+
+exports = module.exports = supportsArgumentsClass ? supported : unsupported;
+
+exports.supported = supported;
+function supported(object) {
+  return Object.prototype.toString.call(object) == '[object Arguments]';
+};
+
+exports.unsupported = unsupported;
+function unsupported(object){
+  return object &&
+    typeof object == 'object' &&
+    typeof object.length == 'number' &&
+    Object.prototype.hasOwnProperty.call(object, 'callee') &&
+    !Object.prototype.propertyIsEnumerable.call(object, 'callee') ||
+    false;
+};
+
+
+/***/ }),
+/* 21 */
+/***/ (function(module, exports) {
+
+exports = module.exports = typeof Object.keys === 'function'
+  ? Object.keys : shim;
+
+exports.shim = shim;
+function shim (obj) {
+  var keys = [];
+  for (var key in obj) keys.push(key);
+  return keys;
+}
+
+
+/***/ }),
+/* 22 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = function anonymous(locals, escapeFn, include, rethrow) {
+    "use strict";
+    escapeFn = escapeFn || function(markup) {
+        return markup == undefined ? "" : String(markup).replace(_MATCH_HTML, encode_char);
+    };
+    var _ENCODE_HTML_RULES = {
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&#34;",
+        "'": "&#39;"
+    }, _MATCH_HTML = /[&<>'"]/g;
+    function encode_char(c) {
+        return _ENCODE_HTML_RULES[c] || c;
+    }
+    var __output = [], __append = __output.push.bind(__output);
+    __append("<style>\n@import url('//cloud.typography.com/75214/6517752/css/fonts.css');\n");
+    __append(__webpack_require__(14));
+    __append('</style><div id="header" class="root-wrapper"><div class="byu-header-primary">\n<img class="byu-logo" alt="BYU" src="');
+    __append(__webpack_require__(31));
+    __append('"><div class="byu-header-title">\n<slot id="title" name="title"></slot>\n</div>\n');
+    if (locals.mobile) {
+        __append('<!--<button type="button" class="mobile-menu-button" aria-label="Open or close menu">-->\n<!--<img style="width: 1em; height: 1em;" src="');
+        __append(__webpack_require__(32));
+        __append('" alt="Menu">-->\n<!--</button>-->\n<button type="button" class="mobile-menu-button tcon tcon-menu--xbutterfly" aria-label="toggle menu">\n<span class="tcon-menu__lines" aria-hidden="true"></span>\n<span class="tcon-visuallyhidden">toggle menu</span>\n</button>\n');
+    }
+    __append('</div><div id="secondary" class="byu-header-secondary">\n');
+    if (!locals.mobile) {
+        __append('<div class="byu-header-actions">\n<slot id="actions" name="actions"></slot>\n</div>\n<div class="byu-header-user">\n<slot id="user" name="user"></slot>\n</div>\n');
+    }
+    __append('<div class="byu-header-search">\n<slot id="search" name="search"></slot>\n</div></div>');
+    if (locals.mobile) {
+        __append('<div id="mobileMenu">\n<slot id="signin" name="user"></slot>\n<slot id="navbarMenu" name="nav"></slot>\n<div class="byu-header-actions">\n<slot id="actions" name="actions"></slot>\n</div>\n</div>\n');
+    } else {
+        __append('<div class="navbar-wrapper">\n<slot id="navbarMenu" name="nav"></slot>\n</div>\n');
+    }
+    __append("</div>");
+    return __output.join("");
+}
+
+/***/ }),
+/* 23 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "<style>" + __webpack_require__(11) + "</style> <slot name=\"actiontext\"></slot>";
+
+/***/ }),
+/* 24 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "<style>" + __webpack_require__(12) + "</style> <link rel=\"stylesheet\" href=\"../../bower_components/font-awesome/css/font-awesome.min.css\"> <h2 class=\"header\"> <slot name=\"header\"></slot> </h2> <div class=\"content\"> <slot id=\"defaultContent\"></slot> </div>";
+
+/***/ }),
+/* 25 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "<style>" + __webpack_require__(13) + "</style> <div class=\"secondary-footer\"> <slot id=\"slot\"> </slot> </div> <div class=\"blue-footer\"> <div class=\"inner-wrapper\"> <img src=\"" + __webpack_require__(30) + "\" alt=\"Brigham Young University\" class=\"university-logo\"> <div class=\"copyright-contact\">&copy; <span id=\"currentYear\"></span> All Rights Reserved | Provo, UT 84602, USA | 801.422.4636</div> </div> </div>";
+
+/***/ }),
+/* 26 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "<style>" + __webpack_require__(15) + "</style> <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cloud.typography.com/75214/6517752/css/fonts.css\" media=\"all\"> <nav class=\"outer-nav\"> <div class=\"inner-nav\"> <slot id=\"slot\"></slot> <div class=\"extra-links\" id=\"extraLinks\"> More <div class=\"extra-links-dropdown\"> <ul id=\"extraLinksDropdown\"></ul> </div> </div> </div> </nav> <div id=\"stylePlaceHolder\"></div>";
+
+/***/ }),
+/* 27 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "<style>" + __webpack_require__(16) + "</style> <form> <div id=\"search-container\"> <slot id=\"search\" name=\"search\"><input type=\"search\" placeholder=\"Search\"></slot> </div> <button id=\"submit-button\" type=\"submit\"> <img id=\"search-icon\" src=\"" + __webpack_require__(33) + "\" alt=\"Run Search\"> </button> </form>";
+
+/***/ }),
+/* 28 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "<style>" + __webpack_require__(17) + "</style> <slot id=\"facebook\" name=\"facebook\"></slot> <slot id=\"instagram\" name=\"instagram\"></slot> <slot id=\"twitter\" name=\"twitter\"></slot> <slot id=\"googleplus\" name=\"googleplus\"></slot> <slot id=\"linkedin\" name=\"linkedin\"></slot> <slot id=\"youtube\" name=\"youtube\"></slot>";
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "<style>" + __webpack_require__(18) + "</style> <div class=\"no-user\"> <img class=\"not-mobile\" src=\"" + __webpack_require__(37) + "\"> <img class=\"mobile\" src=\"" + __webpack_require__(36) + "\"> <span class=\"text slot-wrapper\"> <slot name=\"login\">Sign In</slot> </span> </div> <div class=\"has-user\"> <span class=\"name slot-wrapper\"> <slot name=\"user-name\" id=\"user-name\"></slot> </span> <img class=\"not-mobile\" src=\"" + __webpack_require__(35) + "\"> <img class=\"mobile\" src=\"" + __webpack_require__(34) + "\"> <a class=\"logout slot-wrapper\"> <slot name=\"logout\">Sign Out</slot> </a> </div>";
+
+/***/ }),
+/* 30 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml,%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1223.9 108.2'%3E%3Cstyle%3E.st0%7Bfill:%23fff%7D%3C/style%3E%3Cpath class='st0' d='M53.1 72.9c-2.7 0-4.1-.1-6.3-.1-2.3 0-5 .1-7.8.1-.2 0-.2-.6.1-.6 2.5-.2 3.8-.4 4.6-.9.8-.4 1.3-1.8 1.3-14v-9c0-12.1-.5-13.5-1.3-14-.7-.4-2.1-.6-4.6-.9-.2-.1-.2-.6-.1-.6 2.8 0 5.5.1 7.8.1s3.6-.1 6.3-.1c8.2 0 11.7 4.9 11.7 8.7 0 3.8-2.6 6.9-6.5 8.9C64.9 52 68.5 55.8 68.5 61c0 6.1-4.6 11.9-15.4 11.9zM53 34.3c-2 0-3.8.2-3.9.5-.2.2-.4 2.8-.4 10.1 0 3.6.1 5.4.2 5.5.2.2 1.8.4 4.2.4 4.9 0 7.4-3.1 7.4-7.8-.1-6-4.1-8.7-7.5-8.7zM52.4 52c-2 0-3.4.1-3.5.2-.1.1-.2 1.5-.2 8.7 0 6.1.3 9.1.7 9.6.4.6 2.8 1.1 5.5 1.1 5 0 9.1-3.3 9.1-9C64 56.1 59 52 52.4 52zm69.5 20.8c-3.8 0-5.5-.5-7.9-2.1-3.1-2.2-6.5-6.8-11.4-15.2-3.1.1-5.6.1-8-.1v2c0 12.1.6 13.5 1.4 14 .8.4 2.6.6 5.3.9.3.1.3.6.1.6H85.3c-.2 0-.2-.6.1-.6 2.4-.2 3.5-.4 4.2-.9.7-.4 1.3-1.8 1.3-14v-9c0-12.1-.6-13.5-1.3-14-.7-.4-1.8-.6-4.2-.9-.2-.1-.2-.6-.1-.6 2.7 0 5.2.1 7.5.1s4.7-.1 7.4-.1c9.2 0 13.1 5.1 13.1 9.8 0 4.9-3.1 8.7-7.4 11.3 8.2 12.3 13.3 17.6 17.6 17.6.6 0 1.4 0 1.8-.1.2 0 .2.7.1.7-1.2.5-2.1.6-3.5.6zm-21.8-38.3c-2.1 0-4.7.3-4.9.6-.2.4-.7 4.6-.7 13.5 0 3.7.1 4.9.4 5.1.5.4 2.9.7 5.8.7 5 0 8.1-4.4 8.1-9.2 0-5.9-2.9-10.7-8.7-10.7zm34.5 38.4c-.2 0-.2-.6.1-.6 2.4-.2 3.9-.4 4.7-.9.8-.4 1.3-1.8 1.3-14v-9c0-12.1-.5-13.5-1.3-14-.7-.4-2.3-.6-4.7-.9-.3-.1-.3-.6-.1-.6h16c.2 0 .2.6-.1.6-2.4.2-4 .4-4.7.9-.7.4-1.3 1.8-1.3 14v9c0 12.1.6 13.5 1.3 14 .7.4 2.3.6 4.7.9.2.1.2.6.1.6h-16zm71-18.3c-2.4.3-3.2.4-3.9.9-.5.4-.9 1.6-.7 13.8v.6c-3.4 2-8.1 3.4-13.2 3.4-11.7 0-21.3-8.9-21.3-19.8 0-10.5 7.4-20.8 21.1-20.8 6.5 0 10.1 2.2 12.2 1.7.3-.1.4.1.4.2.1 2.2.3 5.5.3 8.9 0 .3-.7.3-.7-.1-.2-1.7-1.1-3.7-2.4-4.9-2.2-2.1-6.3-4.3-10.5-4.3-11.1 0-16 8.8-16 17.5 0 10.3 7.3 19.8 19 19.8 2.7 0 5.5-.6 7.3-1.4-.1-12.9-.4-14.3-.9-14.5-.7-.4-2.3-.6-4.7-.9-.3 0-.3-.6-.1-.6h14.3c0-.1.1.5-.2.5zm44.1 18.3c-.2 0-.2-.6.1-.6 2.4-.2 3.4-.4 4.2-.9.7-.4 1.3-1.8 1.3-14v-4.1h-23.9v4.1c0 12.1.5 13.5 1.3 14 .7.4 1.8.6 4.2.9.2.1.2.6.1.6h-14.9c-.2 0-.2-.6.1-.6 2.4-.2 3.5-.4 4.2-.9.7-.4 1.3-1.8 1.3-14v-9c0-12.1-.6-13.5-1.3-14-.7-.4-1.8-.6-4.2-.9-.2-.1-.2-.6-.1-.6H237c.2 0 .2.6-.1.6-2.4.2-3.4.4-4.2.9-.8.4-1.3 1.8-1.3 14v3.3h23.9v-3.3c0-12.1-.6-13.5-1.3-14-.8-.4-1.8-.6-4.2-.9-.2-.1-.2-.6-.1-.6h14.9c.2 0 .2.6-.1.6-2.4.2-3.4.4-4.2.9-.7.4-1.3 1.8-1.3 14v9c0 12.1.6 13.5 1.3 14 .8.4 1.8.6 4.2.9.2.1.2.6.1.6h-14.9zm52.1 0c-.2 0-.2-.6 0-.6 1.9-.2 3.4-.2 3.4-1.2s-1.2-4.4-4.9-13.7l-.1-.2h-12.5l-.1.2c-3.1 8.3-4.2 12.1-4.2 13.3 0 1.1 1.4 1.2 3.9 1.5.2.1.2.6 0 .6h-11.6c-.2 0-.3-.6 0-.6 1.8-.2 3-.4 3.9-1 .6-.4 1.7-1.7 6.1-13.8l3.3-9c1.9-5.2 3.9-10.5 5.4-15.3.2-.4.7-.4.8 0 1.8 5.4 3.4 9.7 5.7 15.3l3.4 9c4.8 12.1 5.6 13.4 6.5 14 1 .6 2 .7 3.7.9.2.1.2.6 0 .6h-12.7zM294 40.1l-5.7 15.7h11.4L294 40.1zm69.3 32.8c-.2 0-.3-.6 0-.6 1.7-.2 3-.2 3.6-.7.6-.4 1-2-.4-14.1L365.1 43 351 73.1c-.1.1-.4.2-.6-.1l-15.2-29.8-1 13.9c-1.1 12.4-.3 13.8.4 14.3.6.5 2.3.6 3.9.8.2.1.2.6 0 .6h-13c-.2 0-.1-.6.1-.6 2.5-.2 3.8-.4 4.5-1 .5-.4 1.3-1.7 2.2-13.8l.6-9c.3-5.2.7-10.5.8-15.3.1-.3.7-.4.8-.1l17.3 34.2 16-34.2c.1-.2.7-.2.7.1.3 5.4.6 9.7 1.2 15.3l.9 9c1.4 12.1 1.7 13.5 2.6 14 .8.4 1.8.6 4.3.9.2.1.4.6.2.6h-14.4zm83.9-38.7c-.6.3-1.4 1.2-5.8 8.6l-3.3 5.5c-1.5 2.4-3 4.8-4.3 7.1v2c0 12.2.6 13.6 1.3 14 .7.4 2.3.6 4.7.9.2.1.2.6.1.6h-16c-.2 0-.2-.6.1-.6 2.4-.2 4-.4 4.7-.9.7-.4 1.3-1.8 1.3-14v-1.8c-1.4-2.4-2.7-4.7-4.4-7.4l-3.4-5.5c-4.7-7.4-5.2-8.4-6-8.7-1-.4-1.9-.4-3.6-.5-.3 0-.2-.6 0-.6h13.2c.2 0 .2.6 0 .6-1.4.1-3 .1-3.4.4-.5.3 0 1.3 4.5 9.4l6.1 10.3 6.8-11.3c4.4-6.9 4.2-7.9 3.8-8.2-.5-.2-2.2-.4-3.8-.5-.2 0-.2-.6 0-.6h11.7c.2 0 .2.6 0 .6-2.1.1-3.4.2-4.3.6zm34.5 39.1c-11.3 0-20-8.7-20-19.8 0-10.6 8.4-20.8 20.9-20.8 11.3 0 20 8.7 20 19.8 0 10.6-8.3 20.8-20.9 20.8zm-.3-38.9c-11 0-15.3 9.3-15.3 17.3 0 10 7 19.9 16.8 19.9 10.9 0 15.2-9.3 15.2-17.3.1-10-6.9-19.9-16.7-19.9zm73.6.3c-.5.4-1 1.7-1 13.8v10.3c0 7.4-5.5 14.5-15.2 14.5-9.6 0-15.4-6.3-15.4-14.3V48.5c0-12.1-.6-13.5-1.3-14-.7-.4-1.8-.6-4.2-.9-.2-.1-.2-.6-.1-.6H533c.2 0 .2.6-.1.6-2.4.2-3.7.4-4.4.9-.8.4-1.3 1.8-1.3 14v9.3c0 7.6 4.9 13 13 13 7.6 0 11.6-5.5 11.6-12.4v-10c0-12.1-.6-13.3-1-13.8-.7-.6-2.2-.8-4.6-1-.3-.1-.2-.6 0-.6h13.1c.2 0 .2.6 0 .6-2.4.3-3.6.5-4.3 1.1zm59.1.3c-.5.5-1.2 1.4-1.1 13.5l.1 9c.1 5.2 0 10.6.3 15.4.1.3-.7.4-1 .1l-30.5-32.5.2 17c.1 11.2.9 12.9 1.7 13.6.6.4 2.8 1 4.5 1 .2 0 .2.8 0 .8h-14.1c-.2 0-.2-.7 0-.8 2.5-.2 3.9-.6 4.5-1.2.5-.5 1.2-1.4 1-13.5l-.1-9c-.1-5.2-.1-10.6-.4-15.4 0-.3.9-.4 1.1-.1l30.6 32.7-.2-17.2c-.1-12.1-1-13-1.7-13.6-.7-.6-2.3-.9-4.9-1-.2-.1-.2-.8 0-.8h14.3c.2 0 .2.7 0 .8-2.4.3-3.6.7-4.3 1.2zm60.3 19.6c-2.4.3-3.2.4-3.9.9-.5.4-.9 1.6-.7 13.8v.6c-3.4 2-8.1 3.4-13.2 3.4-11.7 0-21.3-8.9-21.3-19.8 0-10.5 7.4-20.8 21.1-20.8 6.5 0 10.1 2.2 12.2 1.7.3-.1.4.1.4.2.1 2.2.3 5.5.3 8.9 0 .3-.7.3-.7-.1-.2-1.7-1.1-3.7-2.4-4.9-2.2-2.1-6.3-4.3-10.5-4.3-11.1 0-16 8.8-16 17.5 0 10.3 7.3 19.8 19 19.8 2.7 0 5.5-.6 7.3-1.4-.1-12.9-.4-14.3-.9-14.5-.7-.4-2.3-.6-4.7-.9-.3 0-.3-.6-.1-.6h14.3c0-.1.1.5-.2.5zm78-19.9c-.5.4-1 1.7-1 13.8v10.3c0 7.4-5.5 14.5-15.2 14.5-9.6 0-15.4-6.3-15.4-14.3V48.5c0-12.1-.6-13.5-1.3-14-.7-.4-1.8-.6-4.2-.9-.2-.1-.2-.6-.1-.6h15.2c.2 0 .2.6-.1.6-2.4.2-3.7.4-4.4.9-.8.4-1.3 1.8-1.3 14v9.3c0 7.6 4.9 13 13 13 7.6 0 11.6-5.5 11.6-12.4v-10c0-12.1-.6-13.3-1-13.8-.7-.6-2.2-.8-4.6-1-.3-.1-.2-.6 0-.6h13.1c.2 0 .2.6 0 .6-2.4.3-3.6.5-4.3 1.1zm59.1.3c-.5.5-1.2 1.4-1.1 13.5l.1 9c.1 5.2 0 10.6.3 15.4.1.3-.7.4-1 .1l-30.5-32.5.2 17c.1 11.2.9 12.9 1.7 13.6.6.4 2.8 1 4.5 1 .2 0 .2.8 0 .8h-14.1c-.2 0-.2-.7 0-.8 2.5-.2 3.9-.6 4.5-1.2.5-.5 1.2-1.4 1-13.5l-.1-9c-.1-5.2-.1-10.6-.4-15.4 0-.3.9-.4 1.1-.1l30.6 32.7-.2-17.2c-.1-12.1-1-13-1.7-13.6-.7-.6-2.3-.9-4.9-1-.2-.1-.2-.8 0-.8h14.3c.2 0 .2.7 0 .8-2.4.3-3.6.7-4.3 1.2zm22.1 37.9c-.2 0-.2-.6.1-.6 2.4-.2 3.9-.4 4.7-.9.8-.4 1.3-1.8 1.3-14v-9c0-12.1-.5-13.5-1.3-14-.7-.4-2.3-.6-4.7-.9-.3-.1-.3-.6-.1-.6h16c.2 0 .2.6-.1.6-2.4.2-4 .4-4.7.9-.7.4-1.3 1.8-1.3 14v9c0 12.1.6 13.5 1.3 14 .7.4 2.3.6 4.7.9.2.1.2.6.1.6h-16zm68-38.2c-.6.5-1.7 1.7-6.6 13.8l-3.6 9c-2 5.2-4.2 10.5-5.8 15.3-.2.4-1.4.4-1.5 0-1.9-5.3-3.6-9.7-5.8-15.3l-3.6-9c-4.5-10.8-5.6-13.2-6.6-13.8-1-.6-2.2-.8-4.1-1-.2-.1-.2-.6 0-.6h13.8c.2 0 .3.6 0 .6-2.3.2-3.8.7-3.8 1.7 0 1.1 1 3.9 4.8 13.2l7 18.4 7.3-18.4c3.3-8.4 4.2-11.5 4.2-12.8 0-1.1-1.4-1.8-4-2-.2-.1-.2-.6 0-.6h11.9c.2 0 .3.6 0 .6-1.8.1-2.8.3-3.6.9zm43.5 37.5c-.3.4-2.2.7-4.7.7-3.7 0-5.6-.2-10.8-.2-3.9 0-5.9.1-10.3.1-.2 0-.2-.6.1-.6 2.4-.2 3.8-.4 4.6-.9.8-.4 1.3-1.8 1.3-14v-9c0-12.1-.5-13.5-1.3-14-.7-.4-2.2-.6-4.6-.9-.2-.1-.2-.6-.1-.6 4.8.1 11.9.1 15.9.1 5.2 0 7.1-.1 9-.3.2 0 .4.1.4.2-.2 2.2-.3 4.6-.7 7.9-.1.2-.7.2-.7-.2 0-1.6-.1-3.1-1-4.1-1-1.1-2.9-2-7.3-2-2.4 0-5 0-5.6.1-.2.6-.2 3.6-.2 7.4V51h5.4c5.8 0 6.6-.9 7-3.1 0-.2.7-.2.7 0-.1 1.7-.3 7.2-.3 8.9 0 .2-.7.2-.7-.1 0-1.2-.3-2.4-.9-3-.6-.6-1.5-1.2-5.8-1.2h-5.4v4.4c0 7.9.4 12.3 1 12.9.5.6 2.8.8 6.3.8 3.9 0 6-1.1 7.1-2.3.9-.9 1.5-2.5 2-4.4.1-.4.7-.1.7.2-.4 4.6-1 8-1.1 8.1zm55.7.6c-3.8 0-5.5-.5-7.9-2.1-3.1-2.2-6.5-6.8-11.4-15.2-3.1.1-5.6.1-8-.1v2c0 12.1.6 13.5 1.4 14 .8.4 2.6.6 5.3.9.3.1.3.6.1.6h-16.1c-.2 0-.2-.6.1-.6 2.4-.2 3.5-.4 4.2-.9.7-.4 1.3-1.8 1.3-14v-9c0-12.1-.6-13.5-1.3-14-.7-.4-1.8-.6-4.2-.9-.2-.1-.2-.6-.1-.6 2.7 0 5.2.1 7.5.1s4.7-.1 7.4-.1c9.2 0 13.1 5.1 13.1 9.8 0 4.9-3.1 8.7-7.4 11.3 8.2 12.3 13.3 17.6 17.6 17.6.6 0 1.4 0 1.8-.1.2 0 .2.7.1.7-1.2.5-2.1.6-3.5.6zM979 34.5c-2.1 0-4.7.3-4.9.6-.2.4-.7 4.6-.7 13.5 0 3.7.1 4.9.4 5.1.5.4 2.9.7 5.8.7 5 0 8.1-4.4 8.1-9.2 0-5.9-2.9-10.7-8.7-10.7zm44.8 38.7c-6.2 0-9.4-3.4-9.5-3.6-.1-.2-.4-5.4 0-8.5-.1-.3.7-.3.7.1.1 2.3 1 4.8 1.8 6.1 1.8 2.7 4.2 4.4 7.8 4.4 4.8 0 7.7-3.4 7.7-7.9 0-9.2-16.3-10.7-16.3-20.8 0-6.3 4.9-10.3 10.6-10.3 4.7 0 5.5 1.7 7.7 1.1.2-.1.4.1.4.2 0 2.2.1 5 0 8.3-.1.2-.7.2-.7-.1-.1-2-.9-4.4-2.1-5.7-1.4-1.5-3.4-2.4-5.6-2.4-3.9 0-6.8 2.9-6.8 6.7 0 7.7 17 10.9 17 20.9-.1 7.6-6.6 11.5-12.7 11.5zm31.6-.3c-.2 0-.2-.6.1-.6 2.4-.2 3.9-.4 4.7-.9.8-.4 1.3-1.8 1.3-14v-9c0-12.1-.5-13.5-1.3-14-.7-.4-2.3-.6-4.7-.9-.3-.1-.3-.6-.1-.6h16c.2 0 .2.6-.1.6-2.4.2-4 .4-4.7.9-.7.4-1.3 1.8-1.3 14v9c0 12.1.6 13.5 1.3 14 .7.4 2.3.6 4.7.9.2.1.2.6.1.6h-16zm68.3-31.3c-.1.2-.7.2-.7-.1 0-1.5-.3-3.9-1.2-4.7-1.1-1.2-4.1-1.8-10.6-1.8-1.4 0-2.2 0-2.8.1-.2.6-.2 3.6-.2 7.4v15c0 12.1.6 13.5 1.3 14 .7.4 2.3.6 4.7.9.2.1.2.6.1.6h-16c-.2 0-.2-.6.1-.6 2.4-.2 3.9-.4 4.7-.9.7-.4 1.3-1.8 1.3-14v-15c0-3.9-.1-6.8-.2-7.4-.6-.1-1.7-.1-3.1-.1-6.3 0-9.2.6-10.7 1.8-.9.9-1.5 3.4-1.8 4.9 0 .3-.7.1-.7-.1.4-3.1.7-6.5.9-8.6 0-.1.1-.2.4-.2 2.2.4 6.5.7 17.2.7 14.7 0 16.4-.4 17.5-.8.2-.1.4.1.4.2-.1 2.2-.2 5.5-.6 8.7zm49.1-7.4c-.6.3-1.4 1.2-5.8 8.6l-3.3 5.5c-1.5 2.4-3 4.8-4.3 7.1v2c0 12.2.6 13.6 1.3 14 .7.4 2.3.6 4.7.9.2.1.2.6.1.6h-16c-.2 0-.2-.6.1-.6 2.4-.2 4-.4 4.7-.9.7-.4 1.3-1.8 1.3-14v-1.8c-1.4-2.4-2.7-4.7-4.4-7.4l-3.4-5.5c-4.7-7.4-5.2-8.4-6-8.7-1-.4-1.9-.4-3.6-.5-.3 0-.2-.6 0-.6h13.2c.2 0 .2.6 0 .6-1.4.1-3 .1-3.4.4-.5.3 0 1.3 4.5 9.4l6.1 10.3 6.8-11.3c4.4-6.9 4.2-7.9 3.8-8.2-.5-.2-2.2-.4-3.8-.5-.2 0-.2-.6 0-.6h11.7c.2 0 .2.6 0 .6-2.1.1-3.3.2-4.3.6z'/%3E%3C/svg%3E"
+
+/***/ }),
+/* 31 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 139.7 40.3'%3E%3Cpath d='M16.6 16.1V9.4c0-.5-.1-.9-.1-.9s.5.1.9.1h5c3.8 0 6.1.6 6.1 4.1 0 2.3-1.4 4.3-5.9 4.3h-6v-.9zm0 15.3v-7.7c0-.5-.1-.9-.1-.9s.5.1.9.1h4.3c3.4 0 7.5 0 7.5 4.7 0 3.5-3 4.7-7 4.7h-4.8c-.5 0-.9.1-.9.1s.1-.5.1-1zM4.4 4.5v32.1c0 1 .1 1.4-.7 1.9-.7.4-1.4.5-2.6.7-.1 0-.1.5 0 .5h26c11 0 15.6-4.3 15.6-11.1 0-5-2.3-8.1-7-9.2-.1 0-.1-.1 0-.1 2.9-.9 5.7-3.1 5.7-8.3 0-7.1-4.8-9.5-15.2-9.5h-25c-.2-.1-.2.3-.1.4 1.2.2 1.9.3 2.6.7.8.5.7.8.7 1.9zm130.9 0c0-1-.1-1.4.7-1.9.7-.4 1.5-.5 2.7-.7.1 0 .1-.5 0-.5h-19.2c-.1 0-.1.4 0 .5 1.2.2 1.8.3 2.5.7.7.5.7.8.7 1.9v19.3c0 4.4-2.5 7.8-7.5 7.8s-7.5-3.4-7.5-7.8V4.5c0-1-.1-1.4.7-1.9.7-.4 1.3-.6 2.5-.7.1 0 .1-.5 0-.5H92.8c-.1 0-.1.5 0 .5.7 0 1.1.1 1.5.4.6.5.7 1.1.7 2.2v19c0 9.1 5 16.9 20.2 16.9s20.2-7.8 20.2-16.9v-19zm-58 35.2c.1 0 .1-.4 0-.5-1.2-.2-1.9-.3-2.7-.7-.7-.5-.7-.8-.7-1.9V24.4L87.2 4.7c.7-1.1 1.2-1.6 1.8-2.1.1-.1.3-.2.5-.3.5-.3.7-.4 1.4-.4.1 0 .2-.5 0-.5H73c-.1 0-.1.5 0 .5.9 0 1.9 0 1.8 1.3-.1 1.2-5.3 8.7-7.1 11.5-.3.4-.5.8-.6 1.3-.1-.5-.4-1-.6-1.3-2.6-3.8-6.9-10-7.1-11.5-.1-1.3.9-1.3 1.8-1.3.1 0 .2-.5 0-.5H42.4c-.1 0-.1.4 0 .5.8.1 1.2 0 2.2.5.1.1.4.2.5.3.6.5 1 1 1.7 2L60 24.3v12.3c0 1 .1 1.4-.7 1.9-.7.4-1.5.5-2.7.7-.1 0-.1.5 0 .5h20.7z' fill='%23FFF'/%3E%3C/svg%3E"
+
+/***/ }),
+/* 32 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml,%3Csvg width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1664 1344v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V832q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19H192q-26 0-45-19t-19-45V320q0-26 19-45t45-19h1408q26 0 45 19t19 45z' fill='%23fff'/%3E%3C/svg%3E"
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml,%3Csvg width='1792' height='1792' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1216 832q0-185-131.5-316.5T768 384 451.5 515.5 320 832t131.5 316.5T768 1280t316.5-131.5T1216 832zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225T64 832t55.5-273.5 150-225 225-150T768 128t273.5 55.5 225 150 150 225T1472 832q0 220-124 399l343 343q37 37 37 90z' fill='%23fff'/%3E%3C/svg%3E"
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml,%3Csvg height='1000' width='1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23002e5d' d='M849.9 747.2q-12.3-86.5-48.8-143.7t-103-66.1q-37.4 41.3-89 64.4T500 625t-109.1-23.2-89-64.4q-66.4 8.9-103 66.1t-48.8 143.7q59.2 83.7 151.2 132.5T500 928.6t198.7-48.9 151.2-132.5zM714.3 357.1q0-88.7-62.8-151.5T500 142.9t-151.5 62.7-62.8 151.5 62.8 151.5T500 571.4t151.5-62.8 62.8-151.5zM1000 500q0 101.6-39.6 193.9T854.1 853.5 694.8 960.4 500 1000q-101.6 0-194.2-39.6T146.2 853.8 39.6 694.2 0 500t39.6-194.2 106.6-159.6T305.8 39.6 500 0t194.2 39.6 159.6 106.6 106.6 159.6T1000 500z'/%3E%3C/svg%3E"
+
+/***/ }),
+/* 35 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml,%3Csvg height='1000' width='1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FFF' d='M849.9 747.2q-12.3-86.5-48.8-143.7t-103-66.1q-37.4 41.3-89 64.4T500 625t-109.1-23.2-89-64.4q-66.4 8.9-103 66.1t-48.8 143.7q59.2 83.7 151.2 132.5T500 928.6t198.7-48.9 151.2-132.5zM714.3 357.1q0-88.7-62.8-151.5T500 142.9t-151.5 62.7-62.8 151.5 62.8 151.5T500 571.4t151.5-62.8 62.8-151.5zM1000 500q0 101.6-39.6 193.9T854.1 853.5 694.8 960.4 500 1000q-101.6 0-194.2-39.6T146.2 853.8 39.6 694.2 0 500t39.6-194.2 106.6-159.6T305.8 39.6 500 0t194.2 39.6 159.6 106.6 106.6 159.6T1000 500z'/%3E%3C/svg%3E"
+
+/***/ }),
+/* 36 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml,%3Csvg height='1000' width='1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23002e5d' d='M500 0q101.6 0 194.2 39.6t159.6 106.6 106.6 159.6T1000 500q0 101-39.3 193.6T854.4 853.2 694.8 960.1 500 1000t-194.8-39.6-159.3-106.9T39.6 693.9 0 500t39.6-194.2 106.6-159.6T305.8 39.6 500 0zm345.4 753.9q83.2-114.4 83.2-253.9 0-87.1-34.1-166.3T803 197t-136.7-91.5T500 71.4t-166.3 34.1T197 197t-91.5 136.7T71.4 500q0 139.5 83.2 253.9 36.8-182.5 170.7-182.5 73.1 71.5 174.7 71.5t174.7-71.5q133.9 0 170.7 182.5zm-131.1-361q0-88.8-62.8-151.5T500 178.6t-151.5 62.8-62.8 151.5 62.8 151.5T500 607.1t151.5-62.7 62.8-151.5z'/%3E%3C/svg%3E"
+
+/***/ }),
+/* 37 */
+/***/ (function(module, exports) {
+
+module.exports = "data:image/svg+xml,%3Csvg height='1000' width='1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FFF' d='M500 0q101.6 0 194.2 39.6t159.6 106.6 106.6 159.6T1000 500q0 101-39.3 193.6T854.4 853.2 694.8 960.1 500 1000t-194.8-39.6-159.3-106.9T39.6 693.9 0 500t39.6-194.2 106.6-159.6T305.8 39.6 500 0zm345.4 753.9q83.2-114.4 83.2-253.9 0-87.1-34.1-166.3T803 197t-136.7-91.5T500 71.4t-166.3 34.1T197 197t-91.5 136.7T71.4 500q0 139.5 83.2 253.9 36.8-182.5 170.7-182.5 73.1 71.5 174.7 71.5t174.7-71.5q133.9 0 170.7 182.5zm-131.1-361q0-88.8-62.8-151.5T500 178.6t-151.5 62.8-62.8 151.5 62.8 151.5T500 607.1t151.5-62.7 62.8-151.5z'/%3E%3C/svg%3E"
+
+/***/ }),
+/* 38 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+function pad (hash, len) {
+  while (hash.length < len) {
+    hash = '0' + hash;
+  }
+  return hash;
+}
+
+function fold (hash, text) {
+  var i;
+  var chr;
+  var len;
+  if (text.length === 0) {
+    return hash;
+  }
+  for (i = 0, len = text.length; i < len; i++) {
+    chr = text.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
+    hash |= 0;
+  }
+  return hash < 0 ? hash * -2 : hash;
+}
+
+function foldObject (hash, o, seen) {
+  return Object.keys(o).sort().reduce(foldKey, hash);
+  function foldKey (hash, key) {
+    return foldValue(hash, o[key], key, seen);
+  }
+}
+
+function foldValue (input, value, key, seen) {
+  var hash = fold(fold(fold(input, key), toString(value)), typeof value);
+  if (value === null) {
+    return fold(hash, 'null');
+  }
+  if (value === undefined) {
+    return fold(hash, 'undefined');
+  }
+  if (typeof value === 'object') {
+    if (seen.indexOf(value) !== -1) {
+      return fold(hash, '[Circular]' + key);
+    }
+    seen.push(value);
+    return foldObject(hash, value, seen);
+  }
+  return fold(hash, value.toString());
+}
+
+function toString (o) {
+  return Object.prototype.toString.call(o);
+}
+
+function sum (o) {
+  return pad(foldValue(0, o, '', []).toString(16), 8);
+}
+
+module.exports = sum;
+
+
+/***/ }),
+/* 39 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hash_sum__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hash_sum___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hash_sum__);
+/* harmony export (immutable) */ __webpack_exports__["a"] = applyTemplate;
+/*
+ *  @license
+ *    Copyright 2017 Brigham Young University
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
+ */
+
+
+
+
+function applyTemplate(element, elementName, template, callback) {
+    let sum = __WEBPACK_IMPORTED_MODULE_0_hash_sum___default()(template);
+
+    let elSettings = element.__byu_webCommunity_components = element.__byu_webCommunity_components || {};
+    if (elSettings.templateHash === sum) {
+        //Nothing has changed in the element.  Don't replace the DOM, don't fire the callback.
+        return;
+    }
+    elSettings.templateHash = sum;
+
+    if (window.ShadyCSS) {
+        applyTemplateShady(element, elementName, template, callback, sum);
+    } else {
+        applyTemplateNative(element, template, callback);
+    }
+}
+
+function applyTemplateShady(element, elementName, template, callback, sum) {
+    let templateId = '__byu-custom-element-template_' + elementName + '_' + sum;
+    let templateElement = document.head.querySelector('template#' + templateId);
+    if (!templateElement) {
+        templateElement = document.createElement('template');
+        templateElement.id = templateId;
+        templateElement.innerHTML = template;
+        document.head.appendChild(templateElement);
+        ShadyCSS.prepareTemplate(templateElement, elementName);
+    }
+    ShadyCSS.styleElement(element);
+    let imported = document.importNode(templateElement.content, true);
+    let shadow = element.shadowRoot;
+    //It'd be nice if we could just diff the DOM and replace what changed between templates, but that might lead to
+    // event listeners getting applied twice.  Easier to just clear out the shadow DOM and replace it.
+    while (shadow.firstChild) {
+        shadow.removeChild(shadow.firstChild);
+    }
+    shadow.appendChild(imported);
+    if (callback) {
+        setTimeout(callback);
+    }
+}
+
+function applyTemplateNative(element, template, callback) {
+    element.shadowRoot.innerHTML = template;
+    if (callback) {
+        callback();
+    }
+}
+
+
+
+/***/ }),
+/* 40 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_header_script_js__ = __webpack_require__(5);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__byu_menu_script_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__byu_search_script_js__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__byu_user_info_script_js__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__byu_footer_script_js__ = __webpack_require__(4);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__byu_footer_column_script_js__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__byu_footer_action_button_script_js__ = __webpack_require__(2);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__byu_social_media_links_script_js__ = __webpack_require__(8);
+/**
+ * Created by ThatJoeMoore on 2/18/17
+ */
+
+
+/*
+ * Header Bits
+ */
+
+
+
+
+
+/*
+ * Footer Bits
+ */
+
+
+
+
+
+
+
+
+/***/ })
+/******/ ]);
+//# sourceMappingURL=components.js.map
