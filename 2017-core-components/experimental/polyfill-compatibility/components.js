@@ -548,15 +548,10 @@ class ByuSearch extends HTMLElement {
 
     connectedCallback() {
         __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-search', __WEBPACK_IMPORTED_MODULE_0__template_html__, () => {
-            let input = getInputElement(this, true);
+            var input = getInputElement(this, true);
             if (input) input.addEventListener('input', inputHandler);
 
-            this._formSubmitHandler = formSubmitHandler(this);
-            this.shadowRoot.querySelector('form')
-                .addEventListener('submit', this._formSubmitHandler);
-
             if (this.hasAttribute('value')) this.value = this.getAttribute('value');
-            applyPlaceholder(this);
         });
     }
 
@@ -564,8 +559,6 @@ class ByuSearch extends HTMLElement {
         let input = getInputElement(this, true);
         if (input) input.removeEventListener('input', inputHandler);
 
-        this.shadowRoot.querySelector('form')
-            .removeEventListener('submit', this._formSubmitHandler);
     }
 
     get value() {
@@ -590,17 +583,17 @@ class ByuSearch extends HTMLElement {
     search() {
         if (this.hasAttribute('onsearch')) evalInContext.call(this, this.getAttribute('onsearch'));
 
-        if (this.hasAttribute('action')) {
-            let form = this.shadowRoot.querySelector('form');
-            let value = this.value;
-            let action = this.getAttribute('action').toString().replace(/\$1/g, value);
-            form.setAttribute('action', action);
-            form.setAttribute('method', this.hasAttribute('method')
-                ? this.getAttribute('method')
-                : 'GET');
-            if (this.hasAttribute('target')) form.setAttribute('target', this.getAttribute('target'));
-            form.submit();
-        }
+        // if (this.hasAttribute('action')) {
+        //     let form = this.shadowRoot.querySelector('form');
+        //     let value = this.value;
+        //     let action = this.getAttribute('action').toString().replace(/\$1/g, value);
+        //     form.setAttribute('action', action);
+        //     form.setAttribute('method', this.hasAttribute('method')
+        //         ? this.getAttribute('method')
+        //         : 'GET');
+        //     if (this.hasAttribute('target')) form.setAttribute('target', this.getAttribute('target'));
+        //     form.submit();
+        // }
     }
 
 }
@@ -630,14 +623,19 @@ function getInputElement(component, flatten) {
 }
 
 function getParentComponent(el) {
-    while (!(el instanceof ByuSearch)) el = el.host ? el.host : el.parentNode;
+    console.log(el.tagName);
+    console.log(el.parentNode);
+    while (!(el.tagName === 'byu-search')) el = el.host ? el.host : el.parentNode;
     return el;
 }
 
 function inputHandler(e) {
     var el = e.target;
-    var component = el.tagName === 'byu-search' ? el : getParentComponent(el);
-    component.value = e.target.value;
+    if (el)
+    {
+        var component = el.tagName === 'byu-search' ? el : getParentComponent(el);
+        component.value = e.target.value;
+    }
 }
 
 function formSubmitHandler(searchElement) {
@@ -958,7 +956,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ":host {\n  background-color: #767676;\n  font-family: \"Vitesse A\", \"Vitesse B\", Georgia, serif;\n  font-size: 20px !important;\n  color: #fff;\n  display: inline-block;\n  text-align: center;\n  line-height: 2.2em;\n  height: 45px;\n  width: auto;\n  min-width: 125px;\n  margin: 10px 0 20px 0;\n  -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.35);\n  -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.35);\n  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.35); }\n\n::slotted(*) {\n  font-family: \"Vitesse A\", \"Vitesse B\", Georgia, serif !important;\n  font-weight: 400 !important;\n  color: #fff !important;\n  display: inline-block;\n  position: relative;\n  height: 100%;\n  width: 100%;\n  margin: 0 20px;\n  left: -20px;\n  cursor: pointer;\n  vertical-align: middle !important; }\n\n::slotted(a) {\n  text-decoration: none !important; }\n", ""]);
+exports.push([module.i, ":host{background-color:#767676;font-family:Vitesse A,Vitesse B,Georgia,serif;font-size:20px!important;color:#fff;display:inline-block;text-align:center;line-height:2.2em;height:45px;width:auto;min-width:125px;margin:10px 0 20px;-webkit-box-shadow:0 3px 5px 0 rgba(0,0,0,.35);-moz-box-shadow:0 3px 5px 0 rgba(0,0,0,.35);box-shadow:0 3px 5px 0 rgba(0,0,0,.35)}::slotted(*){font-family:Vitesse A,Vitesse B,Georgia,serif!important;font-weight:400!important;color:#fff!important;display:inline-block!important;position:relative!important;height:100%!important;width:100%!important;margin:0 20px!important;left:-20px!important;cursor:pointer!important;vertical-align:middle!important}::slotted(a){text-decoration:none!important}", ""]);
 
 // exports
 
@@ -972,7 +970,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ":host {\n  padding: 0 15px; }\n\n.header {\n  width: 100%; }\n\n.header ::slotted(*) {\n  font-family: \"Vitesse A\", \"Vitesse B\", Georgia, serif !important;\n  text-transform: uppercase !important;\n  color: #002e5d !important;\n  font-size: 20px !important;\n  border-bottom: 1px solid #c5c5c5 !important;\n  padding-bottom: 3px !important;\n  white-space: nowrap !important;\n  font-weight: 400 !important;\n  width: 100%;\n  display: inline-block; }\n\n.content ::slotted(:not(byu-footer-action-button)) {\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-size: 13px;\n  font-weight: 400;\n  color: #767676 !important;\n  position: relative;\n  top: -11px;\n  line-height: 1.42857143; }\n\n.content ::slotted(a) {\n  line-height: 35px;\n  text-decoration: none !important;\n  outline: none !important; }\n\n.content ::slotted(a:hover) {\n  cursor: pointer;\n  color: #002e5d !important; }\n", ""]);
+exports.push([module.i, ":host{padding:0 15px}.header{width:100%}.header ::slotted(*){font-family:Vitesse A,Vitesse B,Georgia,serif!important;text-transform:uppercase!important;color:#002e5d!important;font-size:20px!important;border-bottom:1px solid #c5c5c5!important;padding-bottom:3px!important;white-space:nowrap!important;font-weight:400!important;width:100%;display:inline-block}.content ::slotted(:not(byu-footer-action-button)){font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-size:13px;font-weight:400;color:#767676!important;position:relative;top:-11px;line-height:1.42857143}.content ::slotted(a){line-height:35px;text-decoration:none!important;outline:none!important}.content ::slotted(a:hover){cursor:pointer;color:#002e5d!important}", ""]);
 
 // exports
 
@@ -986,7 +984,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ".blue-footer {\n  background-color: #002e5d;\n  text-align: center;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif;\n  font-weight: 400;\n  font-size: 12px;\n  color: white;\n  height: 80px;\n  display: table;\n  width: 100%; }\n\n.inner-wrapper {\n  display: table-cell;\n  vertical-align: middle; }\n\n.university-logo {\n  width: 380px;\n  max-width: 100vw; }\n\n.secondary-footer {\n  height: auto;\n  background-color: #e6e6e6;\n  text-align: center; }\n\n.secondary-footer ::slotted(*) {\n  display: inline-block;\n  text-align: left;\n  vertical-align: top; }\n\n@media (max-width: 767px) {\n  .secondary-footer ::slotted(*) {\n    width: 80%; }\n  .secondary-footer ::slotted(*:last-child) {\n    padding-bottom: 30px; }\n  .secondary-footer ::slotted(*:first-child) {\n    padding-top: 10px; } }\n\n@media (min-width: 768px) and (max-width: 1199px) {\n  .secondary-footer ::slotted(*) {\n    width: 40%; }\n  .secondary-footer ::slotted(*:nth-child(n+3)) {\n    padding-bottom: 30px; }\n  .secondary-footer ::slotted(*:nth-child(-n+2)) {\n    padding-top: 10px; } }\n\n@media (min-width: 1200px) {\n  .secondary-footer ::slotted(*) {\n    width: 20%;\n    padding-top: 10px;\n    padding-bottom: 30px; } }\n", ""]);
+exports.push([module.i, ".blue-footer{background-color:#002e5d;text-align:center;font-family:Gotham A,Gotham B,Helvetica,sans-serif;font-weight:400;font-size:12px;color:#fff;height:80px;display:table;width:100%}.inner-wrapper{display:table-cell;vertical-align:middle}.university-logo{width:380px;max-width:100vw}.secondary-footer{height:auto;background-color:#e6e6e6;text-align:center}.secondary-footer ::slotted(*){display:inline-block;text-align:left;vertical-align:top}@media (max-width:767px){.secondary-footer ::slotted(*){width:80%}.secondary-footer ::slotted(:last-child){padding-bottom:30px}.secondary-footer ::slotted(:first-child){padding-top:10px}}@media (min-width:768px) and (max-width:1199px){.secondary-footer ::slotted(*){width:40%}.secondary-footer ::slotted(:nth-child(n+3)){padding-bottom:30px}.secondary-footer ::slotted(:nth-child(-n+2)){padding-top:10px}}@media (min-width:1200px){.secondary-footer ::slotted(*){width:20%;padding-top:10px;padding-bottom:30px}}", ""]);
 
 // exports
 
@@ -1000,7 +998,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "/*Variables*/\n.tcon {\n  appearance: none;\n  border: none;\n  cursor: pointer;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  height: 1.5em;\n  transition: 0.15s;\n  user-select: none;\n  width: 1.5em;\n  background: transparent;\n  outline: none;\n  -webkit-tap-highlight-color: transparent;\n  -webkit-tap-highlight-color: transparent; }\n  .tcon > * {\n    display: block; }\n  .tcon:hover, .tcon:focus {\n    outline: none; }\n  .tcon::-moz-focus-inner {\n    border: 0; }\n\n.tcon-menu__lines {\n  display: inline-block;\n  height: 0.21429em;\n  width: 1.5em;\n  border-radius: 0.10714em;\n  transition: 0.15s;\n  background: white;\n  position: relative; }\n  .tcon-menu__lines::before, .tcon-menu__lines::after {\n    display: inline-block;\n    height: 0.21429em;\n    width: 1.5em;\n    border-radius: 0.10714em;\n    transition: 0.15s;\n    background: white;\n    content: '';\n    position: absolute;\n    left: 0;\n    transform-origin: 0.10714em center;\n    width: 100%; }\n  .tcon-menu__lines::before {\n    top: 0.375em; }\n  .tcon-menu__lines::after {\n    top: -0.375em; }\n  .tcon-transform .tcon-menu__lines {\n    transform: scale3d(0.8, 0.8, 0.8); }\n\n.tcon-menu--xbutterfly {\n  width: auto; }\n  .tcon-menu--xbutterfly .tcon-menu__lines::before, .tcon-menu--xbutterfly .tcon-menu__lines::after {\n    transform-origin: 50% 50%;\n    transition: top .15s .3s ease, transform .15s ease; }\n  .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines {\n    background: transparent; }\n    .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::before, .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::after {\n      top: 0;\n      transition: top .15s ease, transform .15s .25s ease;\n      width: 1.5em; }\n    .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::before {\n      transform: rotate3d(0, 0, 1, 45deg); }\n    .tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines::after {\n      transform: rotate3d(0, 0, 1, -45deg); }\n\n.tcon-visuallyhidden {\n  border: 0;\n  clip: rect(0 0 0 0);\n  height: 1px;\n  margin: -1px;\n  overflow: hidden;\n  padding: 0;\n  position: absolute;\n  width: 1px; }\n  .tcon-visuallyhidden:active, .tcon-visuallyhidden:focus {\n    clip: auto;\n    height: auto;\n    margin: 0;\n    overflow: visible;\n    position: static;\n    width: auto; }\n\n.byu-header-actions ::slotted(*) {\n  text-decoration: none !important;\n  font-size: 13px !important;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n  text-transform: uppercase !important;\n  color: white !important;\n  cursor: pointer !important;\n  margin-left: 4px;\n  margin-right: 4px; }\n\n:host([mobile-view]) .byu-header-actions ::slotted(*) {\n  text-decoration: none !important;\n  font-size: 13px !important;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n  text-transform: uppercase !important;\n  color: white !important;\n  cursor: pointer !important;\n  color: #002e5d !important;\n  height: 35px !important;\n  display: table-cell;\n  vertical-align: middle !important;\n  text-align: center !important;\n  padding: 0 6px !important;\n  display: block;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 18px 33px !important;\n  line-height: 12px;\n  text-align: left !important;\n  height: auto !important;\n  background-color: #c5c5c5;\n  margin-right: 0;\n  margin-left: 0; }\n\n:host([mobile-view]) .byu-header > div > * {\n  margin-right: 0; }\n\n/* MOBILE */\n#mobileMenu {\n  max-height: 0;\n  transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1); }\n\n.root-wrapper {\n  font-family: \"Vitesse Book\" !important;\n  font-size: 18px; }\n  .root-wrapper .byu-header-primary {\n    background-color: #002e5d;\n    color: #ffffff;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: space-between;\n    align-items: center;\n    padding-left: 16px;\n    flex: 1;\n    height: 55px; }\n    .root-wrapper .byu-header-primary .byu-header-title, .root-wrapper .byu-header-primary .byu-header-title ::slotted(*) {\n      white-space: nowrap;\n      overflow: hidden;\n      -ms-text-overflow: ellipsis;\n      text-overflow: ellipsis;\n      flex: 1;\n      font-family: \"Vitesse A\", \"Vitesse B\", Georgia, serif !important;\n      font-size: 22px;\n      color: #fff; }\n      .root-wrapper .byu-header-primary .byu-header-title a, .root-wrapper .byu-header-primary .byu-header-title ::slotted(*) a {\n        color: #fff; }\n  .root-wrapper .byu-logo {\n    height: 48px;\n    width: 92px; }\n\n#mobileMenu {\n  overflow: hidden; }\n\n/* FULL SIZE */\n:host(:not([mobile-view])) .byu-header-primary > *, :host(:not([mobile-view])) .byu-header-secondary > * {\n  margin-right: 16px; }\n\n:host(:not([mobile-view])) .navbar-wrapper {\n  background-color: white;\n  width: 100%; }\n\n:host(:not([mobile-view])) .root-wrapper {\n  background-color: #002e5d;\n  display: flex;\n  flex-direction: row;\n  flex-wrap: wrap;\n  justify-content: space-between;\n  align-items: center; }\n  :host(:not([mobile-view])) .root-wrapper.no-nav {\n    height: 48px; }\n  :host(:not([mobile-view])) .root-wrapper .nav-expand {\n    display: none; }\n  :host(:not([mobile-view])) .root-wrapper .byu-header-secondary {\n    color: #ffffff;\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    justify-content: space-between;\n    align-items: center;\n    height: 55px; }\n", ""]);
+exports.push([module.i, ".tcon{appearance:none;border:none;cursor:pointer;display:flex;justify-content:center;align-items:center;height:1.5em;transition:.15s;user-select:none;width:1.5em;background:transparent;outline:none;-webkit-tap-highlight-color:transparent}.tcon>*{display:block}.tcon:focus,.tcon:hover{outline:none}.tcon::-moz-focus-inner{border:0}.tcon-menu__lines{width:1.5em;position:relative}.tcon-menu__lines,.tcon-menu__lines:after,.tcon-menu__lines:before{display:inline-block;height:.21429em;border-radius:.10714em;transition:.15s;background:#fff}.tcon-menu__lines:after,.tcon-menu__lines:before{width:1.5em;content:\"\";position:absolute;left:0;transform-origin:.10714em center;width:100%}.tcon-menu__lines:before{top:.375em}.tcon-menu__lines:after{top:-.375em}.tcon-transform .tcon-menu__lines{transform:scale3d(.8,.8,.8)}.tcon-menu--xbutterfly{width:auto}.tcon-menu--xbutterfly .tcon-menu__lines:after,.tcon-menu--xbutterfly .tcon-menu__lines:before{transform-origin:50% 50%;transition:top .15s ease .3s,transform .15s ease}.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines{background:transparent}.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines:after,.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines:before{top:0;transition:top .15s ease,transform .15s ease .25s;width:1.5em}.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines:before{transform:rotate(45deg)}.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines:after{transform:rotate(-45deg)}.tcon-visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.tcon-visuallyhidden:active,.tcon-visuallyhidden:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.byu-header-actions ::slotted(*){color:#fff!important;margin-left:4px;margin-right:4px}.byu-header-actions ::slotted(*),:host([mobile-view]) .byu-header-actions ::slotted(*){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:400!important;text-transform:uppercase!important;cursor:pointer!important}:host([mobile-view]) .byu-header-actions ::slotted(*){color:#fff!important;color:#002e5d!important;height:35px!important;display:table-cell;vertical-align:middle!important;text-align:center!important;padding:0 6px!important;display:block;width:100%;box-sizing:border-box;padding:18px 33px!important;line-height:12px;text-align:left!important;height:auto!important;background-color:#c5c5c5;margin-right:0;margin-left:0}:host([mobile-view]) .byu-header>div>*{margin-right:0}#mobileMenu{max-height:0;transition:.5s cubic-bezier(.4,0,.2,1)}.root-wrapper{font-family:Vitesse Book!important;font-size:18px}.root-wrapper .byu-header-primary{background-color:#002e5d;color:#fff;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:center;padding-left:16px;flex:1;height:55px}.root-wrapper .byu-header-primary .byu-header-title,.root-wrapper .byu-header-primary .byu-header-title ::slotted(*){white-space:nowrap;overflow:hidden;-ms-text-overflow:ellipsis;text-overflow:ellipsis;flex:1;font-family:Vitesse A,Vitesse B,Georgia,serif!important;font-size:22px;color:#fff}.root-wrapper .byu-header-primary .byu-header-title ::slotted(*) a,.root-wrapper .byu-header-primary .byu-header-title a{color:#fff}.root-wrapper .byu-logo{height:48px;width:92px}#mobileMenu{overflow:hidden}:host(:not([mobile-view])) .byu-header-primary>*,:host(:not([mobile-view])) .byu-header-secondary>*{margin-right:16px}:host(:not([mobile-view])) .navbar-wrapper{background-color:#fff;width:100%}:host(:not([mobile-view])) .root-wrapper{background-color:#002e5d;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:center}:host(:not([mobile-view])) .root-wrapper.no-nav{height:48px}:host(:not([mobile-view])) .root-wrapper .nav-expand{display:none}:host(:not([mobile-view])) .root-wrapper .byu-header-secondary{color:#fff;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:center;height:55px}", ""]);
 
 // exports
 
@@ -1014,7 +1012,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ":host {\n  display: block;\n  width: 100%;\n  height: auto;\n  background: #ffffff;\n  opacity: 0.88;\n  border-bottom: 1px solid #ccc; }\n\n.outer-nav {\n  display: flex;\n  flex-direction: row;\n  flex-wrap: nowrap;\n  align-items: center;\n  justify-content: flex-start;\n  padding: 0; }\n\n.inner-nav {\n  width: 100%;\n  display: table; }\n\n.inner-nav ::slotted(*) {\n  display: table;\n  width: 16.66%; }\n\n.extra-links, .inner-nav ::slotted(*) {\n  text-decoration: none !important;\n  font-size: 13px !important;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n  text-transform: uppercase !important;\n  color: white !important;\n  cursor: pointer !important;\n  color: #002e5d !important;\n  height: 35px !important;\n  display: table-cell;\n  vertical-align: middle !important;\n  text-align: center !important;\n  padding: 0 6px !important; }\n\n:host(:not(.mobile-view)) .extra-links:hover, :host(:not(.mobile-view)) .inner-nav ::slotted(*:hover) {\n  background-color: #c5c5c5 !important; }\n\n:host(:not(.mobile-view)) .inner-nav ::slotted(*.selected) {\n  background: #e6e6e6 !important; }\n\n.extra-links {\n  display: none;\n  cursor: pointer; }\n  .extra-links .extra-links-dropdown {\n    display: none;\n    position: absolute;\n    background-color: white;\n    z-index: 10;\n    min-width: 115px;\n    margin-top: 10px; }\n    .extra-links .extra-links-dropdown ul {\n      list-style-type: none;\n      padding: 0; }\n  .extra-links:hover .extra-links-dropdown {\n    display: block; }\n\n:host([has-extra-links]) .extra-links {\n  display: block; }\n  :host([has-extra-links]) .extra-links .extra-links-dropdown {\n    display: block; }\n\n:host(.mobile-view) .outer-nav {\n  flex-direction: column; }\n\n:host(.mobile-view) .inner-nav {\n  display: block; }\n\n:host(.mobile-view) #slot {\n  display: flex;\n  flex-direction: column; }\n\n:host(.mobile-view) .inner-nav ::slotted(*) {\n  text-decoration: none !important;\n  font-size: 13px !important;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n  text-transform: uppercase !important;\n  color: white !important;\n  cursor: pointer !important;\n  color: #002e5d !important;\n  height: 35px !important;\n  display: table-cell;\n  vertical-align: middle !important;\n  text-align: center !important;\n  padding: 0 6px !important;\n  display: block;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 18px 33px !important;\n  line-height: 12px;\n  text-align: left !important;\n  height: auto !important; }\n", ""]);
+exports.push([module.i, ":host{display:block;width:100%;height:auto;background:#fff;opacity:.88;border-bottom:1px solid #ccc}.outer-nav{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;justify-content:flex-start;padding:0}.inner-nav{width:100%;display:table}.inner-nav ::slotted(*){display:table;width:16.66%}.extra-links,.inner-nav ::slotted(*){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:400!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;color:#002e5d!important;height:35px!important;display:table-cell;vertical-align:middle!important;text-align:center!important;padding:0 6px!important}:host(:not(.mobile-view)) .extra-links:hover,:host(:not(.mobile-view)) .inner-nav ::slotted(:hover){background-color:#c5c5c5!important}:host(:not(.mobile-view)) .inner-nav ::slotted(.selected){background:#e6e6e6!important}.extra-links{display:none;cursor:pointer}.extra-links .extra-links-dropdown{display:none;position:absolute;background-color:#fff;z-index:10;min-width:115px;margin-top:10px}.extra-links .extra-links-dropdown ul{list-style-type:none;padding:0}.extra-links:hover .extra-links-dropdown,:host([has-extra-links]) .extra-links,:host([has-extra-links]) .extra-links .extra-links-dropdown{display:block}:host(.mobile-view) .outer-nav{flex-direction:column}:host(.mobile-view) .inner-nav{display:block}:host(.mobile-view) #slot{display:flex;flex-direction:column}:host(.mobile-view) .inner-nav ::slotted(*){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:400!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;color:#002e5d!important;height:35px!important;display:table-cell;vertical-align:middle!important;text-align:center!important;padding:0 6px!important;display:block;width:100%;box-sizing:border-box;padding:18px 33px!important;line-height:12px;text-align:left!important;height:auto!important}", ""]);
 
 // exports
 
@@ -1028,7 +1026,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ":host {\n  display: inline-block; }\n\n#search-icon {\n  width: 1em;\n  height: 1em; }\n\nbutton {\n  background-color: var(--byu-search-color, #767676);\n  border: 1px solid var(--byu-search-color, #767676);\n  color: #FFF;\n  padding-left: 10px;\n  padding-right: 10px; }\n\nform {\n  display: flex;\n  align-items: stretch;\n  align-content: center; }\n\nform #search-container {\n  flex: 1; }\n\nform #search-container input,\n#search-container ::slotted(input) {\n  padding: 5px 10px;\n  border: 1px solid var(--byu-search-color, #767676);\n  border-right: none; }\n\n:host(.mobile-view) {\n  width: 100%;\n  height: 35px; }\n  :host(.mobile-view) form #search-container input,\n  :host(.mobile-view) #search-container ::slotted(input) {\n    padding: 5px 10px;\n    border: 1px solid var(--byu-search-color, #767676);\n    border-right: none;\n    width: 100%;\n    height: 35px; }\n", ""]);
+exports.push([module.i, ":host{display:inline-block}#search-icon{width:1em;height:1em}button{background-color:var(--byu-search-color,#767676);border:1px solid var(--byu-search-color,#767676);color:#fff;padding-left:10px;padding-right:10px}#search-form{display:flex;align-items:stretch;align-content:center}#search-form #search-container{flex:1}#search-container ::slotted(input),#search-form #search-container input{padding:5px 10px;border:1px solid var(--byu-search-color,#767676);border-right:none}:host(.mobile-view){width:100%;height:35px}:host(.mobile-view) #search-container ::slotted(input),:host(.mobile-view) #search-form #search-container input{padding:5px 10px;border:1px solid var(--byu-search-color,#767676);border-right:none;width:100%;height:35px}", ""]);
 
 // exports
 
@@ -1042,7 +1040,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "::slotted(a) {\n  text-decoration: none !important; }\n\n::slotted(.fa) {\n  text-decoration: none !important;\n  color: #002e5d !important;\n  font-size: 25px !important;\n  line-height: 40px !important;\n  border: 1px solid #fff !important;\n  width: 40px !important;\n  height: 40px !important;\n  text-align: center !important;\n  border-radius: 20px !important;\n  margin: 0 5px 5px 0 !important;\n  cursor: pointer; }\n\n::slotted(.fa:hover) {\n  background-color: #fff !important; }\n", ""]);
+exports.push([module.i, "::slotted(.fa),::slotted(a){text-decoration:none!important}::slotted(.fa){color:#002e5d!important;font-size:25px!important;line-height:40px!important;border:1px solid #fff!important;width:40px!important;height:40px!important;text-align:center!important;border-radius:20px!important;margin:0 5px 5px 0!important;cursor:pointer}::slotted(.fa:hover){background-color:#fff!important}", ""]);
 
 // exports
 
@@ -1056,7 +1054,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "img {\n  height: 20px;\n  width: 20px;\n  margin: 7px; }\n\n.slot-wrapper ::slotted(*) {\n  text-decoration: none !important;\n  font-size: 13px !important;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n  text-transform: uppercase !important;\n  color: white !important;\n  cursor: pointer !important; }\n\n.has-user, .no-user {\n  display: flex;\n  flex-direction: row;\n  align-items: center; }\n\n/* NON MOBILE */\n:host(:not([mobile-view])) {\n  color: white;\n  cursor: pointer; }\n  :host(:not([mobile-view])) .slot-wrapper ::slotted(*) {\n    text-decoration: none !important;\n    font-size: 13px !important;\n    font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n    font-weight: 400 !important;\n    text-transform: uppercase !important;\n    color: white !important;\n    cursor: pointer !important; }\n  :host(:not([mobile-view])) .mobile {\n    display: none; }\n  :host(:not([mobile-view])) img {\n    margin: 7px; }\n\n/* MOBILE */\n:host([mobile-view]) {\n  text-decoration: none !important;\n  font-size: 13px !important;\n  font-family: \"Gotham A\", \"Gotham B\", Helvetica, sans-serif !important;\n  font-weight: 400 !important;\n  text-transform: uppercase !important;\n  color: white !important;\n  cursor: pointer !important;\n  color: #002e5d !important;\n  height: 35px !important;\n  display: table-cell;\n  vertical-align: middle !important;\n  text-align: center !important;\n  padding: 0 6px !important;\n  display: block;\n  width: 100%;\n  box-sizing: border-box;\n  padding: 18px 33px !important;\n  line-height: 12px;\n  text-align: left !important;\n  height: auto !important;\n  padding-left: 0 !important;\n  border-bottom: solid 1px #c5c5c5; }\n  :host([mobile-view]) .not-mobile {\n    display: none; }\n  :host([mobile-view]) .has-user .name {\n    order: 2;\n    flex: 1; }\n  :host([mobile-view]) .has-user img {\n    order: 1;\n    margin: 7px; }\n  :host([mobile-view]) .has-user .logout {\n    order: 3; }\n  :host([mobile-view]) .slot-wrapper ::slotted(*) {\n    color: #002e5d !important; }\n\n:host(:not([has-user])) .has-user {\n  display: none; }\n\n:host([has-user]) .no-user {\n  display: none; }\n", ""]);
+exports.push([module.i, "img{height:20px;width:20px;margin:7px}.slot-wrapper ::slotted(*){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:400!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;cursor:auto!important}.has-user,.no-user{display:flex;flex-direction:row;align-items:center}:host(:not([mobile-view])){color:#fff}:host(:not([mobile-view])) .mobile{display:none}:host(:not([mobile-view])) img{margin:7px}:host([mobile-view]){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:400!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;color:#002e5d!important;height:35px!important;display:table-cell;vertical-align:middle!important;text-align:center!important;padding:0 6px!important;display:block;width:100%;box-sizing:border-box;padding:18px 33px!important;line-height:12px;text-align:left!important;height:auto!important;padding-left:0!important;border-bottom:1px solid #c5c5c5}:host([mobile-view]) .not-mobile{display:none}:host([mobile-view]) .has-user .name{order:2;flex:1}:host([mobile-view]) .has-user img{order:1;margin:7px}:host([mobile-view]) .has-user .logout{order:3}:host([mobile-view]) .slot-wrapper ::slotted(*){color:#002e5d!important}:host(:not([has-user])) .has-user,:host([has-user]) .no-user{display:none}", ""]);
 
 // exports
 
@@ -1262,7 +1260,7 @@ module.exports = "<style>" + __webpack_require__(12) + "</style> <h2 class=\"hea
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__(13) + "</style> <div class=\"secondary-footer\"> <slot id=\"slot\"> </slot> </div> <div class=\"blue-footer\"> <div class=\"inner-wrapper\"> <img src=\"" + __webpack_require__(30) + "\" alt=\"Brigham Young University\" class=\"university-logo\"> <div class=\"copyright-contact\">&copy; <span id=\"currentYear\"></span> All Rights Reserved | Provo, UT 84602, USA | 801.422.4636</div> </div> </div>";
+module.exports = "<style>" + __webpack_require__(13) + "</style> <div class=\"secondary-footer\"> <slot id=\"slot\"> </slot> </div> <div class=\"blue-footer\"> <div class=\"inner-wrapper\"> <a href=\"https://home.byu.edu/home/\" target=\"_blank\"><img src=\"" + __webpack_require__(30) + "\" alt=\"Brigham Young University\" class=\"university-logo\"></a> <div class=\"copyright-contact\">&copy; <span id=\"currentYear\"></span> All Rights Reserved | Provo, UT 84602, USA | 801.422.4636</div> </div> </div>";
 
 /***/ }),
 /* 26 */
@@ -1274,7 +1272,7 @@ module.exports = "<style>" + __webpack_require__(15) + "</style> <link type=\"te
 /* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__(16) + "</style> <form> <div id=\"search-container\"> <slot id=\"search\" name=\"search\"><input type=\"search\" placeholder=\"Search\"></slot> </div> <button id=\"submit-button\" type=\"submit\"> <img id=\"search-icon\" src=\"" + __webpack_require__(33) + "\" alt=\"Run Search\"> </button> </form>";
+module.exports = "<style>" + __webpack_require__(16) + "</style> <div id=\"search-form\"> <div id=\"search-container\"> <slot id=\"search\"><input type=\"search\" placeholder=\"Search\"></slot> </div> <button id=\"submit-button\" type=\"submit\"> <img id=\"search-icon\" src=\"" + __webpack_require__(33) + "\" alt=\"Run Search\"> </button> </div>";
 
 /***/ }),
 /* 28 */
