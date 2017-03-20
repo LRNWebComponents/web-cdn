@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-03-20T18:30:36.928Z",
+  "$built": "2017-03-20T18:37:39.567Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -3718,9 +3718,100 @@
     "web-component-polyfills": {
       "source": "github:byuweb/web-component-polyfills",
       "aliases": {
-        "latest": "unstable"
+        "0.x.x": "0.1.0",
+        "0.1.x": "0.1.0",
+        "latest": "0.1.0"
       },
       "versions": [
+        {
+          "name": "0.1.0",
+          "ref": "v0.1.0",
+          "tarball_url": "https://api.github.com/repos/byuweb/web-component-polyfills/tarball/v0.1.0",
+          "git_sha": "9204aa95e5ec7beed600fb294fe14992076a0a4a",
+          "link": "https://github.com/byuweb/web-component-polyfills/tree/v0.1.0",
+          "last_updated": "2017-03-20T18:36:37+00:00",
+          "messages": [],
+          "resources": {
+            "web-component-polyfills.js": {
+              "entrypoint": true,
+              "description": "Bundle of all Web Component polyfills",
+              "size": 338230,
+              "gzip_size": 73889,
+              "hashes": {
+                "sha256": {
+                  "base64": "UHYJ/mQUY56GwC296jQi7vWRQEbffoIujXD2mnCUm4c=",
+                  "hex": "507609fe6414639e86c02dbdea3422eef5914046df7e822e8d70f69a70949b87"
+                },
+                "sha384": {
+                  "base64": "YY/JUKw0YCwLhboTa5MlDLVOSzfRmFJW/X3p3tIlTFEUHxbmQqqlKEHkt9QpCu71",
+                  "hex": "618fc950ac34602c0b85ba136b93250cb54e4b37d1985256fd7de9ded2254c51141f16e642aaa52841e4b7d4290aeef5"
+                },
+                "sha512": {
+                  "base64": "Sfx3Z5tONi1wgjbyNAybnslSLsNMnuWLxQ08w76zxGaSozcCTNQGDKRZBHem0kaC6PEGV0SNI+YiLrYsQ4UD9A==",
+                  "hex": "49fc77679b4e362d708236f2340c9b9ec9522ec34c9ee58bc50d3cc3beb3c46692a337024cd4060ca4590477a6d24682e8f10657448d23e6222eb62c438503f4"
+                }
+              }
+            },
+            "web-component-polyfills.js.map": {
+              "entrypoint": false,
+              "size": 514860,
+              "gzip_size": 142100,
+              "hashes": {
+                "sha256": {
+                  "base64": "iQCejpixFU6P4XrjEmCgXHcFazqkI2xQYbqay+OifX4=",
+                  "hex": "89009e8e98b1154e8fe17ae31260a05c77056b3aa4236c5061ba9acbe3a27d7e"
+                },
+                "sha384": {
+                  "base64": "DqSqAvA4NLUxlYjwenPaQuuyHndYo/x7Cs9plAc0RALsCZ+4PDE8RTivvKosDHag",
+                  "hex": "0ea4aa02f03834b5319588f07a73da42ebb21e7758a3fc7b0acf699407344402ec099fb83c313c4538afbcaa2c0c76a0"
+                },
+                "sha512": {
+                  "base64": "rKbvieUkXmi78VI9jOtMcAfobnp8sQcQBYz5ym4FMQ+rjjHL4e5RfV9H/2HtMTBjBfQpIJZzII5RKkj9s693vQ==",
+                  "hex": "aca6ef89e5245e68bbf1523d8ceb4c7007e86e7a7cb10710058cf9ca6e05310fab8e31cbe1ee517d5f47ff61ed31306305f429209673208e512a48fdb3af77bd"
+                }
+              }
+            },
+            "web-component-polyfills.min.js": {
+              "entrypoint": true,
+              "description": "Minified bundle of all Web Component polyfills",
+              "size": 133725,
+              "gzip_size": 32838,
+              "hashes": {
+                "sha256": {
+                  "base64": "hqmbS5/QrSxXDdJWibYAoSAo2R9ExjF6RYNZNHOaRds=",
+                  "hex": "86a99b4b9fd0ad2c570dd25689b600a12028d91f44c6317a45835934739a45db"
+                },
+                "sha384": {
+                  "base64": "DL6df7WAtxe6XNEFyAu+svrXRb+5vmcHyeZbO5+g/urOcF0nI1nvgumL0KXg3Hs4",
+                  "hex": "0cbe9d7fb580b717ba5cd105c80bbeb2fad745bfb9be6707c9e65b3b9fa0feeace705d272359ef82e98bd0a5e0dc7b38"
+                },
+                "sha512": {
+                  "base64": "qnYx2N2rRvyuXS+nwW1R73iQ7/O1Jwk3maXFyc6arvcn6OpTn/BNOh6Hcp0ILse2rY/m4QWFLUPJR/35alp2YQ==",
+                  "hex": "aa7631d8ddab46fcae5d2fa7c16d51ef7890eff3b527093799a5c5c9ce9aaef727e8ea539ff04d3a1e87729d082ec7b6ad8fe6e105852d43c947fdf96a5a7661"
+                }
+              }
+            },
+            "web-component-polyfills.min.js.map": {
+              "entrypoint": false,
+              "size": 812507,
+              "gzip_size": 202833,
+              "hashes": {
+                "sha256": {
+                  "base64": "JoJl//BvjUvgoP9wRAbnMgHhjScScSdb+cyIHwq6j0U=",
+                  "hex": "268265fff06f8d4be0a0ff704406e73201e18d271271275bf9cc881f0aba8f45"
+                },
+                "sha384": {
+                  "base64": "LUbjoww5Yf2M5Rlznzr+Xx+Oj8YzBmoieJhnFH+kEkSwcewIEgwckmkdw/33hjFR",
+                  "hex": "2d46e3a30c3961fd8ce519739f3afe5f1f8e8fc633066a22789867147fa41244b071ec08120c1c92691dc3fdf7863151"
+                },
+                "sha512": {
+                  "base64": "9b4ZOK60h610X/YcgOFl9EAA5JKLOjX3S1AN4F+L26jizdsOA04BGXZvYreAXic/08DeufZN4mV2RS8KN/fkhQ==",
+                  "hex": "f5be1938aeb487ad745ff61c80e165f44000e4928b3a35f74b500de05f8bdba8e2cddb0e034e0119766f62b7805e273fd3c0deb9f64de26576452f0a37f7e485"
+                }
+              }
+            }
+          }
+        },
         {
           "name": "unstable",
           "ref": "master",
