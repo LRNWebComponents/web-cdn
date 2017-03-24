@@ -446,50 +446,95 @@ window.BYUHeader = BYUHeader;
 
 class BYUMenu extends HTMLElement {
 
+    get showMore () {
+        return isShowingMoreMenu(this);
+    }
+
+    set showMore (show) {
+        const el = this.shadowRoot.querySelector('.byu-menu-more-menu');
+        if (show && !isShowingMoreMenu(this)) enableHideClick(this);
+        toggleClass(el, 'byu-menu-more-expanded', show);
+    }
+
     constructor() {
         super(); // always call super first
-        this.attachShadow({mode: 'open'});
     }
 
     connectedCallback() {
         __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-menu', __WEBPACK_IMPORTED_MODULE_0__template_html__, () => {
-            this._addSlotListeners();
+            const component = this;
+
+            updateMoreMenuState(this);
+            addSlotListeners(this);
+
+            // when the more button is clicked then show the more menu
+            this.shadowRoot.querySelector('.byu-menu-more').addEventListener('click', function() {
+                component.showMore = true;
+            });
         });
     }
 
-    _maybeAddMoreMenu() {
-        // if there are more than 6 links add the extras to a "more" dropdown
-        const slot = this.shadowRoot.querySelector("#slot");
 
-        let allLinks = slot.assignedNodes().filter(function (element) {
-            return element instanceof HTMLElement
-        });
+}
 
-        if (allLinks.length > 6) {
-            this.setAttribute('has-extra-links', '');
+function addSlotListeners(component) {
+    component.shadowRoot.querySelector('slot')
+        .addEventListener('slotchange', e => updateMoreMenuState(component));
+}
 
-            let extras = allLinks.slice(5);
-            let dropdown = this.shadowRoot.querySelector("#extraLinksDropdown");
-            for (let i = 0; i < extras.length; i++) {
-                let listItem = document.createElement("li");
-                //listItem.appendChild(extras[i]);
-                listItem.appendChild(extras[i].cloneNode());
-                dropdown.appendChild(listItem);
-            }
-        } else {
-            this.removeAttribute('has-extra-links');
+function enableHideClick(component) {
+
+    const fn = function() {
+        document.removeEventListener('click', fn);
+        component.showMore = false;
+    };
+
+    setTimeout(function () {
+        document.addEventListener('click', fn);
+    });
+}
+
+function hasClass(el, className) {
+    const classes = el.className.split(/ +/);
+    return classes.indexOf(className) !== -1;
+}
+
+function isShowingMoreMenu(component) {
+    return hasClass(component.shadowRoot.querySelector('.byu-menu-more-menu'), 'byu-menu-more-expanded');
+}
+
+function toggleClass(el, className, value) {
+    const classes = el.className.split(/ +/);
+    const index = classes.indexOf(className);
+    const exists = index !== -1;
+    const setTo = arguments.length > 2 ? arguments[2] : !exists;
+    if (setTo && !exists) {
+        classes.push(className);
+    } else if (!setTo && exists) {
+        classes.splice(index, 1);
+    }
+    el.className = classes.join(' ');
+}
+
+function updateMoreMenuState(component) {
+    const children = component.children;
+    const length = component.children.length;
+    const hasOverflow = length > 6;
+    const nav = component.shadowRoot.querySelector('.outer-nav');
+
+    if (nav) toggleClass(nav, 'byu-menu-more-visible', hasOverflow);
+
+    if (hasOverflow) {
+        for (let i = 5; i < length; i++) {
+            children[i].setAttribute('slot', 'more');
         }
-    }
-
-    _addSlotListeners() {
-        this.shadowRoot.querySelector('#slot')
-            .addEventListener('slotchange', e => this._maybeAddMoreMenu())
+    } else if (length === 6) {
+        children[5].setAttribute('slot', '');
     }
 }
 
 window.customElements.define('byu-menu', BYUMenu);
 window.BYUMenu = BYUMenu;
-
 
 
 /***/ }),
@@ -970,7 +1015,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ":host{padding:0 15px}.header{width:100%}.header ::slotted(*){font-family:Vitesse A,Vitesse B,Georgia,serif!important;text-transform:uppercase!important;color:#002e5d!important;font-size:20px!important;border-bottom:1px solid #c5c5c5!important;padding-bottom:3px!important;white-space:nowrap!important;font-weight:400!important;width:100%;display:inline-block}.content ::slotted(:not(byu-footer-action-button)){font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-size:13px;font-weight:400;color:#767676!important;position:relative;top:-11px;line-height:1.42857143}.content ::slotted(a){line-height:35px;text-decoration:none!important;outline:none!important}.content ::slotted(a:hover){cursor:pointer;color:#002e5d!important}", ""]);
+exports.push([module.i, ":host{padding:0 15px}.header{width:100%}.header ::slotted(*){font-family:Vitesse A,Vitesse B,Georgia,serif!important;text-transform:uppercase!important;color:#002e5d!important;font-size:20px!important;border-bottom:1px solid #c5c5c5!important;padding-bottom:3px!important;white-space:nowrap!important;font-weight:400!important;width:100%;display:inline-block}.content ::slotted(:not(byu-footer-action-button)){font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-size:13px;font-weight:500;color:#767676!important;position:relative;top:-11px;line-height:1.42857143}.content ::slotted(a){line-height:35px;text-decoration:none!important;outline:none!important}.content ::slotted(a:hover){cursor:pointer;color:#002e5d!important}", ""]);
 
 // exports
 
@@ -984,7 +1029,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ".blue-footer{background-color:#002e5d;text-align:center;font-family:Gotham A,Gotham B,Helvetica,sans-serif;font-weight:400;font-size:12px;color:#fff;height:80px;display:table;width:100%}.inner-wrapper{display:table-cell;vertical-align:middle}.university-logo{width:380px;max-width:100vw}.secondary-footer{height:auto;background-color:#e6e6e6;text-align:center}.secondary-footer ::slotted(*){display:inline-block;text-align:left;vertical-align:top}@media (max-width:767px){.secondary-footer ::slotted(*){width:80%}.secondary-footer ::slotted(:last-child){padding-bottom:30px}.secondary-footer ::slotted(:first-child){padding-top:10px}}@media (min-width:768px) and (max-width:1199px){.secondary-footer ::slotted(*){width:40%}.secondary-footer ::slotted(:nth-child(n+3)){padding-bottom:30px}.secondary-footer ::slotted(:nth-child(-n+2)){padding-top:10px}}@media (min-width:1200px){.secondary-footer ::slotted(*){width:20%;padding-top:10px;padding-bottom:30px}}", ""]);
+exports.push([module.i, ".blue-footer{background-color:#002e5d;text-align:center;font-family:Gotham A,Gotham B,Helvetica,sans-serif;font-weight:400;font-size:12px;color:#fff;height:80px;display:table;width:100%}.blue-footer a{text-decoration:none;color:#fff}.blue-footer a:hover{color:#fff}.inner-wrapper{display:table-cell;vertical-align:middle}.university-logo{width:380px;max-width:100vw}.secondary-footer{height:auto;background-color:#e5e5e5;text-align:center}.secondary-footer ::slotted(*){display:inline-block;text-align:left;vertical-align:top}@media (max-width:767px){.secondary-footer ::slotted(*){width:80%}.secondary-footer ::slotted(:last-child){padding-bottom:30px}.secondary-footer ::slotted(:first-child){padding-top:10px}}@media (min-width:768px) and (max-width:1199px){.secondary-footer ::slotted(*){width:40%}.secondary-footer ::slotted(:nth-child(n+3)){padding-bottom:30px}.secondary-footer ::slotted(:nth-child(-n+2)){padding-top:10px}}@media (min-width:1200px){.secondary-footer ::slotted(*){width:20%;padding-top:10px;padding-bottom:30px}}", ""]);
 
 // exports
 
@@ -998,7 +1043,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ".tcon{appearance:none;border:none;cursor:pointer;display:flex;justify-content:center;align-items:center;height:1.5em;transition:.15s;user-select:none;width:1.5em;background:transparent;outline:none;-webkit-tap-highlight-color:transparent}.tcon>*{display:block}.tcon:focus,.tcon:hover{outline:none}.tcon::-moz-focus-inner{border:0}.tcon-menu__lines{width:1.5em;position:relative}.tcon-menu__lines,.tcon-menu__lines:after,.tcon-menu__lines:before{display:inline-block;height:.21429em;border-radius:.10714em;transition:.15s;background:#fff}.tcon-menu__lines:after,.tcon-menu__lines:before{width:1.5em;content:\"\";position:absolute;left:0;transform-origin:.10714em center;width:100%}.tcon-menu__lines:before{top:.375em}.tcon-menu__lines:after{top:-.375em}.tcon-transform .tcon-menu__lines{transform:scale3d(.8,.8,.8)}.tcon-menu--xbutterfly{width:auto}.tcon-menu--xbutterfly .tcon-menu__lines:after,.tcon-menu--xbutterfly .tcon-menu__lines:before{transform-origin:50% 50%;transition:top .15s ease .3s,transform .15s ease}.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines{background:transparent}.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines:after,.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines:before{top:0;transition:top .15s ease,transform .15s ease .25s;width:1.5em}.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines:before{transform:rotate(45deg)}.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines:after{transform:rotate(-45deg)}.tcon-visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.tcon-visuallyhidden:active,.tcon-visuallyhidden:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}#mobileMenu{max-height:0;transition:.5s cubic-bezier(.4,0,.2,1)}.byu-header-actions ::slotted(*){color:#fff!important;margin-left:4px;margin-right:4px}.byu-header-actions ::slotted(*),:host([mobile-view]) .byu-header-actions ::slotted(*){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:400!important;text-transform:uppercase!important;cursor:pointer!important}:host([mobile-view]) .byu-header-actions ::slotted(*){color:#fff!important;color:#002e5d!important;height:35px!important;display:table-cell;vertical-align:middle!important;text-align:center!important;padding:0 6px!important;display:block;width:100%;box-sizing:border-box;padding:18px 33px!important;line-height:12px;text-align:left!important;height:auto!important;background-color:#c5c5c5;margin-right:0;margin-left:0}:host([mobile-view]) .byu-header>div>*{margin-right:0}.root-wrapper{font-family:Vitesse Book!important;font-size:18px}.root-wrapper>div>*{margin-right:16px}.root-wrapper .byu-header-primary{background-color:#002e5d;color:#fff;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:center;padding-left:16px;flex:1;height:55px}.root-wrapper .byu-header-primary .byu-header-title,.root-wrapper .byu-header-primary .byu-header-title ::slotted(*){white-space:nowrap;overflow:hidden;-ms-text-overflow:ellipsis;text-overflow:ellipsis;flex:1;font-family:Vitesse A,Vitesse B,Georgia,serif!important;font-size:22px;color:#fff}.root-wrapper .byu-header-primary .byu-header-title ::slotted(*) a,.root-wrapper .byu-header-primary .byu-header-title a{color:#fff}.root-wrapper .byu-logo{height:48px;width:92px}#mobileMenu{overflow:hidden}:host(:not([mobile-view])) .byu-header-primary>*,:host(:not([mobile-view])) .byu-header-secondary>*{margin-right:16px}:host(:not([mobile-view])) .navbar-wrapper{background-color:#fff;width:100%}:host(:not([mobile-view])) .root-wrapper{background-color:#002e5d;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:center}:host(:not([mobile-view])) .root-wrapper.no-nav{height:48px}:host(:not([mobile-view])) .root-wrapper .nav-expand{display:none}:host(:not([mobile-view])) .root-wrapper .byu-header-secondary{color:#fff;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:center;height:55px}", ""]);
+exports.push([module.i, ".tcon{appearance:none;border:none;cursor:pointer;display:flex;justify-content:center;align-items:center;height:1.5em;transition:.15s;user-select:none;width:1.5em;background:transparent;outline:none;-webkit-tap-highlight-color:transparent}.tcon>*{display:block}.tcon:focus,.tcon:hover{outline:none}.tcon::-moz-focus-inner{border:0}.tcon-menu__lines{width:1.5em;position:relative}.tcon-menu__lines,.tcon-menu__lines:after,.tcon-menu__lines:before{display:inline-block;height:.21429em;border-radius:.10714em;transition:.15s;background:#fff}.tcon-menu__lines:after,.tcon-menu__lines:before{width:1.5em;content:\"\";position:absolute;left:0;transform-origin:.10714em center;width:100%}.tcon-menu__lines:before{top:.375em}.tcon-menu__lines:after{top:-.375em}.tcon-transform .tcon-menu__lines{transform:scale3d(.8,.8,.8)}.tcon-menu--xbutterfly{width:auto}.tcon-menu--xbutterfly .tcon-menu__lines:after,.tcon-menu--xbutterfly .tcon-menu__lines:before{transform-origin:50% 50%;transition:top .15s ease .3s,transform .15s ease}.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines{background:transparent}.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines:after,.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines:before{top:0;transition:top .15s ease,transform .15s ease .25s;width:1.5em}.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines:before{transform:rotate(45deg)}.tcon-menu--xbutterfly.tcon-transform .tcon-menu__lines:after{transform:rotate(-45deg)}.tcon-visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.tcon-visuallyhidden:active,.tcon-visuallyhidden:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}#mobileMenu{max-height:0;transition:.5s cubic-bezier(.4,0,.2,1)}.byu-header-actions ::slotted(*){color:#fff!important;color:#002e5d;margin-left:4px;margin-right:4px}.byu-header-actions ::slotted(*),:host([mobile-view]) .byu-header-actions ::slotted(*){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:500!important;text-transform:uppercase!important;cursor:pointer!important}:host([mobile-view]) .byu-header-actions ::slotted(*){color:#fff!important;color:#002e5d!important;height:35px!important;display:inline-block;text-align:center!important;padding:0 6px!important;line-height:35px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box;padding:18px 33px!important;line-height:12px;text-align:left!important;height:auto!important;background-color:#c5c5c5;border-top:1px solid #767676}:host([mobile-view]) .byu-header-actions ::slotted(*):hover{background:#c5c5c5!important}:host([mobile-view]) .byu-header-actions ::slotted(*).selected{background:#e5e5e5!important}:host([mobile-view]) .byu-header-actions ::slotted(*).long-link{max-width:300px;flex:2;padding:0 12px!important}:host([mobile-view]) .byu-header-actions ::slotted(*).extra-long-link{max-width:400px;flex:3;padding:0 12px!important}:host([mobile-view])>div>:not(.byu-logo){margin-right:0}:host([mobile-view]) .root-wrapper>div>.byu-logo{margin-right:8px;align-items:flex-start}:host([mobile-view]) .byu-header-title,:host([mobile-view]) .byu-header-title ::slotted(*){font-size:16px}.root-wrapper{font-family:Gotham A,Gotham B,Helvetica,sans-serif;font-size:18px}.root-wrapper>div>*{margin-right:16px}.root-wrapper button{background-color:#767676;color:#fff;border:none;cursor:pointer}.root-wrapper button.mobile-menu-button{background-color:transparent;font-size:20px}.root-wrapper .byu-header-primary{background-color:#002e5d;color:#fff;display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:center;padding-left:16px;flex:1;min-height:55px}.root-wrapper .byu-header-primary .byu-header-title,.root-wrapper .byu-header-primary .byu-header-title ::slotted(*){overflow:hidden;-ms-text-overflow:ellipsis;text-overflow:ellipsis;flex:1;font-family:Vitesse A,Vitesse B,Georgia,serif!important;font-size:22px;color:#fff!important;padding:10px 0}.root-wrapper .byu-header-primary .byu-header-title ::slotted(*) a,.root-wrapper .byu-header-primary .byu-header-title a{color:#fff!important}.root-wrapper .byu-header-primary .byu-header-user button{background-color:transparent;position:relative}.root-wrapper .byu-header-primary .byu-header-user button .icon{width:20px;height:20px;font-size:20px;vertical-align:middle}.root-wrapper .byu-header-primary .byu-header-user button .label{font-family:Gotham A,Gotham B,Helvetica,sans-serif;font-weight:500;font-size:13px;text-transform:uppercase}.root-wrapper .byu-header-primary .byu-header-search #search-input{font-family:Gotham A,Gotham B,Helvetica,sans-serif;font-weight:500;font-size:13px;color:#002e5d}.root-wrapper .byu-header-primary .byu-header-search #search-input::-webkit-input-placeholder{color:#c5c5c5;opacity:1}.root-wrapper .byu-header-primary .byu-header-search #search-input::-ms-input-placeholder{color:#c5c5c5;opacity:1}.root-wrapper .byu-header-primary .byu-header-search #search-input::-moz-placeholder{color:#c5c5c5;opacity:1}.root-wrapper .byu-header-primary .byu-logo{height:30px}.root-wrapper #mobileMenu{overflow:hidden}:host(:not([mobile-view])) .byu-header-primary>*,:host(:not([mobile-view])) .byu-header-secondary>*{margin-right:16px}:host(:not([mobile-view])) .root-wrapper{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:center}:host(:not([mobile-view])) .root-wrapper.no-nav{height:48px}:host(:not([mobile-view])) .root-wrapper .nav-expand{display:none}:host(:not([mobile-view])) .root-wrapper .byu-header-secondary{background-color:#002e5d;color:#fff;height:55px}:host(:not([mobile-view])) .root-wrapper .byu-header-secondary,:host(:not([mobile-view])) .root-wrapper .byu-header-secondary .byu-header-search{display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:center}:host(:not([mobile-view])) .root-wrapper .byu-header-secondary .byu-header-search input{border:1px solid #002e5d;border-right:none;height:20px;padding:4px 6px;flex:1;width:217px;box-sizing:content-box}:host(:not([mobile-view])) .root-wrapper .byu-header-secondary .byu-header-search button{height:28px;width:30px;text-align:center}:host(:not([mobile-view])) .root-wrapper .byu-header-secondary .byu-header-menu-button{display:none}", ""]);
 
 // exports
 
@@ -1012,7 +1057,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ":host{display:block;width:100%;height:auto;background:#fff;opacity:.88;border-bottom:1px solid #ccc}.outer-nav{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;justify-content:flex-start;padding:0}.inner-nav{width:100%;display:table}.inner-nav ::slotted(*){display:table;width:16.66%}.extra-links,.inner-nav ::slotted(*){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:400!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;color:#002e5d!important;height:35px!important;display:table-cell;vertical-align:middle!important;text-align:center!important;padding:0 6px!important}:host(:not(.mobile-view)) .extra-links:hover,:host(:not(.mobile-view)) .inner-nav ::slotted(:hover){background-color:#c5c5c5!important}:host(:not(.mobile-view)) .inner-nav ::slotted(.selected){background:#e6e6e6!important}.extra-links{display:none;cursor:pointer}.extra-links .extra-links-dropdown{display:none;position:absolute;background-color:#fff;z-index:10;min-width:115px;margin-top:10px}.extra-links .extra-links-dropdown ul{list-style-type:none;padding:0}.extra-links:hover .extra-links-dropdown,:host([has-extra-links]) .extra-links,:host([has-extra-links]) .extra-links .extra-links-dropdown{display:block}:host(.mobile-view) .outer-nav{flex-direction:column}:host(.mobile-view) .inner-nav{display:block}:host(.mobile-view) #slot{display:flex;flex-direction:column}:host(.mobile-view) .inner-nav ::slotted(*){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:400!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;color:#002e5d!important;height:35px!important;display:table-cell;vertical-align:middle!important;text-align:center!important;padding:0 6px!important;display:block;width:100%;box-sizing:border-box;padding:18px 33px!important;line-height:12px;text-align:left!important;height:auto!important}", ""]);
+exports.push([module.i, ":host{display:block;width:100%;height:auto;background:#fff;border-bottom:1px solid #ccc}:host(.transparent){opacity:.88}.outer-nav{display:flex;flex-direction:row;flex-wrap:nowrap;align-items:center;justify-content:flex-start;padding:0;height:35px;position:relative}.inner-nav ::slotted(*){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:500!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;color:#002e5d!important;height:35px!important;display:inline-block;box-sizing:border-box;text-align:center!important;padding:0 6px!important;line-height:35px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;max-width:200px}.inner-nav ::slotted(*):hover{background:#c5c5c5!important}.inner-nav ::slotted(*).selected{background:#e5e5e5!important}.inner-nav ::slotted(*).long-link{max-width:300px;flex:2;padding:0 12px!important}.inner-nav ::slotted(*).extra-long-link{max-width:400px;flex:3;padding:0 12px!important}.inner-nav ::slotted(:hover){background:#c5c5c5!important}.inner-nav ::slotted(.selected){background:#e5e5e5!important}.inner-nav ::slotted(.long-link){max-width:300px;flex:2;padding:0 12px!important}.inner-nav ::slotted(.extra-long-link){max-width:400px;flex:3;padding:0 12px!important}.byu-menu-more-menu{display:none;position:relative;height:35px;width:16.66%}.byu-menu-more-menu .byu-menu-more{text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:500!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;color:#002e5d!important;height:35px!important;display:inline-block;box-sizing:border-box;text-align:center!important;padding:0 6px!important;line-height:35px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;position:relative;flex:1;max-width:200px;display:block}.byu-menu-more-menu .byu-menu-more:hover{background:#c5c5c5!important}.byu-menu-more-menu .byu-menu-more.selected{background:#e5e5e5!important}.byu-menu-more-menu .byu-menu-more.long-link{max-width:300px;flex:2;padding:0 12px!important}.byu-menu-more-menu .byu-menu-more.extra-long-link{max-width:400px;flex:3;padding:0 12px!important}.byu-menu-more-menu .byu-menu-more svg{fill:#002e5d}.byu-menu-more-menu .byu-menu-more-items{display:none;position:absolute;top:35px;left:0;right:0;z-index:2;background:#fff;box-shadow:0 0 2px 0 rgba(0,0,0,.75)}.byu-menu-more-menu .byu-menu-more-items .byu-menu-more-items ::slotted(*){width:100%;text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:500!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;color:#002e5d!important;height:35px!important;display:inline-block;box-sizing:border-box;text-align:center!important;padding:0 6px!important;line-height:35px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;text-align:left!important}.byu-menu-more-menu .byu-menu-more-items .byu-menu-more-items ::slotted(*):hover{background:#c5c5c5!important}.byu-menu-more-menu .byu-menu-more-items .byu-menu-more-items ::slotted(*).selected{background:#e5e5e5!important}.byu-menu-more-menu .byu-menu-more-items .byu-menu-more-items ::slotted(*).long-link{max-width:300px;flex:2;padding:0 12px!important}.byu-menu-more-menu .byu-menu-more-items .byu-menu-more-items ::slotted(*).extra-long-link{max-width:400px;flex:3;padding:0 12px!important}.byu-menu-more-visible .byu-menu-more-menu{display:block}.byu-menu-more-visible .byu-menu-more-menu.byu-menu-more-expanded{background:#e5e5e5;box-shadow:0 0 2px 0 rgba(0,0,0,.75)}.byu-menu-more-visible .byu-menu-more-menu.byu-menu-more-expanded .byu-menu-more-items{display:block}.byu-menu-more-visible .byu-menu-more-menu.byu-menu-more-expanded .byu-menu-fixed-overlay{position:fixed;top:0;bottom:0;left:0;right:0;z-index:1}:host(.mobile-view) .outer-nav{display:block;height:auto}:host(.mobile-view) .byu-menu-more{display:none}:host(.mobile-view) ::slotted(*){display:block!important;text-align:left!important;padding:15px 30px!important;height:auto!important;width:100%;position:static;box-sizing:border-box;max-width:100%}:host(.mobile-view) .byu-menu-more-menu{display:block;width:100%;box-shadow:none;position:static;height:auto;max-width:100%}:host(.mobile-view) .byu-menu-more-menu .byu-menu-more-items{display:block;box-shadow:none;padding:0}:host(.mobile-view) .byu-menu-more-menu .byu-menu-more-items ::slotted(*){display:block!important;text-align:left!important;padding:15px 30px!important;height:auto!important;width:100%;position:static;box-sizing:border-box}:host(.mobile-view) .byu-menu-more-menu.byu-menu-more-expanded{box-shadow:none}:host(.mobile-view) .byu-menu-more-menu.byu-menu-more-expanded .byu-menu-fixed-overlay{display:none!important}:host(.mobile-view) .byu-menu-more-items{position:static}", ""]);
 
 // exports
 
@@ -1026,7 +1071,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ":host{display:inline-block}#search-icon{width:1em;height:1em}button{background-color:var(--byu-search-color,#767676);border:1px solid var(--byu-search-color,#767676);color:#fff;padding-left:10px;padding-right:10px}#search-form{display:flex;align-items:stretch;align-content:center}#search-form #search-container{flex:1}#search-container ::slotted(input),#search-form #search-container input{padding:5px 10px;border:1px solid var(--byu-search-color,#767676);border-right:none}:host(.mobile-view){width:100%;height:35px}:host(.mobile-view) #search-container ::slotted(input),:host(.mobile-view) #search-form #search-container input{padding:5px 10px;border:1px solid var(--byu-search-color,#767676);border-right:none;width:100%;height:35px}", ""]);
+exports.push([module.i, ":host{display:inline-block}#search-icon{width:1em;height:1em}button{background-color:var(--byu-search-color,#767676);border:1px solid var(--byu-search-color,#767676);color:#fff;justify-content:center;align-items:center}button,form{display:flex}form{align-items:stretch;align-content:center}form #search-container{flex:1}#search-container ::slotted(input),#search-form #search-container input{padding:5px 10px;border:1px solid var(--byu-search-color,#767676);border-right:none}:host(.mobile-view){width:100%;height:35px}:host(.mobile-view) #search-container ::slotted(input),:host(.mobile-view) #search-form #search-container input{padding:5px 10px;border:1px solid var(--byu-search-color,#767676);border-right:none;width:100%;height:35px}", ""]);
 
 // exports
 
@@ -1054,7 +1099,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, "img{height:20px;width:20px;margin:7px}.slot-wrapper ::slotted(*){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:400!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;cursor:auto!important}.has-user,.no-user{display:flex;flex-direction:row;align-items:center}:host(:not([mobile-view])){color:#fff}:host(:not([mobile-view])) .mobile{display:none}:host(:not([mobile-view])) img{margin:7px}:host([mobile-view]){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:400!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;color:#002e5d!important;height:35px!important;display:table-cell;vertical-align:middle!important;text-align:center!important;padding:0 6px!important;display:block;width:100%;box-sizing:border-box;padding:18px 33px!important;line-height:12px;text-align:left!important;height:auto!important;padding-left:0!important;border-bottom:1px solid #c5c5c5}:host([mobile-view]) .not-mobile{display:none}:host([mobile-view]) .has-user .name{order:2;flex:1}:host([mobile-view]) .has-user img{order:1;margin:7px}:host([mobile-view]) .has-user .logout{order:3}:host([mobile-view]) .slot-wrapper ::slotted(*){color:#002e5d!important}:host(:not([has-user])) .has-user,:host([has-user]) .no-user{display:none}", ""]);
+exports.push([module.i, "img{height:20px;width:20px;margin:5px}.slot-wrapper ::slotted(*){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:500!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;cursor:auto!important}.has-user,.no-user{display:flex;flex-direction:row;align-items:center}:host(:not([mobile-view])){color:#fff}:host(:not([mobile-view])) .mobile{display:none}:host(:not([mobile-view])) .slot-wrapper ::slotted(a):hover{text-decoration:underline}:host(:not([mobile-view])) .has-user ::slotted(*){color:#c3ddf9;text-transform:capitalize!important;width:130px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}:host(:not([mobile-view])) img{margin:7px}:host([mobile-view]){text-decoration:none!important;font-size:13px!important;font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-weight:500!important;text-transform:uppercase!important;color:#fff!important;cursor:pointer!important;color:#002e5d!important;height:35px!important;display:inline-block;text-align:center!important;padding:0 6px!important;line-height:35px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:block;box-sizing:border-box;padding:18px 33px!important;line-height:12px;text-align:left!important;height:auto!important;padding-left:0!important;border-bottom:1px solid #c5c5c5}:host([mobile-view]):hover{background:#c5c5c5!important}:host([mobile-view]).selected{background:#e5e5e5!important}:host([mobile-view]).long-link{max-width:300px;flex:2;padding:0 12px!important}:host([mobile-view]).extra-long-link{max-width:400px;flex:3;padding:0 12px!important}:host([mobile-view]) .not-mobile{display:none}:host([mobile-view]) .has-user .name{order:2;flex:1}:host([mobile-view]) .has-user img{order:1;margin:7px}:host([mobile-view]) .has-user .logout{order:3}:host([mobile-view]) .slot-wrapper ::slotted(*){color:#002e5d!important}:host(:not([has-user])) .has-user,:host([has-user]) .no-user{display:none}", ""]);
 
 // exports
 
@@ -1224,7 +1269,7 @@ module.exports = function anonymous(locals, escapeFn, include, rethrow) {
     __append(__webpack_require__(14));
     __append('</style><div id="header" class="root-wrapper"><div class="byu-header-primary">\n<img class="byu-logo" alt="BYU" src="');
     __append(__webpack_require__(31));
-    __append('"><div class="byu-header-title">\n<slot id="title" name="title"></slot>\n</div>\n');
+    __append('"><div class="byu-header-title">\n<slot id="site-title" name="site-title"></slot>\n</div>\n');
     if (locals.mobile) {
         __append('<!--<button type="button" class="mobile-menu-button" aria-label="Open or close menu">-->\n<!--<img style="width: 1em; height: 1em;" src="');
         __append(__webpack_require__(32));
@@ -1234,7 +1279,7 @@ module.exports = function anonymous(locals, escapeFn, include, rethrow) {
     if (!locals.mobile) {
         __append('<div class="byu-header-actions">\n<slot id="actions" name="actions"></slot>\n</div>\n<div class="byu-header-user">\n<slot id="user" name="user"></slot>\n</div>\n');
     }
-    __append('<div class="byu-header-search">\n<slot id="search" name="search"></slot>\n</div></div>');
+    __append('<div class="byu-header-search">\n<slot id="search" name="search"></slot>\n</div>\n</div>');
     if (locals.mobile) {
         __append('<div id="mobileMenu">\n<slot id="signin" name="user"></slot>\n<slot id="navbarMenu" name="nav"></slot>\n<div class="byu-header-actions">\n<slot id="actions" name="actions"></slot>\n</div>\n</div>\n');
     } else {
@@ -1260,13 +1305,13 @@ module.exports = "<style>" + __webpack_require__(12) + "</style> <h2 class=\"hea
 /* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__(13) + "</style> <div class=\"secondary-footer\"> <slot id=\"slot\"> </slot> </div> <div class=\"blue-footer\"> <div class=\"inner-wrapper\"> <a href=\"https://home.byu.edu/home/\" target=\"_blank\"><img src=\"" + __webpack_require__(30) + "\" alt=\"Brigham Young University\" class=\"university-logo\"></a> <div class=\"copyright-contact\">&copy; <span id=\"currentYear\"></span> All Rights Reserved | Provo, UT 84602, USA | 801.422.4636</div> </div> </div>";
+module.exports = "<style>" + __webpack_require__(13) + "</style> <div class=\"secondary-footer\"> <slot id=\"slot\"> </slot> </div> <div class=\"blue-footer\"> <div class=\"inner-wrapper\"> <a href=\"https://home.byu.edu/home/\" target=\"_blank\"><img src=\"" + __webpack_require__(30) + "\" alt=\"Brigham Young University\" class=\"university-logo\"></a> <div class=\"copyright-contact\">&copy; <span id=\"currentYear\"></span> All Rights Reserved | Provo, UT 84602, USA | <a href=\"tel:18014224636\">801.422.4636</a></div> </div> </div>";
 
 /***/ }),
 /* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__(15) + "</style> <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cloud.typography.com/75214/6517752/css/fonts.css\" media=\"all\"> <nav class=\"outer-nav\"> <div class=\"inner-nav\"> <slot id=\"slot\"></slot> <div class=\"extra-links\" id=\"extraLinks\"> More <div class=\"extra-links-dropdown\"> <ul id=\"extraLinksDropdown\"></ul> </div> </div> </div> </nav> <div id=\"stylePlaceHolder\"></div>";
+module.exports = "<style>" + __webpack_require__(15) + "</style> <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cloud.typography.com/75214/6517752/css/fonts.css\" media=\"all\"> <nav class=\"outer-nav\"> <slot class=\"byu-menu-items\"></slot> <div class=\"byu-menu-more-menu\"> <a href=\"javascript: void 0\" class=\"byu-menu-more\"> More <svg width=\"13\" height=\"13\" viewBox=\"0 0 1792 1792\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M1683 808l-742 741q-19 19-45 19t-45-19l-742-741q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z\"/></svg> </a> <div class=\"byu-menu-more-items\"> <slot name=\"more\"></slot> </div> </div> </nav>";
 
 /***/ }),
 /* 27 */
