@@ -70,7 +70,7 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__ (1) + "</style>\n<!-- Use the id \"title\" for title -->\n<slot id=\"card-content\">\n\n</slot>\n\n\n\n\n\n\n\n";
+module.exports = "<style>" + __webpack_require__ (1) + "</style> <slot id=\"card-content\"> </slot>";
 
 /***/ }),
 /* 1 */
