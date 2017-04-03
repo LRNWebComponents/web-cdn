@@ -422,7 +422,7 @@ byu-search:not(.byu-component-rendered):after {
   width: 35px;
   float: right; }
 
-#search-form:not(.byu-component-rendered) {
+byu-search:not(.byu-component-rendered) > * {
   display: none; }
 
 /* --- Color variable names are all lower case. Other variables are camel-case --- */
