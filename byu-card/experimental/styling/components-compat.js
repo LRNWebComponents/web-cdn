@@ -113,7 +113,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 		/******/__webpack_require__.p = "";
 		/******/
 		/******/ // Load entry module and return exports
-		/******/return __webpack_require__(__webpack_require__.s = 3);
+		/******/return __webpack_require__(__webpack_require__.s = 1);
 		/******/
 	})(
 	/************************************************************************/
@@ -121,14 +121,42 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 	/* 0 */
 	/***/function (module, exports, __webpack_require__) {
 
-		module.exports = "<style>" + __webpack_require__(1) + "</style> <slot id=\"card-content\"> </slot>";
+		module.exports = "<style>" + __webpack_require__(2) + "</style> <slot id=\"card-content\"> </slot>";
 
 		/***/
 	},
 	/* 1 */
 	/***/function (module, exports, __webpack_require__) {
 
-		exports = module.exports = __webpack_require__(2)();
+		"use strict";
+
+		var template = __webpack_require__(0);
+
+		var ByuCard = function (_HTMLElement) {
+			_inherits(ByuCard, _HTMLElement);
+
+			function ByuCard() {
+				_classCallCheck(this, ByuCard);
+
+				var _this = _possibleConstructorReturn(this, (ByuCard.__proto__ || Object.getPrototypeOf(ByuCard)).call(this));
+
+				var shadowRoot = _this.attachShadow({ mode: 'open' });
+				shadowRoot.innerHTML = template;
+				return _this;
+			}
+
+			return ByuCard;
+		}(HTMLElement);
+
+		window.customElements.define('byu-card', ByuCard);
+		window.ByuCard = ByuCard;
+
+		/***/
+	},
+	/* 2 */
+	/***/function (module, exports, __webpack_require__) {
+
+		exports = module.exports = __webpack_require__(3)();
 		// imports
 
 
@@ -140,7 +168,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 		/***/
 	},
-	/* 2 */
+	/* 3 */
 	/***/function (module, exports) {
 
 		/*
@@ -191,34 +219,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 			};
 			return list;
 		};
-
-		/***/
-	},
-	/* 3 */
-	/***/function (module, exports, __webpack_require__) {
-
-		"use strict";
-
-		var template = __webpack_require__(0);
-
-		var ByuCard = function (_HTMLElement) {
-			_inherits(ByuCard, _HTMLElement);
-
-			function ByuCard() {
-				_classCallCheck(this, ByuCard);
-
-				var _this = _possibleConstructorReturn(this, (ByuCard.__proto__ || Object.getPrototypeOf(ByuCard)).call(this));
-
-				var shadowRoot = _this.attachShadow({ mode: 'open' });
-				shadowRoot.innerHTML = template;
-				return _this;
-			}
-
-			return ByuCard;
-		}(HTMLElement);
-
-		window.customElements.define('byu-card', ByuCard);
-		window.ByuCard = ByuCard;
 
 		/***/
 	}]);

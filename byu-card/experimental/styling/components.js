@@ -63,20 +63,42 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__ (1) + "</style> <slot id=\"card-content\"> </slot>";
+module.exports = "<style>" + __webpack_require__ (2) + "</style> <slot id=\"card-content\"> </slot>";
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)();
+"use strict";
+    
+    const template = __webpack_require__(0);
+    class ByuCard extends HTMLElement {
+
+        constructor() {
+            super();
+            let shadowRoot = this.attachShadow({mode: 'open'});
+            shadowRoot.innerHTML = template;
+		}
+
+    }
+
+    window.customElements.define('byu-card', ByuCard);
+    window.ByuCard = ByuCard;
+
+
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(3)();
 // imports
 
 
@@ -87,7 +109,7 @@ exports.push([module.i, "#card-content ::slotted(*){width:100%;padding:10px 15px
 
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports) {
 
 /*
@@ -140,28 +162,6 @@ module.exports = function() {
 	};
 	return list;
 };
-
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-    
-    const template = __webpack_require__(0);
-    class ByuCard extends HTMLElement {
-
-        constructor() {
-            super();
-            let shadowRoot = this.attachShadow({mode: 'open'});
-            shadowRoot.innerHTML = template;
-		}
-
-    }
-
-    window.customElements.define('byu-card', ByuCard);
-    window.ByuCard = ByuCard;
-
 
 
 /***/ })
