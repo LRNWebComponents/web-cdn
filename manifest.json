@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-04-03T21:39:15.408Z",
+  "$built": "2017-04-03T21:40:20.887Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1042,6 +1042,307 @@
                 "sha512": {
                   "base64": "PuXcfc1ltsO07WxT5hIA4kpkasZ/Qjm+D3Nh8VeoZtvOOJHAM+e6y5iX8T6Rkpzh+2TgP0AuCaG//TjIa7mBag==",
                   "hex": "3ee5dc7dcd65b6c3b4ed6c53e61200e24a646ac67f4239be0f7361f157a866dbce3891c033e7bacb9897f13e91929ce1fb64e03f402e09a1bffd38c86bb9816a"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "byu-user-info-fix",
+          "ref": "byu-user-info-fix",
+          "tarball_url": "https://api.github.com/repos/byuweb/2017-components/tarball/byu-user-info-fix",
+          "git_sha": "eeb024a2519a4b3a7ff9b2185ecede6a7d063436",
+          "link": "https://github.com/byuweb/2017-components/tree/byu-user-info-fix",
+          "last_updated": "2017-04-03T21:39:47+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "2017-core-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file",
+              "size": 19417,
+              "gzip_size": 2759,
+              "hashes": {
+                "sha256": {
+                  "base64": "B8Kr9p6At+9bgyXP1uKOoYxEi8MSk+6zsdl9RyTCABk=",
+                  "hex": "07c2abf69e80b7ef5b8325cfd6e28ea18c448bc31293eeb3b1d97d4724c20019"
+                },
+                "sha384": {
+                  "base64": "n48q+bfnsCZCdnhbzSsCaxP3vrDUdv8orzQqO1nFgthF9dCNNI1+VN0VLaqv/ZDA",
+                  "hex": "9f8f2af9b7e7b0264276785bcd2b026b13f7beb0d476ff28af342a3b59c582d845f5d08d348d7e54dd152daaaffd90c0"
+                },
+                "sha512": {
+                  "base64": "ukqVXaEq+B5u6vmKffrc0tHBZq9zI6VsV0o9S4OBqGU1x9WW5VDr3UEh8LgOuY/XzwLxfcqS9vteTmnTN/2cLg==",
+                  "hex": "ba4a955da12af81e6eeaf98a7dfadcd2d1c166af7323a56c574a3d4b8381a86535c7d596e550ebdd4121f0b80eb98fd7cf02f17dca92f6fb5e4e69d337fd9c2e"
+                }
+              }
+            },
+            "2017-core-components.css.map": {
+              "entrypoint": false,
+              "size": 51500,
+              "gzip_size": 10611,
+              "hashes": {
+                "sha256": {
+                  "base64": "Te0SHCHECYylpKBUDBeSwolT/fFSgHroTKbnHOJWd4c=",
+                  "hex": "4ded121c21c4098ca5a4a0540c1792c28953fdf152807ae84ca6e71ce2567787"
+                },
+                "sha384": {
+                  "base64": "x3DXY2JXEbcYEs+eztAzjz6oRoEFTgVtA5ENHxB04Df/gwrsRRYOYOdfC4sGUuvc",
+                  "hex": "c770d763625711b71812cf9eced0338f3ea84681054e056d03910d1f1074e037ff830aec45160e60e75f0b8b0652ebdc"
+                },
+                "sha512": {
+                  "base64": "G/CwsfB7gKGYnW1swAU6F9lFktf2Nd1bcj5vtC1sPNFg/wfWX3oKfMUKhN+lseiPAwTB69BYMD/g4ogq5SxCaw==",
+                  "hex": "1bf0b0b1f07b80a1989d6d6cc0053a17d94592d7f635dd5b723e6fb42d6c3cd160ff07d65f7a0a7cc50a84dfa5b1e88f0304c1ebd058303fe0e2882ae52c426b"
+                }
+              }
+            },
+            "2017-core-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle",
+              "size": 6558,
+              "gzip_size": 2487,
+              "hashes": {
+                "sha256": {
+                  "base64": "sDxJJyYWwzYaDb8cVoyoC+01uK9NqBSK7G98Xk2SzPQ=",
+                  "hex": "b03c49272616c3361a0dbf1c568ca80bed35b8af4da8148aec6f7c5e4d92ccf4"
+                },
+                "sha384": {
+                  "base64": "WIxe5LxY3sWWUduCwsVOKxzWGQGZg2egoLuj8rAeDG4fSi4fNk0aM02C8wZ6Bd6X",
+                  "hex": "588c5ee4bc58dec59651db82c2c54e2b1cd61901998367a0a0bba3f2b01e0c6e1f4a2e1f364d1a334d82f3067a05de97"
+                },
+                "sha512": {
+                  "base64": "phVS9cDouVsnGFSuEHRR5ZOhVVIbU3iC6FnP8FOUVB0xC5hOG2lBLrul4VhENdIY5JvYFPr/l5puiCMBkM6Phw==",
+                  "hex": "a61552f5c0e8b95b271854ae107451e593a155521b537882e859cff05394541d310b984e1b69412ebba5e1584435d218e49bd814faff979a6e88230190ce8f87"
+                }
+              }
+            },
+            "2017-core-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file",
+              "size": 8767,
+              "gzip_size": 2108,
+              "hashes": {
+                "sha256": {
+                  "base64": "Vapa6cUiJlfNSqRzZ0sybQQXt4KRYpVtQekhkV9F4DM=",
+                  "hex": "55aa5ae9c5222657cd4aa473674b326d0417b7829162956d41e921915f45e033"
+                },
+                "sha384": {
+                  "base64": "e/QNByPItIGCLuAHXAPvEC05EaYeoXcTo/Q3/jTNVCWFrBkFZUDIpy/ifiiui94u",
+                  "hex": "7bf40d0723c8b481822ee0075c03ef102d3911a61ea17713a3f437fe34cd542585ac19056540c8a72fe27e28ae8bde2e"
+                },
+                "sha512": {
+                  "base64": "uoZEMi7r41Vl+PyHMZgn8OB5xM8JLG+yeu+en9T73nKDCLcx3b/d6CRzuo8MwqAppFnWyB1xiuwWl54HlDCNtg==",
+                  "hex": "ba8644322eebe35565f8fc87319827f0e079c4cf092c6fb27aef9e9fd4fbde728308b731ddbfdde82473ba8f0cc2a029a459d6c81d718aec16979e0794308db6"
+                }
+              }
+            },
+            "2017-core-components.min.css.map": {
+              "entrypoint": false,
+              "size": 51504,
+              "gzip_size": 10615,
+              "hashes": {
+                "sha256": {
+                  "base64": "4e9gbS3O20pdkf4MGdXl/f+ycN74EJKMX4M/TyOCUh0=",
+                  "hex": "e1ef606d2dcedb4a5d91fe0c19d5e5fdffb270def810928c5f833f4f2382521d"
+                },
+                "sha384": {
+                  "base64": "eksonBr7AhugmmcYx8aacMHL6IevBLHoocOq/w+tV/1fSgiRN6fV5YphYAtqwFqY",
+                  "hex": "7a4b289c1afb021ba09a6718c7c69a70c1cbe887af04b1e8a1c3aaff0fad57fd5f4a089137a7d5e58a61600b6ac05a98"
+                },
+                "sha512": {
+                  "base64": "WArPWNtGMxShhCTLCiND9Ubn4KJZssivYNV85evVFvt+Kinl/+x6/AY3DPg/Y7fzWpqwIaqwa+w983YBro3Kuw==",
+                  "hex": "580acf58db463314a18424cb0a2343f546e7e0a259b2c8af60d57ce5ebd516fb7e2a29e5ffec7afc06370cf83f63b7f35a9ab021aab06bec3df37601ae8dcabb"
+                }
+              }
+            },
+            "2017-core-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle",
+              "size": 1877,
+              "gzip_size": 908,
+              "hashes": {
+                "sha256": {
+                  "base64": "pkqUV/W36mGNDx7DjTc61dcE53jDtGA1xhh7NKkGpQA=",
+                  "hex": "a64a9457f5b7ea618d0f1ec38d373ad5d704e778c3b46035c6187b34a906a500"
+                },
+                "sha384": {
+                  "base64": "y4EiR/Ec68HqQdF1L5E0bmX+S4BetOkI1rQYJ0Q3FRxVDHgZJC+d2fDX8oYNLofL",
+                  "hex": "cb812247f11cebc1ea41d1752f91346e65fe4b805eb4e908d6b418274437151c550c7819242f9dd9f0d7f2860d2e87cb"
+                },
+                "sha512": {
+                  "base64": "vkw4DI+X7GaxIGYhZxCFesBT8tMItyfbrHb0bjXzFfwjDV//g5vPqNnjB10so3cDHZ99KEAXXgIRWdwMw34AEA==",
+                  "hex": "be4c380c8f97ec66b12066216710857ac053f2d308b727dbac76f46e35f315fc230d5fff839bcfa8d9e3075d2ca377031d9f7d2840175e021159dc0cc37e0010"
+                }
+              }
+            },
+            "2017-core-components.min.js.map": {
+              "entrypoint": false,
+              "size": 9832,
+              "gzip_size": 3801,
+              "hashes": {
+                "sha256": {
+                  "base64": "JBzyex2s9Ad7mDaXVtwkU3TcJaCZTpbNYSQCLJYz8n0=",
+                  "hex": "241cf27b1dacf4077b98369756dc245374dc25a0994e96cd6124022c9633f27d"
+                },
+                "sha384": {
+                  "base64": "ifo+VC18Q/iAx/wvXelSNNUmliwZyDZv3eMIJ89hmemk9KK8coZcIlNGg9u8vdW1",
+                  "hex": "89fa3e542d7c43f880c7fc2f5de95234d526962c19c8366fdde30827cf6199e9a4f4a2bc72865c22534683dbbcbdd5b5"
+                },
+                "sha512": {
+                  "base64": "wksKD9ILUyogf7Ia/WoyGBKEGbfYZNT0Om0SYOpJgvRXbETllOUzAUD3xENoFTZBJ8DGVzd4CG3m0UCD9LMuYQ==",
+                  "hex": "c24b0a0fd20b532a207fb21afd6a3218128419b7d864d4f43a6d1260ea4982f4576c44e594e5330140f7c4436815364127c0c6573778086de6d14083f4b32e61"
+                }
+              }
+            },
+            "components-compat.js": {
+              "entrypoint": false,
+              "size": 100942,
+              "gzip_size": 19585,
+              "hashes": {
+                "sha256": {
+                  "base64": "Ez/y+vuX638KOb4hp/Nq3rYCdCndcAYL1BNXnCf0K4A=",
+                  "hex": "133ff2fafb97eb7f0a39be21a7f36adeb6027429dd70060bd413579c27f42b80"
+                },
+                "sha384": {
+                  "base64": "rAepORLrUkYZzYEMxLVMyRWyB8BXmWU9K7R6gPk7iw5fAE4mN0D/Kek6WDNtxkGY",
+                  "hex": "ac07a93912eb524619cd810cc4b54cc915b207c05799653d2bb47a80f93b8b0e5f004e263740ff29e93a58336dc64198"
+                },
+                "sha512": {
+                  "base64": "2wv90Y/F1i6rrTW4yC/2PKpLZM3UZhyTeLB+2iYpN3wG/er5KixL/U0puCLxZJbHsUZtb4GTShmXyI4mQQ3D6A==",
+                  "hex": "db0bfdd18fc5d62eabad35b8c82ff63caa4b64cdd4661c9378b07eda2629377c06fdeaf92a2c4bfd4d29b822f16496c7b1466d6f81934a1997c88e26410dc3e8"
+                }
+              }
+            },
+            "components-compat.js.map": {
+              "entrypoint": false,
+              "size": 206764,
+              "gzip_size": 47125,
+              "hashes": {
+                "sha256": {
+                  "base64": "Ht3swPuFb9RvaCTE8SVsIrMNnA13M3GE/ZibyFQF5zk=",
+                  "hex": "1eddecc0fb856fd46f6824c4f1256c22b30d9c0d77337184fd989bc85405e739"
+                },
+                "sha384": {
+                  "base64": "7aQocWjxEJOXvxGZ1TYnZJd4q27E4NEC0+2e3XuVeKKsTkfyAFJmvxA0yRK3+2mI",
+                  "hex": "eda4287168f1109397bf1199d53627649778ab6ec4e0d102d3ed9edd7b9578a2ac4e47f2005266bf1034c912b7fb6988"
+                },
+                "sha512": {
+                  "base64": "Ll0vsJ4JVCD+VlsHDliLMKDlKR6bomCr427HLTChIHR1gX+p9WA4VO+rOqbIz+OVkoXTwnQoCkBU9Uavwbfe3A==",
+                  "hex": "2e5d2fb09e095420fe565b070e588b30a0e5291e9ba260abe36ec72d30a1207475817fa9f5603854efab3aa6c8cfe3959285d3c274280a4054f546afc1b7dedc"
+                }
+              }
+            },
+            "components-compat.min.js": {
+              "entrypoint": false,
+              "size": 53791,
+              "gzip_size": 13582,
+              "hashes": {
+                "sha256": {
+                  "base64": "8GAdfWKA9PLIVSpWAx+8Fazycjcfu+GedR4VUlCj1j4=",
+                  "hex": "f0601d7d6280f4f2c8552a56031fbc15acf272371fbbe19e751e155250a3d63e"
+                },
+                "sha384": {
+                  "base64": "P9a0dZzFb3vcFHY2zhuIUa7HXLGBLGEo8uT3M0NuaNmPmpj2lN7wbLtyx88cLi8l",
+                  "hex": "3fd6b4759cc56f7bdc147636ce1b8851aec75cb1812c6128f2e4f733436e68d98f9a98f694def06cbb72c7cf1c2e2f25"
+                },
+                "sha512": {
+                  "base64": "RnERWj+fxl9gte3DrHxb7EjU25+twlUgteq2u2vrVJ0YtI0P6i5d8VPjF88jF5iB/pxKTTeV7KHh944nNuRG7g==",
+                  "hex": "4671115a3f9fc65f60b5edc3ac7c5bec48d4db9fadc25520b5eab6bb6beb549d18b48d0fea2e5df153e317cf23179881fe9c4a4d3795eca1e1f78e2736e446ee"
+                }
+              }
+            },
+            "components-compat.min.js.map": {
+              "entrypoint": false,
+              "size": 307678,
+              "gzip_size": 67380,
+              "hashes": {
+                "sha256": {
+                  "base64": "qC9V8Cv5cLCcdkjyZkTpMaGD4CuPC9KQ3yoTSTmJcTA=",
+                  "hex": "a82f55f02bf970b09c7648f26644e931a183e02b8f0bd290df2a134939897130"
+                },
+                "sha384": {
+                  "base64": "FVGHBqGJy+8nL5/fVtkGllhSUToH7CfJZ75YRr95tW/LOcF8XxND2Yr8mSihyYIB",
+                  "hex": "15518706a189cbef272f9fdf56d906965852513a07ec27c967be5846bf79b56fcb39c17c5f1343d98afc9928a1c98201"
+                },
+                "sha512": {
+                  "base64": "kUt2ACbmstK9g9MV24NZe8T/elEDjsaHPVqD9LYhhbheKxEFEOn7we4JNKLaRH9ybxqIbS2AnSlipF3Jzzr00Q==",
+                  "hex": "914b760026e6b2d2bd83d315db83597bc4ff7a51038ec6873d5a83f4b62185b85e2b110510e9fbc1ee0934a2da447f726f1a886d2d809d2962a45dc9cf3af4d1"
+                }
+              }
+            },
+            "components.js": {
+              "entrypoint": false,
+              "size": 80350,
+              "gzip_size": 17972,
+              "hashes": {
+                "sha256": {
+                  "base64": "Y82ePf1qokqJaU9brvbZf1V7QtGcGcD3lfUDXSficB4=",
+                  "hex": "63cd9e3dfd6aa24a89694f5baef6d97f557b42d19c19c0f795f5035d27e2701e"
+                },
+                "sha384": {
+                  "base64": "/KlaCAn5u5xV/TpBzN5Jx3CkBhxqxndQn79yPw6ptpxGGypLvyLSzOhlu5zv1HTM",
+                  "hex": "fca95a0809f9bb9c55fd3a41ccde49c770a4061c6ac677509fbf723f0ea9b69c461b2a4bbf22d2cce865bb9cefd474cc"
+                },
+                "sha512": {
+                  "base64": "C0Q0K9KYehptLGqXjYNoxXFmNi+bIZS+ntuaUz+N7XfK4AOsIPeJ98raaUUaxfDxvfbR4rgHrGw3nBRfIVLMEw==",
+                  "hex": "0b44342bd2987a1a6d2c6a978d8368c57166362f9b2194be9edb9a533f8ded77cae003ac20f789f7cada69451ac5f0f1bdf6d1e2b807ac6c379c145f2152cc13"
+                }
+              }
+            },
+            "components.js.map": {
+              "entrypoint": false,
+              "size": 95488,
+              "gzip_size": 20533,
+              "hashes": {
+                "sha256": {
+                  "base64": "6JRFIPzrurDfYRU4UVIOvlWHpW/kb8bYxkNR941LBnw=",
+                  "hex": "e8944520fcebbab0df61153851520ebe5587a56fe46fc6d8c64351f78d4b067c"
+                },
+                "sha384": {
+                  "base64": "u/PtRf8fMze2BlP5+AiRQJBlKJHBX/URvubQVQ4QEbg4g5Mg5uwWei470ubTr5QE",
+                  "hex": "bbf3ed45ff1f3337b60653f9f808914090652891c15ff511bee6d0550e1011b838839320e6ec167a2e3bd2e6d3af9404"
+                },
+                "sha512": {
+                  "base64": "B+XY1YCRgc/qRSiI3yo/FsAzI0udZY0uUcV24VJJQHC2+FtWR7kxM4bv4qxufOuOncmlfCh6KzrjoFy0V0vN+A==",
+                  "hex": "07e5d8d5809181cfea452888df2a3f16c033234b9d658d2e51c576e152494070b6f85b5647b9313386efe2ac6e7ceb8e9dc9a57c287a2b3ae3a05cb4574bcdf8"
+                }
+              }
+            },
+            "components.min.js": {
+              "entrypoint": false,
+              "size": 49873,
+              "gzip_size": 12821,
+              "hashes": {
+                "sha256": {
+                  "base64": "jO1zimyE20776IZq5QxUUmaV0ic+clWWzPeFEcNvVww=",
+                  "hex": "8ced738a6c84db4efbe8866ae50c54526695d2273e725596ccf78511c36f570c"
+                },
+                "sha384": {
+                  "base64": "p4JRYdVUbHuf5lrxj8eucbJmupQUJM5/WfUcwzhg+/xpXpFvUyHb2+aTVrUzoJap",
+                  "hex": "a7825161d5546c7b9fe65af18fc7ae71b266ba941424ce7f59f51cc33860fbfc695e916f5321dbdbe69356b533a096a9"
+                },
+                "sha512": {
+                  "base64": "yXlGOekfDQJ7/EhKF3CCcqfWahuGaOhhFYLaq4b0vFM9HrzSzO0j8MbPJGl1hV9ZD+uyKcUkZf0Cv3q1diU7ig==",
+                  "hex": "c9794639e91f0d027bfc484a17708272a7d66a1b8668e8611582daab86f4bc533d1ebcd2cced23f0c6cf246975855f590febb229c52465fd02bf7ab576253b8a"
+                }
+              }
+            },
+            "components.min.js.map": {
+              "entrypoint": false,
+              "size": 195953,
+              "gzip_size": 44904,
+              "hashes": {
+                "sha256": {
+                  "base64": "YG4sjnSUboX8MlxJGHS88UZjPNKM3xHgNcy4uJhNhbA=",
+                  "hex": "606e2c8e74946e85fc325c491874bcf146633cd28cdf11e035ccb8b8984d85b0"
+                },
+                "sha384": {
+                  "base64": "QrII6hJ3tGq90SKqmfkOp8EL8ENmKmrrvNz+FMZk94U9XoiDds05k5rTvpkNqNiU",
+                  "hex": "42b208ea1277b46abdd122aa99f90ea7c10bf043662a6aebbcdcfe14c664f7853d5e888376cd39939ad3be990da8d894"
+                },
+                "sha512": {
+                  "base64": "aglJU3E2TG6NsVOen0pm8wvQRatQ/L2805gRn6W2oSHRRhdR02qXZoPKsd9h+H9gMV5dwGo39d8kkNs9+ukquQ==",
+                  "hex": "6a09495371364c6e8db1539e9f4a66f30bd045ab50fcbdbcd398119fa5b6a121d1461751d36a976683cab1df61f87f60315e5dc06a37f5df2490db3dfae92ab9"
                 }
               }
             }
