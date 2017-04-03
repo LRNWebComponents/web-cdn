@@ -422,6 +422,12 @@ byu-search:not(.byu-component-rendered):after {
   width: 35px;
   float: right; }
 
+#search-form:not(.byu-component-rendered) #search-container #search-button {
+  display: none; }
+
+#search-form:not(.byu-component-rendered) #search-container #search ::slotted(*) {
+  display: none; }
+
 /* --- Color variable names are all lower case. Other variables are camel-case --- */
 byu-social-media-links:not(.byu-component-rendered) > a {
   text-decoration: none !important; }
