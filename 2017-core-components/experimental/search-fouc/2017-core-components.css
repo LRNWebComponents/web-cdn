@@ -423,7 +423,7 @@ byu-search:not(.byu-component-rendered):after {
   float: right; }
 
 byu-search:not(.byu-component-rendered) > [slot="search"] {
-  display: none; }
+  display: none !important; }
 
 /* --- Color variable names are all lower case. Other variables are camel-case --- */
 byu-social-media-links:not(.byu-component-rendered) > a {
