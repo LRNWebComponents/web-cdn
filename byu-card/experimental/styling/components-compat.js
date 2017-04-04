@@ -277,7 +277,7 @@
 
 
         // module
-        exports.push([module.i, ":host{display:inline-block;background-color:#fff;padding:0;-moz-box-shadow:0 8px 12px rgba(0,0,0,.2);-webkit-box-shadow:0 8px 12px rgba(0,0,0,.2);box-shadow:0 8px 12px rgba(0,0,0,.2);vertical-align:top;min-width:250px;width:30%;max-width:700px;margin-bottom:20px}:host(:hover){-moz-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);-webkit-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);box-shadow:0 10px 18px 0 rgba(0,0,0,.3)}#card-content ::slotted(*){width:100%;padding:20px;color:#444}#card-content ::slotted(ul){padding-left:40px}#card-content ::slotted(img){padding:0}", ""]);
+        exports.push([module.i, ":host{display:inline-block;background-color:#fff;-moz-box-shadow:0 8px 12px rgba(0,0,0,.2);-webkit-box-shadow:0 8px 12px rgba(0,0,0,.2);box-shadow:0 8px 12px rgba(0,0,0,.2);vertical-align:top;min-width:250px;width:30%;max-width:700px;margin-bottom:20px;padding-top:20px}:host(:hover){-moz-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);-webkit-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);box-shadow:0 10px 18px 0 rgba(0,0,0,.3)}#card-content ::slotted(*){width:100%;padding:0 20px;color:#444}#card-content ::slotted(ul){padding-left:40px}#card-content ::slotted(img){padding:0;padding-top:20px}", ""]);
 
         // exports
 
