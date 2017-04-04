@@ -464,6 +464,9 @@ byu-user-info:not(.byu-component-rendered) > * {
   text-transform: uppercase !important;
   color: white !important; }
 
+byu-user-info:not(.byu-component-rendered) > [slot="login"] {
+  display: none; }
+
 /* NON MOBILE */
 byu-user-info:not(.byu-component-rendered):not([mobile-view]) {
   color: white; }
