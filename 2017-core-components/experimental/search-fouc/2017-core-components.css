@@ -422,8 +422,8 @@ byu-search:not(.byu-component-rendered):after {
   width: 35px;
   float: right; }
 
-byu-search:not(.byu-component-rendered) > [slot="search"] {
-  display: none !important; }
+byu-search:not(.byu-component-rendered) * [slot="search"] {
+  display: none; }
 
 /* --- Color variable names are all lower case. Other variables are camel-case --- */
 byu-social-media-links:not(.byu-component-rendered) > a {
