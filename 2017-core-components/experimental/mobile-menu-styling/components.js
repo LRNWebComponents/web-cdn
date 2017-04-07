@@ -264,13 +264,13 @@ class BYUHeader extends HTMLElement {
             mobile: this.inMobileView
         };
         if (!__WEBPACK_IMPORTED_MODULE_1_deep_equal__(state, this._renderState)) {
-            __WEBPACK_IMPORTED_MODULE_2_byu_web_component_utils__["applyTemplate"](this, 'byu-header', __WEBPACK_IMPORTED_MODULE_0__template_ejs_html__(state)), () => {
+            __WEBPACK_IMPORTED_MODULE_2_byu_web_component_utils__["applyTemplate"](this, 'byu-header', __WEBPACK_IMPORTED_MODULE_0__template_ejs_html__(state), () => {
                 this._renderState = state;
                 this._addSlotListeners();
                 this._notifyChildrenOfMobileState();
                 this._addButtonListeners();
                 this._checkIfMenuIsNeeded();
-            };
+            });
         }
     }
 
