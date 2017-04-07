@@ -363,13 +363,13 @@
                         mobile: this.inMobileView
                     };
                     if (!__WEBPACK_IMPORTED_MODULE_1_deep_equal__(state, this._renderState)) {
-                        __WEBPACK_IMPORTED_MODULE_2_byu_web_component_utils__["applyTemplate"](this, 'byu-header', __WEBPACK_IMPORTED_MODULE_0__template_ejs_html__(state), function () {
+                        __WEBPACK_IMPORTED_MODULE_2_byu_web_component_utils__["applyTemplate"](this, 'byu-header', __WEBPACK_IMPORTED_MODULE_0__template_ejs_html__(state)), function () {
                             _this6._renderState = state;
                             _this6._addSlotListeners();
                             _this6._notifyChildrenOfMobileState();
                             _this6._addButtonListeners();
                             _this6._checkIfMenuIsNeeded();
-                        });
+                        };
                     }
                 }
             }, {
