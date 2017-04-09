@@ -5271,7 +5271,9 @@ var PatchElement = function (internals) {
     var oldValue = Native.Element_getAttribute.call(this, name);
     Native.Element_setAttribute.call(this, name, newValue);
     newValue = Native.Element_getAttribute.call(this, name);
-    internals.attributeChangedCallback(this, name, oldValue, newValue, null);
+    if (oldValue !== newValue) {
+      internals.attributeChangedCallback(this, name, oldValue, newValue, null);
+    }
   });
 
   setPropertyUnchecked(Element.prototype, 'setAttributeNS',
@@ -5290,7 +5292,9 @@ var PatchElement = function (internals) {
     var oldValue = Native.Element_getAttributeNS.call(this, namespace, name);
     Native.Element_setAttributeNS.call(this, namespace, name, newValue);
     newValue = Native.Element_getAttributeNS.call(this, namespace, name);
-    internals.attributeChangedCallback(this, name, oldValue, newValue, namespace);
+    if (oldValue !== newValue) {
+      internals.attributeChangedCallback(this, name, oldValue, newValue, namespace);
+    }
   });
 
   setPropertyUnchecked(Element.prototype, 'removeAttribute',
@@ -7190,79 +7194,68 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
 var flush$1 = function flush() {};
 
-/**
- * @param {HTMLElement} element
- * @return {!Array<string>}
- */
-function getClasses(element) {
-  var classes = [];
-  if (element.classList) {
-    classes = Array.from(element.classList);
-  } else if (element instanceof window['SVGElement'] && element.hasAttribute('class')) {
-    classes = element.getAttribute('class').split(/\s+/);
-  }
-  return classes;
-}
+if (!nativeShadow) {
+  var elementNeedsScoping = function elementNeedsScoping(element) {
+    return element.classList && !element.classList.contains(StyleTransformer$1.SCOPE_NAME) ||
+    // note: necessary for IE11
+    element instanceof window['SVGElement'] && (!element.hasAttribute('class') || element.getAttribute('class').indexOf(StyleTransformer$1.SCOPE_NAME) < 0);
+  };
 
-/**
- * @param {HTMLElement} element
- * @return {string}
- */
-function getCurrentScope(element) {
-  var classes = getClasses(element);
-  var idx = classes.indexOf(StyleTransformer$1.SCOPE_NAME);
-  if (idx > -1) {
-    return classes[idx + 1];
-  }
-  return '';
-}
-
-/**
- * @param {Array<MutationRecord|null>|null} mxns
- */
-function handler(mxns) {
-  for (var x = 0; x < mxns.length; x++) {
-    var mxn = mxns[x];
-    if (mxn.target === document.documentElement || mxn.target === document.head) {
-      continue;
-    }
-    for (var i = 0; i < mxn.addedNodes.length; i++) {
-      var n = mxn.addedNodes[i];
-      if (n.nodeType !== Node.ELEMENT_NODE) {
+  /**
+   * @param {Array<MutationRecord|null>|null} mxns
+   */
+  var handler = function handler(mxns) {
+    for (var x = 0; x < mxns.length; x++) {
+      var mxn = mxns[x];
+      if (mxn.target === document.documentElement || mxn.target === document.head) {
         continue;
       }
-      n = /** @type {HTMLElement} */n; // eslint-disable-line no-self-assign
-      var root = n.getRootNode();
-      var currentScope = getCurrentScope(n);
-      // node was scoped, but now is in document
-      if (currentScope && root === n.ownerDocument) {
-        StyleTransformer$1.dom(n, currentScope, true);
-      } else if (root.nodeType === Node.DOCUMENT_FRAGMENT_NODE) {
-        var newScope = void 0;
-        var host = /** @type {ShadowRoot} */root.host;
-        // element may no longer be in a shadowroot
-        if (!host) {
-          continue;
+      for (var i = 0; i < mxn.addedNodes.length; i++) {
+        var n = mxn.addedNodes[i];
+        if (elementNeedsScoping(n)) {
+          var root = n.getRootNode();
+          if (root.nodeType === Node.DOCUMENT_FRAGMENT_NODE) {
+            // may no longer be in a shadowroot
+            var host = /** @type {ShadowRoot} */root.host;
+            if (host) {
+              var _getIsExtends = getIsExtends(host),
+                  scope = _getIsExtends.is;
+
+              StyleTransformer$1.dom(n, scope);
+            }
+          }
         }
-        newScope = getIsExtends(host).is;
-        if (currentScope === newScope) {
-          continue;
+      }
+      for (var _i = 0; _i < mxn.removedNodes.length; _i++) {
+        var _n = /** @type {HTMLElement} */mxn.removedNodes[_i];
+        if (_n.nodeType === Node.ELEMENT_NODE) {
+          var classes = undefined;
+          if (_n.classList) {
+            classes = Array.from(_n.classList);
+          } else if (_n.hasAttribute('class')) {
+            classes = _n.getAttribute('class').split(/\s+/);
+          }
+          if (classes !== undefined) {
+            // NOTE: relies on the scoping class always being adjacent to the
+            // SCOPE_NAME class.
+            var classIdx = classes.indexOf(StyleTransformer$1.SCOPE_NAME);
+            if (classIdx >= 0) {
+              var _scope = classes[classIdx + 1];
+              if (_scope) {
+                StyleTransformer$1.dom(_n, _scope, true);
+              }
+            }
+          }
         }
-        if (currentScope) {
-          StyleTransformer$1.dom(n, currentScope, true);
-        }
-        StyleTransformer$1.dom(n, newScope);
       }
     }
-  }
-}
+  };
 
-if (!nativeShadow) {
   var observer = new MutationObserver(handler);
   var start = function start(node) {
     observer.observe(node, { childList: true, subtree: true });
   };
-  var nativeCustomElements = window['customElements'] && !window['customElements']['polyfillWrapFlushCallback'];
+  var nativeCustomElements = window.customElements && !window['customElements']['flush'];
   // need to start immediately with native custom elements
   // TODO(dfreedm): with polyfilled HTMLImports and native custom elements
   // excessive mutations may be observed; this can be optimized via cooperation
@@ -7324,22 +7317,6 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 */
 
-/*
- * Utilities for handling invalidating apply-shim mixins for a given template.
- *
- * The invalidation strategy involves keeping track of the "current" version of a template's mixins, and updating that count when a mixin is invalidated.
- * The template
- */
-
-/** @const {string} */
-var CURRENT_VERSION = '_applyShimCurrentVersion';
-
-/** @const {string} */
-var NEXT_VERSION = '_applyShimNextVersion';
-
-/** @const {string} */
-var VALIDATING_VERSION = '_applyShimValidatingVersion';
-
 /**
  * @const {Promise<void>}
  */
@@ -7356,21 +7333,10 @@ function invalidate(elementName) {
 }
 
 /**
- * This function can be called multiple times to mark a template invalid
- * and signal that the style inside must be regenerated.
- *
- * Use `startValidatingTemplate` to begin an asynchronous validation cycle.
- * During that cycle, call `templateIsValidating` to see if the template must
- * be revalidated
  * @param {HTMLTemplateElement} template
  */
 function invalidateTemplate(template) {
-  // default the current version to 0
-  template[CURRENT_VERSION] = template[CURRENT_VERSION] || 0;
-  // ensure the "validating for" flag exists
-  template[VALIDATING_VERSION] = template[VALIDATING_VERSION] || 0;
-  // increment the next version
-  template[NEXT_VERSION] = (template[NEXT_VERSION] || 0) + 1;
+  template['_applyShimInvalid'] = true;
 }
 
 /**
@@ -7384,7 +7350,7 @@ function invalidateTemplate(template) {
  * @return {boolean}
  */
 function templateIsValid(template) {
-  return template[CURRENT_VERSION] === template[NEXT_VERSION];
+  return !template['_applyShimInvalid'];
 }
 
 /**
@@ -7394,13 +7360,11 @@ function templateIsValid(template) {
 
 
 /**
- * Returns true if the template is currently invalid and `startValidating` has been called since the last invalidation.
- * If false, the template must be validated.
  * @param {HTMLTemplateElement} template
  * @return {boolean}
  */
 function templateIsValidating(template) {
-  return !templateIsValid(template) && template[VALIDATING_VERSION] === template[NEXT_VERSION];
+  return template._validating;
 }
 
 /**
@@ -7412,21 +7376,13 @@ function templateIsValidating(template) {
 
 
 /**
- * Begin an asynchronous invalidation cycle.
- * This should be called after every validation of a template
- *
- * After one microtask, the template will be marked as valid until the next call to `invalidateTemplate`
  * @param {HTMLTemplateElement} template
  */
 function startValidatingTemplate(template) {
-  // remember that the current "next version" is the reason for this validation cycle
-  template[VALIDATING_VERSION] = template[NEXT_VERSION];
-  // however, there only needs to be one async task to clear the counters
   if (!template._validating) {
     template._validating = true;
     promise.then(function () {
-      // sync the current version to let future invalidations cause a refresh cycle
-      template[CURRENT_VERSION] = template[NEXT_VERSION];
+      template['_applyShimInvalid'] = false;
       template._validating = false;
     });
   }
@@ -7460,29 +7416,27 @@ var resolveFn = void 0;
  * @param {?function()} callback
  */
 function documentWait(callback) {
-  requestAnimationFrame(function () {
-    if (whenReady) {
-      whenReady(callback);
-    } else {
-      if (!readyPromise) {
-        readyPromise = new Promise(function (resolve) {
-          resolveFn = resolve;
-        });
-        if (document.readyState === 'complete') {
-          resolveFn();
-        } else {
-          document.addEventListener('readystatechange', function () {
-            if (document.readyState === 'complete') {
-              resolveFn();
-            }
-          });
-        }
-      }
-      readyPromise.then(function () {
-        callback && callback();
+  if (whenReady) {
+    whenReady(callback);
+  } else {
+    if (!readyPromise) {
+      readyPromise = new Promise(function (resolve) {
+        resolveFn = resolve;
       });
+      if (document.readyState === 'complete') {
+        resolveFn();
+      } else {
+        document.addEventListener('readystatechange', function () {
+          if (document.readyState === 'complete') {
+            resolveFn();
+          }
+        });
+      }
     }
-  });
+    readyPromise.then(function () {
+      callback && callback();
+    });
+  }
 }
 
 /**
@@ -7858,7 +7812,7 @@ var ScopingShim = function () {
     value: function _ensureApplyShim() {
       if (this._applyShim) {
         return;
-      } else if (window.ShadyCSS && window.ShadyCSS.ApplyShim) {
+      } else if (window.ShadyCSS.ApplyShim) {
         this._applyShim = window.ShadyCSS.ApplyShim;
         this._applyShim['invalidCallback'] = invalidate;
       } else {
@@ -7876,7 +7830,7 @@ var ScopingShim = function () {
 
       if (this._customStyleInterface) {
         return;
-      } else if (window.ShadyCSS && window.ShadyCSS.CustomStyleInterface) {
+      } else if (window.ShadyCSS.CustomStyleInterface) {
         this._customStyleInterface = /** @type {!CustomStyleInterfaceInterface} */window.ShadyCSS.CustomStyleInterface;
         /** @type {function(!HTMLStyleElement)} */
         this._customStyleInterface['transformCallback'] = function (style) {
@@ -8374,6 +8328,8 @@ if (CustomStyleInterface) {
 //------ shadydom ------
 //------ custom-elements ------
 //------ shadycss ------
+//------ post-polyfill ------
+// import '../bower_components/webcomponentsjs/src/post-polyfill.js'
 //------ unresolved styles ------
 
 }());
