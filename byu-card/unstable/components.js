@@ -63,31 +63,167 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__ (1) + "</style> <slot id=\"card-content\"> </slot>";
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_templating__ = __webpack_require__(3);
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "applyTemplate", function() { return __WEBPACK_IMPORTED_MODULE_0__lib_templating__["a"]; });
+/**
+ * Created by ThatJoeMoore on 2/14/17
+ */
+
+
+
+
+
+
 
 /***/ }),
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(2)();
+module.exports = "<style>" + __webpack_require__ (4) + "</style> <div id=\"card-content\"> <slot> </slot> </div>";
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+const util = __webpack_require__(0);
+const template = __webpack_require__(1);
+
+class ByuCard extends HTMLElement {
+
+    constructor() {
+        super();
+        this.attachShadow({mode: 'open'});
+    }
+
+    connectedCallback() {
+        util.applyTemplate(this, 'byu-card', template, () => {
+            // this._addSomeEventListenersOrSomething();
+            // this.shadowRoot.querySelector('#myId');
+        });
+    }
+}
+
+window.customElements.define('byu-card', ByuCard);
+window.ByuCard = ByuCard;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hash_sum__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hash_sum___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hash_sum__);
+/* harmony export (immutable) */ __webpack_exports__["a"] = applyTemplate;
+/*
+ *  @license
+ *    Copyright 2017 Brigham Young University
+ *
+ *    Licensed under the Apache License, Version 2.0 (the "License");
+ *    you may not use this file except in compliance with the License.
+ *    You may obtain a copy of the License at
+ *
+ *        http://www.apache.org/licenses/LICENSE-2.0
+ *
+ *    Unless required by applicable law or agreed to in writing, software
+ *    distributed under the License is distributed on an "AS IS" BASIS,
+ *    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ *    See the License for the specific language governing permissions and
+ *    limitations under the License.
+ */
+
+
+
+
+const TEMPLATE_RENDERED_CLASS = 'byu-component-rendered';
+
+function applyTemplate(element, elementName, template, callback) {
+    let sum = __WEBPACK_IMPORTED_MODULE_0_hash_sum___default()(template);
+
+    let elSettings = element.__byu_webCommunity_components = element.__byu_webCommunity_components || {};
+    if (elSettings.templateHash === sum) {
+        //Nothing has changed in the element.  Don't replace the DOM, don't fire the callback.
+        return;
+    }
+    elSettings.templateHash = sum;
+
+    if (window.ShadyCSS) {
+        applyTemplateShady(element, elementName, template, callback, sum);
+    } else {
+        applyTemplateNative(element, template, callback);
+    }
+}
+
+function applyTemplateShady(element, elementName, template, callback, sum) {
+    let templateId = '__byu-custom-element-template_' + elementName + '_' + sum;
+    let templateElement = document.head.querySelector('template#' + templateId);
+    if (!templateElement) {
+        templateElement = document.createElement('template');
+        templateElement.id = templateId;
+        templateElement.innerHTML = template;
+        document.head.appendChild(templateElement);
+        ShadyCSS.prepareTemplate(templateElement, elementName);
+    }
+    if (ShadyCSS.styleElement) {
+        ShadyCSS.styleElement(element);
+    } else if (ShadyCSS.applyStyle) {
+        ShadyCSS.applyStyle(element);
+    } else {
+        throw new Error('ShadyCSS is not properly defined: no styleElement or applyStyle!');
+    }
+    let imported = document.importNode(templateElement.content, true);
+    let shadow = element.shadowRoot;
+    //It'd be nice if we could just diff the DOM and replace what changed between templates, but that might lead to
+    // event listeners getting applied twice.  Easier to just clear out the shadow DOM and replace it.
+    while (shadow.firstChild) {
+        shadow.removeChild(shadow.firstChild);
+    }
+    shadow.appendChild(imported);
+    setTimeout(function() {
+        runAfterStamping(element, callback);
+    });
+}
+
+function applyTemplateNative(element, template, callback) {
+    element.shadowRoot.innerHTML = template;
+    runAfterStamping(element, callback);
+}
+
+function runAfterStamping(element, callback) {
+    element.classList.add(TEMPLATE_RENDERED_CLASS);
+    if (callback) {
+        callback();
+    }
+}
+
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(5)();
 // imports
 
 
 // module
-exports.push([module.i, "#card-content ::slotted(*){width:100%;padding:10px 15px}#card-content ::slotted(img),:host{padding:0}:host{display:inline-block;background-color:#fff;-moz-box-shadow:0 8px 12px rgba(0,0,0,.2);-webkit-box-shadow:0 8px 12px rgba(0,0,0,.2);box-shadow:0 8px 12px rgba(0,0,0,.2);vertical-align:top;min-width:250px;width:30%;max-width:700px;margin-bottom:20px}:host(:hover){-moz-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);-webkit-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);box-shadow:0 10px 18px 0 rgba(0,0,0,.3)}#card-content::slotted(*){width:100%;padding:20px}#card-content::slotted(ul){padding-left:40px}#card-content::slotted(img){padding:0}:host.picture-left #inner-top .profile-image{order:1}:host[theme=blue] .profile-image{background:#002e5d}:host[theme=gray] .profile-image{background:gray}#card-content::slotted(*){color:#444}", ""]);
+exports.push([module.i, ":host{display:inline-block;background-color:#fff;-moz-box-shadow:0 8px 12px rgba(0,0,0,.2);-webkit-box-shadow:0 8px 12px rgba(0,0,0,.2);box-shadow:0 8px 12px rgba(0,0,0,.2);vertical-align:top;min-width:250px;width:30%;max-width:700px;margin-bottom:20px;padding-top:20px}:host(:hover){-moz-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);-webkit-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);box-shadow:0 10px 18px 0 rgba(0,0,0,.3)}:host ul{margin-bottom:0}#card-content ::slotted(*){width:100%;padding:0 20px;color:#444}#card-content ::slotted(ul){padding-left:40px}#card-content ::slotted(img){padding:0}", ""]);
 
 // exports
 
 
 /***/ }),
-/* 2 */
+/* 5 */
 /***/ (function(module, exports) {
 
 /*
@@ -143,25 +279,68 @@ module.exports = function() {
 
 
 /***/ }),
-/* 3 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-    
-    const template = __webpack_require__(0);
-    class ByuCard extends HTMLElement {
 
-        constructor() {
-            super();
-            let shadowRoot = this.attachShadow({mode: 'open'});
-            shadowRoot.innerHTML = template;
-		}
 
+function pad (hash, len) {
+  while (hash.length < len) {
+    hash = '0' + hash;
+  }
+  return hash;
+}
+
+function fold (hash, text) {
+  var i;
+  var chr;
+  var len;
+  if (text.length === 0) {
+    return hash;
+  }
+  for (i = 0, len = text.length; i < len; i++) {
+    chr = text.charCodeAt(i);
+    hash = ((hash << 5) - hash) + chr;
+    hash |= 0;
+  }
+  return hash < 0 ? hash * -2 : hash;
+}
+
+function foldObject (hash, o, seen) {
+  return Object.keys(o).sort().reduce(foldKey, hash);
+  function foldKey (hash, key) {
+    return foldValue(hash, o[key], key, seen);
+  }
+}
+
+function foldValue (input, value, key, seen) {
+  var hash = fold(fold(fold(input, key), toString(value)), typeof value);
+  if (value === null) {
+    return fold(hash, 'null');
+  }
+  if (value === undefined) {
+    return fold(hash, 'undefined');
+  }
+  if (typeof value === 'object') {
+    if (seen.indexOf(value) !== -1) {
+      return fold(hash, '[Circular]' + key);
     }
+    seen.push(value);
+    return foldObject(hash, value, seen);
+  }
+  return fold(hash, value.toString());
+}
 
-    window.customElements.define('byu-card', ByuCard);
-    window.ByuCard = ByuCard;
+function toString (o) {
+  return Object.prototype.toString.call(o);
+}
 
+function sum (o) {
+  return pad(foldValue(0, o, '', []).toString(16), 8);
+}
+
+module.exports = sum;
 
 
 /***/ })
