@@ -21,7 +21,7 @@ byu-footer:not(.byu-component-rendered) {
   display: flex;
   width: 100%;
   font-family: sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   flex-wrap: wrap;
   padding-top: 30px;
   justify-content: space-around; }
@@ -236,6 +236,7 @@ byu-footer-column [slot="header"]:not(.byu-component-rendered) {
     width: auto; }
 
 /* GENERAL STYLING */
+/* GENERAL STYLING */
 /* MOBILE */
 /* FULL SIZE */
 byu-header:not(.byu-component-rendered) {
@@ -246,7 +247,7 @@ byu-header:not(.byu-component-rendered) {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding-right: 16px;
+  padding: 0 16px;
   flex: 1;
   min-height: 55px;
   box-sizing: border-box;
@@ -285,7 +286,7 @@ byu-header:not(.byu-component-rendered) > [slot="site-title"]:before {
   position: relative;
   top: 6px;
   padding-right: 16px;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 2px; }
 
 /* MOBILE */
@@ -427,7 +428,8 @@ byu-search:not(.byu-component-rendered):after {
   background-color: var(--byu-search-color, #767676);
   border: 1px solid var(--byu-search-color, #767676);
   color: #FFF;
-  width: 30px;
+  width: 36px;
+  height: 36px;
   height: 27px;
   width: 35px;
   float: right; }
@@ -575,7 +577,7 @@ byu-footer:not(.byu-component-rendered) {
   display: flex;
   width: 100%;
   font-family: sans-serif;
-  font-weight: 800;
+  font-weight: 600;
   flex-wrap: wrap;
   padding-top: 30px;
   justify-content: space-around; }
