@@ -168,11 +168,11 @@
             return ByuCard;
         }(HTMLElement);
 
-        // connectedCallback() {
-        //     util.applyTemplate(this, 'byu-card', template, () => {
-        //         // this._addSomeEventListenersOrSomething();
-        //     });
-        // }
+        connectedCallback();{
+            util.applyTemplate(this, 'byu-card', template, function () {
+                // this._addSomeEventListenersOrSomething();
+            });
+        }
 
         // this.shadowRoot.querySelector('#myId');
 

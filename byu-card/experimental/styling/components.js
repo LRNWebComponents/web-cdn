@@ -95,29 +95,29 @@ module.exports = "<style>" + __webpack_require__ (4) + "</style> <div id=\"card-
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-    
-    const util = __webpack_require__(0);
-    const template = __webpack_require__(1);
 
-    class ByuCard extends HTMLElement {
+const util = __webpack_require__(0);
+const template = __webpack_require__(1);
 
-        constructor() {
-            super();
-            this.attachShadow({mode: 'open'});
-        }
+class ByuCard extends HTMLElement {
 
+    constructor() {
+        super();
+        this.attachShadow({mode: 'open'});
     }
 
-    // connectedCallback() {
-    //     util.applyTemplate(this, 'byu-card', template, () => {
-    //         // this._addSomeEventListenersOrSomething();
-    //     });
-    // }
+}
 
-    // this.shadowRoot.querySelector('#myId');
+connectedCallback(); {
+    util.applyTemplate(this, 'byu-card', template, () => {
+        // this._addSomeEventListenersOrSomething();
+    });
+}
 
-    window.customElements.define('byu-card', ByuCard);
-    window.ByuCard = ByuCard;
+// this.shadowRoot.querySelector('#myId');
+
+window.customElements.define('byu-card', ByuCard);
+window.ByuCard = ByuCard;
 
 /***/ }),
 /* 3 */
