@@ -15,6 +15,24 @@
         }
     }
 
+    var _createClass = function () {
+        function defineProperties(target, props) {
+            for (var i = 0; i < props.length; i++) {
+                var descriptor = props[i];
+                descriptor.enumerable = descriptor.enumerable || false;
+                descriptor.configurable = true;
+                if ("value" in descriptor) descriptor.writable = true;
+                Object.defineProperty(target, descriptor.key, descriptor);
+            }
+        }
+
+        return function (Constructor, protoProps, staticProps) {
+            if (protoProps) defineProperties(Constructor.prototype, protoProps);
+            if (staticProps) defineProperties(Constructor, staticProps);
+            return Constructor;
+        };
+    }();
+
     function _possibleConstructorReturn(self, call) {
         if (!self) {
             throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
@@ -165,16 +183,18 @@
                 return _this;
             }
 
+            _createClass(ByuCard, [{
+                key: 'connectedCallback',
+                value: function connectedCallback() {
+                    util.applyTemplate(this, 'byu-card', template, function () {
+                        // this._addSomeEventListenersOrSomething();
+                        // this.shadowRoot.querySelector('#myId');
+                    });
+                }
+            }]);
+
             return ByuCard;
         }(HTMLElement);
-
-        connectedCallback();{
-            util.applyTemplate(this, 'byu-card', template, function () {
-                // this._addSomeEventListenersOrSomething();
-            });
-        }
-
-        // this.shadowRoot.querySelector('#myId');
 
         window.customElements.define('byu-card', ByuCard);
         window.ByuCard = ByuCard;
@@ -277,7 +297,7 @@
 
 
         // module
-        exports.push([module.i, ":host{display:inline-block;background-color:#fff;-moz-box-shadow:0 8px 12px rgba(0,0,0,.2);-webkit-box-shadow:0 8px 12px rgba(0,0,0,.2);box-shadow:0 8px 12px rgba(0,0,0,.2);vertical-align:top;min-width:250px;width:30%;max-width:700px;margin-bottom:20px;padding-top:20px}:host(:hover){-moz-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);-webkit-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);box-shadow:0 10px 18px 0 rgba(0,0,0,.3)}:host ul{margin-bottom:0}#card-content ::slotted(*){width:100%;padding:0 20px;color:#444}#card-content ::slotted(ul){padding-left:40px}#card-content ::slotted(img){padding:0;padding-top:20px;width:30%}", ""]);
+        exports.push([module.i, ":host{display:inline-block;background-color:#fff;-moz-box-shadow:0 8px 12px rgba(0,0,0,.2);-webkit-box-shadow:0 8px 12px rgba(0,0,0,.2);box-shadow:0 8px 12px rgba(0,0,0,.2);vertical-align:top;min-width:250px;width:30%;max-width:700px;margin-bottom:20px;padding-top:20px}:host(:hover){-moz-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);-webkit-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);box-shadow:0 10px 18px 0 rgba(0,0,0,.3)}:host ul{margin-bottom:0}#card-content ::slotted(*){width:100%;padding:0 20px;color:#444}#card-content ::slotted(ul){padding-left:40px}#card-content ::slotted(img){padding:0;padding-top:20px}", ""]);
 
         // exports
 
