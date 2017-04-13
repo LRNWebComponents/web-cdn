@@ -239,6 +239,7 @@ byu-footer-column [slot="header"]:not(.byu-component-rendered) {
 /* GENERAL STYLING */
 /* MOBILE */
 /* FULL SIZE */
+/* FULL WIDTH (NOT DEFAULT WIDTH OF 1200px) */
 byu-header:not(.byu-component-rendered) {
   background-color: #002E5D;
   color: #ffffff;
@@ -322,7 +323,8 @@ byu-header:not(.byu-component-rendered) > [slot="site-title"]:before {
 /* ------ footer settings ------------- */
 /* MOBILE */
 byu-menu:not(.byu-component-rendered) {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: auto;
   background: #fff;
@@ -335,6 +337,8 @@ byu-menu:not(.byu-component-rendered) {
   padding: 0;
   height: 35px;
   position: relative;
+  max-width: 1200px;
+  flex: 1;
   color: #002E5D !important;
   height: 35px;
   justify-content: flex-start;
@@ -362,8 +366,7 @@ byu-menu:not(.byu-component-rendered) > * {
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;
-  flex: 1;
-  max-width: 200px; }
+  flex: 1; }
   byu-menu:not(.byu-component-rendered) > *:hover {
     background: #c5c5c5 !important; }
   byu-menu:not(.byu-component-rendered) > *.selected {
@@ -427,6 +430,8 @@ byu-search:not(.byu-component-rendered):after {
   color: #FFF;
   width: 30px;
   height: 30px;
+  display: flex;
+  box-sizing: border-box;
   height: 27px;
   width: 35px;
   float: right; }
@@ -436,20 +441,13 @@ byu-social-media-links:not(.byu-component-rendered) > a {
   text-decoration: none !important; }
 
 byu-social-media-links:not(.byu-component-rendered) > .fa {
-  text-decoration: none !important;
-  color: #002E5D !important;
-  font-size: 25px !important;
-  line-height: 40px !important;
-  border: 1px solid #fff !important;
-  width: 40px !important;
-  height: 40px !important;
+  font-size: 32px !important;
+  line-height: 28px !important;
+  width: 28px !important;
+  height: 28px !important;
   text-align: center !important;
-  border-radius: 20px !important;
-  margin: 0 5px 5px 0 !important;
+  margin: 10px 15px 10px 0 !important;
   cursor: pointer; }
-
-byu-social-media-links:not(.byu-component-rendered) > .fa:hover {
-  background-color: #fff !important; }
 
 /* --- Color variable names are all lower case. Other variables are camel-case --- */
 /* --- Color variable names are all lower case. Other variables are camel-case --- */
@@ -491,15 +489,9 @@ html {
   height: 100%; }
 
 body {
-  display: flex;
-  flex-direction: column;
   min-height: 100%;
   margin: 0;
   color: #444; }
-
-/*wrap the page in this for an easy sticky footer*/
-.page-content {
-  flex: 1; }
 
 a {
   color: #003DA5; }
