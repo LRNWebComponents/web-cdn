@@ -117,6 +117,8 @@ byu-footer-column:not(.byu-component-rendered) {
     font-size: 20px !important;
     border-bottom: 1px solid #c5c5c5 !important;
     padding-bottom: 3px !important;
+    margin-bottom: 5px !important;
+    /* needed space below the header line */
     white-space: nowrap !important;
     font-weight: 400 !important;
     width: 100%;
