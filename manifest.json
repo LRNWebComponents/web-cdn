@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-05-23T21:48:36.877Z",
+  "$built": "2017-05-24T04:42:56.779Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -9669,9 +9669,9 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/shared-icons/tarball/master",
-          "git_sha": "a9aba2fdee32b5ff890fd3dcb107d06ebe282717",
+          "git_sha": "1b03436e15d79ebdb4c84ef3e6b7618ae7599201",
           "link": "https://github.com/byuweb/shared-icons/tree/master",
-          "last_updated": "2017-05-23T03:15:23+00:00",
+          "last_updated": "2017-05-24T04:42:12+00:00",
           "messages": [],
           "resources": {
             "fontawesome/cancel-black.svg": {
@@ -10130,7 +10130,26 @@
                 }
               }
             },
-            "social/facebook.svg": {
+            "social/_obfuscations.json": {
+              "entrypoint": false,
+              "size": 328,
+              "gzip_size": 207,
+              "hashes": {
+                "sha256": {
+                  "base64": "4MjcEbmGkKqSxAvfg6h7V8b2DV3B2RUi7w2FlfIDutA=",
+                  "hex": "e0c8dc11b98690aa92c40bdf83a87b57c6f60d5dc1d91522ef0d8595f203bad0"
+                },
+                "sha384": {
+                  "base64": "Wnv1IJldAxoXmrRZrsGjUyWk+esZgmwWBhxTywUx5QzIZ1Tzi2/An9DXIcIoNR0w",
+                  "hex": "5a7bf520995d031a179ab459aec1a35325a4f9eb19826c16061c53cb0531e50cc86754f38b6fc09fd0d721c228351d30"
+                },
+                "sha512": {
+                  "base64": "wi6E7dP3V2fU4IFv3vUgVTvDoWLk3gXwcsiMeSJrLD5bUVPTuzz5CIkWVAcu2qqefd2Tyz+PnIPlmphAjmgJ2g==",
+                  "hex": "c22e84edd3f75767d4e0816fdef520553bc3a162e4de05f072c88c79226b2c3e5b5153d3bb3cf908891654072edaaa9e7ddd93cb3f8f9c83e59a98408e6809da"
+                }
+              }
+            },
+            "social/faceybook.svg": {
               "entrypoint": false,
               "size": 388,
               "gzip_size": 278,
@@ -10149,7 +10168,7 @@
                 }
               }
             },
-            "social/gplus.svg": {
+            "social/gyplus.svg": {
               "entrypoint": false,
               "size": 519,
               "gzip_size": 340,
@@ -10168,7 +10187,7 @@
                 }
               }
             },
-            "social/instagram.svg": {
+            "social/instygram.svg": {
               "entrypoint": false,
               "size": 1148,
               "gzip_size": 531,
@@ -10187,7 +10206,7 @@
                 }
               }
             },
-            "social/linkedin.svg": {
+            "social/linkydin.svg": {
               "entrypoint": false,
               "size": 573,
               "gzip_size": 368,
@@ -10206,7 +10225,7 @@
                 }
               }
             },
-            "social/pinterest.svg": {
+            "social/pinyterest.svg": {
               "entrypoint": false,
               "size": 815,
               "gzip_size": 485,
@@ -10244,7 +10263,7 @@
                 }
               }
             },
-            "social/snapchat.svg": {
+            "social/snapychat.svg": {
               "entrypoint": false,
               "size": 5495,
               "gzip_size": 2726,
@@ -10263,7 +10282,7 @@
                 }
               }
             },
-            "social/twitter.svg": {
+            "social/twytter.svg": {
               "entrypoint": false,
               "size": 581,
               "gzip_size": 373,
@@ -10282,7 +10301,7 @@
                 }
               }
             },
-            "social/youtube.svg": {
+            "social/youytube.svg": {
               "entrypoint": false,
               "size": 766,
               "gzip_size": 452,
