@@ -7,8 +7,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -103,7 +101,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     "use strict";
     /* harmony import */
-    var __WEBPACK_IMPORTED_MODULE_0__lib_templating__ = __webpack_require__(14);
+    var __WEBPACK_IMPORTED_MODULE_0__lib_templating__ = __webpack_require__(13);
     /* harmony reexport (binding) */__webpack_require__.d(__webpack_exports__, "a", function () {
         return __WEBPACK_IMPORTED_MODULE_0__lib_templating__["a"];
     });
@@ -172,7 +170,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     "use strict";
     /* harmony import */
-    var __WEBPACK_IMPORTED_MODULE_0__byu_footer_action_button_html__ = __webpack_require__(28);
+    var __WEBPACK_IMPORTED_MODULE_0__byu_footer_action_button_html__ = __webpack_require__(27);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_0__byu_footer_action_button_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_footer_action_button_html__);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
 
@@ -208,7 +206,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     "use strict";
     /* harmony import */
-    var __WEBPACK_IMPORTED_MODULE_0__byu_footer_column_html__ = __webpack_require__(29);
+    var __WEBPACK_IMPORTED_MODULE_0__byu_footer_column_html__ = __webpack_require__(28);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_0__byu_footer_column_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_footer_column_html__);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
 
@@ -244,7 +242,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     "use strict";
     /* harmony import */
-    var __WEBPACK_IMPORTED_MODULE_0__byu_footer_html__ = __webpack_require__(30);
+    var __WEBPACK_IMPORTED_MODULE_0__byu_footer_html__ = __webpack_require__(29);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_0__byu_footer_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_footer_html__);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
 
@@ -285,9 +283,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     "use strict";
     /* harmony import */
-    var __WEBPACK_IMPORTED_MODULE_0__byu_header_ejs_html__ = __webpack_require__(26);
+    var __WEBPACK_IMPORTED_MODULE_0__byu_header_ejs_html__ = __webpack_require__(25);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_0__byu_header_ejs_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_header_ejs_html__);
-    /* harmony import */var __WEBPACK_IMPORTED_MODULE_1_deep_equal__ = __webpack_require__(23);
+    /* harmony import */var __WEBPACK_IMPORTED_MODULE_1_deep_equal__ = __webpack_require__(22);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_1_deep_equal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_deep_equal__);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_2_byu_web_component_utils__ = __webpack_require__(0);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_3__icons_transformicons__ = __webpack_require__(11);
@@ -565,7 +563,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     "use strict";
     /* harmony import */
-    var __WEBPACK_IMPORTED_MODULE_0__byu_menu_html__ = __webpack_require__(31);
+    var __WEBPACK_IMPORTED_MODULE_0__byu_menu_html__ = __webpack_require__(30);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_0__byu_menu_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_menu_html__);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
 
@@ -687,13 +685,9 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     "use strict";
     /* harmony import */
-
-    var _DEFAULT_ACTION_TARGE;
-
-    var __WEBPACK_IMPORTED_MODULE_0__byu_search_html__ = __webpack_require__(32);
+    var __WEBPACK_IMPORTED_MODULE_0__byu_search_html__ = __webpack_require__(31);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_0__byu_search_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_search_html__);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
-    /* harmony import */var __WEBPACK_IMPORTED_MODULE_2__util_matchesSelector_js__ = __webpack_require__(13);
     /**
      *  @license
      *    Copyright 2016 Brigham Young University
@@ -711,26 +705,26 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
      *    limitations under the License.
      **/
 
-    var CLASS_SELECTED_INPUT = '__byu-search-selected-input';
-
     var ATTR_SEARCH_HANDLER = 'onsearch';
-    var ATTR_SEARCH_INPUT_SELECTOR = 'search-input-selector';
-    var ATTR_ACTION = 'action';
-    var ATTR_ACTION_TARGET = 'action-target';
-
-    var ACTION_SUBMIT_FORM = 'submit-form';
-    var ACTION_CLICK = 'click';
-    var ACTION_NAVIGATE = 'navigate';
-
-    var DEFAULT_ACTION_TARGET_SUBMIT_FORM = 'form';
-    var DEFAULT_ACTION_TARGET_CLICK = 'button, input[type="submit"], input[type="button"]';
-
-    var DEFAULT_ACTION_TARGET = (_DEFAULT_ACTION_TARGE = {}, _defineProperty(_DEFAULT_ACTION_TARGE, ACTION_SUBMIT_FORM, DEFAULT_ACTION_TARGET_SUBMIT_FORM), _defineProperty(_DEFAULT_ACTION_TARGE, ACTION_CLICK, DEFAULT_ACTION_TARGET_CLICK), _DEFAULT_ACTION_TARGE);
-
-    var DEFAULT_SEARCH_INPUT_SELECTOR = 'input[type="search"], input[type="text"]';
 
     var ByuSearch = function (_HTMLElement6) {
         _inherits(ByuSearch, _HTMLElement6);
+
+        _createClass(ByuSearch, [{
+            key: 'attributeChangedCallback',
+            value: function attributeChangedCallback(attr, oldValue, newValue) {
+                switch (attr) {
+                    case ATTR_SEARCH_HANDLER:
+                        this.searchHandler = newValue;
+                        return;
+                }
+            }
+        }], [{
+            key: 'observedAttributes',
+            get: function get() {
+                return [ATTR_SEARCH_HANDLER];
+            }
+        }]);
 
         function ByuSearch() {
             _classCallCheck(this, ByuSearch);
@@ -747,106 +741,76 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
             value: function connectedCallback() {
                 var _this11 = this;
 
+                var component = this;
+
                 __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-search', __WEBPACK_IMPORTED_MODULE_0__byu_search_html___default.a, function () {
-                    _this11._initialized = true;
-                    applyStyleHelpers(_this11);
-                    applyA11yHelpers(_this11);
-                    setupSearchDispatchers(_this11);
-                    setupSearchListeners(_this11);
-                    // let input = this.getInputElement(this, true);
-                    // if (input) {
-                    //     input.addEventListener('input', this.inputHandler);
-                    //     input.addEventListener('keypress', function (e) {
-                    //         if (e.keyCode === 13) {
-                    //             e.preventDefault();
-                    //             component.search(component);
-                    //         }
-                    //     }, false);
-                    // }
-                    //
-                    // if (this.hasAttribute('onsearch')) this.searchHandler = this.getAttribute('onsearch');
-                    // this.shadowRoot.querySelector('#search-button').addEventListener('click', function () {
-                    //     component.search(component);
-                    // });
+
+                    var input = _this11.getInputElement(_this11, true);
+                    if (input) {
+                        input.addEventListener('input', _this11.inputHandler);
+                        input.addEventListener('keypress', function (e) {
+                            if (e.keyCode === 13) {
+                                e.preventDefault();
+                                component.search(component);
+                            }
+                        }, false);
+                    }
+
+                    if (_this11.hasAttribute('onsearch')) _this11.searchHandler = _this11.getAttribute('onsearch');
+                    _this11.shadowRoot.querySelector('#search-button').addEventListener('click', function () {
+                        component.search(component);
+                    });
                 });
             }
         }, {
             key: 'disconnectedCallback',
             value: function disconnectedCallback() {
-                removeStyleHelpers(this);
-                removeA11yHelpers(this);
-                teardownSearchDispatchers(this);
-                teardownSearchListeners(this);
+                var input = this.getInputElement(this, true);
+                if (input) {
+                    input.removeEventListener('input', this.inputHandler);
+                    input.removeEventListener('keypress', this.searchHandler);
+                }
             }
         }, {
             key: 'search',
-            value: function search() {
-                var el = this.searchInputElement;
-                if (!el) {
-                    throw new Error('Unable to perform search; no search element matching the selector \'' + this.searchInputSelector + '\' can be found!');
-                }
-                var value = el.value;
-                if (!value) return;
-
-                var cancelled = !this.dispatchEvent(createEvent('search', { search: value }));
-                if (cancelled) return;
-
-                if (this.action) {
-                    runPredefinedAction(this, value);
+            value: function search(component) {
+                if (component.hasAttribute('onsearch')) {
+                    component.runCallback(component.getAttribute('onsearch'), component.getInputValue(component));
                 }
             }
         }, {
-            key: 'attributeChangedCallback',
-            value: function attributeChangedCallback(attr, oldValue, newValue) {
-                switch (attr) {
-                    case ATTR_SEARCH_HANDLER:
-                        this.searchHandler = newValue;
-                        return;
+            key: 'runCallback',
+            value: function runCallback(fnString, value) {
+                var func = window[fnString];
+                if (!func) {
+                    console.error("Cannot find search callback function", fnString);
+                    return;
                 }
+                return func.call(this, value);
             }
         }, {
-            key: 'onsearch',
-            get: function get() {
-                return this.getAttribute(ATTR_SEARCH_HANDLER);
-            },
-            set: function set(value) {
-                this.setAttribute(ATTR_SEARCH_HANDLER, value);
+            key: 'getInputValue',
+            value: function getInputValue(component) {
+                var input = this.getInputElement(component, true);
+                return input ? input.value : '';
             }
         }, {
-            key: 'searchInputSelector',
-            set: function set(value) {
-                this.setAttribute(ATTR_SEARCH_INPUT_SELECTOR, value);
-            },
-            get: function get() {
-                return this.getAttribute(ATTR_SEARCH_INPUT_SELECTOR) || DEFAULT_SEARCH_INPUT_SELECTOR;
+            key: 'getInputElement',
+            value: function getInputElement(component, flatten) {
+                var elements = component.shadowRoot.querySelector("#search").assignedNodes({ flatten: flatten });
+                for (var i = 0; i < elements.length; i++) {
+                    if (elements[i].tagName === 'INPUT') return elements[i];
+                }
+                return null;
             }
         }, {
-            key: 'searchInputElement',
-            get: function get() {
-                return querySelectorLightDom(this, this.searchInputSelector);
-            }
-        }, {
-            key: 'action',
-            set: function set(value) {
-                this.setAttribute(ATTR_ACTION, value);
-            },
-            get: function get() {
-                //Defaults to null
-                return this.getAttribute(ATTR_ACTION);
-            }
-        }, {
-            key: 'actionTarget',
-            set: function set(value) {
-                this.setAttribute(ATTR_ACTION_TARGET, value);
-            },
-            get: function get() {
-                //Default depends on action target value
-                return this.getAttribute(ATTR_ACTION_TARGET) || defaultActionTarget(this.action);
-            }
-        }], [{
-            key: 'observedAttributes',
-            get: function get() {
-                return [ATTR_SEARCH_INPUT_SELECTOR];
+            key: 'inputHandler',
+            value: function inputHandler(e) {
+                var el = e.target;
+                if (el) {
+                    var component = this;
+                    component.value = e.target.value;
+                }
             }
         }]);
 
@@ -856,200 +820,6 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
     window.customElements.define('byu-search', ByuSearch);
     window.ByuSearch = ByuSearch;
 
-    function runPredefinedAction(search, value) {
-        var action = search.action;
-
-        switch (action) {
-            case ACTION_SUBMIT_FORM:
-                runSubmitFormAction(search, value);
-                break;
-            case ACTION_CLICK:
-                runClickAction(search, value);
-                break;
-            case ACTION_NAVIGATE:
-                runNavigateAction(search, value);
-                break;
-            default:
-                throw new Error('Invalid value for ' + ATTR_ACTION + ': \'' + action + '\'');
-        }
-    }
-
-    function runSubmitFormAction(search, value) {
-        var target = search.actionTarget;
-
-        var form = querySelectorLightDom(search, target);
-
-        if (!form) {
-            throw new Error('Unable to find target for \'submit-form\' action using selector \'' + target + '\'');
-        }
-
-        if (!(form instanceof HTMLFormElement)) {
-            throw new Error('Element found by selector \'' + target + '\' must be a <form>, but was \'' + form.localName + '\'');
-        }
-
-        form.submit();
-    }
-
-    function runClickAction(search, value) {
-        var target = search.actionTarget;
-
-        var button = querySelectorLightDom(search, target);
-
-        if (!button) {
-            throw new Error('Unable to find target for \'click\' action using selector \'' + target + '\'');
-        }
-
-        button.click();
-    }
-
-    function runNavigateAction(search, value) {
-        var target = search.actionTarget;
-
-        if (!target) {
-            throw new Error('When using action="navigate", you must specify an action-target');
-        }
-
-        if (target.indexOf('${search}')) {
-            console.warn('[byu-search] WARNING: Using action="navigate" with a target that does not contain ${search} will not include the search terms in the URL.', search);
-        }
-
-        window.location.assign(target.replace('${search}', window.encodeURIComponent(value)));
-    }
-
-    function applyStyleHelpers(search) {
-        var el = search.searchInputElement;
-        if (el) {
-            el.classList.add(CLASS_SELECTED_INPUT);
-        } else {
-            console.error('[byu-search] WARNING! Unable to find a search input element using the selector \'' + search.searchInputSelector + '\' on ', search);
-        }
-    }
-
-    function removeStyleHelpers(search) {
-        var el = search.searchInputElement;
-        if (el) el.classList.remove(CLASS_SELECTED_INPUT);
-    }
-
-    // For Accessibility, it's good for us to have a title and placeholder set. So, if there isn't one, we'll set it.
-    function applyA11yHelpers(search) {
-        var el = search.searchInputElement;
-        if (!el) return;
-        if (el.title && el.placeholder) return;
-
-        var helped = [];
-
-        if (!el.title && !el.placeholder) {
-            el.title = el.placeholder = 'Search';
-            helped.push('title', 'placeholder');
-        } else if (el.title) {
-            el.placeholder = el.title;
-            helped.push('placeholder');
-        } else {
-            el.title = el.placeholder;
-            helped.push('title');
-        }
-
-        el.__byu_search_a11yHelpersApplied = helped;
-    }
-
-    function removeA11yHelpers(search) {
-        var el = search.searchInputElement;
-        if (!el) return;
-
-        var helpers = el.__byu_search_a11yHelpersApplied;
-        if (!helpers) return;
-
-        if (helpers.includes('title')) {
-            el.title = null;
-        }
-        if (helpers.includes('placeholder')) {
-            el.placeholder = null;
-        }
-        delete el.__byu_search_a11yHelpersApplied;
-    }
-
-    function setupSearchDispatchers(search) {
-        setupEnterKeySearchDispatcher(search);
-        setupButtonSearchDispatcher(search);
-    }
-
-    function setupButtonSearchDispatcher(search) {
-        search.shadowRoot.querySelector('#search-button').addEventListener('click', function () {
-            search.search();
-        });
-    }
-
-    function setupEnterKeySearchDispatcher(search) {
-        var el = search.searchInputElement;
-        if (!el) return;
-
-        var keypress = el.__byu_search_keyObserver = function (e) {
-            if (e.keyCode === 13) {
-                search.search();
-            }
-        };
-        el.addEventListener('keypress', keypress, false);
-    }
-
-    function teardownSearchDispatchers(search) {
-        teardownEnterKeySearchDispatcher(search);
-    }
-
-    function teardownEnterKeySearchDispatcher(search) {
-        var el = search.searchInputElement;
-        if (!el) return;
-
-        var keypress = el.__byu_search_keyObserver;
-        if (keypress) el.removeEventListener('keypress', keypress, false);
-    }
-
-    function setupSearchListeners(search) {
-        if (!search.onsearch) return;
-        var handler = search.__onsearchHandler = function (event) {
-            var handler = window[search.onsearch];
-            if (!handler) {
-                throw new Error('Unable to find a global function named \'' + search.onsearch + '\'');
-            }
-            handler.call(search, event.detail.search, event);
-        };
-
-        search.addEventListener('search', handler, false);
-    }
-
-    function teardownSearchListeners(search) {
-        if (search.__onsearchHandler) {
-            search.removeEventListener('search', search.__onsearchHandler, false);
-        }
-    }
-
-    function defaultActionTarget(action) {
-        if (!action) return null;
-        return DEFAULT_ACTION_TARGET[action];
-    }
-
-    function createEvent(name, detail) {
-        if (typeof window.CustomEvent === 'function') {
-            return new CustomEvent(name, { detail: detail, cancelable: true, bubbles: true });
-        }
-        var evt = document.createEvent('CustomEvent');
-        evt.initCustomEvent(name, true, true, detail);
-        return evt;
-    }
-
-    function querySelectorLightDom(search, selector) {
-        var roots = search.shadowRoot.querySelector('#search').assignedNodes({ flatten: true }).filter(function (n) {
-            return n instanceof HTMLElement;
-        });
-
-        for (var i = 0, len = roots.length; i < len; i++) {
-            var each = roots[i];
-            if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__util_matchesSelector_js__["a" /* default */])(each, selector)) return each;
-            var child = each.querySelector(selector);
-            if (child) return child;
-        }
-        return null;
-    }
-
     /***/
 },
 /* 8 */
@@ -1057,7 +827,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     "use strict";
     /* harmony import */
-    var __WEBPACK_IMPORTED_MODULE_0__byu_social_media_links_html__ = __webpack_require__(33);
+    var __WEBPACK_IMPORTED_MODULE_0__byu_social_media_links_html__ = __webpack_require__(32);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_0__byu_social_media_links_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_social_media_links_html__);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
 
@@ -1154,7 +924,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     "use strict";
     /* harmony import */
-    var __WEBPACK_IMPORTED_MODULE_0__byu_user_info_html__ = __webpack_require__(34);
+    var __WEBPACK_IMPORTED_MODULE_0__byu_user_info_html__ = __webpack_require__(33);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_0__byu_user_info_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_user_info_html__);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
     /**
@@ -1497,30 +1267,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /***/function (module, __webpack_exports__, __webpack_require__) {
 
     "use strict";
-    /* harmony export (immutable) */
-    __webpack_exports__["a"] = matches;
-    /**
-     * Created by ThatJoeMoore on 5/31/17.
-     */
-
-    function matches(el, selector) {
-        var proto = Element.prototype;
-        var actual = proto.matches || proto.matchesSelector || proto.mozMatchesSelector || proto.msMatchesSelector || proto.oMatchesSelector || proto.webkitMatchesSelector || function (s) {
-            var doc = this.document || this.ownerDocument;
-            return doc.querySelectorAll(s).indexOf(this) !== -1;
-        };
-
-        return actual.call(el, selector);
-    }
-
-    /***/
-},
-/* 14 */
-/***/function (module, __webpack_exports__, __webpack_require__) {
-
-    "use strict";
     /* harmony import */
-    var __WEBPACK_IMPORTED_MODULE_0_hash_sum__ = __webpack_require__(27);
+    var __WEBPACK_IMPORTED_MODULE_0_hash_sum__ = __webpack_require__(26);
     /* harmony import */var __WEBPACK_IMPORTED_MODULE_0_hash_sum___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hash_sum__);
     /* harmony export (immutable) */__webpack_exports__["a"] = applyTemplate;
     /*
@@ -1603,7 +1351,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 15 */
+/* 14 */
 /***/function (module, exports, __webpack_require__) {
 
     exports = module.exports = __webpack_require__(1)();
@@ -1618,7 +1366,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 16 */
+/* 15 */
 /***/function (module, exports, __webpack_require__) {
 
     exports = module.exports = __webpack_require__(1)();
@@ -1633,7 +1381,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 17 */
+/* 16 */
 /***/function (module, exports, __webpack_require__) {
 
     exports = module.exports = __webpack_require__(1)();
@@ -1648,7 +1396,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 18 */
+/* 17 */
 /***/function (module, exports, __webpack_require__) {
 
     exports = module.exports = __webpack_require__(1)();
@@ -1663,7 +1411,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 19 */
+/* 18 */
 /***/function (module, exports, __webpack_require__) {
 
     exports = module.exports = __webpack_require__(1)();
@@ -1678,7 +1426,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 20 */
+/* 19 */
 /***/function (module, exports, __webpack_require__) {
 
     exports = module.exports = __webpack_require__(1)();
@@ -1693,7 +1441,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 21 */
+/* 20 */
 /***/function (module, exports, __webpack_require__) {
 
     exports = module.exports = __webpack_require__(1)();
@@ -1708,7 +1456,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 22 */
+/* 21 */
 /***/function (module, exports, __webpack_require__) {
 
     exports = module.exports = __webpack_require__(1)();
@@ -1723,12 +1471,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 23 */
+/* 22 */
 /***/function (module, exports, __webpack_require__) {
 
     var pSlice = Array.prototype.slice;
-    var objectKeys = __webpack_require__(25);
-    var isArguments = __webpack_require__(24);
+    var objectKeys = __webpack_require__(24);
+    var isArguments = __webpack_require__(23);
 
     var deepEqual = module.exports = function (actual, expected, opts) {
         if (!opts) opts = {};
@@ -1820,7 +1568,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 24 */
+/* 23 */
 /***/function (module, exports) {
 
     var supportsArgumentsClass = function () {
@@ -1841,7 +1589,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 25 */
+/* 24 */
 /***/function (module, exports) {
 
     exports = module.exports = typeof Object.keys === 'function' ? Object.keys : shim;
@@ -1856,7 +1604,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 26 */
+/* 25 */
 /***/function (module, exports, __webpack_require__) {
 
     module.exports = function anonymous(locals, escapeFn, include, rethrow) {
@@ -1879,7 +1627,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
         var __output = [],
             __append = __output.push.bind(__output);
         __append("<style>\n");
-        __append(__webpack_require__(18));
+        __append(__webpack_require__(17));
         __append('</style>\n<div id="header" class="byu-header-root">\n<div class="byu-header-content">\n<div class="byu-header-primary">\n<img class="byu-logo" alt="BYU" src="https://cdn.byu.edu/shared-icons/latest/logos/monogram-white.svg">\n<div class="byu-header-title">\n<slot id="site-title" name="site-title"></slot>\n</div>\n');
         if (locals.mobile) {
             __append('<button type="button" class="mobile-menu-button tcon tcon-menu--xbutterfly" aria-label="toggle menu">\n<span class="tcon-menu__lines" aria-hidden="true"></span>\n<span class="tcon-visuallyhidden">toggle menu</span>\n</button>\n');
@@ -1900,7 +1648,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
-/* 27 */
+/* 26 */
 /***/function (module, exports, __webpack_require__) {
 
     "use strict";
@@ -1964,52 +1712,52 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
     /***/
 },
+/* 27 */
+/***/function (module, exports, __webpack_require__) {
+
+    module.exports = "<style>" + __webpack_require__(14) + "</style> <div class=\"wrapper\"> <slot name=\"actiontext\"></slot> </div>";
+
+    /***/
+},
 /* 28 */
 /***/function (module, exports, __webpack_require__) {
 
-    module.exports = "<style>" + __webpack_require__(15) + "</style> <div class=\"wrapper\"> <slot name=\"actiontext\"></slot> </div>";
+    module.exports = "<style>" + __webpack_require__(15) + "</style> <h2 class=\"header\"> <slot name=\"header\"></slot> </h2> <div class=\"content\"> <slot></slot> </div>";
 
     /***/
 },
 /* 29 */
 /***/function (module, exports, __webpack_require__) {
 
-    module.exports = "<style>" + __webpack_require__(16) + "</style> <h2 class=\"header\"> <slot name=\"header\"></slot> </h2> <div class=\"content\"> <slot></slot> </div>";
+    module.exports = "<style>" + __webpack_require__(16) + "</style> <div class=\"secondary-footer\"> <div class=\"secondary-footer-content\"> <slot id=\"slot\"></slot> </div> </div> <div class=\"blue-footer\"> <div class=\"inner-wrapper\"> <a href=\"https://home.byu.edu/home/\" target=\"_blank\"><img src=\"https://cdn.byu.edu/shared-icons/latest/logos/word-mark-wide-white.svg\" alt=\"Brigham Young University\" class=\"university-logo\"></a> <div class=\"copyright-contact\">&copy; <span id=\"currentYear\"></span> All Rights Reserved | Provo, UT 84602, USA | <a href=\"tel:18014224636\">801-422-4636</a></div> </div> </div>";
 
     /***/
 },
 /* 30 */
 /***/function (module, exports, __webpack_require__) {
 
-    module.exports = "<style>" + __webpack_require__(17) + "</style> <div class=\"secondary-footer\"> <div class=\"secondary-footer-content\"> <slot id=\"slot\"></slot> </div> </div> <div class=\"blue-footer\"> <div class=\"inner-wrapper\"> <a href=\"https://home.byu.edu/home/\" target=\"_blank\"><img src=\"https://cdn.byu.edu/shared-icons/latest/logos/word-mark-wide-white.svg\" alt=\"Brigham Young University\" class=\"university-logo\"></a> <div class=\"copyright-contact\">&copy; <span id=\"currentYear\"></span> All Rights Reserved | Provo, UT 84602, USA | <a href=\"tel:18014224636\">801-422-4636</a></div> </div> </div>";
+    module.exports = "<style>" + __webpack_require__(18) + "</style> <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cloud.typography.com/75214/6517752/css/fonts.css\" media=\"all\"> <nav class=\"outer-nav slot-container\"> <slot class=\"byu-menu-items\"></slot> <div class=\"byu-menu-more-menu\"> <a href=\"javascript: void 0\" class=\"byu-menu-more\"> More <img class=\"more-open-button\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/down-open-navy.svg\" alt=\"Open\"> </a> <div class=\"byu-menu-more-items slot-container\"> <slot name=\"more\"></slot> </div> </div> </nav>";
 
     /***/
 },
 /* 31 */
 /***/function (module, exports, __webpack_require__) {
 
-    module.exports = "<style>" + __webpack_require__(19) + "</style> <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cloud.typography.com/75214/6517752/css/fonts.css\" media=\"all\"> <nav class=\"outer-nav slot-container\"> <slot class=\"byu-menu-items\"></slot> <div class=\"byu-menu-more-menu\"> <a href=\"javascript: void 0\" class=\"byu-menu-more\"> More <img class=\"more-open-button\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/down-open-navy.svg\" alt=\"Open\"> </a> <div class=\"byu-menu-more-items slot-container\"> <slot name=\"more\"></slot> </div> </div> </nav>";
+    module.exports = "<style>" + __webpack_require__(19) + "</style> <div id=\"search-form\"> <div id=\"search-container\"> <slot id=\"search\"><input type=\"search\" placeholder=\"Search\"></slot> </div> <button id=\"search-button\" type=\"submit\"> <img id=\"search-icon\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/search-white.svg\" alt=\"Run Search\"> </button> </div>";
 
     /***/
 },
 /* 32 */
 /***/function (module, exports, __webpack_require__) {
 
-    module.exports = "<style>" + __webpack_require__(20) + "</style> <div id=\"search-form\"> <div id=\"search-container\"> <slot id=\"search\"><input type=\"search\" placeholder=\"Search\"></slot> </div> <button id=\"search-button\" type=\"submit\"> <img id=\"search-icon\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/search-white.svg\" alt=\"Run Search\"> </button> </div>";
+    module.exports = "<style>" + __webpack_require__(20) + "</style> <div class=\"slot-wrapper\"> <slot id=\"social-main\"></slot> <slot id=\"social-deprecated-facebook\" name=\"facebook\"></slot> <slot id=\"social-deprecated-twitter\" name=\"twitter\"></slot> <slot id=\"social-deprecated-instagram\" name=\"instagram\"></slot> <slot id=\"social-deprecated-youtube\" name=\"youtube\"></slot> <slot id=\"social-deprecated-pinterest\" name=\"pinterest\"></slot> <slot id=\"social-deprecated-googleplus\" name=\"googleplus\"></slot> <slot id=\"social-deprecated-linkedin\" name=\"linkedin\"></slot> <slot id=\"social-deprecated-rss\" name=\"rss\"></slot> <slot id=\"social-deprecated-snapchat\" name=\"snapchat\"></slot> </div>";
 
     /***/
 },
 /* 33 */
 /***/function (module, exports, __webpack_require__) {
 
-    module.exports = "<style>" + __webpack_require__(21) + "</style> <div class=\"slot-wrapper\"> <slot id=\"social-main\"></slot> <slot id=\"social-deprecated-facebook\" name=\"facebook\"></slot> <slot id=\"social-deprecated-twitter\" name=\"twitter\"></slot> <slot id=\"social-deprecated-instagram\" name=\"instagram\"></slot> <slot id=\"social-deprecated-youtube\" name=\"youtube\"></slot> <slot id=\"social-deprecated-pinterest\" name=\"pinterest\"></slot> <slot id=\"social-deprecated-googleplus\" name=\"googleplus\"></slot> <slot id=\"social-deprecated-linkedin\" name=\"linkedin\"></slot> <slot id=\"social-deprecated-rss\" name=\"rss\"></slot> <slot id=\"social-deprecated-snapchat\" name=\"snapchat\"></slot> </div>";
-
-    /***/
-},
-/* 34 */
-/***/function (module, exports, __webpack_require__) {
-
-    module.exports = "<style>" + __webpack_require__(22) + "</style> <div class=\"byu-user-wrapper\"> <div class=\"no-user slot-wrapper\"> <img class=\"not-mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-o-white.svg\"> <img class=\"mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-o-navy.svg\"> <span class=\"text slot-wrapper\"> <slot name=\"login\">Sign In</slot> </span> </div> <div class=\"has-user\"> <span class=\"name slot-wrapper\"> <slot name=\"user-name\" id=\"user-name\"></slot> </span> <img class=\"not-mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-white.svg\"> <img class=\"mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-navy.svg\"> <span class=\"logout slot-wrapper\"> <slot name=\"logout\">Sign Out</slot> </span> </div> </div>";
+    module.exports = "<style>" + __webpack_require__(21) + "</style> <div class=\"byu-user-wrapper\"> <div class=\"no-user slot-wrapper\"> <img class=\"not-mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-o-white.svg\"> <img class=\"mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-o-navy.svg\"> <span class=\"text slot-wrapper\"> <slot name=\"login\">Sign In</slot> </span> </div> <div class=\"has-user\"> <span class=\"name slot-wrapper\"> <slot name=\"user-name\" id=\"user-name\"></slot> </span> <img class=\"not-mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-white.svg\"> <img class=\"mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-navy.svg\"> <span class=\"logout slot-wrapper\"> <slot name=\"logout\">Sign Out</slot> </span> </div> </div>";
 
     /***/
 }]);
