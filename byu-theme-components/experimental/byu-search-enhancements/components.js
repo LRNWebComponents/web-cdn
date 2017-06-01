@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 11);
+/******/ 	return __webpack_require__(__webpack_require__.s = 12);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -71,7 +71,7 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_templating__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__lib_templating__ = __webpack_require__(14);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__lib_templating__["a"]; });
 /**
  * Created by ThatJoeMoore on 2/14/17
@@ -144,7 +144,7 @@ module.exports = function() {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_footer_action_button_html__ = __webpack_require__(26);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_footer_action_button_html__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_footer_action_button_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_footer_action_button_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
 
@@ -175,7 +175,7 @@ window.BYUFooterActionButton = BYUFooterActionButton;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_footer_column_html__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_footer_column_html__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_footer_column_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_footer_column_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
 
@@ -204,7 +204,7 @@ window.BYUFooterColumn = BYUFooterColumn;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_footer_html__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_footer_html__ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_footer_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_footer_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
 
@@ -238,12 +238,12 @@ window.BYUFooter = BYUFooter;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_header_ejs_html__ = __webpack_require__(24);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_header_ejs_html__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_header_ejs_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_header_ejs_html__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_deep_equal__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_deep_equal__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_deep_equal___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_deep_equal__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_byu_web_component_utils__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__icons_transformicons__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__icons_transformicons__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__icons_transformicons___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3__icons_transformicons__);
 
 
@@ -488,7 +488,7 @@ window.BYUHeader = BYUHeader;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_menu_html__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_menu_html__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_menu_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_menu_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
 
@@ -596,9 +596,10 @@ window.BYUMenu = BYUMenu;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_search_html__ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_search_html__ = __webpack_require__(32);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_search_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_search_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__util_matchesSelector_js__ = __webpack_require__(13);
 /**
  *  @license
  *    Copyright 2016 Brigham Young University
@@ -620,12 +621,87 @@ window.BYUMenu = BYUMenu;
 
 
 
+
+const CLASS_SELECTED_INPUT = '__byu-search-selected-input';
+
 const ATTR_SEARCH_HANDLER = 'onsearch';
+const ATTR_SEARCH_INPUT_SELECTOR = 'search-input-selector';
+const ATTR_ACTION = 'action';
+const ATTR_ACTION_TARGET = 'action-target';
+
+const ACTION_SUBMIT_FORM = 'submit-form';
+const ACTION_CLICK = 'click';
+const ACTION_NAVIGATE = 'navigate';
+
+const DEFAULT_ACTION_TARGET_SUBMIT_FORM = 'form';
+const DEFAULT_ACTION_TARGET_CLICK = 'button, input[type="submit"], input[type="button"]';
+
+const DEFAULT_ACTION_TARGET = {
+    //If you're not familiar with this syntax (computed property names), see https://github.com/lukehoban/es6features#enhanced-object-literals
+    [ACTION_SUBMIT_FORM]: DEFAULT_ACTION_TARGET_SUBMIT_FORM,
+    [ACTION_CLICK]: DEFAULT_ACTION_TARGET_CLICK
+};
+
+const DEFAULT_SEARCH_INPUT_SELECTOR = 'input[type="search"], input[type="text"]';
 
 class ByuSearch extends HTMLElement {
 
+    constructor() {
+        super(); // always call super first
+        this.attachShadow({mode: 'open'});
+    }
+
+    connectedCallback() {
+        __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-search', __WEBPACK_IMPORTED_MODULE_0__byu_search_html___default.a, () => {
+            this._initialized = true;
+            applyStyleHelpers(this);
+            applyA11yHelpers(this);
+            setupSearchDispatchers(this);
+            setupSearchListeners(this);
+            // let input = this.getInputElement(this, true);
+            // if (input) {
+            //     input.addEventListener('input', this.inputHandler);
+            //     input.addEventListener('keypress', function (e) {
+            //         if (e.keyCode === 13) {
+            //             e.preventDefault();
+            //             component.search(component);
+            //         }
+            //     }, false);
+            // }
+            //
+            // if (this.hasAttribute('onsearch')) this.searchHandler = this.getAttribute('onsearch');
+            // this.shadowRoot.querySelector('#search-button').addEventListener('click', function () {
+            //     component.search(component);
+            // });
+        });
+    }
+
+    disconnectedCallback() {
+        removeStyleHelpers(this);
+        removeA11yHelpers(this);
+        teardownSearchDispatchers(this);
+        teardownSearchListeners(this);
+
+    }
+
+    search() {
+        let el = this.searchInputElement;
+        if (!el) {
+            throw new Error(`Unable to perform search; no search element matching the selector '${this.searchInputSelector}' can be found!`);
+        }
+        let value = el.value;
+        if (!value) return;
+
+        let cancelled = !this.dispatchEvent(createEvent('search', {search: value}));
+        if (cancelled) return;
+
+        if (this.action) {
+            runPredefinedAction(this, value);
+        }
+    }
+
     static get observedAttributes() {
-        return [ATTR_SEARCH_HANDLER];
+        return [ATTR_SEARCH_INPUT_SELECTOR];
     }
 
     attributeChangedCallback(attr, oldValue, newValue) {
@@ -636,89 +712,251 @@ class ByuSearch extends HTMLElement {
         }
     }
 
-    constructor() {
-        super(); // always call super first
-        this.attachShadow({ mode: 'open' });
+    get onsearch() {
+        return this.getAttribute(ATTR_SEARCH_HANDLER);
     }
 
-    connectedCallback() {
-
-        const component = this;
-
-        __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-search', __WEBPACK_IMPORTED_MODULE_0__byu_search_html___default.a, () => {
-
-            var input = this.getInputElement(this, true);
-            if (input) {
-                input.addEventListener('input', this.inputHandler);
-                input.addEventListener('keypress', function (e) {
-                    if (e.keyCode === 13) {
-                        e.preventDefault();
-                        component.search(component);
-                    }
-                }, false);
-            }
-
-            if (this.hasAttribute('onsearch')) this.searchHandler = this.getAttribute('onsearch');
-            this.shadowRoot.querySelector('#search-button').addEventListener('click', function () {
-                component.search(component);
-            });
-        });
+    set onsearch(value) {
+        this.setAttribute(ATTR_SEARCH_HANDLER, value);
     }
 
-    disconnectedCallback() {
-        var input = this.getInputElement(this, true);
-        if (input) {
-            input.removeEventListener('input', this.inputHandler);
-            input.removeEventListener('keypress', this.searchHandler);
-        }
+    set searchInputSelector(value) {
+        this.setAttribute(ATTR_SEARCH_INPUT_SELECTOR, value);
     }
 
-    search(component) {
-        if (component.hasAttribute('onsearch')) {
-            component.runCallback(component.getAttribute('onsearch'), component.getInputValue(component));
-        }
+    get searchInputSelector() {
+        return this.getAttribute(ATTR_SEARCH_INPUT_SELECTOR) || DEFAULT_SEARCH_INPUT_SELECTOR;
     }
 
-    runCallback(fnString, value) {
-        let func = window[fnString];
-        if (!func) {
-            console.error("Cannot find search callback function", fnString);
-            return;
-        }
-        return func.call(this, value);
+    get searchInputElement() {
+        return querySelectorLightDom(this, this.searchInputSelector)
     }
 
-    getInputValue(component) {
-        var input = this.getInputElement(component, true);
-        return input ? input.value : '';
+    set action(value) {
+        this.setAttribute(ATTR_ACTION, value);
     }
 
-    getInputElement(component, flatten) {
-        var elements = component.shadowRoot.querySelector("#search").assignedNodes({ flatten: flatten });
-        for (var i = 0; i < elements.length; i++) {
-            if (elements[i].tagName === 'INPUT') return elements[i];
-        }
-        return null;
+    get action() {
+        //Defaults to null
+        return this.getAttribute(ATTR_ACTION);
     }
 
-    inputHandler(e) {
-        var el = e.target;
-        if (el) {
-            var component = this;
-            component.value = e.target.value;
-        }
+    set actionTarget(value) {
+        this.setAttribute(ATTR_ACTION_TARGET, value);
     }
+
+    get actionTarget() {
+        //Default depends on action target value
+        return this.getAttribute(ATTR_ACTION_TARGET) || defaultActionTarget(this.action);
+    }
+
 }
 
 window.customElements.define('byu-search', ByuSearch);
 window.ByuSearch = ByuSearch;
+
+function runPredefinedAction(search, value) {
+    let action = search.action;
+
+    switch (action) {
+        case ACTION_SUBMIT_FORM:
+            runSubmitFormAction(search, value);
+            break;
+        case ACTION_CLICK:
+            runClickAction(search, value);
+            break;
+        case ACTION_NAVIGATE:
+            runNavigateAction(search, value);
+            break;
+        default:
+            throw new Error(`Invalid value for ${ATTR_ACTION}: '${action}'`);
+    }
+}
+
+function runSubmitFormAction(search, value) {
+    let target = search.actionTarget;
+
+    let form = querySelectorLightDom(search, target);
+
+    if (!form) {
+        throw new Error(`Unable to find target for 'submit-form' action using selector '${target}'`);
+    }
+
+    if (!(form instanceof HTMLFormElement)) {
+        throw new Error(`Element found by selector '${target}' must be a <form>, but was '${form.localName}'`);
+    }
+
+    form.submit();
+}
+
+function runClickAction(search, value) {
+    let target = search.actionTarget;
+
+    let button = querySelectorLightDom(search, target);
+
+    if (!button) {
+        throw new Error(`Unable to find target for 'click' action using selector '${target}'`);
+    }
+
+    button.click();
+}
+
+function runNavigateAction(search, value) {
+    let target = search.actionTarget;
+
+    if (!target) {
+        throw new Error('When using action="navigate", you must specify an action-target');
+    }
+
+    if (target.indexOf('${search}')) {
+        console.warn(`[byu-search] WARNING: Using action="navigate" with a target that does not contain \${search} will not include the search terms in the URL.`, search);
+    }
+
+    window.location.assign(target.replace('${search}', window.encodeURIComponent(value)));
+}
+
+function applyStyleHelpers(search) {
+    let el = search.searchInputElement;
+    if (el) {
+        el.classList.add(CLASS_SELECTED_INPUT);
+    } else {
+        console.error(`[byu-search] WARNING! Unable to find a search input element using the selector '${search.searchInputSelector}' on `, search);
+    }
+}
+
+function removeStyleHelpers(search) {
+    let el = search.searchInputElement;
+    if (el) el.classList.remove(CLASS_SELECTED_INPUT);
+}
+
+// For Accessibility, it's good for us to have a title and placeholder set. So, if there isn't one, we'll set it.
+function applyA11yHelpers(search) {
+    let el = search.searchInputElement;
+    if (!el) return;
+    if (el.title && el.placeholder) return;
+
+    let helped = [];
+
+    if (!el.title && !el.placeholder) {
+        el.title = el.placeholder = 'Search';
+        helped.push('title', 'placeholder');
+    } else if (el.title) {
+        el.placeholder = el.title;
+        helped.push('placeholder');
+    } else {
+        el.title = el.placeholder;
+        helped.push('title');
+    }
+
+    el.__byu_search_a11yHelpersApplied = helped;
+}
+
+function removeA11yHelpers(search) {
+    let el = search.searchInputElement;
+    if (!el) return;
+
+    let helpers = el.__byu_search_a11yHelpersApplied;
+    if (!helpers) return;
+
+    if (helpers.includes('title')) {
+        el.title = null;
+    }
+    if (helpers.includes('placeholder')) {
+        el.placeholder = null;
+    }
+    delete el.__byu_search_a11yHelpersApplied;
+}
+
+function setupSearchDispatchers(search) {
+    setupEnterKeySearchDispatcher(search);
+    setupButtonSearchDispatcher(search);
+}
+
+function setupButtonSearchDispatcher(search) {
+    search.shadowRoot.querySelector('#search-button')
+        .addEventListener('click', function () {
+            search.search();
+        });
+}
+
+function setupEnterKeySearchDispatcher(search) {
+    let el = search.searchInputElement;
+    if (!el) return;
+
+    let keypress = el.__byu_search_keyObserver = function (e) {
+        if (e.keyCode === 13) {
+            search.search();
+        }
+    };
+    el.addEventListener('keypress', keypress, false);
+}
+
+function teardownSearchDispatchers(search) {
+    teardownEnterKeySearchDispatcher(search);
+}
+
+function teardownEnterKeySearchDispatcher(search) {
+    let el = search.searchInputElement;
+    if (!el) return;
+
+    let keypress = el.__byu_search_keyObserver;
+    if (keypress) el.removeEventListener('keypress', keypress, false);
+}
+
+function setupSearchListeners(search) {
+    if (!search.onsearch) return;
+    let handler = search.__onsearchHandler = function (event) {
+        let handler = window[search.onsearch];
+        if (!handler) {
+            throw new Error(`Unable to find a global function named '${search.onsearch}'`);
+        }
+        handler.call(search, event.detail.search, event);
+    };
+
+    search.addEventListener('search', handler, false);
+}
+
+function teardownSearchListeners(search) {
+    if (search.__onsearchHandler) {
+        search.removeEventListener('search', search.__onsearchHandler, false);
+    }
+}
+
+function defaultActionTarget(action) {
+    if (!action) return null;
+    return DEFAULT_ACTION_TARGET[action];
+}
+
+function createEvent(name, detail) {
+    if (typeof window.CustomEvent === 'function') {
+        return new CustomEvent(name, {detail, cancelable: true, bubbles: true})
+    }
+    let evt = document.createEvent('CustomEvent');
+    evt.initCustomEvent(name, true, true, detail);
+    return evt;
+}
+
+function querySelectorLightDom(search, selector) {
+    let roots = search.shadowRoot.querySelector('#search').assignedNodes({flatten: true})
+        .filter(n => n instanceof HTMLElement);
+
+    for (let i = 0, len = roots.length; i < len; i++) {
+        let each = roots[i];
+        if (__webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__util_matchesSelector_js__["a" /* default */])(each, selector)) return each;
+        let child = each.querySelector(selector);
+        if (child) return child;
+    }
+    return null;
+}
+
+
 
 /***/ }),
 /* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_social_media_links_html__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_social_media_links_html__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_social_media_links_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_social_media_links_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
 
@@ -802,7 +1040,7 @@ function detectSocialKind(element) {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_user_info_html__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_user_info_html__ = __webpack_require__(34);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__byu_user_info_html___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__byu_user_info_html__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__ = __webpack_require__(0);
 /**
@@ -874,6 +1112,37 @@ window.ByuUserInfo = ByuUserInfo;
 
 /***/ }),
 /* 10 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"name": "byuweb-components",
+	"version": "1.0.2",
+	"description": "Components to be used for byu web pages and applications.",
+	"main": "",
+	"scripts": {
+		"build": "gulp build",
+		"serve": "gulp watch",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"private": true,
+	"author": "",
+	"license": "Apache-2.0",
+	"dependencies": {
+		"byu-web-component-utils": "^0.2.0",
+		"deep-equal": "^1.0.1"
+	},
+	"devDependencies": {
+		"browser-sync": "^2.18.6",
+		"byu-web-component-build": "^0.2.3",
+		"byu-web-component-utils": "^0.2.0",
+		"git-revision-webpack-plugin": "^2.5.1",
+		"gulp": "^3.9.1",
+		"gulp-rename": "^1.2.2"
+	}
+};
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1071,7 +1340,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;/**
 }));
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1084,6 +1353,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__byu_footer_column_byu_footer_column_js__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__byu_footer_action_button_byu_footer_action_button_js__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__byu_social_media_links_byu_social_media_links_js__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__package_json__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__package_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8__package_json__);
 /**
  * Created by ThatJoeMoore on 2/18/17
  */
@@ -1108,12 +1379,44 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 
+console.log(`--------------- Starting byu-theme-components ${__WEBPACK_IMPORTED_MODULE_8__package_json__["version"]} ---------------`);
+
+
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hash_sum__ = __webpack_require__(25);
+/* harmony export (immutable) */ __webpack_exports__["a"] = matches;
+/**
+ * Created by ThatJoeMoore on 5/31/17.
+ */
+
+
+function matches(el, selector) {
+    let proto = Element.prototype;
+    let actual =
+        proto.matches ||
+        proto.matchesSelector ||
+        proto.mozMatchesSelector ||
+        proto.msMatchesSelector ||
+        proto.oMatchesSelector ||
+        proto.webkitMatchesSelector ||
+        function (s) {
+            let doc = this.document || this.ownerDocument;
+            return doc.querySelectorAll(s).indexOf(this) !== -1;
+        };
+
+    return actual.call(el, selector);
+}
+
+
+/***/ }),
+/* 14 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hash_sum__ = __webpack_require__(27);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hash_sum___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hash_sum__);
 /* harmony export (immutable) */ __webpack_exports__["a"] = applyTemplate;
 /*
@@ -1200,7 +1503,7 @@ function runAfterStamping(element, callback) {
 
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)();
@@ -1214,7 +1517,7 @@ exports.push([module.i, ":host{background-color:#666;font-family:Vitesse A,Vites
 
 
 /***/ }),
-/* 14 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)();
@@ -1228,7 +1531,7 @@ exports.push([module.i, ":host{padding:0 15px;box-sizing:border-box;float:left}.
 
 
 /***/ }),
-/* 15 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)();
@@ -1242,7 +1545,7 @@ exports.push([module.i, ".blue-footer{background-color:#002e5d;text-align:center
 
 
 /***/ }),
-/* 16 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)();
@@ -1256,7 +1559,7 @@ exports.push([module.i, ".tcon{appearance:none;border:none;cursor:pointer;displa
 
 
 /***/ }),
-/* 17 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)();
@@ -1270,7 +1573,7 @@ exports.push([module.i, ":host{display:flex;justify-content:center;width:100%;he
 
 
 /***/ }),
-/* 18 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)();
@@ -1284,7 +1587,7 @@ exports.push([module.i, ":host{margin-left:20px}#search-icon{width:17px;height:1
 
 
 /***/ }),
-/* 19 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)();
@@ -1298,7 +1601,7 @@ exports.push([module.i, ".slot-wrapper{display:flex;flex-direction:row}.slot-wra
 
 
 /***/ }),
-/* 20 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(1)();
@@ -1312,12 +1615,12 @@ exports.push([module.i, "img{height:20px;margin:5px}.slot-wrapper ::slotted(*){t
 
 
 /***/ }),
-/* 21 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var pSlice = Array.prototype.slice;
-var objectKeys = __webpack_require__(23);
-var isArguments = __webpack_require__(22);
+var objectKeys = __webpack_require__(25);
+var isArguments = __webpack_require__(24);
 
 var deepEqual = module.exports = function (actual, expected, opts) {
   if (!opts) opts = {};
@@ -1412,7 +1715,7 @@ function objEquiv(a, b, opts) {
 
 
 /***/ }),
-/* 22 */
+/* 24 */
 /***/ (function(module, exports) {
 
 var supportsArgumentsClass = (function(){
@@ -1438,7 +1741,7 @@ function unsupported(object){
 
 
 /***/ }),
-/* 23 */
+/* 25 */
 /***/ (function(module, exports) {
 
 exports = module.exports = typeof Object.keys === 'function'
@@ -1453,7 +1756,7 @@ function shim (obj) {
 
 
 /***/ }),
-/* 24 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = function anonymous(locals, escapeFn, include, rethrow) {
@@ -1473,7 +1776,7 @@ module.exports = function anonymous(locals, escapeFn, include, rethrow) {
     }
     var __output = [], __append = __output.push.bind(__output);
     __append("<style>\n");
-    __append(__webpack_require__(16));
+    __append(__webpack_require__(18));
     __append('</style>\n<div id="header" class="byu-header-root">\n<div class="byu-header-content">\n<div class="byu-header-primary">\n<img class="byu-logo" alt="BYU" src="https://cdn.byu.edu/shared-icons/latest/logos/monogram-white.svg">\n<div class="byu-header-title">\n<slot id="site-title" name="site-title"></slot>\n</div>\n');
     if (locals.mobile) {
         __append('<button type="button" class="mobile-menu-button tcon tcon-menu--xbutterfly" aria-label="toggle menu">\n<span class="tcon-menu__lines" aria-hidden="true"></span>\n<span class="tcon-visuallyhidden">toggle menu</span>\n</button>\n');
@@ -1493,7 +1796,7 @@ module.exports = function anonymous(locals, escapeFn, include, rethrow) {
 }
 
 /***/ }),
-/* 25 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1558,46 +1861,46 @@ module.exports = sum;
 
 
 /***/ }),
-/* 26 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = "<style>" + __webpack_require__(13) + "</style> <div class=\"wrapper\"> <slot name=\"actiontext\"></slot> </div>";
-
-/***/ }),
-/* 27 */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = "<style>" + __webpack_require__(14) + "</style> <h2 class=\"header\"> <slot name=\"header\"></slot> </h2> <div class=\"content\"> <slot></slot> </div>";
-
-/***/ }),
 /* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__(15) + "</style> <div class=\"secondary-footer\"> <div class=\"secondary-footer-content\"> <slot id=\"slot\"></slot> </div> </div> <div class=\"blue-footer\"> <div class=\"inner-wrapper\"> <a href=\"https://home.byu.edu/home/\" target=\"_blank\"><img src=\"https://cdn.byu.edu/shared-icons/latest/logos/word-mark-wide-white.svg\" alt=\"Brigham Young University\" class=\"university-logo\"></a> <div class=\"copyright-contact\">&copy; <span id=\"currentYear\"></span> All Rights Reserved | Provo, UT 84602, USA | <a href=\"tel:18014224636\">801-422-4636</a></div> </div> </div>";
+module.exports = "<style>" + __webpack_require__(15) + "</style> <div class=\"wrapper\"> <slot name=\"actiontext\"></slot> </div>";
 
 /***/ }),
 /* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__(17) + "</style> <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cloud.typography.com/75214/6517752/css/fonts.css\" media=\"all\"> <nav class=\"outer-nav slot-container\"> <slot class=\"byu-menu-items\"></slot> <div class=\"byu-menu-more-menu\"> <a href=\"javascript: void 0\" class=\"byu-menu-more\"> More <img class=\"more-open-button\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/down-open-navy.svg\" alt=\"Open\"> </a> <div class=\"byu-menu-more-items slot-container\"> <slot name=\"more\"></slot> </div> </div> </nav>";
+module.exports = "<style>" + __webpack_require__(16) + "</style> <h2 class=\"header\"> <slot name=\"header\"></slot> </h2> <div class=\"content\"> <slot></slot> </div>";
 
 /***/ }),
 /* 30 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__(18) + "</style> <div id=\"search-form\"> <div id=\"search-container\"> <slot id=\"search\"><input type=\"search\" placeholder=\"Search\"></slot> </div> <button id=\"search-button\" type=\"submit\"> <img id=\"search-icon\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/search-white.svg\" alt=\"Run Search\"> </button> </div>";
+module.exports = "<style>" + __webpack_require__(17) + "</style> <div class=\"secondary-footer\"> <div class=\"secondary-footer-content\"> <slot id=\"slot\"></slot> </div> </div> <div class=\"blue-footer\"> <div class=\"inner-wrapper\"> <a href=\"https://home.byu.edu/home/\" target=\"_blank\"><img src=\"https://cdn.byu.edu/shared-icons/latest/logos/word-mark-wide-white.svg\" alt=\"Brigham Young University\" class=\"university-logo\"></a> <div class=\"copyright-contact\">&copy; <span id=\"currentYear\"></span> All Rights Reserved | Provo, UT 84602, USA | <a href=\"tel:18014224636\">801-422-4636</a></div> </div> </div>";
 
 /***/ }),
 /* 31 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__(19) + "</style> <div class=\"slot-wrapper\"> <slot id=\"social-main\"></slot> <slot id=\"social-deprecated-facebook\" name=\"facebook\"></slot> <slot id=\"social-deprecated-twitter\" name=\"twitter\"></slot> <slot id=\"social-deprecated-instagram\" name=\"instagram\"></slot> <slot id=\"social-deprecated-youtube\" name=\"youtube\"></slot> <slot id=\"social-deprecated-pinterest\" name=\"pinterest\"></slot> <slot id=\"social-deprecated-googleplus\" name=\"googleplus\"></slot> <slot id=\"social-deprecated-linkedin\" name=\"linkedin\"></slot> <slot id=\"social-deprecated-rss\" name=\"rss\"></slot> <slot id=\"social-deprecated-snapchat\" name=\"snapchat\"></slot> </div>";
+module.exports = "<style>" + __webpack_require__(19) + "</style> <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cloud.typography.com/75214/6517752/css/fonts.css\" media=\"all\"> <nav class=\"outer-nav slot-container\"> <slot class=\"byu-menu-items\"></slot> <div class=\"byu-menu-more-menu\"> <a href=\"javascript: void 0\" class=\"byu-menu-more\"> More <img class=\"more-open-button\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/down-open-navy.svg\" alt=\"Open\"> </a> <div class=\"byu-menu-more-items slot-container\"> <slot name=\"more\"></slot> </div> </div> </nav>";
 
 /***/ }),
 /* 32 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__(20) + "</style> <div class=\"byu-user-wrapper\"> <div class=\"no-user slot-wrapper\"> <img class=\"not-mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-o-white.svg\"> <img class=\"mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-o-navy.svg\"> <span class=\"text slot-wrapper\"> <slot name=\"login\">Sign In</slot> </span> </div> <div class=\"has-user\"> <span class=\"name slot-wrapper\"> <slot name=\"user-name\" id=\"user-name\"></slot> </span> <img class=\"not-mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-white.svg\"> <img class=\"mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-navy.svg\"> <span class=\"logout slot-wrapper\"> <slot name=\"logout\">Sign Out</slot> </span> </div> </div>";
+module.exports = "<style>" + __webpack_require__(20) + "</style> <div id=\"search-form\"> <div id=\"search-container\"> <slot id=\"search\"><input type=\"search\" placeholder=\"Search\"></slot> </div> <button id=\"search-button\" type=\"submit\"> <img id=\"search-icon\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/search-white.svg\" alt=\"Run Search\"> </button> </div>";
+
+/***/ }),
+/* 33 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "<style>" + __webpack_require__(21) + "</style> <div class=\"slot-wrapper\"> <slot id=\"social-main\"></slot> <slot id=\"social-deprecated-facebook\" name=\"facebook\"></slot> <slot id=\"social-deprecated-twitter\" name=\"twitter\"></slot> <slot id=\"social-deprecated-instagram\" name=\"instagram\"></slot> <slot id=\"social-deprecated-youtube\" name=\"youtube\"></slot> <slot id=\"social-deprecated-pinterest\" name=\"pinterest\"></slot> <slot id=\"social-deprecated-googleplus\" name=\"googleplus\"></slot> <slot id=\"social-deprecated-linkedin\" name=\"linkedin\"></slot> <slot id=\"social-deprecated-rss\" name=\"rss\"></slot> <slot id=\"social-deprecated-snapchat\" name=\"snapchat\"></slot> </div>";
+
+/***/ }),
+/* 34 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = "<style>" + __webpack_require__(22) + "</style> <div class=\"byu-user-wrapper\"> <div class=\"no-user slot-wrapper\"> <img class=\"not-mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-o-white.svg\"> <img class=\"mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-o-navy.svg\"> <span class=\"text slot-wrapper\"> <slot name=\"login\">Sign In</slot> </span> </div> <div class=\"has-user\"> <span class=\"name slot-wrapper\"> <slot name=\"user-name\" id=\"user-name\"></slot> </span> <img class=\"not-mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-white.svg\"> <img class=\"mobile\" src=\"https://cdn.byu.edu/shared-icons/latest/fontawesome/user-circle-navy.svg\"> <span class=\"logout slot-wrapper\"> <slot name=\"logout\">Sign Out</slot> </span> </div> </div>";
 
 /***/ })
 /******/ ]);
