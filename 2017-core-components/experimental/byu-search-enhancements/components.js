@@ -740,13 +740,7 @@ class ByuSearch extends HTMLElement {
         __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-search', __WEBPACK_IMPORTED_MODULE_0__byu_search_html___default.a, () => {
             this._initialized = true;
 
-            this._input = lookupSearchInput(this);
-
-            if (this._input) {
-                setupInputElement(this, this._input);
-            } else {
-                console.error(`[byu-search] WARNING! Unable to find a search input element using the selector '${this.searchInputSelector}' on `, this);
-            }
+            this._input = lookupAndConfigureInputElement(this, this.searchInputSelector);
 
             setupButtonSearchDispatcher(this);
             setupSearchListeners(this);
@@ -788,11 +782,13 @@ class ByuSearch extends HTMLElement {
 
     attributeChangedCallback(attr, oldValue, newValue) {
         switch (attr) {
-            case ATTR_SEARCH_HANDLER:
-            case ATTR_OLD_SEARCH_HANDLER:
-                teardownSearchListeners(this);
-                setupSearchListeners(this);
+            case ATTR_SEARCH_INPUT_SELECTOR:
+                teardownInputElement(this, this._input);
+
+                this._input = lookupAndConfigureInputElement(this, newValue);
+
                 return;
+            //All other attrs are lazily looked up, as needed.
         }
     }
 
@@ -871,8 +867,19 @@ function handleSlotChange(search, event) {
     }
 }
 
-function lookupSearchInput(search) {
-    return __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["c" /* querySelectorSlot */](search._searchSlot, search.searchInputSelector)
+function lookupSearchInput(search, selector) {
+    return __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["c" /* querySelectorSlot */](search._searchSlot, selector)
+}
+
+function lookupAndConfigureInputElement(search, selector) {
+    let input = lookupSearchInput(search, selector);
+
+    if (input) {
+        setupInputElement(search, input);
+    } else {
+        console.error(`[byu-search] WARNING! Unable to find a search input element using the selector '${selector}' on `, search);
+    }
+    return input;
 }
 
 function setupInputElement(search, input) {
@@ -1010,36 +1017,38 @@ function teardownEnterKeySearchDispatcher(search, input) {
 }
 
 function setupSearchListeners(search) {
-    if (search.onbyusearch) {
-        let handler = search.__onbyusearchHandler = function (event) {
-            let handler = window[search.onbyusearch];
-            if (!handler) {
-                throw new Error(`Unable to find a global function named '${search.onbyusearch}'`);
-            }
-            handler.call(search, event);
-        };
+    let handler = search.__onbyusearchHandler = function (event) {
+        let name = search.onbyusearch;
+        if (!name) return;
+        let handler = window[name];
+        if (!handler) {
+            throw new Error(`Unable to find a global function named '${name}'`);
+        }
+        handler.call(search, event);
+    };
 
-        search.addEventListener(EVENT_TYPE, handler, false);
-    }
-    if (search.onsearch) {
-        let handler = search.__onsearchHandler = function (event) {
-            let handler = window[search.onsearch];
-            if (!handler) {
-                throw new Error(`Unable to find a global function named '${search.onsearch}'`);
-            }
-            handler.call(search, event.detail.search, event);
-        };
+    search.addEventListener(EVENT_TYPE, handler, false);
 
-        search.addEventListener(EVENT_TYPE, handler, false);
-    }
+    let legacyHandler = search.__onsearchLegacyHandler = function (event) {
+        let name = search.onsearch;
+        if (!name) return;
+
+        let handler = window[name];
+        if (!handler) {
+            throw new Error(`Unable to find a global function named '${name}'`);
+        }
+        handler.call(search, event.detail.search, event);
+    };
+
+    search.addEventListener(EVENT_TYPE, legacyHandler, false);
 }
 
 function teardownSearchListeners(search) {
     if (search.__onbyusearchHandler) {
         search.removeEventListener(EVENT_TYPE, search.__onbyusearchHandler, false);
     }
-    if (search.__onsearchHandler) {
-        search.removeEventListener(EVENT_TYPE, search.__onsearchHandler, false);
+    if (search.__onsearchLegacyHandler) {
+        search.removeEventListener(EVENT_TYPE, search.__onsearchLegacyHandler, false);
     }
 }
 

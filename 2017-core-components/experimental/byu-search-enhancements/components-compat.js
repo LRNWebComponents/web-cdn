@@ -832,13 +832,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                 __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["a" /* applyTemplate */](this, 'byu-search', __WEBPACK_IMPORTED_MODULE_0__byu_search_html___default.a, function () {
                     _this11._initialized = true;
 
-                    _this11._input = lookupSearchInput(_this11);
-
-                    if (_this11._input) {
-                        setupInputElement(_this11, _this11._input);
-                    } else {
-                        console.error('[byu-search] WARNING! Unable to find a search input element using the selector \'' + _this11.searchInputSelector + '\' on ', _this11);
-                    }
+                    _this11._input = lookupAndConfigureInputElement(_this11, _this11.searchInputSelector);
 
                     setupButtonSearchDispatcher(_this11);
                     setupSearchListeners(_this11);
@@ -878,11 +872,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
             key: 'attributeChangedCallback',
             value: function attributeChangedCallback(attr, oldValue, newValue) {
                 switch (attr) {
-                    case ATTR_SEARCH_HANDLER:
-                    case ATTR_OLD_SEARCH_HANDLER:
-                        teardownSearchListeners(this);
-                        setupSearchListeners(this);
+                    case ATTR_SEARCH_INPUT_SELECTOR:
+                        teardownInputElement(this, this._input);
+
+                        this._input = lookupAndConfigureInputElement(this, newValue);
+
                         return;
+                    //All other attrs are lazily looked up, as needed.
                 }
             }
         }, {
@@ -969,8 +965,19 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
         }
     }
 
-    function lookupSearchInput(search) {
-        return __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["c" /* querySelectorSlot */](search._searchSlot, search.searchInputSelector);
+    function lookupSearchInput(search, selector) {
+        return __WEBPACK_IMPORTED_MODULE_1_byu_web_component_utils__["c" /* querySelectorSlot */](search._searchSlot, selector);
+    }
+
+    function lookupAndConfigureInputElement(search, selector) {
+        var input = lookupSearchInput(search, selector);
+
+        if (input) {
+            setupInputElement(search, input);
+        } else {
+            console.error('[byu-search] WARNING! Unable to find a search input element using the selector \'' + selector + '\' on ', search);
+        }
+        return input;
     }
 
     function setupInputElement(search, input) {
@@ -1107,36 +1114,38 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
     }
 
     function setupSearchListeners(search) {
-        if (search.onbyusearch) {
-            var handler = search.__onbyusearchHandler = function (event) {
-                var handler = window[search.onbyusearch];
-                if (!handler) {
-                    throw new Error('Unable to find a global function named \'' + search.onbyusearch + '\'');
-                }
-                handler.call(search, event);
-            };
+        var handler = search.__onbyusearchHandler = function (event) {
+            var name = search.onbyusearch;
+            if (!name) return;
+            var handler = window[name];
+            if (!handler) {
+                throw new Error('Unable to find a global function named \'' + name + '\'');
+            }
+            handler.call(search, event);
+        };
 
-            search.addEventListener(EVENT_TYPE, handler, false);
-        }
-        if (search.onsearch) {
-            var _handler = search.__onsearchHandler = function (event) {
-                var handler = window[search.onsearch];
-                if (!handler) {
-                    throw new Error('Unable to find a global function named \'' + search.onsearch + '\'');
-                }
-                handler.call(search, event.detail.search, event);
-            };
+        search.addEventListener(EVENT_TYPE, handler, false);
 
-            search.addEventListener(EVENT_TYPE, _handler, false);
-        }
+        var legacyHandler = search.__onsearchLegacyHandler = function (event) {
+            var name = search.onsearch;
+            if (!name) return;
+
+            var handler = window[name];
+            if (!handler) {
+                throw new Error('Unable to find a global function named \'' + name + '\'');
+            }
+            handler.call(search, event.detail.search, event);
+        };
+
+        search.addEventListener(EVENT_TYPE, legacyHandler, false);
     }
 
     function teardownSearchListeners(search) {
         if (search.__onbyusearchHandler) {
             search.removeEventListener(EVENT_TYPE, search.__onbyusearchHandler, false);
         }
-        if (search.__onsearchHandler) {
-            search.removeEventListener(EVENT_TYPE, search.__onsearchHandler, false);
+        if (search.__onsearchLegacyHandler) {
+            search.removeEventListener(EVENT_TYPE, search.__onsearchLegacyHandler, false);
         }
     }
 
