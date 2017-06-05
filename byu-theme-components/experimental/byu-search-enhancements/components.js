@@ -332,7 +332,7 @@ class BYUHeader extends HTMLElement {
                 this._addButtonListeners();
                 this._checkIfMenuIsNeeded();
                 this._checkIfFullWidth();
-                this._checkIfLinked();
+                this._applyHomeUrl();
             });
         }
     }
@@ -357,23 +357,13 @@ class BYUHeader extends HTMLElement {
 
     _checkIfFullWidth() {
         var menuSlot = this.shadowRoot.querySelector('#navbarMenu');
-        if (menuSlot.assignedNodes().length > 0)
-        {
+        if (menuSlot.assignedNodes().length > 0) {
             var menu = menuSlot.assignedNodes()[0];
             if (this.hasAttribute('full-width')) {
                 menu.setAttribute('full-width', '');
             } else {
                 menu.removeAttribute('full-width');
             }
-        }
-    }
-
-    _checkIfLinked() {
-        if (this.hasAttribute(ATTR_HOME_URL)) {
-            this._applyHomeUrl(this.getAttribute(ATTR_HOME_URL));
-        } else {
-            this.setAttribute(ATTR_HOME_URL, DEFAULT_HOME_URL);
-            this._applyHomeUrl(this.getAttribute(ATTR_HOME_URL));
         }
     }
 
@@ -451,7 +441,7 @@ class BYUHeader extends HTMLElement {
                 this._applyMenuOpen();
                 return;
             case ATTR_HOME_URL:
-                this._applyHomeUrl(newValue);
+                this._applyHomeUrl();
                 return;
         }
     }
@@ -468,10 +458,11 @@ class BYUHeader extends HTMLElement {
         }
     }
 
-    _applyHomeUrl(url) {
-        this.homeUrl = url;
+    _applyHomeUrl() {
         let aTag = this.shadowRoot.querySelector('#home-url');
-        aTag.setAttribute('href', this.homeUrl);
+        if (aTag) {//Filter out cases where we haven't fully initialized yet
+            aTag.setAttribute('href', this.homeUrl);
+        }
     }
 
     get mobileMaxWidth() {
@@ -523,15 +514,11 @@ class BYUHeader extends HTMLElement {
     }
 
     get homeUrl() {
-        return this.getAttribute(ATTR_HOME_URL);
+        return this.getAttribute(ATTR_HOME_URL) || DEFAULT_HOME_URL;
     }
 
     set homeUrl(val) {
-        if (val) {
-            this.setAttribute(ATTR_HOME_URL, val);
-        } else {
-            this.setAttribute(ATTR_HOME_URL, DEFAULT_HOME_URL);
-        }
+        this.setAttribute(ATTR_HOME_URL, val);
     }
 
     _applyMobileWidth() {
