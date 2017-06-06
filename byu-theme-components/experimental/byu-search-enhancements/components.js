@@ -770,7 +770,9 @@ class ByuSearch extends HTMLElement {
     attributeChangedCallback(attr, oldValue, newValue) {
         switch (attr) {
             case ATTR_SEARCH_INPUT_SELECTOR:
-                teardownInputElement(this, this._input);
+                if (this._input) {
+                    teardownInputElement(this, this._input);
+                }
 
                 this._input = lookupAndConfigureInputElement(this, newValue);
 
