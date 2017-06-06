@@ -6,9 +6,9 @@
 /******/ 	function __webpack_require__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-/******/
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
@@ -1169,9 +1169,9 @@ console.log(`--------------- Starting byu-theme-components ${__WEBPACK_IMPORTED_
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (immutable) */ __webpack_exports__["a"] = applyTemplate;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hash_sum__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hash_sum___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hash_sum__);
-/* harmony export (immutable) */ __webpack_exports__["a"] = applyTemplate;
 /*
  *  @license
  *    Copyright 2017 Brigham Young University
@@ -1278,7 +1278,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, ":host{padding:0 15px;box-sizing:border-box;float:left}.header{width:100%}.header ::slotted(*){font-family:Vitesse A,Vitesse B,Georgia,serif!important;text-transform:uppercase!important;color:#002e5d!important;font-size:20px!important;border-bottom:1px solid #c5c5c5!important;padding-bottom:3px!important;white-space:nowrap!important;font-weight:400!important;width:100%;display:inline-block}.content ::slotted(:not(byu-footer-action-button)){font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-size:13px!important;font-weight:400!important;color:#666!important;position:relative;top:-11px;line-height:1.42857143}.content ::slotted(a){line-height:35px;text-decoration:none!important;outline:none!important}.content ::slotted(a:hover){cursor:pointer;color:#002e5d!important}", ""]);
+exports.push([module.i, ":host{padding:0 15px;box-sizing:border-box}.header{width:100%}.header ::slotted(*){font-family:Vitesse A,Vitesse B,Georgia,serif!important;text-transform:uppercase!important;color:#002e5d!important;font-size:20px!important;border-bottom:1px solid #c5c5c5!important;padding-bottom:3px!important;white-space:nowrap!important;font-weight:400!important;width:100%;display:inline-block}.content ::slotted(:not(byu-footer-action-button)){font-family:Gotham A,Gotham B,Helvetica,sans-serif!important;font-size:13px!important;font-weight:400!important;color:#666!important;position:relative;top:-11px;line-height:1.42857143}.content ::slotted(a){line-height:35px;text-decoration:none!important;outline:none!important}.content ::slotted(a:hover){cursor:pointer;color:#002e5d!important}", ""]);
 
 // exports
 
@@ -1292,7 +1292,7 @@ exports = module.exports = __webpack_require__(1)();
 
 
 // module
-exports.push([module.i, ".blue-footer{background-color:#002e5d;text-align:center;font-family:Gotham A,Gotham B,Helvetica,sans-serif;font-weight:400;font-size:12px;color:#fff;height:80px;width:100%;display:flex;justify-content:center;align-items:center}.blue-footer a{text-decoration:none;color:#fff}.blue-footer a:hover{color:#fff}.inner-wrapper{max-width:1200px;margin-top:-10px}.university-logo{width:450px;max-width:100vw;box-sizing:border-box;margin-bottom:-10px;height:40px}.secondary-footer{height:auto;background-color:#e5e5e5;text-align:center;display:flex;justify-content:center;flex:1}.secondary-footer-content ::slotted(*){display:inline-block;text-align:left;vertical-align:top}.secondary-footer-content{width:1200px!important;margin:0 15px}:host([full-width]) .inner-wrapper{max-width:100%}:host([full-width]) .secondary-footer-content{width:100%}@media (max-width:767px){.secondary-footer-content ::slotted(*){width:100%}.secondary-footer-content ::slotted(:last-child){padding-bottom:30px}.secondary-footer-content ::slotted(:first-child){padding-top:10px}.secondary-footer-content ::slotted(*){padding-left:0!important;padding-right:0!important}}@media (min-width:768px) and (max-width:1199px){.secondary-footer-content ::slotted(*){width:50%}.secondary-footer-content ::slotted(:nth-child(n+3)){padding-bottom:30px}.secondary-footer-content ::slotted(:nth-child(-n+2)){padding-top:10px}.secondary-footer-content ::slotted(:nth-child(odd)){padding-left:0!important}.secondary-footer-content ::slotted(:nth-child(2n)){padding-right:0!important}}@media (min-width:1200px){.secondary-footer-content ::slotted(*){width:25%;padding-top:10px;padding-bottom:30px}.secondary-footer-content ::slotted(:first-child){padding-left:0!important}.secondary-footer-content ::slotted(:last-child){padding-right:0!important}}", ""]);
+exports.push([module.i, ".blue-footer{background-color:#002e5d;text-align:center;font-family:Gotham A,Gotham B,Helvetica,sans-serif;font-weight:400;font-size:12px;color:#fff;height:80px;width:100%;display:flex;justify-content:center;align-items:center}.blue-footer a{text-decoration:none;color:#fff}.blue-footer a:hover{color:#fff}.inner-wrapper{max-width:1200px;margin-top:-10px}.university-logo{width:450px;max-width:100vw;box-sizing:border-box;margin-bottom:-10px;height:40px}.secondary-footer{height:auto;background-color:#e5e5e5;text-align:center;display:flex;justify-content:center;flex:1}.secondary-footer-content ::slotted(*){display:inline-block;text-align:left;vertical-align:top}.secondary-footer-content{width:1200px!important;margin:0 15px}:host([full-width]) .inner-wrapper{max-width:100%}:host([full-width]) .secondary-footer-content{width:100%}@media (max-width:767px){.secondary-footer-content ::slotted(*){width:100%}.secondary-footer-content ::slotted(:last-child){padding-bottom:30px}.secondary-footer-content ::slotted(:first-child){padding-top:10px}.secondary-footer-content ::slotted(*){padding-left:0!important;padding-right:0!important}}@media (min-width:768px) and (max-width:1199px){.secondary-footer-content ::slotted(*){width:50%}.secondary-footer-content ::slotted(:nth-child(n+3)){padding-bottom:30px}.secondary-footer-content ::slotted(:nth-child(-n+2)){padding-top:10px}}@media (min-width:1200px){.secondary-footer-content ::slotted(*){width:25%;padding-top:10px;padding-bottom:30px}.secondary-footer-content ::slotted(:first-child){padding-left:0!important}.secondary-footer-content ::slotted(:last-child){padding-right:0!important}}", ""]);
 
 // exports
 
