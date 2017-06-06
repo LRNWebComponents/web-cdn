@@ -859,6 +859,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
         }, {
             key: 'attributeChangedCallback',
             value: function attributeChangedCallback(attr, oldValue, newValue) {
+                if (!this._initialized) return;
                 switch (attr) {
                     case ATTR_SEARCH_INPUT_SELECTOR:
                         if (this._input) {
