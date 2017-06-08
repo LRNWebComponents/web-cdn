@@ -379,7 +379,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
     // module
-    exports.push([module.i, ":host{display:inline-block;background-color:#fff;-moz-box-shadow:0 8px 12px rgba(0,0,0,.2);-webkit-box-shadow:0 8px 12px rgba(0,0,0,.2);box-shadow:0 8px 12px rgba(0,0,0,.2);vertical-align:top;min-width:250px;width:30%;max-width:700px;margin-bottom:20px}:host(:hover){-moz-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);-webkit-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);box-shadow:0 10px 18px 0 rgba(0,0,0,.3)}:host ul{margin-bottom:0!important}#card-content ::slotted(*){width:100%;padding:0 20px!important;color:#444}#card-content ::slotted(ul){padding-left:40px!important}#card-content ::slotted(img){padding:0!important}#card-content ::slotted(:not(img)):first-of-type(){padding-top:20px!important}", ""]);
+    exports.push([module.i, ":host{display:inline-block;background-color:#fff;-moz-box-shadow:0 8px 12px rgba(0,0,0,.2);-webkit-box-shadow:0 8px 12px rgba(0,0,0,.2);box-shadow:0 8px 12px rgba(0,0,0,.2);vertical-align:top;min-width:250px;width:30%;max-width:700px;margin-bottom:20px}:host(:hover){-moz-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);-webkit-box-shadow:0 10px 18px 0 rgba(0,0,0,.3);box-shadow:0 10px 18px 0 rgba(0,0,0,.3)}:host ul{margin-bottom:0!important}#card-content ::slotted(*){width:100%;box-sizing:border-box;padding:0 20px!important;color:#444}#card-content ::slotted(ul){padding-left:40px!important}#card-content ::slotted(img){padding:0!important}#card-content ::slotted(:not(img)):first-of-type(){padding-top:20px!important}", ""]);
 
     // exports
 
