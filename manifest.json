@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-06-09T20:56:04.294Z",
+  "$built": "2017-06-09T20:58:45.336Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1751,430 +1751,7 @@
           "last_updated": "2017-06-09T20:54:51+00:00",
           "experimental": true,
           "messages": [],
-          "resources": {
-            "2017-core-components.css": {
-              "entrypoint": false,
-              "size": 18057,
-              "gzip_size": 2794,
-              "hashes": {
-                "sha256": {
-                  "base64": "Q4m7gLMtNd1qM75UicxNdsxt25OmyAl8V7vVv0qY0is=",
-                  "hex": "4389bb80b32d35dd6a33be5489cc4d76cc6ddb93a6c8097c57bbd5bf4a98d22b"
-                },
-                "sha384": {
-                  "base64": "OqBb7H7EXykrXjWbq8fOhbjM4Xe2wBE2edSzIzzog3Olk5KRTA2f84LE8r2+O7ae",
-                  "hex": "3aa05bec7ec45f292b5e359babc7ce85b8cce177b6c0113679d4b3233ce88373a59392914c0d9ff382c4f2bdbe3bb69e"
-                },
-                "sha512": {
-                  "base64": "nAImNXYpumTvvwhBPyHZgJpGP9rnNSCYiLS/NyqNMhtPkUXa5czn1VJ9FCW3kH4eClYafCJT+oALKQH7ojH+uA==",
-                  "hex": "9c0226357629ba64efbf08413f21d9809a463fdae735209888b4bf372a8d321b4f9145dae5cce7d5527d1425b7907e1e0a561a7c2253fa800b2901fba231feb8"
-                }
-              }
-            },
-            "2017-core-components.css.map": {
-              "entrypoint": false,
-              "size": 53830,
-              "gzip_size": 10937,
-              "hashes": {
-                "sha256": {
-                  "base64": "7HC7zMHL4XXGz/rI4YcVB5MMCM/Rimsn+WzTq0BeaRE=",
-                  "hex": "ec70bbccc1cbe175c6cffac8e1871507930c08cfd18a6b27f96cd3ab405e6911"
-                },
-                "sha384": {
-                  "base64": "Ab3AVNxzcZn1W2LciLJRnodAuEF1H7NXfRa69t5wyujzX4P9Pk0S3O3QyKJM7zVR",
-                  "hex": "01bdc054dc737199f55b62dc88b2519e8740b841751fb3577d16baf6de70cae8f35f83fd3e4d12dcedd0c8a24cef3551"
-                },
-                "sha512": {
-                  "base64": "uhSf9gyJheAzHSejZdEGHYrKJlUCw02urlMOyh/EKJf/u4K9Pb6TkgSZ4KUpB6sjwk89T2ZOhQRcOxN1QRE9Dw==",
-                  "hex": "ba149ff60c8985e0331d27a365d1061d8aca265502c34daeae530eca1fc42897ffbb82bd3dbe93920499e0a52907ab23c24f3d4f664e85045c3b137541113d0f"
-                }
-              }
-            },
-            "2017-core-components.js": {
-              "entrypoint": false,
-              "size": 6698,
-              "gzip_size": 2577,
-              "hashes": {
-                "sha256": {
-                  "base64": "u7r3Shsj/VaGB5UEPfLwNeCbyYmM5w5TjTMFE2Ylfak=",
-                  "hex": "bbbaf74a1b23fd56860795043df2f035e09bc9898ce70e538d33051366257da9"
-                },
-                "sha384": {
-                  "base64": "oOYPJViVw/rdAOQkx0VWN8Xj6IXvOGwEcxYfl/fEkPQk0+lozIsnDQBO7MkFJrXm",
-                  "hex": "a0e60f255895c3fadd00e424c7455637c5e3e885ef386c0473161f97f7c490f424d3e968cc8b270d004eecc90526b5e6"
-                },
-                "sha512": {
-                  "base64": "AaPGYLHgSvZ0E9d67w3GRRrJPlsEZKbin+TMF586djxK1W9zygKs48eoqc4TU5+N9iP243LVz6MmuXYMczHEiQ==",
-                  "hex": "01a3c660b1e04af67413d77aef0dc6451ac93e5b0464a6e29fe4cc179f3a763c4ad56f73ca02ace3c7a8a9ce13539f8df623f6e372d5cfa326b9760c7331c489"
-                }
-              }
-            },
-            "2017-core-components.min.css": {
-              "entrypoint": false,
-              "size": 10342,
-              "gzip_size": 2197,
-              "hashes": {
-                "sha256": {
-                  "base64": "qv6DYuI6V1TfF9K4CcBl41Us16iIX2oS17zxgP4u/RA=",
-                  "hex": "aafe8362e23a5754df17d2b809c065e3552cd7a8885f6a12d7bcf180fe2efd10"
-                },
-                "sha384": {
-                  "base64": "fTzQJF4euEGBgSIR1AsxavfrLnSOoIPQzRuFdavPh269GAP7dK81p6I/UP2Yh6Xx",
-                  "hex": "7d3cd0245e1eb84181812211d40b316af7eb2e748ea083d0cd1b8575abcf876ebd1803fb74af35a7a23f50fd9887a5f1"
-                },
-                "sha512": {
-                  "base64": "tr3a+8IwgUSO5RXtAGhUalHyNKmabDO3C9bN31mc8gc6xiQ4uGBTXS66MOKQUMeN6K3bTrzecAafFGgEBf/Aow==",
-                  "hex": "b6bddafbc23081448ee515ed0068546a51f234a99a6c33b70bd6cddf599cf2073ac62438b860535d2eba30e29050c78de8addb4ebcde70069f14680405ffc0a3"
-                }
-              }
-            },
-            "2017-core-components.min.css.map": {
-              "entrypoint": false,
-              "size": 53834,
-              "gzip_size": 10940,
-              "hashes": {
-                "sha256": {
-                  "base64": "ANdjx/Ll1B6bzwf17YZIPZRfQsK773POuvcy/G7ykxM=",
-                  "hex": "00d763c7f2e5d41e9bcf07f5ed86483d945f42c2bbef73cebaf732fc6ef29313"
-                },
-                "sha384": {
-                  "base64": "82wjEmfnXEZkTSMBKVO2vIN24PnKQm/JvJjpcIiP85YUxu03BXqkASlU5j4XVSWo",
-                  "hex": "f36c231267e75c46644d23012953b6bc8376e0f9ca426fc9bc98e970888ff39614c6ed37057aa4012954e63e175525a8"
-                },
-                "sha512": {
-                  "base64": "AeJwDapu1/qbpPnkJrGpuGTsuc6sHpEg9hkSWASTJv2H/Gwc4tcv92X9TqXod89VstR12mbKGyssdUSpPAqjXg==",
-                  "hex": "01e2700daa6ed7fa9ba4f9e426b1a9b864ecb9ceac1e9120f6191258049326fd87fc6c1ce2d72ff765fd4ea5e877cf55b2d475da66ca1b2b2c7544a93c0aa35e"
-                }
-              }
-            },
-            "2017-core-components.min.js": {
-              "entrypoint": false,
-              "size": 1903,
-              "gzip_size": 919,
-              "hashes": {
-                "sha256": {
-                  "base64": "PRnkMz5lh6t4D4mswCgZVfDtn+UsdSsXnzUVyE4KGjk=",
-                  "hex": "3d19e4333e6587ab780f89acc0281955f0ed9fe52c752b179f3515c84e0a1a39"
-                },
-                "sha384": {
-                  "base64": "Y/ag5gG6FLx3w4s+8DgXrK95LWXPhCiYT+RSbNYC6a4yiR+FF84l9HRNzuYoBYrW",
-                  "hex": "63f6a0e601ba14bc77c38b3ef03817acaf792d65cf8428984fe4526cd602e9ae32891f8517ce25f4744dcee628058ad6"
-                },
-                "sha512": {
-                  "base64": "zADeAHLYQ8AMQRSOCh1u1KVHnKVYPSpMd/trCafnpiL0Ps6YeAWyOI9q1FDglyvxwz4euvzG8fxUfRXWOhEuCA==",
-                  "hex": "cc00de0072d843c00c41148e0a1d6ed4a5479ca5583d2a4c77fb6b09a7e7a622f43ece987805b2388f6ad450e0972bf1c33e1ebafcc6f1fc547d15d63a112e08"
-                }
-              }
-            },
-            "2017-core-components.min.js.map": {
-              "entrypoint": false,
-              "size": 10069,
-              "gzip_size": 3922,
-              "hashes": {
-                "sha256": {
-                  "base64": "Fniyg1PhE0e4g8REFM9pmYQw6e8+B88zquC7gYSU2Yo=",
-                  "hex": "1678b28353e11347b883c44414cf69998430e9ef3e07cf33aae0bb818494d98a"
-                },
-                "sha384": {
-                  "base64": "iMJaY9QkDbk+1WsYR/rh9zTdRwdcMBFPcZUT3lZ2pAQEIcykIxyue3/N2p9CervY",
-                  "hex": "88c25a63d4240db93ed56b1847fae1f734dd47075c30114f719513de5676a4040421cca4231cae7b7fcdda9f427abbd8"
-                },
-                "sha512": {
-                  "base64": "3soHRr36VI1RsGhMKImvPk92JjgpLBlKkuQytv/nEHTyOhxdza34hUCQ+yHGAshzvNMsyLFO5gu5gOgEspCs3Q==",
-                  "hex": "deca0746bdfa548d51b0684c2889af3e4f762638292c194a92e432b6ffe71074f23a1c5dcdadf8854090fb21c602c873bcd32cc8b14ee60bb980e804b290acdd"
-                }
-              }
-            },
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file",
-              "size": 18057,
-              "gzip_size": 2794,
-              "hashes": {
-                "sha256": {
-                  "base64": "Q4m7gLMtNd1qM75UicxNdsxt25OmyAl8V7vVv0qY0is=",
-                  "hex": "4389bb80b32d35dd6a33be5489cc4d76cc6ddb93a6c8097c57bbd5bf4a98d22b"
-                },
-                "sha384": {
-                  "base64": "OqBb7H7EXykrXjWbq8fOhbjM4Xe2wBE2edSzIzzog3Olk5KRTA2f84LE8r2+O7ae",
-                  "hex": "3aa05bec7ec45f292b5e359babc7ce85b8cce177b6c0113679d4b3233ce88373a59392914c0d9ff382c4f2bdbe3bb69e"
-                },
-                "sha512": {
-                  "base64": "nAImNXYpumTvvwhBPyHZgJpGP9rnNSCYiLS/NyqNMhtPkUXa5czn1VJ9FCW3kH4eClYafCJT+oALKQH7ojH+uA==",
-                  "hex": "9c0226357629ba64efbf08413f21d9809a463fdae735209888b4bf372a8d321b4f9145dae5cce7d5527d1425b7907e1e0a561a7c2253fa800b2901fba231feb8"
-                }
-              }
-            },
-            "byu-theme-components.css.map": {
-              "entrypoint": false,
-              "size": 53933,
-              "gzip_size": 11155,
-              "hashes": {
-                "sha256": {
-                  "base64": "q+/2r/YR0/vNEhCIUqmO9THX1a4TESJPtBSiYsFUJG8=",
-                  "hex": "abeff6aff611d3fbcd12108852a98ef531d7d5ae1311224fb414a262c154246f"
-                },
-                "sha384": {
-                  "base64": "Ph1GvFD8wGfWs+1arvRJqqsMdPsK28BNu7ucOPeKl4GxJK9K2+uaZLwsor4KlBFs",
-                  "hex": "3e1d46bc50fcc067d6b3ed5aaef449aaab0c74fb0adbc04dbbbb9c38f78a9781b124af4adbeb9a64bc2ca2be0a94116c"
-                },
-                "sha512": {
-                  "base64": "bP/4uX7mpttTuUtswtCLGxUbTy/dL07n5ExSgfGoduMq6/2yFkJ6/Wcs8ZM6U368OWo423Ux2DEv+a8zgp4u8A==",
-                  "hex": "6cfff8b97ee6a6db53b94b6cc2d08b1b151b4f2fdd2f4ee7e44c5281f1a876e32aebfdb216427afd672cf1933a537ebc396a38db7531d8312ff9af33829e2ef0"
-                }
-              }
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle",
-              "size": 6698,
-              "gzip_size": 2577,
-              "hashes": {
-                "sha256": {
-                  "base64": "u7r3Shsj/VaGB5UEPfLwNeCbyYmM5w5TjTMFE2Ylfak=",
-                  "hex": "bbbaf74a1b23fd56860795043df2f035e09bc9898ce70e538d33051366257da9"
-                },
-                "sha384": {
-                  "base64": "oOYPJViVw/rdAOQkx0VWN8Xj6IXvOGwEcxYfl/fEkPQk0+lozIsnDQBO7MkFJrXm",
-                  "hex": "a0e60f255895c3fadd00e424c7455637c5e3e885ef386c0473161f97f7c490f424d3e968cc8b270d004eecc90526b5e6"
-                },
-                "sha512": {
-                  "base64": "AaPGYLHgSvZ0E9d67w3GRRrJPlsEZKbin+TMF586djxK1W9zygKs48eoqc4TU5+N9iP243LVz6MmuXYMczHEiQ==",
-                  "hex": "01a3c660b1e04af67413d77aef0dc6451ac93e5b0464a6e29fe4cc179f3a763c4ad56f73ca02ace3c7a8a9ce13539f8df623f6e372d5cfa326b9760c7331c489"
-                }
-              }
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file",
-              "size": 10342,
-              "gzip_size": 2197,
-              "hashes": {
-                "sha256": {
-                  "base64": "qv6DYuI6V1TfF9K4CcBl41Us16iIX2oS17zxgP4u/RA=",
-                  "hex": "aafe8362e23a5754df17d2b809c065e3552cd7a8885f6a12d7bcf180fe2efd10"
-                },
-                "sha384": {
-                  "base64": "fTzQJF4euEGBgSIR1AsxavfrLnSOoIPQzRuFdavPh269GAP7dK81p6I/UP2Yh6Xx",
-                  "hex": "7d3cd0245e1eb84181812211d40b316af7eb2e748ea083d0cd1b8575abcf876ebd1803fb74af35a7a23f50fd9887a5f1"
-                },
-                "sha512": {
-                  "base64": "tr3a+8IwgUSO5RXtAGhUalHyNKmabDO3C9bN31mc8gc6xiQ4uGBTXS66MOKQUMeN6K3bTrzecAafFGgEBf/Aow==",
-                  "hex": "b6bddafbc23081448ee515ed0068546a51f234a99a6c33b70bd6cddf599cf2073ac62438b860535d2eba30e29050c78de8addb4ebcde70069f14680405ffc0a3"
-                }
-              }
-            },
-            "byu-theme-components.min.css.map": {
-              "entrypoint": false,
-              "size": 53937,
-              "gzip_size": 11158,
-              "hashes": {
-                "sha256": {
-                  "base64": "MQo/mtN4OehX+DY6Xq7cqPy67TKydve3UF5gzt2ufhI=",
-                  "hex": "310a3f9ad37839e857f8363a5eaedca8fcbaed32b276f7b7505e60ceddae7e12"
-                },
-                "sha384": {
-                  "base64": "VFB0Jq5z1+3FUS8FgsCA58uyv3lFnw3hj/Osu+FnNmCrmT/CHjowOa40souELfrD",
-                  "hex": "54507426ae73d7edc5512f0582c080e7cbb2bf79459f0de18ff3acbbe1673660ab993fc21e3a3039ae34b28b842dfac3"
-                },
-                "sha512": {
-                  "base64": "FU0qkkBLq5UmlD5uUiYAyVSj1+vqSRfn9K8joQAxZ9FL15B5TTOxWXwc2N2lcxnX0NFyFZafA/H5qXkPeM9+2w==",
-                  "hex": "154d2a92404bab9526943e6e522600c954a3d7ebea4917e7f4af23a1003167d14bd790794d33b1597c1cd8dda57319d7d0d17215969f03f1f9a9790f78cf7edb"
-                }
-              }
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle",
-              "size": 1903,
-              "gzip_size": 919,
-              "hashes": {
-                "sha256": {
-                  "base64": "PRnkMz5lh6t4D4mswCgZVfDtn+UsdSsXnzUVyE4KGjk=",
-                  "hex": "3d19e4333e6587ab780f89acc0281955f0ed9fe52c752b179f3515c84e0a1a39"
-                },
-                "sha384": {
-                  "base64": "Y/ag5gG6FLx3w4s+8DgXrK95LWXPhCiYT+RSbNYC6a4yiR+FF84l9HRNzuYoBYrW",
-                  "hex": "63f6a0e601ba14bc77c38b3ef03817acaf792d65cf8428984fe4526cd602e9ae32891f8517ce25f4744dcee628058ad6"
-                },
-                "sha512": {
-                  "base64": "zADeAHLYQ8AMQRSOCh1u1KVHnKVYPSpMd/trCafnpiL0Ps6YeAWyOI9q1FDglyvxwz4euvzG8fxUfRXWOhEuCA==",
-                  "hex": "cc00de0072d843c00c41148e0a1d6ed4a5479ca5583d2a4c77fb6b09a7e7a622f43ece987805b2388f6ad450e0972bf1c33e1ebafcc6f1fc547d15d63a112e08"
-                }
-              }
-            },
-            "byu-theme-components.min.js.map": {
-              "entrypoint": false,
-              "size": 10069,
-              "gzip_size": 3924,
-              "hashes": {
-                "sha256": {
-                  "base64": "VpLc0aBZVM/UKtfu6PvJq4jXiZ79iYXEjznERYgbnPc=",
-                  "hex": "5692dcd1a05954cfd42ad7eee8fbc9ab88d7899efd8985c48f39c445881b9cf7"
-                },
-                "sha384": {
-                  "base64": "tOSAjXsi/t9S/vamjUiqGXoEg4CuhU2EP4V3zRhudn0LehrthgH5TfRE08bH9DKl",
-                  "hex": "b4e4808d7b22fedf52fef6a68d48aa197a048380ae854d843f8577cd186e767d0b7a1aed8601f94df444d3c6c7f432a5"
-                },
-                "sha512": {
-                  "base64": "/ivf1U2xOmcgwU9D29fC76clZ7xpzer9BamVIcQxlKfQWWcwZxZB9ZH+QUW4XpEscC0rPzyU7Fhdgf2J5ALtWA==",
-                  "hex": "fe2bdfd54db13a6720c14f43dbd7c2efa72567bc69cdeafd05a99521c43194a7d0596730671641f591fe4145b85e912c702d2b3f3c94ec585d81fd89e402ed58"
-                }
-              }
-            },
-            "components-compat.js": {
-              "entrypoint": false,
-              "size": 93559,
-              "gzip_size": 17342,
-              "hashes": {
-                "sha256": {
-                  "base64": "fihht8k96cN96t4zIqt9Xq0Zn30hPwfiYVKxXDKMIFg=",
-                  "hex": "7e2861b7c93de9c37deade3322ab7d5ead199f7d213f07e26152b15c328c2058"
-                },
-                "sha384": {
-                  "base64": "LF4w2mXuZMxGXYo1DRzP5syOIoAGyeku9aUFasihT2Hy7HgFT0UyfWTTlq0ml5Ik",
-                  "hex": "2c5e30da65ee64cc465d8a350d1ccfe6cc8e228006c9e92ef5a5056ac8a14f61f2ec78054f45327d64d396ad26979224"
-                },
-                "sha512": {
-                  "base64": "QaD4KVlGcpY+nkn87s2zqIOiWy2Q0M0SF0ryjAUjRJyr/H+vokYl6Gy6E/cEQINRp/SE7RJf7TfsIgEusQXhdw==",
-                  "hex": "41a0f829594672963e9e49fceecdb3a883a25b2d90d0cd12174af28c0523449cabfc7fafa24625e86cba13f704408351a7f484ed125fed37ec22012eb105e177"
-                }
-              }
-            },
-            "components-compat.js.map": {
-              "entrypoint": false,
-              "size": 172969,
-              "gzip_size": 35065,
-              "hashes": {
-                "sha256": {
-                  "base64": "PRJN7aHIghPWIypXKs6rxzNJPrfypi0Xn5HtbKCjsz8=",
-                  "hex": "3d124deda1c88213d6232a572aceabc733493eb7f2a62d179f91ed6ca0a3b33f"
-                },
-                "sha384": {
-                  "base64": "IQl1iC3vu48fQVcbf8NyrX5O7y6H4jIEsx+PH3biZkR1wFHyv5xzjuyedEOh8rRy",
-                  "hex": "210975882defbb8f1f41571b7fc372ad7e4eef2e87e23204b31f8f1f76e2664475c051f2bf9c738eec9e7443a1f2b472"
-                },
-                "sha512": {
-                  "base64": "HQffLlMTxTEFBdMpNe/Byv0oKI/yZpuY4FTNXesQd2L2/nO8LU2Vrtid6uwg8NeJ5/VZj2OMQeqtX9tBnCAzzw==",
-                  "hex": "1d07df2e5313c5310505d32935efc1cafd28288ff2669b98e054cd5deb107762f6fe73bc2d4d95aed89deaec20f0d789e7f5598f638c41eaad5fdb419c2033cf"
-                }
-              }
-            },
-            "components-compat.min.js": {
-              "entrypoint": false,
-              "size": 47516,
-              "gzip_size": 10912,
-              "hashes": {
-                "sha256": {
-                  "base64": "I0fh2HL01FO5ZwdDlSUithBi2FsICYIbOmgda2k76FE=",
-                  "hex": "2347e1d872f4d453b9670743952522b61062d85b0809821b3a681d6b693be851"
-                },
-                "sha384": {
-                  "base64": "Y2RK9BORjRkgq4bMFGQ4Dvf97KTk98gYiEJAsg42UfAQXGFzXCnphHBrhD170bwJ",
-                  "hex": "63644af413918d1920ab86cc1464380ef7fdeca4e4f7c818884240b20e3651f0105c61735c29e984706b843d7bd1bc09"
-                },
-                "sha512": {
-                  "base64": "v5DLnt4klh70e0t6kD/NvnWpSntCVPwvoRi7c9+G/e+W/80sVJDeWgK7zM0yNeiXgCwASkAp0WidPVRV3Et7MQ==",
-                  "hex": "bf90cb9ede24961ef47b4b7a903fcdbe75a94a7b4254fc2fa118bb73df86fdef96ffcd2c5490de5a02bbcccd3235e897802c004a4029d1689d3d5455dc4b7b31"
-                }
-              }
-            },
-            "components-compat.min.js.map": {
-              "entrypoint": false,
-              "size": 293366,
-              "gzip_size": 59218,
-              "hashes": {
-                "sha256": {
-                  "base64": "C7XBoX/FdyaTEN2dbjBvPQ1xhl9nn3bKmU58uiEIQHI=",
-                  "hex": "0bb5c1a17fc577269310dd9d6e306f3d0d71865f679f76ca994e7cba21084072"
-                },
-                "sha384": {
-                  "base64": "Z0KA4YRykln5PaKzJiq5ZKM3Qr/iKx1aW01utR5qDRyMmSuUefDFHMJI+VxSS0ok",
-                  "hex": "674280e184729259f93da2b3262ab964a33742bfe22b1d5a5b4d6eb51e6a0d1c8c992b9479f0c51cc248f95c524b4a24"
-                },
-                "sha512": {
-                  "base64": "ZHqDhllmoeWzwzdbfM7ATonKVcvA7IUtOwf337dNV8gZWxUypLOhJmCRixdKIzIdVNVZwc67v4XcQoFXVu/0aw==",
-                  "hex": "647a83865966a1e5b3c3375b7ccec04e89ca55cbc0ec852d3b07f7dfb74d57c8195b1532a4b3a12660918b174a23321d54d559c1cebbbf85dc42815756eff46b"
-                }
-              }
-            },
-            "components.js": {
-              "entrypoint": false,
-              "size": 78645,
-              "gzip_size": 15938,
-              "hashes": {
-                "sha256": {
-                  "base64": "+0iRgxBNMMmVARAC9IhdYuqWcodRrQ2zafzZfArl6RE=",
-                  "hex": "fb489183104d30c995011002f4885d62ea96728751ad0db369fcd97c0ae5e911"
-                },
-                "sha384": {
-                  "base64": "hTL4dUh+Qp1MokxkVQlL6c1USKsLX4jpOFJS0KQq8b7/dqqp0gG0+3vIpL5biOyv",
-                  "hex": "8532f875487e429d4ca24c6455094be9cd5448ab0b5f88e9385252d0a42af1beff76aaa9d201b4fb7bc8a4be5b88ecaf"
-                },
-                "sha512": {
-                  "base64": "E1ljINupwpruXSO9doZR1Ea1UKxOAmDSolcY4gnHQqlo4zayblhpEJlhKQJrYAbPXjHhDRAt+g6LHI4RteEtCw==",
-                  "hex": "13596320dba9c29aee5d23bd768651d446b550ac4e0260d2a25718e209c742a968e336b26e586910996129026b6006cf5e31e10d102dfa0e8b1c8e11b5e12d0b"
-                }
-              }
-            },
-            "components.js.map": {
-              "entrypoint": false,
-              "size": 93187,
-              "gzip_size": 18633,
-              "hashes": {
-                "sha256": {
-                  "base64": "NSTwcCGaY0ccAZSbqRmldKZpytURnxC6NzubpGDfiHI=",
-                  "hex": "3524f070219a63471c01949ba919a574a669cad5119f10ba373b9ba460df8872"
-                },
-                "sha384": {
-                  "base64": "mk4H4F+fhZ8/zPceZwkXCe4c3yZTuntTvy+a+EDdm2lEKEiPq9Bc5QPyrxlhBGYv",
-                  "hex": "9a4e07e05f9f859f3fccf71e67091709ee1cdf2653ba7b53bf2f9af840dd9b694428488fabd05ce503f2af196104662f"
-                },
-                "sha512": {
-                  "base64": "fNeUVe8r2MnMRFQZxyJhD4RrO4JmsHbYXdhI0RZaXqFjZl1IN4O9KMvhgvRkQQ0K9+5LpkBPmkWTKWOr1bH69Q==",
-                  "hex": "7cd79455ef2bd8c9cc445419c722610f846b3b8266b076d85dd848d1165a5ea163665d483783bd28cbe182f464410d0af7ee4ba6404f9a45932963abd5b1faf5"
-                }
-              }
-            },
-            "components.min.js": {
-              "entrypoint": false,
-              "size": 44065,
-              "gzip_size": 10204,
-              "hashes": {
-                "sha256": {
-                  "base64": "VJRbJ+zoAWYTCrgR9lgKC0x6auQDU4/V+bEh9pD1aeM=",
-                  "hex": "54945b27ece80166130ab811f6580a0b4c7a6ae403538fd5f9b121f690f569e3"
-                },
-                "sha384": {
-                  "base64": "uLwBGgKGQo0k0M2LWmT+xeyKxzpqmW0RzRaeCuGQtDdO2j2/YjmwSLK+RL20X+3t",
-                  "hex": "b8bc011a0286428d24d0cd8b5a64fec5ec8ac73a6a996d11cd169e0ae190b4374eda3dbf6239b048b2be44bdb45feded"
-                },
-                "sha512": {
-                  "base64": "mYmbsSoT5zxCEI6OqVnLKYf4ef2qIULdf+c2KghJcAAn6QL+34Gp2VPQPT161ymZt/6lVJiJB8vLC27SOXY5mA==",
-                  "hex": "99899bb12a13e73c42108e8ea959cb2987f879fdaa2142dd7fe7362a0849700027e902fedf81a9d953d03d3d7ad72999b7fea554988907cbcb0b6ed239763998"
-                }
-              }
-            },
-            "components.min.js.map": {
-              "entrypoint": false,
-              "size": 191947,
-              "gzip_size": 41037,
-              "hashes": {
-                "sha256": {
-                  "base64": "llLWrURxcNL1B7jwujaxeTxCjaR1ln8agHChhQAvOPc=",
-                  "hex": "9652d6ad447170d2f507b8f0ba36b1793c428da475967f1a8070a185002f38f7"
-                },
-                "sha384": {
-                  "base64": "kSf9cEW5gNiEEpPkUsBEK4qQ+10Re5y3oZ0kS5Y9gF/Q8GknE7Ih1y4gKO2EtNzh",
-                  "hex": "9127fd7045b980d8841293e452c0442b8a90fb5d117b9cb7a19d244b963d805fd0f0692713b221d72e2028ed84b4dce1"
-                },
-                "sha512": {
-                  "base64": "5qRgMTYsjo6PJmhRTxDWw3tPuwf1znV3hcJB5smJacJN3oPZMMz6JBG8cEP+L7Kvh32sNi2GbO36rdKI7FStZg==",
-                  "hex": "e6a46031362c8e8e8f2668514f10d6c37b4fbb07f5ce757785c241e6c98969c24dde83d930ccfa2411bc7043fe2fb2af877dac362d866cedfaadd288ec54ad66"
-                }
-              }
-            }
-          }
+          "resources": {}
         },
         {
           "name": "byu-search-enhancements",
@@ -3482,27 +3059,27 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/master",
-          "git_sha": "2bcb5e4cdd012ca95f673da69455fae0d294956b",
+          "git_sha": "a082939bda4052f729da920a567153487c084e29",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
-          "last_updated": "2017-06-08T22:17:59+00:00",
+          "last_updated": "2017-06-09T20:58:09+00:00",
           "messages": [],
           "resources": {
             "2017-core-components.css": {
               "entrypoint": false,
-              "size": 18026,
-              "gzip_size": 2787,
+              "size": 18057,
+              "gzip_size": 2794,
               "hashes": {
                 "sha256": {
-                  "base64": "jx8tgWKKKj64wfxQtRLgujnLSFdYH0EAwwkDZ31TOY8=",
-                  "hex": "8f1f2d81628a2a3eb8c1fc50b512e0ba39cb4857581f4100c30903677d53398f"
+                  "base64": "Q4m7gLMtNd1qM75UicxNdsxt25OmyAl8V7vVv0qY0is=",
+                  "hex": "4389bb80b32d35dd6a33be5489cc4d76cc6ddb93a6c8097c57bbd5bf4a98d22b"
                 },
                 "sha384": {
-                  "base64": "RiD607lvH5cCZyABwWuBpHGQ/tanZKDl1dNWJnat8TUvmPNc3aBd/Nl+CmB8K/va",
-                  "hex": "4620fad3b96f1f9702672001c16b81a47190fed6a764a0e5d5d3562676adf1352f98f35cdda05dfcd97e0a607c2bfbda"
+                  "base64": "OqBb7H7EXykrXjWbq8fOhbjM4Xe2wBE2edSzIzzog3Olk5KRTA2f84LE8r2+O7ae",
+                  "hex": "3aa05bec7ec45f292b5e359babc7ce85b8cce177b6c0113679d4b3233ce88373a59392914c0d9ff382c4f2bdbe3bb69e"
                 },
                 "sha512": {
-                  "base64": "3kTMWmBldkNVBr5yVxMcvvDBvMv12Bl77WnWqa7pp5f79dRSap9tqIuJ+wm2JLvsdOke3tAGQldm2wJ46mcqqQ==",
-                  "hex": "de44cc5a606576435506be7257131cbef0c1bccbf5d8197bed69d6a9aee9a797fbf5d4526a9f6da88b89fb09b624bbec74e91eded006425766db0278ea672aa9"
+                  "base64": "nAImNXYpumTvvwhBPyHZgJpGP9rnNSCYiLS/NyqNMhtPkUXa5czn1VJ9FCW3kH4eClYafCJT+oALKQH7ojH+uA==",
+                  "hex": "9c0226357629ba64efbf08413f21d9809a463fdae735209888b4bf372a8d321b4f9145dae5cce7d5527d1425b7907e1e0a561a7c2253fa800b2901fba231feb8"
                 }
               }
             },
@@ -3546,20 +3123,20 @@
             },
             "2017-core-components.min.css": {
               "entrypoint": false,
-              "size": 10316,
-              "gzip_size": 2190,
+              "size": 10342,
+              "gzip_size": 2197,
               "hashes": {
                 "sha256": {
-                  "base64": "zLaRYuSQ+aMsFBuotViGQYc9yR4PBjDeS/Dkzm59lPc=",
-                  "hex": "ccb69162e490f9a32c141ba8b5588641873dc91e0f0630de4bf0e4ce6e7d94f7"
+                  "base64": "qv6DYuI6V1TfF9K4CcBl41Us16iIX2oS17zxgP4u/RA=",
+                  "hex": "aafe8362e23a5754df17d2b809c065e3552cd7a8885f6a12d7bcf180fe2efd10"
                 },
                 "sha384": {
-                  "base64": "b4oGY9oC3dBWWHkIJxDFtQ+Lr5dOt1wbT1F+akp/nw8T0ct44KE0jT6wBGgs5svR",
-                  "hex": "6f8a0663da02ddd0565879082710c5b50f8baf974eb75c1b4f517e6a4a7f9f0f13d1cb78e0a1348d3eb004682ce6cbd1"
+                  "base64": "fTzQJF4euEGBgSIR1AsxavfrLnSOoIPQzRuFdavPh269GAP7dK81p6I/UP2Yh6Xx",
+                  "hex": "7d3cd0245e1eb84181812211d40b316af7eb2e748ea083d0cd1b8575abcf876ebd1803fb74af35a7a23f50fd9887a5f1"
                 },
                 "sha512": {
-                  "base64": "ArtjHLlwHipLsPAZf95vja/sF7uj99rzxbZCFWjs0ceJLTvKJHbRB0SSokouGK88PB6VQwZxH4Lq4voO4vqbBg==",
-                  "hex": "02bb631cb9701e2a4bb0f0197fde6f8dafec17bba3f7daf3c5b6421568ecd1c7892d3bca2476d1074492a24a2e18af3c3c1e954306711f82eae2fa0ee2fa9b06"
+                  "base64": "tr3a+8IwgUSO5RXtAGhUalHyNKmabDO3C9bN31mc8gc6xiQ4uGBTXS66MOKQUMeN6K3bTrzecAafFGgEBf/Aow==",
+                  "hex": "b6bddafbc23081448ee515ed0068546a51f234a99a6c33b70bd6cddf599cf2073ac62438b860535d2eba30e29050c78de8addb4ebcde70069f14680405ffc0a3"
                 }
               }
             },
@@ -3623,39 +3200,39 @@
             "byu-theme-components.css": {
               "entrypoint": true,
               "description": "Main CSS file",
-              "size": 18026,
-              "gzip_size": 2787,
+              "size": 18057,
+              "gzip_size": 2794,
               "hashes": {
                 "sha256": {
-                  "base64": "jx8tgWKKKj64wfxQtRLgujnLSFdYH0EAwwkDZ31TOY8=",
-                  "hex": "8f1f2d81628a2a3eb8c1fc50b512e0ba39cb4857581f4100c30903677d53398f"
+                  "base64": "Q4m7gLMtNd1qM75UicxNdsxt25OmyAl8V7vVv0qY0is=",
+                  "hex": "4389bb80b32d35dd6a33be5489cc4d76cc6ddb93a6c8097c57bbd5bf4a98d22b"
                 },
                 "sha384": {
-                  "base64": "RiD607lvH5cCZyABwWuBpHGQ/tanZKDl1dNWJnat8TUvmPNc3aBd/Nl+CmB8K/va",
-                  "hex": "4620fad3b96f1f9702672001c16b81a47190fed6a764a0e5d5d3562676adf1352f98f35cdda05dfcd97e0a607c2bfbda"
+                  "base64": "OqBb7H7EXykrXjWbq8fOhbjM4Xe2wBE2edSzIzzog3Olk5KRTA2f84LE8r2+O7ae",
+                  "hex": "3aa05bec7ec45f292b5e359babc7ce85b8cce177b6c0113679d4b3233ce88373a59392914c0d9ff382c4f2bdbe3bb69e"
                 },
                 "sha512": {
-                  "base64": "3kTMWmBldkNVBr5yVxMcvvDBvMv12Bl77WnWqa7pp5f79dRSap9tqIuJ+wm2JLvsdOke3tAGQldm2wJ46mcqqQ==",
-                  "hex": "de44cc5a606576435506be7257131cbef0c1bccbf5d8197bed69d6a9aee9a797fbf5d4526a9f6da88b89fb09b624bbec74e91eded006425766db0278ea672aa9"
+                  "base64": "nAImNXYpumTvvwhBPyHZgJpGP9rnNSCYiLS/NyqNMhtPkUXa5czn1VJ9FCW3kH4eClYafCJT+oALKQH7ojH+uA==",
+                  "hex": "9c0226357629ba64efbf08413f21d9809a463fdae735209888b4bf372a8d321b4f9145dae5cce7d5527d1425b7907e1e0a561a7c2253fa800b2901fba231feb8"
                 }
               }
             },
             "byu-theme-components.css.map": {
               "entrypoint": false,
-              "size": 53246,
-              "gzip_size": 11247,
+              "size": 53933,
+              "gzip_size": 11155,
               "hashes": {
                 "sha256": {
-                  "base64": "Zobla59to5PJwUJf4eRlaD9G8kz1qJ/Dy9FG/aqUa6k=",
-                  "hex": "6686e56b9f6da393c9c1425fe1e465683f46f24cf5a89fc3cbd146fdaa946ba9"
+                  "base64": "q+/2r/YR0/vNEhCIUqmO9THX1a4TESJPtBSiYsFUJG8=",
+                  "hex": "abeff6aff611d3fbcd12108852a98ef531d7d5ae1311224fb414a262c154246f"
                 },
                 "sha384": {
-                  "base64": "a+SOixGRiKYMZ8e7vwL1z05850FqqKVowL+/H1Sc8KmFqoySBPQSAI/8Xz20koZK",
-                  "hex": "6be48e8b119188a60c67c7bbbf02f5cf4e7ce7416aa8a568c0bfbf1f549cf0a985aa8c9204f412008ffc5f3db492864a"
+                  "base64": "Ph1GvFD8wGfWs+1arvRJqqsMdPsK28BNu7ucOPeKl4GxJK9K2+uaZLwsor4KlBFs",
+                  "hex": "3e1d46bc50fcc067d6b3ed5aaef449aaab0c74fb0adbc04dbbbb9c38f78a9781b124af4adbeb9a64bc2ca2be0a94116c"
                 },
                 "sha512": {
-                  "base64": "VwgOQdKXlxsBzH4qwzMPIg/p6OzYcCM+sRyMywknZwIWn03vRqDOuPBUjziw1DWHltRuWr5JlgFkLICek9Rr5A==",
-                  "hex": "57080e41d297971b01cc7e2ac3330f220fe9e8ecd870233eb11c8ccb09276702169f4def46a0ceb8f0548f38b0d4358796d46e5abe499601642c809e93d46be4"
+                  "base64": "bP/4uX7mpttTuUtswtCLGxUbTy/dL07n5ExSgfGoduMq6/2yFkJ6/Wcs8ZM6U368OWo423Ux2DEv+a8zgp4u8A==",
+                  "hex": "6cfff8b97ee6a6db53b94b6cc2d08b1b151b4f2fdd2f4ee7e44c5281f1a876e32aebfdb216427afd672cf1933a537ebc396a38db7531d8312ff9af33829e2ef0"
                 }
               }
             },
@@ -3682,39 +3259,39 @@
             "byu-theme-components.min.css": {
               "entrypoint": true,
               "description": "Main CSS file",
-              "size": 10316,
-              "gzip_size": 2190,
+              "size": 10342,
+              "gzip_size": 2197,
               "hashes": {
                 "sha256": {
-                  "base64": "zLaRYuSQ+aMsFBuotViGQYc9yR4PBjDeS/Dkzm59lPc=",
-                  "hex": "ccb69162e490f9a32c141ba8b5588641873dc91e0f0630de4bf0e4ce6e7d94f7"
+                  "base64": "qv6DYuI6V1TfF9K4CcBl41Us16iIX2oS17zxgP4u/RA=",
+                  "hex": "aafe8362e23a5754df17d2b809c065e3552cd7a8885f6a12d7bcf180fe2efd10"
                 },
                 "sha384": {
-                  "base64": "b4oGY9oC3dBWWHkIJxDFtQ+Lr5dOt1wbT1F+akp/nw8T0ct44KE0jT6wBGgs5svR",
-                  "hex": "6f8a0663da02ddd0565879082710c5b50f8baf974eb75c1b4f517e6a4a7f9f0f13d1cb78e0a1348d3eb004682ce6cbd1"
+                  "base64": "fTzQJF4euEGBgSIR1AsxavfrLnSOoIPQzRuFdavPh269GAP7dK81p6I/UP2Yh6Xx",
+                  "hex": "7d3cd0245e1eb84181812211d40b316af7eb2e748ea083d0cd1b8575abcf876ebd1803fb74af35a7a23f50fd9887a5f1"
                 },
                 "sha512": {
-                  "base64": "ArtjHLlwHipLsPAZf95vja/sF7uj99rzxbZCFWjs0ceJLTvKJHbRB0SSokouGK88PB6VQwZxH4Lq4voO4vqbBg==",
-                  "hex": "02bb631cb9701e2a4bb0f0197fde6f8dafec17bba3f7daf3c5b6421568ecd1c7892d3bca2476d1074492a24a2e18af3c3c1e954306711f82eae2fa0ee2fa9b06"
+                  "base64": "tr3a+8IwgUSO5RXtAGhUalHyNKmabDO3C9bN31mc8gc6xiQ4uGBTXS66MOKQUMeN6K3bTrzecAafFGgEBf/Aow==",
+                  "hex": "b6bddafbc23081448ee515ed0068546a51f234a99a6c33b70bd6cddf599cf2073ac62438b860535d2eba30e29050c78de8addb4ebcde70069f14680405ffc0a3"
                 }
               }
             },
             "byu-theme-components.min.css.map": {
               "entrypoint": false,
-              "size": 53250,
-              "gzip_size": 11251,
+              "size": 53937,
+              "gzip_size": 11158,
               "hashes": {
                 "sha256": {
-                  "base64": "y1B+wQEAcU/Laqj4Ti0EwNhIndwCzQeECvZNPhAgp60=",
-                  "hex": "cb507ec10100714fcb6aa8f84e2d04c0d8489ddc02cd07840af64d3e1020a7ad"
+                  "base64": "MQo/mtN4OehX+DY6Xq7cqPy67TKydve3UF5gzt2ufhI=",
+                  "hex": "310a3f9ad37839e857f8363a5eaedca8fcbaed32b276f7b7505e60ceddae7e12"
                 },
                 "sha384": {
-                  "base64": "FNIYnCgGFHWnLxJYUOcEHJ6l15PJuj8MKMQUZhehAbWSaiylRtnVCY1EzvsYm/v8",
-                  "hex": "14d2189c28061475a72f125850e7041c9ea5d793c9ba3f0c28c4146617a101b5926a2ca546d9d5098d44cefb189bfbfc"
+                  "base64": "VFB0Jq5z1+3FUS8FgsCA58uyv3lFnw3hj/Osu+FnNmCrmT/CHjowOa40souELfrD",
+                  "hex": "54507426ae73d7edc5512f0582c080e7cbb2bf79459f0de18ff3acbbe1673660ab993fc21e3a3039ae34b28b842dfac3"
                 },
                 "sha512": {
-                  "base64": "0eSjbsQQllQGXxdn7I0Z+AWsWkX5xr6nQZ+T9ddP+v8TIFmzhGOrrbFp5T2/2W9scjR11qNhWHEcU9fqfPIDhQ==",
-                  "hex": "d1e4a36ec4109654065f1767ec8d19f805ac5a45f9c6bea7419f93f5d74ffaff132059b38463abadb169e53dbfd96f6c723475d6a36158711c53d7ea7cf20385"
+                  "base64": "FU0qkkBLq5UmlD5uUiYAyVSj1+vqSRfn9K8joQAxZ9FL15B5TTOxWXwc2N2lcxnX0NFyFZafA/H5qXkPeM9+2w==",
+                  "hex": "154d2a92404bab9526943e6e522600c954a3d7ebea4917e7f4af23a1003167d14bd790794d33b1597c1cd8dda57319d7d0d17215969f03f1f9a9790f78cf7edb"
                 }
               }
             },
@@ -3759,153 +3336,153 @@
             },
             "components-compat.js": {
               "entrypoint": false,
-              "size": 93048,
-              "gzip_size": 17308,
+              "size": 93559,
+              "gzip_size": 17342,
               "hashes": {
                 "sha256": {
-                  "base64": "YDScT0S34UaXtvu8y9nhtJ99Gff80SrTz84mR5el9AI=",
-                  "hex": "60349c4f44b7e14697b6fbbccbd9e1b49f7d19f7fcd12ad3cfce264797a5f402"
+                  "base64": "fihht8k96cN96t4zIqt9Xq0Zn30hPwfiYVKxXDKMIFg=",
+                  "hex": "7e2861b7c93de9c37deade3322ab7d5ead199f7d213f07e26152b15c328c2058"
                 },
                 "sha384": {
-                  "base64": "N2LZw8ojvgzeknCInhsPM8MZzpb81huWer+4drlpkYQqNYbj/EK+MmrHEnhxuYI7",
-                  "hex": "3762d9c3ca23be0cde9270889e1b0f33c319ce96fcd61b967abfb876b96991842a3586e3fc42be326ac7127871b9823b"
+                  "base64": "LF4w2mXuZMxGXYo1DRzP5syOIoAGyeku9aUFasihT2Hy7HgFT0UyfWTTlq0ml5Ik",
+                  "hex": "2c5e30da65ee64cc465d8a350d1ccfe6cc8e228006c9e92ef5a5056ac8a14f61f2ec78054f45327d64d396ad26979224"
                 },
                 "sha512": {
-                  "base64": "QQkp0N2sPPBXf5JrRlKp0t6yg8puE7rpPkWr/QCPOm49arTMb1SYhQgGeRG54AfSK5j7im+CYD4/sdQD0IkEUQ==",
-                  "hex": "410929d0ddac3cf0577f926b4652a9d2deb283ca6e13bae93e45abfd008f3a6e3d6ab4cc6f54988508067911b9e007d22b98fb8a6f82603e3fb1d403d0890451"
+                  "base64": "QaD4KVlGcpY+nkn87s2zqIOiWy2Q0M0SF0ryjAUjRJyr/H+vokYl6Gy6E/cEQINRp/SE7RJf7TfsIgEusQXhdw==",
+                  "hex": "41a0f829594672963e9e49fceecdb3a883a25b2d90d0cd12174af28c0523449cabfc7fafa24625e86cba13f704408351a7f484ed125fed37ec22012eb105e177"
                 }
               }
             },
             "components-compat.js.map": {
               "entrypoint": false,
-              "size": 171434,
-              "gzip_size": 34656,
+              "size": 172969,
+              "gzip_size": 35065,
               "hashes": {
                 "sha256": {
-                  "base64": "lIf6UaTY8GBF87uwhdObecPos+ePDdyKKOvC9x7cA0s=",
-                  "hex": "9487fa51a4d8f06045f3bbb085d39b79c3e8b3e78f0ddc8a28ebc2f71edc034b"
+                  "base64": "PRJN7aHIghPWIypXKs6rxzNJPrfypi0Xn5HtbKCjsz8=",
+                  "hex": "3d124deda1c88213d6232a572aceabc733493eb7f2a62d179f91ed6ca0a3b33f"
                 },
                 "sha384": {
-                  "base64": "IJEDjJxGGQn3sXsMCB28SixjTqG8mZ7RW/xAcGE/Dd+c5a5CJHch07kh8//CStwH",
-                  "hex": "2091038c9c461909f7b17b0c081dbc4a2c634ea1bc999ed15bfc4070613f0ddf9ce5ae42247721d3b921f3ffc24adc07"
+                  "base64": "IQl1iC3vu48fQVcbf8NyrX5O7y6H4jIEsx+PH3biZkR1wFHyv5xzjuyedEOh8rRy",
+                  "hex": "210975882defbb8f1f41571b7fc372ad7e4eef2e87e23204b31f8f1f76e2664475c051f2bf9c738eec9e7443a1f2b472"
                 },
                 "sha512": {
-                  "base64": "jfhksYwq+qpDcIz4GYnRhlsNW+MBm7QlRz/ReJUr0bD0q6ZJN8zLxRKflPuC8DL8UiIBmfudWvqExhiT+1s5ZA==",
-                  "hex": "8df864b18c2afaaa43708cf81989d1865b0d5be3019bb425473fd178952bd1b0f4aba64937cccbc5129f94fb82f032fc52220199fb9d5afa84c61893fb5b3964"
+                  "base64": "HQffLlMTxTEFBdMpNe/Byv0oKI/yZpuY4FTNXesQd2L2/nO8LU2Vrtid6uwg8NeJ5/VZj2OMQeqtX9tBnCAzzw==",
+                  "hex": "1d07df2e5313c5310505d32935efc1cafd28288ff2669b98e054cd5deb107762f6fe73bc2d4d95aed89deaec20f0d789e7f5598f638c41eaad5fdb419c2033cf"
                 }
               }
             },
             "components-compat.min.js": {
               "entrypoint": false,
-              "size": 47216,
-              "gzip_size": 10889,
+              "size": 47516,
+              "gzip_size": 10912,
               "hashes": {
                 "sha256": {
-                  "base64": "UCtRCoJHQt1EHoCYBmiUt1viMnvZ2BTvdTC15OZln2k=",
-                  "hex": "502b510a824742dd441e8098066894b75be2327bd9d814ef7530b5e4e6659f69"
+                  "base64": "I0fh2HL01FO5ZwdDlSUithBi2FsICYIbOmgda2k76FE=",
+                  "hex": "2347e1d872f4d453b9670743952522b61062d85b0809821b3a681d6b693be851"
                 },
                 "sha384": {
-                  "base64": "Oud7dxKvuQjgmVtrwQFmq/bRo28ydb7de8pOuxBlgr0moc9oWkU9ZJQDlkaMwOvn",
-                  "hex": "3ae77b7712afb908e0995b6bc10166abf6d1a36f3275bedd7bca4ebb106582bd26a1cf685a453d64940396468cc0ebe7"
+                  "base64": "Y2RK9BORjRkgq4bMFGQ4Dvf97KTk98gYiEJAsg42UfAQXGFzXCnphHBrhD170bwJ",
+                  "hex": "63644af413918d1920ab86cc1464380ef7fdeca4e4f7c818884240b20e3651f0105c61735c29e984706b843d7bd1bc09"
                 },
                 "sha512": {
-                  "base64": "rN9VFxyLtcWYENgD3OXWh3Xtyfd7dUfcNXrHCN34Q+Tc91eecrjV4xMKAfDGsm81G6KzVWphHjrZJR9JpkERWg==",
-                  "hex": "acdf55171c8bb5c59810d803dce5d68775edc9f77b7547dc357ac708ddf843e4dcf7579e72b8d5e3130a01f0c6b26f351ba2b3556a611e3ad9251f49a641115a"
+                  "base64": "v5DLnt4klh70e0t6kD/NvnWpSntCVPwvoRi7c9+G/e+W/80sVJDeWgK7zM0yNeiXgCwASkAp0WidPVRV3Et7MQ==",
+                  "hex": "bf90cb9ede24961ef47b4b7a903fcdbe75a94a7b4254fc2fa118bb73df86fdef96ffcd2c5490de5a02bbcccd3235e897802c004a4029d1689d3d5455dc4b7b31"
                 }
               }
             },
             "components-compat.min.js.map": {
               "entrypoint": false,
-              "size": 291147,
-              "gzip_size": 58956,
+              "size": 293366,
+              "gzip_size": 59218,
               "hashes": {
                 "sha256": {
-                  "base64": "1tuWDrE37k3pHRJcB7eHwkbKRHqNgW2MBOkCmf9YKv0=",
-                  "hex": "d6db960eb137ee4de91d125c07b787c246ca447a8d816d8c04e90299ff582afd"
+                  "base64": "C7XBoX/FdyaTEN2dbjBvPQ1xhl9nn3bKmU58uiEIQHI=",
+                  "hex": "0bb5c1a17fc577269310dd9d6e306f3d0d71865f679f76ca994e7cba21084072"
                 },
                 "sha384": {
-                  "base64": "fpancghR/2f+wZkyGnyN8Hg0r2rlP1KVGbmSFguNG7rImc8rE+LPIml1W5OJlfDc",
-                  "hex": "7e96a7720851ff67fec199321a7c8df07834af6ae53f529519b992160b8d1bbac899cf2b13e2cf2269755b938995f0dc"
+                  "base64": "Z0KA4YRykln5PaKzJiq5ZKM3Qr/iKx1aW01utR5qDRyMmSuUefDFHMJI+VxSS0ok",
+                  "hex": "674280e184729259f93da2b3262ab964a33742bfe22b1d5a5b4d6eb51e6a0d1c8c992b9479f0c51cc248f95c524b4a24"
                 },
                 "sha512": {
-                  "base64": "1hFp9OMtM8ptJjD8HBccIbP3a6dcHHDEr37QcfPESMTWj4fNure9WnQYMqGvRx74Vd0ROiYctzitdoYBCfknRw==",
-                  "hex": "d61169f4e32d33ca6d2630fc1c171c21b3f76ba75c1c70c4af7ed071f3c448c4d68f87cdbab7bd5a741832a1af471ef855dd113a261cb738ad76860109f92747"
+                  "base64": "ZHqDhllmoeWzwzdbfM7ATonKVcvA7IUtOwf337dNV8gZWxUypLOhJmCRixdKIzIdVNVZwc67v4XcQoFXVu/0aw==",
+                  "hex": "647a83865966a1e5b3c3375b7ccec04e89ca55cbc0ec852d3b07f7dfb74d57c8195b1532a4b3a12660918b174a23321d54d559c1cebbbf85dc42815756eff46b"
                 }
               }
             },
             "components.js": {
               "entrypoint": false,
-              "size": 77951,
-              "gzip_size": 15910,
+              "size": 78645,
+              "gzip_size": 15938,
               "hashes": {
                 "sha256": {
-                  "base64": "ngIFr8Fq9G6zgUsL0ijYQF8QVN5BGqMi3tbbtDz+VbI=",
-                  "hex": "9e0205afc16af46eb3814b0bd228d8405f1054de411aa322ded6dbb43cfe55b2"
+                  "base64": "+0iRgxBNMMmVARAC9IhdYuqWcodRrQ2zafzZfArl6RE=",
+                  "hex": "fb489183104d30c995011002f4885d62ea96728751ad0db369fcd97c0ae5e911"
                 },
                 "sha384": {
-                  "base64": "9rb3CkAKeFoa24lGgrTO2E8idXuaaYmTLrnhcgb6hO6D6HMxFyPSyDWo5AhCtshC",
-                  "hex": "f6b6f70a400a785a1adb894682b4ced84f22757b9a6989932eb9e17206fa84ee83e873311723d2c835a8e40842b6c842"
+                  "base64": "hTL4dUh+Qp1MokxkVQlL6c1USKsLX4jpOFJS0KQq8b7/dqqp0gG0+3vIpL5biOyv",
+                  "hex": "8532f875487e429d4ca24c6455094be9cd5448ab0b5f88e9385252d0a42af1beff76aaa9d201b4fb7bc8a4be5b88ecaf"
                 },
                 "sha512": {
-                  "base64": "CHc3ko1FNGTTbckndMFYuhrxCDnlNIFnn3mGNv4oSXkwR+qB3ARPPvS+YBiHlSLtbPQwyum6LOoN2L4HQRrp+Q==",
-                  "hex": "087737928d453464d36dc92774c158ba1af10839e53481679f798636fe2849793047ea81dc044f3ef4be6018879522ed6cf430cae9ba2cea0dd8be07411ae9f9"
+                  "base64": "E1ljINupwpruXSO9doZR1Ea1UKxOAmDSolcY4gnHQqlo4zayblhpEJlhKQJrYAbPXjHhDRAt+g6LHI4RteEtCw==",
+                  "hex": "13596320dba9c29aee5d23bd768651d446b550ac4e0260d2a25718e209c742a968e336b26e586910996129026b6006cf5e31e10d102dfa0e8b1c8e11b5e12d0b"
                 }
               }
             },
             "components.js.map": {
               "entrypoint": false,
-              "size": 92146,
-              "gzip_size": 18585,
+              "size": 93187,
+              "gzip_size": 18633,
               "hashes": {
                 "sha256": {
-                  "base64": "dyg5JnkdSVir24n6asJ/wqT1hD6+aK5eN0K3ddwfhTc=",
-                  "hex": "77283926791d4958abdb89fa6ac27fc2a4f5843ebe68ae5e3742b775dc1f8537"
+                  "base64": "NSTwcCGaY0ccAZSbqRmldKZpytURnxC6NzubpGDfiHI=",
+                  "hex": "3524f070219a63471c01949ba919a574a669cad5119f10ba373b9ba460df8872"
                 },
                 "sha384": {
-                  "base64": "ZBTQmtPVLAKE3yVm97YKjdnSV5UmsjU0SHYZGH7D66XpnKuZGT/B+w6E1aE7OHdY",
-                  "hex": "6414d09ad3d52c0284df2566f7b60a8dd9d2579526b23534487619187ec3eba5e99cab99193fc1fb0e84d5a13b387758"
+                  "base64": "mk4H4F+fhZ8/zPceZwkXCe4c3yZTuntTvy+a+EDdm2lEKEiPq9Bc5QPyrxlhBGYv",
+                  "hex": "9a4e07e05f9f859f3fccf71e67091709ee1cdf2653ba7b53bf2f9af840dd9b694428488fabd05ce503f2af196104662f"
                 },
                 "sha512": {
-                  "base64": "5mrlLkzku4SZY2VjDldVJgtpUTwLbzSY75Utd/DeAOBZX8M1s1IhE6YrWDFoVGQibdDFi4ZLHYGZ9gSBnvZ6Ag==",
-                  "hex": "e66ae52e4ce4bb84996365630e5755260b69513c0b6f3498ef952d77f0de00e0595fc335b3522113a62b5831685464226dd0c58b864b1d8199f604819ef67a02"
+                  "base64": "fNeUVe8r2MnMRFQZxyJhD4RrO4JmsHbYXdhI0RZaXqFjZl1IN4O9KMvhgvRkQQ0K9+5LpkBPmkWTKWOr1bH69Q==",
+                  "hex": "7cd79455ef2bd8c9cc445419c722610f846b3b8266b076d85dd848d1165a5ea163665d483783bd28cbe182f464410d0af7ee4ba6404f9a45932963abd5b1faf5"
                 }
               }
             },
             "components.min.js": {
               "entrypoint": false,
-              "size": 43767,
-              "gzip_size": 10170,
+              "size": 44065,
+              "gzip_size": 10204,
               "hashes": {
                 "sha256": {
-                  "base64": "fLkxM0Jfvs9I0sLMflpKuUZwi4XeWVOfacwf5A53T5E=",
-                  "hex": "7cb93133425fbecf48d2c2cc7e5a4ab946708b85de59539f69cc1fe40e774f91"
+                  "base64": "VJRbJ+zoAWYTCrgR9lgKC0x6auQDU4/V+bEh9pD1aeM=",
+                  "hex": "54945b27ece80166130ab811f6580a0b4c7a6ae403538fd5f9b121f690f569e3"
                 },
                 "sha384": {
-                  "base64": "/80RXLrVGD0EYXUS7MwHTmgpxbRAv8gBVYkDB0PQ8wm6TPTNqAkzau/izdR6ZdlA",
-                  "hex": "ffcd115cbad5183d04617512eccc074e6829c5b440bfc8015589030743d0f309ba4cf4cda809336aefe2cdd47a65d940"
+                  "base64": "uLwBGgKGQo0k0M2LWmT+xeyKxzpqmW0RzRaeCuGQtDdO2j2/YjmwSLK+RL20X+3t",
+                  "hex": "b8bc011a0286428d24d0cd8b5a64fec5ec8ac73a6a996d11cd169e0ae190b4374eda3dbf6239b048b2be44bdb45feded"
                 },
                 "sha512": {
-                  "base64": "NhWPilgI3EY3FkMsnGyaqTcIqMT5Q8/bsRsPPOX3UTa/N+lRXaLCQ5a/q0b5rMQHABa0y56wjZZbUuJVpeQetQ==",
-                  "hex": "36158f8a5808dc463716432c9c6c9aa93708a8c4f943cfdbb11b0f3ce5f75136bf37e9515da2c24396bfab46f9acc4070016b4cb9eb08d965b52e255a5e41eb5"
+                  "base64": "mYmbsSoT5zxCEI6OqVnLKYf4ef2qIULdf+c2KghJcAAn6QL+34Gp2VPQPT161ymZt/6lVJiJB8vLC27SOXY5mA==",
+                  "hex": "99899bb12a13e73c42108e8ea959cb2987f879fdaa2142dd7fe7362a0849700027e902fedf81a9d953d03d3d7ad72999b7fea554988907cbcb0b6ed239763998"
                 }
               }
             },
             "components.min.js.map": {
               "entrypoint": false,
-              "size": 189791,
-              "gzip_size": 40924,
+              "size": 191947,
+              "gzip_size": 41037,
               "hashes": {
                 "sha256": {
-                  "base64": "ghcFhxBmDv1S6wJAlTTRVdNskTvI2SmLFa70Hkmk2pQ=",
-                  "hex": "8217058710660efd52eb02409534d155d36c913bc8d9298b15aef41e49a4da94"
+                  "base64": "llLWrURxcNL1B7jwujaxeTxCjaR1ln8agHChhQAvOPc=",
+                  "hex": "9652d6ad447170d2f507b8f0ba36b1793c428da475967f1a8070a185002f38f7"
                 },
                 "sha384": {
-                  "base64": "a8PACTvZG8JCpLC2oaYKOjgOfIUV0dKt2QgbGnynzw9fBGLGz9SfKrESbLSUDXZQ",
-                  "hex": "6bc3c0093bd91bc242a4b0b6a1a60a3a380e7c8515d1d2add9081b1a7ca7cf0f5f0462c6cfd49f2ab1126cb4940d7650"
+                  "base64": "kSf9cEW5gNiEEpPkUsBEK4qQ+10Re5y3oZ0kS5Y9gF/Q8GknE7Ih1y4gKO2EtNzh",
+                  "hex": "9127fd7045b980d8841293e452c0442b8a90fb5d117b9cb7a19d244b963d805fd0f0692713b221d72e2028ed84b4dce1"
                 },
                 "sha512": {
-                  "base64": "druFDmUzqo2xbEK9Wd+og0XLXRRDWoV0g4O4jBGFpWm5QG/4ORrP3j4pjLwB1rKUjllL9oZ/vIkVT5AV3YlKAg==",
-                  "hex": "76bb850e6533aa8db16c42bd59dfa88345cb5d14435a85748383b88c1185a569b9406ff8391acfde3e298cbc01d6b2948e594bf6867fbc89154f9015dd894a02"
+                  "base64": "5qRgMTYsjo6PJmhRTxDWw3tPuwf1znV3hcJB5smJacJN3oPZMMz6JBG8cEP+L7Kvh32sNi2GbO36rdKI7FStZg==",
+                  "hex": "e6a46031362c8e8e8f2668514f10d6c37b4fbb07f5ce757785c241e6c98969c24dde83d930ccfa2411bc7043fe2fb2af877dac362d866cedfaadd288ec54ad66"
                 }
               }
             }
@@ -6530,430 +6107,7 @@
           "last_updated": "2017-06-09T20:54:51+00:00",
           "experimental": true,
           "messages": [],
-          "resources": {
-            "2017-core-components.css": {
-              "entrypoint": false,
-              "size": 18057,
-              "gzip_size": 2794,
-              "hashes": {
-                "sha256": {
-                  "base64": "Q4m7gLMtNd1qM75UicxNdsxt25OmyAl8V7vVv0qY0is=",
-                  "hex": "4389bb80b32d35dd6a33be5489cc4d76cc6ddb93a6c8097c57bbd5bf4a98d22b"
-                },
-                "sha384": {
-                  "base64": "OqBb7H7EXykrXjWbq8fOhbjM4Xe2wBE2edSzIzzog3Olk5KRTA2f84LE8r2+O7ae",
-                  "hex": "3aa05bec7ec45f292b5e359babc7ce85b8cce177b6c0113679d4b3233ce88373a59392914c0d9ff382c4f2bdbe3bb69e"
-                },
-                "sha512": {
-                  "base64": "nAImNXYpumTvvwhBPyHZgJpGP9rnNSCYiLS/NyqNMhtPkUXa5czn1VJ9FCW3kH4eClYafCJT+oALKQH7ojH+uA==",
-                  "hex": "9c0226357629ba64efbf08413f21d9809a463fdae735209888b4bf372a8d321b4f9145dae5cce7d5527d1425b7907e1e0a561a7c2253fa800b2901fba231feb8"
-                }
-              }
-            },
-            "2017-core-components.css.map": {
-              "entrypoint": false,
-              "size": 53830,
-              "gzip_size": 10937,
-              "hashes": {
-                "sha256": {
-                  "base64": "7HC7zMHL4XXGz/rI4YcVB5MMCM/Rimsn+WzTq0BeaRE=",
-                  "hex": "ec70bbccc1cbe175c6cffac8e1871507930c08cfd18a6b27f96cd3ab405e6911"
-                },
-                "sha384": {
-                  "base64": "Ab3AVNxzcZn1W2LciLJRnodAuEF1H7NXfRa69t5wyujzX4P9Pk0S3O3QyKJM7zVR",
-                  "hex": "01bdc054dc737199f55b62dc88b2519e8740b841751fb3577d16baf6de70cae8f35f83fd3e4d12dcedd0c8a24cef3551"
-                },
-                "sha512": {
-                  "base64": "uhSf9gyJheAzHSejZdEGHYrKJlUCw02urlMOyh/EKJf/u4K9Pb6TkgSZ4KUpB6sjwk89T2ZOhQRcOxN1QRE9Dw==",
-                  "hex": "ba149ff60c8985e0331d27a365d1061d8aca265502c34daeae530eca1fc42897ffbb82bd3dbe93920499e0a52907ab23c24f3d4f664e85045c3b137541113d0f"
-                }
-              }
-            },
-            "2017-core-components.js": {
-              "entrypoint": false,
-              "size": 6698,
-              "gzip_size": 2577,
-              "hashes": {
-                "sha256": {
-                  "base64": "u7r3Shsj/VaGB5UEPfLwNeCbyYmM5w5TjTMFE2Ylfak=",
-                  "hex": "bbbaf74a1b23fd56860795043df2f035e09bc9898ce70e538d33051366257da9"
-                },
-                "sha384": {
-                  "base64": "oOYPJViVw/rdAOQkx0VWN8Xj6IXvOGwEcxYfl/fEkPQk0+lozIsnDQBO7MkFJrXm",
-                  "hex": "a0e60f255895c3fadd00e424c7455637c5e3e885ef386c0473161f97f7c490f424d3e968cc8b270d004eecc90526b5e6"
-                },
-                "sha512": {
-                  "base64": "AaPGYLHgSvZ0E9d67w3GRRrJPlsEZKbin+TMF586djxK1W9zygKs48eoqc4TU5+N9iP243LVz6MmuXYMczHEiQ==",
-                  "hex": "01a3c660b1e04af67413d77aef0dc6451ac93e5b0464a6e29fe4cc179f3a763c4ad56f73ca02ace3c7a8a9ce13539f8df623f6e372d5cfa326b9760c7331c489"
-                }
-              }
-            },
-            "2017-core-components.min.css": {
-              "entrypoint": false,
-              "size": 10342,
-              "gzip_size": 2197,
-              "hashes": {
-                "sha256": {
-                  "base64": "qv6DYuI6V1TfF9K4CcBl41Us16iIX2oS17zxgP4u/RA=",
-                  "hex": "aafe8362e23a5754df17d2b809c065e3552cd7a8885f6a12d7bcf180fe2efd10"
-                },
-                "sha384": {
-                  "base64": "fTzQJF4euEGBgSIR1AsxavfrLnSOoIPQzRuFdavPh269GAP7dK81p6I/UP2Yh6Xx",
-                  "hex": "7d3cd0245e1eb84181812211d40b316af7eb2e748ea083d0cd1b8575abcf876ebd1803fb74af35a7a23f50fd9887a5f1"
-                },
-                "sha512": {
-                  "base64": "tr3a+8IwgUSO5RXtAGhUalHyNKmabDO3C9bN31mc8gc6xiQ4uGBTXS66MOKQUMeN6K3bTrzecAafFGgEBf/Aow==",
-                  "hex": "b6bddafbc23081448ee515ed0068546a51f234a99a6c33b70bd6cddf599cf2073ac62438b860535d2eba30e29050c78de8addb4ebcde70069f14680405ffc0a3"
-                }
-              }
-            },
-            "2017-core-components.min.css.map": {
-              "entrypoint": false,
-              "size": 53834,
-              "gzip_size": 10940,
-              "hashes": {
-                "sha256": {
-                  "base64": "ANdjx/Ll1B6bzwf17YZIPZRfQsK773POuvcy/G7ykxM=",
-                  "hex": "00d763c7f2e5d41e9bcf07f5ed86483d945f42c2bbef73cebaf732fc6ef29313"
-                },
-                "sha384": {
-                  "base64": "82wjEmfnXEZkTSMBKVO2vIN24PnKQm/JvJjpcIiP85YUxu03BXqkASlU5j4XVSWo",
-                  "hex": "f36c231267e75c46644d23012953b6bc8376e0f9ca426fc9bc98e970888ff39614c6ed37057aa4012954e63e175525a8"
-                },
-                "sha512": {
-                  "base64": "AeJwDapu1/qbpPnkJrGpuGTsuc6sHpEg9hkSWASTJv2H/Gwc4tcv92X9TqXod89VstR12mbKGyssdUSpPAqjXg==",
-                  "hex": "01e2700daa6ed7fa9ba4f9e426b1a9b864ecb9ceac1e9120f6191258049326fd87fc6c1ce2d72ff765fd4ea5e877cf55b2d475da66ca1b2b2c7544a93c0aa35e"
-                }
-              }
-            },
-            "2017-core-components.min.js": {
-              "entrypoint": false,
-              "size": 1903,
-              "gzip_size": 919,
-              "hashes": {
-                "sha256": {
-                  "base64": "PRnkMz5lh6t4D4mswCgZVfDtn+UsdSsXnzUVyE4KGjk=",
-                  "hex": "3d19e4333e6587ab780f89acc0281955f0ed9fe52c752b179f3515c84e0a1a39"
-                },
-                "sha384": {
-                  "base64": "Y/ag5gG6FLx3w4s+8DgXrK95LWXPhCiYT+RSbNYC6a4yiR+FF84l9HRNzuYoBYrW",
-                  "hex": "63f6a0e601ba14bc77c38b3ef03817acaf792d65cf8428984fe4526cd602e9ae32891f8517ce25f4744dcee628058ad6"
-                },
-                "sha512": {
-                  "base64": "zADeAHLYQ8AMQRSOCh1u1KVHnKVYPSpMd/trCafnpiL0Ps6YeAWyOI9q1FDglyvxwz4euvzG8fxUfRXWOhEuCA==",
-                  "hex": "cc00de0072d843c00c41148e0a1d6ed4a5479ca5583d2a4c77fb6b09a7e7a622f43ece987805b2388f6ad450e0972bf1c33e1ebafcc6f1fc547d15d63a112e08"
-                }
-              }
-            },
-            "2017-core-components.min.js.map": {
-              "entrypoint": false,
-              "size": 10069,
-              "gzip_size": 3922,
-              "hashes": {
-                "sha256": {
-                  "base64": "Fniyg1PhE0e4g8REFM9pmYQw6e8+B88zquC7gYSU2Yo=",
-                  "hex": "1678b28353e11347b883c44414cf69998430e9ef3e07cf33aae0bb818494d98a"
-                },
-                "sha384": {
-                  "base64": "iMJaY9QkDbk+1WsYR/rh9zTdRwdcMBFPcZUT3lZ2pAQEIcykIxyue3/N2p9CervY",
-                  "hex": "88c25a63d4240db93ed56b1847fae1f734dd47075c30114f719513de5676a4040421cca4231cae7b7fcdda9f427abbd8"
-                },
-                "sha512": {
-                  "base64": "3soHRr36VI1RsGhMKImvPk92JjgpLBlKkuQytv/nEHTyOhxdza34hUCQ+yHGAshzvNMsyLFO5gu5gOgEspCs3Q==",
-                  "hex": "deca0746bdfa548d51b0684c2889af3e4f762638292c194a92e432b6ffe71074f23a1c5dcdadf8854090fb21c602c873bcd32cc8b14ee60bb980e804b290acdd"
-                }
-              }
-            },
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file",
-              "size": 18057,
-              "gzip_size": 2794,
-              "hashes": {
-                "sha256": {
-                  "base64": "Q4m7gLMtNd1qM75UicxNdsxt25OmyAl8V7vVv0qY0is=",
-                  "hex": "4389bb80b32d35dd6a33be5489cc4d76cc6ddb93a6c8097c57bbd5bf4a98d22b"
-                },
-                "sha384": {
-                  "base64": "OqBb7H7EXykrXjWbq8fOhbjM4Xe2wBE2edSzIzzog3Olk5KRTA2f84LE8r2+O7ae",
-                  "hex": "3aa05bec7ec45f292b5e359babc7ce85b8cce177b6c0113679d4b3233ce88373a59392914c0d9ff382c4f2bdbe3bb69e"
-                },
-                "sha512": {
-                  "base64": "nAImNXYpumTvvwhBPyHZgJpGP9rnNSCYiLS/NyqNMhtPkUXa5czn1VJ9FCW3kH4eClYafCJT+oALKQH7ojH+uA==",
-                  "hex": "9c0226357629ba64efbf08413f21d9809a463fdae735209888b4bf372a8d321b4f9145dae5cce7d5527d1425b7907e1e0a561a7c2253fa800b2901fba231feb8"
-                }
-              }
-            },
-            "byu-theme-components.css.map": {
-              "entrypoint": false,
-              "size": 53933,
-              "gzip_size": 11155,
-              "hashes": {
-                "sha256": {
-                  "base64": "q+/2r/YR0/vNEhCIUqmO9THX1a4TESJPtBSiYsFUJG8=",
-                  "hex": "abeff6aff611d3fbcd12108852a98ef531d7d5ae1311224fb414a262c154246f"
-                },
-                "sha384": {
-                  "base64": "Ph1GvFD8wGfWs+1arvRJqqsMdPsK28BNu7ucOPeKl4GxJK9K2+uaZLwsor4KlBFs",
-                  "hex": "3e1d46bc50fcc067d6b3ed5aaef449aaab0c74fb0adbc04dbbbb9c38f78a9781b124af4adbeb9a64bc2ca2be0a94116c"
-                },
-                "sha512": {
-                  "base64": "bP/4uX7mpttTuUtswtCLGxUbTy/dL07n5ExSgfGoduMq6/2yFkJ6/Wcs8ZM6U368OWo423Ux2DEv+a8zgp4u8A==",
-                  "hex": "6cfff8b97ee6a6db53b94b6cc2d08b1b151b4f2fdd2f4ee7e44c5281f1a876e32aebfdb216427afd672cf1933a537ebc396a38db7531d8312ff9af33829e2ef0"
-                }
-              }
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle",
-              "size": 6698,
-              "gzip_size": 2577,
-              "hashes": {
-                "sha256": {
-                  "base64": "u7r3Shsj/VaGB5UEPfLwNeCbyYmM5w5TjTMFE2Ylfak=",
-                  "hex": "bbbaf74a1b23fd56860795043df2f035e09bc9898ce70e538d33051366257da9"
-                },
-                "sha384": {
-                  "base64": "oOYPJViVw/rdAOQkx0VWN8Xj6IXvOGwEcxYfl/fEkPQk0+lozIsnDQBO7MkFJrXm",
-                  "hex": "a0e60f255895c3fadd00e424c7455637c5e3e885ef386c0473161f97f7c490f424d3e968cc8b270d004eecc90526b5e6"
-                },
-                "sha512": {
-                  "base64": "AaPGYLHgSvZ0E9d67w3GRRrJPlsEZKbin+TMF586djxK1W9zygKs48eoqc4TU5+N9iP243LVz6MmuXYMczHEiQ==",
-                  "hex": "01a3c660b1e04af67413d77aef0dc6451ac93e5b0464a6e29fe4cc179f3a763c4ad56f73ca02ace3c7a8a9ce13539f8df623f6e372d5cfa326b9760c7331c489"
-                }
-              }
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file",
-              "size": 10342,
-              "gzip_size": 2197,
-              "hashes": {
-                "sha256": {
-                  "base64": "qv6DYuI6V1TfF9K4CcBl41Us16iIX2oS17zxgP4u/RA=",
-                  "hex": "aafe8362e23a5754df17d2b809c065e3552cd7a8885f6a12d7bcf180fe2efd10"
-                },
-                "sha384": {
-                  "base64": "fTzQJF4euEGBgSIR1AsxavfrLnSOoIPQzRuFdavPh269GAP7dK81p6I/UP2Yh6Xx",
-                  "hex": "7d3cd0245e1eb84181812211d40b316af7eb2e748ea083d0cd1b8575abcf876ebd1803fb74af35a7a23f50fd9887a5f1"
-                },
-                "sha512": {
-                  "base64": "tr3a+8IwgUSO5RXtAGhUalHyNKmabDO3C9bN31mc8gc6xiQ4uGBTXS66MOKQUMeN6K3bTrzecAafFGgEBf/Aow==",
-                  "hex": "b6bddafbc23081448ee515ed0068546a51f234a99a6c33b70bd6cddf599cf2073ac62438b860535d2eba30e29050c78de8addb4ebcde70069f14680405ffc0a3"
-                }
-              }
-            },
-            "byu-theme-components.min.css.map": {
-              "entrypoint": false,
-              "size": 53937,
-              "gzip_size": 11158,
-              "hashes": {
-                "sha256": {
-                  "base64": "MQo/mtN4OehX+DY6Xq7cqPy67TKydve3UF5gzt2ufhI=",
-                  "hex": "310a3f9ad37839e857f8363a5eaedca8fcbaed32b276f7b7505e60ceddae7e12"
-                },
-                "sha384": {
-                  "base64": "VFB0Jq5z1+3FUS8FgsCA58uyv3lFnw3hj/Osu+FnNmCrmT/CHjowOa40souELfrD",
-                  "hex": "54507426ae73d7edc5512f0582c080e7cbb2bf79459f0de18ff3acbbe1673660ab993fc21e3a3039ae34b28b842dfac3"
-                },
-                "sha512": {
-                  "base64": "FU0qkkBLq5UmlD5uUiYAyVSj1+vqSRfn9K8joQAxZ9FL15B5TTOxWXwc2N2lcxnX0NFyFZafA/H5qXkPeM9+2w==",
-                  "hex": "154d2a92404bab9526943e6e522600c954a3d7ebea4917e7f4af23a1003167d14bd790794d33b1597c1cd8dda57319d7d0d17215969f03f1f9a9790f78cf7edb"
-                }
-              }
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle",
-              "size": 1903,
-              "gzip_size": 919,
-              "hashes": {
-                "sha256": {
-                  "base64": "PRnkMz5lh6t4D4mswCgZVfDtn+UsdSsXnzUVyE4KGjk=",
-                  "hex": "3d19e4333e6587ab780f89acc0281955f0ed9fe52c752b179f3515c84e0a1a39"
-                },
-                "sha384": {
-                  "base64": "Y/ag5gG6FLx3w4s+8DgXrK95LWXPhCiYT+RSbNYC6a4yiR+FF84l9HRNzuYoBYrW",
-                  "hex": "63f6a0e601ba14bc77c38b3ef03817acaf792d65cf8428984fe4526cd602e9ae32891f8517ce25f4744dcee628058ad6"
-                },
-                "sha512": {
-                  "base64": "zADeAHLYQ8AMQRSOCh1u1KVHnKVYPSpMd/trCafnpiL0Ps6YeAWyOI9q1FDglyvxwz4euvzG8fxUfRXWOhEuCA==",
-                  "hex": "cc00de0072d843c00c41148e0a1d6ed4a5479ca5583d2a4c77fb6b09a7e7a622f43ece987805b2388f6ad450e0972bf1c33e1ebafcc6f1fc547d15d63a112e08"
-                }
-              }
-            },
-            "byu-theme-components.min.js.map": {
-              "entrypoint": false,
-              "size": 10069,
-              "gzip_size": 3924,
-              "hashes": {
-                "sha256": {
-                  "base64": "VpLc0aBZVM/UKtfu6PvJq4jXiZ79iYXEjznERYgbnPc=",
-                  "hex": "5692dcd1a05954cfd42ad7eee8fbc9ab88d7899efd8985c48f39c445881b9cf7"
-                },
-                "sha384": {
-                  "base64": "tOSAjXsi/t9S/vamjUiqGXoEg4CuhU2EP4V3zRhudn0LehrthgH5TfRE08bH9DKl",
-                  "hex": "b4e4808d7b22fedf52fef6a68d48aa197a048380ae854d843f8577cd186e767d0b7a1aed8601f94df444d3c6c7f432a5"
-                },
-                "sha512": {
-                  "base64": "/ivf1U2xOmcgwU9D29fC76clZ7xpzer9BamVIcQxlKfQWWcwZxZB9ZH+QUW4XpEscC0rPzyU7Fhdgf2J5ALtWA==",
-                  "hex": "fe2bdfd54db13a6720c14f43dbd7c2efa72567bc69cdeafd05a99521c43194a7d0596730671641f591fe4145b85e912c702d2b3f3c94ec585d81fd89e402ed58"
-                }
-              }
-            },
-            "components-compat.js": {
-              "entrypoint": false,
-              "size": 93559,
-              "gzip_size": 17342,
-              "hashes": {
-                "sha256": {
-                  "base64": "fihht8k96cN96t4zIqt9Xq0Zn30hPwfiYVKxXDKMIFg=",
-                  "hex": "7e2861b7c93de9c37deade3322ab7d5ead199f7d213f07e26152b15c328c2058"
-                },
-                "sha384": {
-                  "base64": "LF4w2mXuZMxGXYo1DRzP5syOIoAGyeku9aUFasihT2Hy7HgFT0UyfWTTlq0ml5Ik",
-                  "hex": "2c5e30da65ee64cc465d8a350d1ccfe6cc8e228006c9e92ef5a5056ac8a14f61f2ec78054f45327d64d396ad26979224"
-                },
-                "sha512": {
-                  "base64": "QaD4KVlGcpY+nkn87s2zqIOiWy2Q0M0SF0ryjAUjRJyr/H+vokYl6Gy6E/cEQINRp/SE7RJf7TfsIgEusQXhdw==",
-                  "hex": "41a0f829594672963e9e49fceecdb3a883a25b2d90d0cd12174af28c0523449cabfc7fafa24625e86cba13f704408351a7f484ed125fed37ec22012eb105e177"
-                }
-              }
-            },
-            "components-compat.js.map": {
-              "entrypoint": false,
-              "size": 172969,
-              "gzip_size": 35065,
-              "hashes": {
-                "sha256": {
-                  "base64": "PRJN7aHIghPWIypXKs6rxzNJPrfypi0Xn5HtbKCjsz8=",
-                  "hex": "3d124deda1c88213d6232a572aceabc733493eb7f2a62d179f91ed6ca0a3b33f"
-                },
-                "sha384": {
-                  "base64": "IQl1iC3vu48fQVcbf8NyrX5O7y6H4jIEsx+PH3biZkR1wFHyv5xzjuyedEOh8rRy",
-                  "hex": "210975882defbb8f1f41571b7fc372ad7e4eef2e87e23204b31f8f1f76e2664475c051f2bf9c738eec9e7443a1f2b472"
-                },
-                "sha512": {
-                  "base64": "HQffLlMTxTEFBdMpNe/Byv0oKI/yZpuY4FTNXesQd2L2/nO8LU2Vrtid6uwg8NeJ5/VZj2OMQeqtX9tBnCAzzw==",
-                  "hex": "1d07df2e5313c5310505d32935efc1cafd28288ff2669b98e054cd5deb107762f6fe73bc2d4d95aed89deaec20f0d789e7f5598f638c41eaad5fdb419c2033cf"
-                }
-              }
-            },
-            "components-compat.min.js": {
-              "entrypoint": false,
-              "size": 47516,
-              "gzip_size": 10912,
-              "hashes": {
-                "sha256": {
-                  "base64": "I0fh2HL01FO5ZwdDlSUithBi2FsICYIbOmgda2k76FE=",
-                  "hex": "2347e1d872f4d453b9670743952522b61062d85b0809821b3a681d6b693be851"
-                },
-                "sha384": {
-                  "base64": "Y2RK9BORjRkgq4bMFGQ4Dvf97KTk98gYiEJAsg42UfAQXGFzXCnphHBrhD170bwJ",
-                  "hex": "63644af413918d1920ab86cc1464380ef7fdeca4e4f7c818884240b20e3651f0105c61735c29e984706b843d7bd1bc09"
-                },
-                "sha512": {
-                  "base64": "v5DLnt4klh70e0t6kD/NvnWpSntCVPwvoRi7c9+G/e+W/80sVJDeWgK7zM0yNeiXgCwASkAp0WidPVRV3Et7MQ==",
-                  "hex": "bf90cb9ede24961ef47b4b7a903fcdbe75a94a7b4254fc2fa118bb73df86fdef96ffcd2c5490de5a02bbcccd3235e897802c004a4029d1689d3d5455dc4b7b31"
-                }
-              }
-            },
-            "components-compat.min.js.map": {
-              "entrypoint": false,
-              "size": 293366,
-              "gzip_size": 59218,
-              "hashes": {
-                "sha256": {
-                  "base64": "C7XBoX/FdyaTEN2dbjBvPQ1xhl9nn3bKmU58uiEIQHI=",
-                  "hex": "0bb5c1a17fc577269310dd9d6e306f3d0d71865f679f76ca994e7cba21084072"
-                },
-                "sha384": {
-                  "base64": "Z0KA4YRykln5PaKzJiq5ZKM3Qr/iKx1aW01utR5qDRyMmSuUefDFHMJI+VxSS0ok",
-                  "hex": "674280e184729259f93da2b3262ab964a33742bfe22b1d5a5b4d6eb51e6a0d1c8c992b9479f0c51cc248f95c524b4a24"
-                },
-                "sha512": {
-                  "base64": "ZHqDhllmoeWzwzdbfM7ATonKVcvA7IUtOwf337dNV8gZWxUypLOhJmCRixdKIzIdVNVZwc67v4XcQoFXVu/0aw==",
-                  "hex": "647a83865966a1e5b3c3375b7ccec04e89ca55cbc0ec852d3b07f7dfb74d57c8195b1532a4b3a12660918b174a23321d54d559c1cebbbf85dc42815756eff46b"
-                }
-              }
-            },
-            "components.js": {
-              "entrypoint": false,
-              "size": 78645,
-              "gzip_size": 15938,
-              "hashes": {
-                "sha256": {
-                  "base64": "+0iRgxBNMMmVARAC9IhdYuqWcodRrQ2zafzZfArl6RE=",
-                  "hex": "fb489183104d30c995011002f4885d62ea96728751ad0db369fcd97c0ae5e911"
-                },
-                "sha384": {
-                  "base64": "hTL4dUh+Qp1MokxkVQlL6c1USKsLX4jpOFJS0KQq8b7/dqqp0gG0+3vIpL5biOyv",
-                  "hex": "8532f875487e429d4ca24c6455094be9cd5448ab0b5f88e9385252d0a42af1beff76aaa9d201b4fb7bc8a4be5b88ecaf"
-                },
-                "sha512": {
-                  "base64": "E1ljINupwpruXSO9doZR1Ea1UKxOAmDSolcY4gnHQqlo4zayblhpEJlhKQJrYAbPXjHhDRAt+g6LHI4RteEtCw==",
-                  "hex": "13596320dba9c29aee5d23bd768651d446b550ac4e0260d2a25718e209c742a968e336b26e586910996129026b6006cf5e31e10d102dfa0e8b1c8e11b5e12d0b"
-                }
-              }
-            },
-            "components.js.map": {
-              "entrypoint": false,
-              "size": 93187,
-              "gzip_size": 18633,
-              "hashes": {
-                "sha256": {
-                  "base64": "NSTwcCGaY0ccAZSbqRmldKZpytURnxC6NzubpGDfiHI=",
-                  "hex": "3524f070219a63471c01949ba919a574a669cad5119f10ba373b9ba460df8872"
-                },
-                "sha384": {
-                  "base64": "mk4H4F+fhZ8/zPceZwkXCe4c3yZTuntTvy+a+EDdm2lEKEiPq9Bc5QPyrxlhBGYv",
-                  "hex": "9a4e07e05f9f859f3fccf71e67091709ee1cdf2653ba7b53bf2f9af840dd9b694428488fabd05ce503f2af196104662f"
-                },
-                "sha512": {
-                  "base64": "fNeUVe8r2MnMRFQZxyJhD4RrO4JmsHbYXdhI0RZaXqFjZl1IN4O9KMvhgvRkQQ0K9+5LpkBPmkWTKWOr1bH69Q==",
-                  "hex": "7cd79455ef2bd8c9cc445419c722610f846b3b8266b076d85dd848d1165a5ea163665d483783bd28cbe182f464410d0af7ee4ba6404f9a45932963abd5b1faf5"
-                }
-              }
-            },
-            "components.min.js": {
-              "entrypoint": false,
-              "size": 44065,
-              "gzip_size": 10204,
-              "hashes": {
-                "sha256": {
-                  "base64": "VJRbJ+zoAWYTCrgR9lgKC0x6auQDU4/V+bEh9pD1aeM=",
-                  "hex": "54945b27ece80166130ab811f6580a0b4c7a6ae403538fd5f9b121f690f569e3"
-                },
-                "sha384": {
-                  "base64": "uLwBGgKGQo0k0M2LWmT+xeyKxzpqmW0RzRaeCuGQtDdO2j2/YjmwSLK+RL20X+3t",
-                  "hex": "b8bc011a0286428d24d0cd8b5a64fec5ec8ac73a6a996d11cd169e0ae190b4374eda3dbf6239b048b2be44bdb45feded"
-                },
-                "sha512": {
-                  "base64": "mYmbsSoT5zxCEI6OqVnLKYf4ef2qIULdf+c2KghJcAAn6QL+34Gp2VPQPT161ymZt/6lVJiJB8vLC27SOXY5mA==",
-                  "hex": "99899bb12a13e73c42108e8ea959cb2987f879fdaa2142dd7fe7362a0849700027e902fedf81a9d953d03d3d7ad72999b7fea554988907cbcb0b6ed239763998"
-                }
-              }
-            },
-            "components.min.js.map": {
-              "entrypoint": false,
-              "size": 191947,
-              "gzip_size": 41037,
-              "hashes": {
-                "sha256": {
-                  "base64": "llLWrURxcNL1B7jwujaxeTxCjaR1ln8agHChhQAvOPc=",
-                  "hex": "9652d6ad447170d2f507b8f0ba36b1793c428da475967f1a8070a185002f38f7"
-                },
-                "sha384": {
-                  "base64": "kSf9cEW5gNiEEpPkUsBEK4qQ+10Re5y3oZ0kS5Y9gF/Q8GknE7Ih1y4gKO2EtNzh",
-                  "hex": "9127fd7045b980d8841293e452c0442b8a90fb5d117b9cb7a19d244b963d805fd0f0692713b221d72e2028ed84b4dce1"
-                },
-                "sha512": {
-                  "base64": "5qRgMTYsjo6PJmhRTxDWw3tPuwf1znV3hcJB5smJacJN3oPZMMz6JBG8cEP+L7Kvh32sNi2GbO36rdKI7FStZg==",
-                  "hex": "e6a46031362c8e8e8f2668514f10d6c37b4fbb07f5ce757785c241e6c98969c24dde83d930ccfa2411bc7043fe2fb2af877dac362d866cedfaadd288ec54ad66"
-                }
-              }
-            }
-          }
+          "resources": {}
         },
         {
           "name": "byu-search-enhancements",
@@ -8261,27 +7415,27 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/master",
-          "git_sha": "2bcb5e4cdd012ca95f673da69455fae0d294956b",
+          "git_sha": "a082939bda4052f729da920a567153487c084e29",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
-          "last_updated": "2017-06-08T22:17:59+00:00",
+          "last_updated": "2017-06-09T20:58:09+00:00",
           "messages": [],
           "resources": {
             "2017-core-components.css": {
               "entrypoint": false,
-              "size": 18026,
-              "gzip_size": 2787,
+              "size": 18057,
+              "gzip_size": 2794,
               "hashes": {
                 "sha256": {
-                  "base64": "jx8tgWKKKj64wfxQtRLgujnLSFdYH0EAwwkDZ31TOY8=",
-                  "hex": "8f1f2d81628a2a3eb8c1fc50b512e0ba39cb4857581f4100c30903677d53398f"
+                  "base64": "Q4m7gLMtNd1qM75UicxNdsxt25OmyAl8V7vVv0qY0is=",
+                  "hex": "4389bb80b32d35dd6a33be5489cc4d76cc6ddb93a6c8097c57bbd5bf4a98d22b"
                 },
                 "sha384": {
-                  "base64": "RiD607lvH5cCZyABwWuBpHGQ/tanZKDl1dNWJnat8TUvmPNc3aBd/Nl+CmB8K/va",
-                  "hex": "4620fad3b96f1f9702672001c16b81a47190fed6a764a0e5d5d3562676adf1352f98f35cdda05dfcd97e0a607c2bfbda"
+                  "base64": "OqBb7H7EXykrXjWbq8fOhbjM4Xe2wBE2edSzIzzog3Olk5KRTA2f84LE8r2+O7ae",
+                  "hex": "3aa05bec7ec45f292b5e359babc7ce85b8cce177b6c0113679d4b3233ce88373a59392914c0d9ff382c4f2bdbe3bb69e"
                 },
                 "sha512": {
-                  "base64": "3kTMWmBldkNVBr5yVxMcvvDBvMv12Bl77WnWqa7pp5f79dRSap9tqIuJ+wm2JLvsdOke3tAGQldm2wJ46mcqqQ==",
-                  "hex": "de44cc5a606576435506be7257131cbef0c1bccbf5d8197bed69d6a9aee9a797fbf5d4526a9f6da88b89fb09b624bbec74e91eded006425766db0278ea672aa9"
+                  "base64": "nAImNXYpumTvvwhBPyHZgJpGP9rnNSCYiLS/NyqNMhtPkUXa5czn1VJ9FCW3kH4eClYafCJT+oALKQH7ojH+uA==",
+                  "hex": "9c0226357629ba64efbf08413f21d9809a463fdae735209888b4bf372a8d321b4f9145dae5cce7d5527d1425b7907e1e0a561a7c2253fa800b2901fba231feb8"
                 }
               }
             },
@@ -8325,20 +7479,20 @@
             },
             "2017-core-components.min.css": {
               "entrypoint": false,
-              "size": 10316,
-              "gzip_size": 2190,
+              "size": 10342,
+              "gzip_size": 2197,
               "hashes": {
                 "sha256": {
-                  "base64": "zLaRYuSQ+aMsFBuotViGQYc9yR4PBjDeS/Dkzm59lPc=",
-                  "hex": "ccb69162e490f9a32c141ba8b5588641873dc91e0f0630de4bf0e4ce6e7d94f7"
+                  "base64": "qv6DYuI6V1TfF9K4CcBl41Us16iIX2oS17zxgP4u/RA=",
+                  "hex": "aafe8362e23a5754df17d2b809c065e3552cd7a8885f6a12d7bcf180fe2efd10"
                 },
                 "sha384": {
-                  "base64": "b4oGY9oC3dBWWHkIJxDFtQ+Lr5dOt1wbT1F+akp/nw8T0ct44KE0jT6wBGgs5svR",
-                  "hex": "6f8a0663da02ddd0565879082710c5b50f8baf974eb75c1b4f517e6a4a7f9f0f13d1cb78e0a1348d3eb004682ce6cbd1"
+                  "base64": "fTzQJF4euEGBgSIR1AsxavfrLnSOoIPQzRuFdavPh269GAP7dK81p6I/UP2Yh6Xx",
+                  "hex": "7d3cd0245e1eb84181812211d40b316af7eb2e748ea083d0cd1b8575abcf876ebd1803fb74af35a7a23f50fd9887a5f1"
                 },
                 "sha512": {
-                  "base64": "ArtjHLlwHipLsPAZf95vja/sF7uj99rzxbZCFWjs0ceJLTvKJHbRB0SSokouGK88PB6VQwZxH4Lq4voO4vqbBg==",
-                  "hex": "02bb631cb9701e2a4bb0f0197fde6f8dafec17bba3f7daf3c5b6421568ecd1c7892d3bca2476d1074492a24a2e18af3c3c1e954306711f82eae2fa0ee2fa9b06"
+                  "base64": "tr3a+8IwgUSO5RXtAGhUalHyNKmabDO3C9bN31mc8gc6xiQ4uGBTXS66MOKQUMeN6K3bTrzecAafFGgEBf/Aow==",
+                  "hex": "b6bddafbc23081448ee515ed0068546a51f234a99a6c33b70bd6cddf599cf2073ac62438b860535d2eba30e29050c78de8addb4ebcde70069f14680405ffc0a3"
                 }
               }
             },
@@ -8402,39 +7556,39 @@
             "byu-theme-components.css": {
               "entrypoint": true,
               "description": "Main CSS file",
-              "size": 18026,
-              "gzip_size": 2787,
+              "size": 18057,
+              "gzip_size": 2794,
               "hashes": {
                 "sha256": {
-                  "base64": "jx8tgWKKKj64wfxQtRLgujnLSFdYH0EAwwkDZ31TOY8=",
-                  "hex": "8f1f2d81628a2a3eb8c1fc50b512e0ba39cb4857581f4100c30903677d53398f"
+                  "base64": "Q4m7gLMtNd1qM75UicxNdsxt25OmyAl8V7vVv0qY0is=",
+                  "hex": "4389bb80b32d35dd6a33be5489cc4d76cc6ddb93a6c8097c57bbd5bf4a98d22b"
                 },
                 "sha384": {
-                  "base64": "RiD607lvH5cCZyABwWuBpHGQ/tanZKDl1dNWJnat8TUvmPNc3aBd/Nl+CmB8K/va",
-                  "hex": "4620fad3b96f1f9702672001c16b81a47190fed6a764a0e5d5d3562676adf1352f98f35cdda05dfcd97e0a607c2bfbda"
+                  "base64": "OqBb7H7EXykrXjWbq8fOhbjM4Xe2wBE2edSzIzzog3Olk5KRTA2f84LE8r2+O7ae",
+                  "hex": "3aa05bec7ec45f292b5e359babc7ce85b8cce177b6c0113679d4b3233ce88373a59392914c0d9ff382c4f2bdbe3bb69e"
                 },
                 "sha512": {
-                  "base64": "3kTMWmBldkNVBr5yVxMcvvDBvMv12Bl77WnWqa7pp5f79dRSap9tqIuJ+wm2JLvsdOke3tAGQldm2wJ46mcqqQ==",
-                  "hex": "de44cc5a606576435506be7257131cbef0c1bccbf5d8197bed69d6a9aee9a797fbf5d4526a9f6da88b89fb09b624bbec74e91eded006425766db0278ea672aa9"
+                  "base64": "nAImNXYpumTvvwhBPyHZgJpGP9rnNSCYiLS/NyqNMhtPkUXa5czn1VJ9FCW3kH4eClYafCJT+oALKQH7ojH+uA==",
+                  "hex": "9c0226357629ba64efbf08413f21d9809a463fdae735209888b4bf372a8d321b4f9145dae5cce7d5527d1425b7907e1e0a561a7c2253fa800b2901fba231feb8"
                 }
               }
             },
             "byu-theme-components.css.map": {
               "entrypoint": false,
-              "size": 53246,
-              "gzip_size": 11247,
+              "size": 53933,
+              "gzip_size": 11155,
               "hashes": {
                 "sha256": {
-                  "base64": "Zobla59to5PJwUJf4eRlaD9G8kz1qJ/Dy9FG/aqUa6k=",
-                  "hex": "6686e56b9f6da393c9c1425fe1e465683f46f24cf5a89fc3cbd146fdaa946ba9"
+                  "base64": "q+/2r/YR0/vNEhCIUqmO9THX1a4TESJPtBSiYsFUJG8=",
+                  "hex": "abeff6aff611d3fbcd12108852a98ef531d7d5ae1311224fb414a262c154246f"
                 },
                 "sha384": {
-                  "base64": "a+SOixGRiKYMZ8e7vwL1z05850FqqKVowL+/H1Sc8KmFqoySBPQSAI/8Xz20koZK",
-                  "hex": "6be48e8b119188a60c67c7bbbf02f5cf4e7ce7416aa8a568c0bfbf1f549cf0a985aa8c9204f412008ffc5f3db492864a"
+                  "base64": "Ph1GvFD8wGfWs+1arvRJqqsMdPsK28BNu7ucOPeKl4GxJK9K2+uaZLwsor4KlBFs",
+                  "hex": "3e1d46bc50fcc067d6b3ed5aaef449aaab0c74fb0adbc04dbbbb9c38f78a9781b124af4adbeb9a64bc2ca2be0a94116c"
                 },
                 "sha512": {
-                  "base64": "VwgOQdKXlxsBzH4qwzMPIg/p6OzYcCM+sRyMywknZwIWn03vRqDOuPBUjziw1DWHltRuWr5JlgFkLICek9Rr5A==",
-                  "hex": "57080e41d297971b01cc7e2ac3330f220fe9e8ecd870233eb11c8ccb09276702169f4def46a0ceb8f0548f38b0d4358796d46e5abe499601642c809e93d46be4"
+                  "base64": "bP/4uX7mpttTuUtswtCLGxUbTy/dL07n5ExSgfGoduMq6/2yFkJ6/Wcs8ZM6U368OWo423Ux2DEv+a8zgp4u8A==",
+                  "hex": "6cfff8b97ee6a6db53b94b6cc2d08b1b151b4f2fdd2f4ee7e44c5281f1a876e32aebfdb216427afd672cf1933a537ebc396a38db7531d8312ff9af33829e2ef0"
                 }
               }
             },
@@ -8461,39 +7615,39 @@
             "byu-theme-components.min.css": {
               "entrypoint": true,
               "description": "Main CSS file",
-              "size": 10316,
-              "gzip_size": 2190,
+              "size": 10342,
+              "gzip_size": 2197,
               "hashes": {
                 "sha256": {
-                  "base64": "zLaRYuSQ+aMsFBuotViGQYc9yR4PBjDeS/Dkzm59lPc=",
-                  "hex": "ccb69162e490f9a32c141ba8b5588641873dc91e0f0630de4bf0e4ce6e7d94f7"
+                  "base64": "qv6DYuI6V1TfF9K4CcBl41Us16iIX2oS17zxgP4u/RA=",
+                  "hex": "aafe8362e23a5754df17d2b809c065e3552cd7a8885f6a12d7bcf180fe2efd10"
                 },
                 "sha384": {
-                  "base64": "b4oGY9oC3dBWWHkIJxDFtQ+Lr5dOt1wbT1F+akp/nw8T0ct44KE0jT6wBGgs5svR",
-                  "hex": "6f8a0663da02ddd0565879082710c5b50f8baf974eb75c1b4f517e6a4a7f9f0f13d1cb78e0a1348d3eb004682ce6cbd1"
+                  "base64": "fTzQJF4euEGBgSIR1AsxavfrLnSOoIPQzRuFdavPh269GAP7dK81p6I/UP2Yh6Xx",
+                  "hex": "7d3cd0245e1eb84181812211d40b316af7eb2e748ea083d0cd1b8575abcf876ebd1803fb74af35a7a23f50fd9887a5f1"
                 },
                 "sha512": {
-                  "base64": "ArtjHLlwHipLsPAZf95vja/sF7uj99rzxbZCFWjs0ceJLTvKJHbRB0SSokouGK88PB6VQwZxH4Lq4voO4vqbBg==",
-                  "hex": "02bb631cb9701e2a4bb0f0197fde6f8dafec17bba3f7daf3c5b6421568ecd1c7892d3bca2476d1074492a24a2e18af3c3c1e954306711f82eae2fa0ee2fa9b06"
+                  "base64": "tr3a+8IwgUSO5RXtAGhUalHyNKmabDO3C9bN31mc8gc6xiQ4uGBTXS66MOKQUMeN6K3bTrzecAafFGgEBf/Aow==",
+                  "hex": "b6bddafbc23081448ee515ed0068546a51f234a99a6c33b70bd6cddf599cf2073ac62438b860535d2eba30e29050c78de8addb4ebcde70069f14680405ffc0a3"
                 }
               }
             },
             "byu-theme-components.min.css.map": {
               "entrypoint": false,
-              "size": 53250,
-              "gzip_size": 11251,
+              "size": 53937,
+              "gzip_size": 11158,
               "hashes": {
                 "sha256": {
-                  "base64": "y1B+wQEAcU/Laqj4Ti0EwNhIndwCzQeECvZNPhAgp60=",
-                  "hex": "cb507ec10100714fcb6aa8f84e2d04c0d8489ddc02cd07840af64d3e1020a7ad"
+                  "base64": "MQo/mtN4OehX+DY6Xq7cqPy67TKydve3UF5gzt2ufhI=",
+                  "hex": "310a3f9ad37839e857f8363a5eaedca8fcbaed32b276f7b7505e60ceddae7e12"
                 },
                 "sha384": {
-                  "base64": "FNIYnCgGFHWnLxJYUOcEHJ6l15PJuj8MKMQUZhehAbWSaiylRtnVCY1EzvsYm/v8",
-                  "hex": "14d2189c28061475a72f125850e7041c9ea5d793c9ba3f0c28c4146617a101b5926a2ca546d9d5098d44cefb189bfbfc"
+                  "base64": "VFB0Jq5z1+3FUS8FgsCA58uyv3lFnw3hj/Osu+FnNmCrmT/CHjowOa40souELfrD",
+                  "hex": "54507426ae73d7edc5512f0582c080e7cbb2bf79459f0de18ff3acbbe1673660ab993fc21e3a3039ae34b28b842dfac3"
                 },
                 "sha512": {
-                  "base64": "0eSjbsQQllQGXxdn7I0Z+AWsWkX5xr6nQZ+T9ddP+v8TIFmzhGOrrbFp5T2/2W9scjR11qNhWHEcU9fqfPIDhQ==",
-                  "hex": "d1e4a36ec4109654065f1767ec8d19f805ac5a45f9c6bea7419f93f5d74ffaff132059b38463abadb169e53dbfd96f6c723475d6a36158711c53d7ea7cf20385"
+                  "base64": "FU0qkkBLq5UmlD5uUiYAyVSj1+vqSRfn9K8joQAxZ9FL15B5TTOxWXwc2N2lcxnX0NFyFZafA/H5qXkPeM9+2w==",
+                  "hex": "154d2a92404bab9526943e6e522600c954a3d7ebea4917e7f4af23a1003167d14bd790794d33b1597c1cd8dda57319d7d0d17215969f03f1f9a9790f78cf7edb"
                 }
               }
             },
@@ -8538,153 +7692,153 @@
             },
             "components-compat.js": {
               "entrypoint": false,
-              "size": 93048,
-              "gzip_size": 17308,
+              "size": 93559,
+              "gzip_size": 17342,
               "hashes": {
                 "sha256": {
-                  "base64": "YDScT0S34UaXtvu8y9nhtJ99Gff80SrTz84mR5el9AI=",
-                  "hex": "60349c4f44b7e14697b6fbbccbd9e1b49f7d19f7fcd12ad3cfce264797a5f402"
+                  "base64": "fihht8k96cN96t4zIqt9Xq0Zn30hPwfiYVKxXDKMIFg=",
+                  "hex": "7e2861b7c93de9c37deade3322ab7d5ead199f7d213f07e26152b15c328c2058"
                 },
                 "sha384": {
-                  "base64": "N2LZw8ojvgzeknCInhsPM8MZzpb81huWer+4drlpkYQqNYbj/EK+MmrHEnhxuYI7",
-                  "hex": "3762d9c3ca23be0cde9270889e1b0f33c319ce96fcd61b967abfb876b96991842a3586e3fc42be326ac7127871b9823b"
+                  "base64": "LF4w2mXuZMxGXYo1DRzP5syOIoAGyeku9aUFasihT2Hy7HgFT0UyfWTTlq0ml5Ik",
+                  "hex": "2c5e30da65ee64cc465d8a350d1ccfe6cc8e228006c9e92ef5a5056ac8a14f61f2ec78054f45327d64d396ad26979224"
                 },
                 "sha512": {
-                  "base64": "QQkp0N2sPPBXf5JrRlKp0t6yg8puE7rpPkWr/QCPOm49arTMb1SYhQgGeRG54AfSK5j7im+CYD4/sdQD0IkEUQ==",
-                  "hex": "410929d0ddac3cf0577f926b4652a9d2deb283ca6e13bae93e45abfd008f3a6e3d6ab4cc6f54988508067911b9e007d22b98fb8a6f82603e3fb1d403d0890451"
+                  "base64": "QaD4KVlGcpY+nkn87s2zqIOiWy2Q0M0SF0ryjAUjRJyr/H+vokYl6Gy6E/cEQINRp/SE7RJf7TfsIgEusQXhdw==",
+                  "hex": "41a0f829594672963e9e49fceecdb3a883a25b2d90d0cd12174af28c0523449cabfc7fafa24625e86cba13f704408351a7f484ed125fed37ec22012eb105e177"
                 }
               }
             },
             "components-compat.js.map": {
               "entrypoint": false,
-              "size": 171434,
-              "gzip_size": 34656,
+              "size": 172969,
+              "gzip_size": 35065,
               "hashes": {
                 "sha256": {
-                  "base64": "lIf6UaTY8GBF87uwhdObecPos+ePDdyKKOvC9x7cA0s=",
-                  "hex": "9487fa51a4d8f06045f3bbb085d39b79c3e8b3e78f0ddc8a28ebc2f71edc034b"
+                  "base64": "PRJN7aHIghPWIypXKs6rxzNJPrfypi0Xn5HtbKCjsz8=",
+                  "hex": "3d124deda1c88213d6232a572aceabc733493eb7f2a62d179f91ed6ca0a3b33f"
                 },
                 "sha384": {
-                  "base64": "IJEDjJxGGQn3sXsMCB28SixjTqG8mZ7RW/xAcGE/Dd+c5a5CJHch07kh8//CStwH",
-                  "hex": "2091038c9c461909f7b17b0c081dbc4a2c634ea1bc999ed15bfc4070613f0ddf9ce5ae42247721d3b921f3ffc24adc07"
+                  "base64": "IQl1iC3vu48fQVcbf8NyrX5O7y6H4jIEsx+PH3biZkR1wFHyv5xzjuyedEOh8rRy",
+                  "hex": "210975882defbb8f1f41571b7fc372ad7e4eef2e87e23204b31f8f1f76e2664475c051f2bf9c738eec9e7443a1f2b472"
                 },
                 "sha512": {
-                  "base64": "jfhksYwq+qpDcIz4GYnRhlsNW+MBm7QlRz/ReJUr0bD0q6ZJN8zLxRKflPuC8DL8UiIBmfudWvqExhiT+1s5ZA==",
-                  "hex": "8df864b18c2afaaa43708cf81989d1865b0d5be3019bb425473fd178952bd1b0f4aba64937cccbc5129f94fb82f032fc52220199fb9d5afa84c61893fb5b3964"
+                  "base64": "HQffLlMTxTEFBdMpNe/Byv0oKI/yZpuY4FTNXesQd2L2/nO8LU2Vrtid6uwg8NeJ5/VZj2OMQeqtX9tBnCAzzw==",
+                  "hex": "1d07df2e5313c5310505d32935efc1cafd28288ff2669b98e054cd5deb107762f6fe73bc2d4d95aed89deaec20f0d789e7f5598f638c41eaad5fdb419c2033cf"
                 }
               }
             },
             "components-compat.min.js": {
               "entrypoint": false,
-              "size": 47216,
-              "gzip_size": 10889,
+              "size": 47516,
+              "gzip_size": 10912,
               "hashes": {
                 "sha256": {
-                  "base64": "UCtRCoJHQt1EHoCYBmiUt1viMnvZ2BTvdTC15OZln2k=",
-                  "hex": "502b510a824742dd441e8098066894b75be2327bd9d814ef7530b5e4e6659f69"
+                  "base64": "I0fh2HL01FO5ZwdDlSUithBi2FsICYIbOmgda2k76FE=",
+                  "hex": "2347e1d872f4d453b9670743952522b61062d85b0809821b3a681d6b693be851"
                 },
                 "sha384": {
-                  "base64": "Oud7dxKvuQjgmVtrwQFmq/bRo28ydb7de8pOuxBlgr0moc9oWkU9ZJQDlkaMwOvn",
-                  "hex": "3ae77b7712afb908e0995b6bc10166abf6d1a36f3275bedd7bca4ebb106582bd26a1cf685a453d64940396468cc0ebe7"
+                  "base64": "Y2RK9BORjRkgq4bMFGQ4Dvf97KTk98gYiEJAsg42UfAQXGFzXCnphHBrhD170bwJ",
+                  "hex": "63644af413918d1920ab86cc1464380ef7fdeca4e4f7c818884240b20e3651f0105c61735c29e984706b843d7bd1bc09"
                 },
                 "sha512": {
-                  "base64": "rN9VFxyLtcWYENgD3OXWh3Xtyfd7dUfcNXrHCN34Q+Tc91eecrjV4xMKAfDGsm81G6KzVWphHjrZJR9JpkERWg==",
-                  "hex": "acdf55171c8bb5c59810d803dce5d68775edc9f77b7547dc357ac708ddf843e4dcf7579e72b8d5e3130a01f0c6b26f351ba2b3556a611e3ad9251f49a641115a"
+                  "base64": "v5DLnt4klh70e0t6kD/NvnWpSntCVPwvoRi7c9+G/e+W/80sVJDeWgK7zM0yNeiXgCwASkAp0WidPVRV3Et7MQ==",
+                  "hex": "bf90cb9ede24961ef47b4b7a903fcdbe75a94a7b4254fc2fa118bb73df86fdef96ffcd2c5490de5a02bbcccd3235e897802c004a4029d1689d3d5455dc4b7b31"
                 }
               }
             },
             "components-compat.min.js.map": {
               "entrypoint": false,
-              "size": 291147,
-              "gzip_size": 58956,
+              "size": 293366,
+              "gzip_size": 59218,
               "hashes": {
                 "sha256": {
-                  "base64": "1tuWDrE37k3pHRJcB7eHwkbKRHqNgW2MBOkCmf9YKv0=",
-                  "hex": "d6db960eb137ee4de91d125c07b787c246ca447a8d816d8c04e90299ff582afd"
+                  "base64": "C7XBoX/FdyaTEN2dbjBvPQ1xhl9nn3bKmU58uiEIQHI=",
+                  "hex": "0bb5c1a17fc577269310dd9d6e306f3d0d71865f679f76ca994e7cba21084072"
                 },
                 "sha384": {
-                  "base64": "fpancghR/2f+wZkyGnyN8Hg0r2rlP1KVGbmSFguNG7rImc8rE+LPIml1W5OJlfDc",
-                  "hex": "7e96a7720851ff67fec199321a7c8df07834af6ae53f529519b992160b8d1bbac899cf2b13e2cf2269755b938995f0dc"
+                  "base64": "Z0KA4YRykln5PaKzJiq5ZKM3Qr/iKx1aW01utR5qDRyMmSuUefDFHMJI+VxSS0ok",
+                  "hex": "674280e184729259f93da2b3262ab964a33742bfe22b1d5a5b4d6eb51e6a0d1c8c992b9479f0c51cc248f95c524b4a24"
                 },
                 "sha512": {
-                  "base64": "1hFp9OMtM8ptJjD8HBccIbP3a6dcHHDEr37QcfPESMTWj4fNure9WnQYMqGvRx74Vd0ROiYctzitdoYBCfknRw==",
-                  "hex": "d61169f4e32d33ca6d2630fc1c171c21b3f76ba75c1c70c4af7ed071f3c448c4d68f87cdbab7bd5a741832a1af471ef855dd113a261cb738ad76860109f92747"
+                  "base64": "ZHqDhllmoeWzwzdbfM7ATonKVcvA7IUtOwf337dNV8gZWxUypLOhJmCRixdKIzIdVNVZwc67v4XcQoFXVu/0aw==",
+                  "hex": "647a83865966a1e5b3c3375b7ccec04e89ca55cbc0ec852d3b07f7dfb74d57c8195b1532a4b3a12660918b174a23321d54d559c1cebbbf85dc42815756eff46b"
                 }
               }
             },
             "components.js": {
               "entrypoint": false,
-              "size": 77951,
-              "gzip_size": 15910,
+              "size": 78645,
+              "gzip_size": 15938,
               "hashes": {
                 "sha256": {
-                  "base64": "ngIFr8Fq9G6zgUsL0ijYQF8QVN5BGqMi3tbbtDz+VbI=",
-                  "hex": "9e0205afc16af46eb3814b0bd228d8405f1054de411aa322ded6dbb43cfe55b2"
+                  "base64": "+0iRgxBNMMmVARAC9IhdYuqWcodRrQ2zafzZfArl6RE=",
+                  "hex": "fb489183104d30c995011002f4885d62ea96728751ad0db369fcd97c0ae5e911"
                 },
                 "sha384": {
-                  "base64": "9rb3CkAKeFoa24lGgrTO2E8idXuaaYmTLrnhcgb6hO6D6HMxFyPSyDWo5AhCtshC",
-                  "hex": "f6b6f70a400a785a1adb894682b4ced84f22757b9a6989932eb9e17206fa84ee83e873311723d2c835a8e40842b6c842"
+                  "base64": "hTL4dUh+Qp1MokxkVQlL6c1USKsLX4jpOFJS0KQq8b7/dqqp0gG0+3vIpL5biOyv",
+                  "hex": "8532f875487e429d4ca24c6455094be9cd5448ab0b5f88e9385252d0a42af1beff76aaa9d201b4fb7bc8a4be5b88ecaf"
                 },
                 "sha512": {
-                  "base64": "CHc3ko1FNGTTbckndMFYuhrxCDnlNIFnn3mGNv4oSXkwR+qB3ARPPvS+YBiHlSLtbPQwyum6LOoN2L4HQRrp+Q==",
-                  "hex": "087737928d453464d36dc92774c158ba1af10839e53481679f798636fe2849793047ea81dc044f3ef4be6018879522ed6cf430cae9ba2cea0dd8be07411ae9f9"
+                  "base64": "E1ljINupwpruXSO9doZR1Ea1UKxOAmDSolcY4gnHQqlo4zayblhpEJlhKQJrYAbPXjHhDRAt+g6LHI4RteEtCw==",
+                  "hex": "13596320dba9c29aee5d23bd768651d446b550ac4e0260d2a25718e209c742a968e336b26e586910996129026b6006cf5e31e10d102dfa0e8b1c8e11b5e12d0b"
                 }
               }
             },
             "components.js.map": {
               "entrypoint": false,
-              "size": 92146,
-              "gzip_size": 18585,
+              "size": 93187,
+              "gzip_size": 18633,
               "hashes": {
                 "sha256": {
-                  "base64": "dyg5JnkdSVir24n6asJ/wqT1hD6+aK5eN0K3ddwfhTc=",
-                  "hex": "77283926791d4958abdb89fa6ac27fc2a4f5843ebe68ae5e3742b775dc1f8537"
+                  "base64": "NSTwcCGaY0ccAZSbqRmldKZpytURnxC6NzubpGDfiHI=",
+                  "hex": "3524f070219a63471c01949ba919a574a669cad5119f10ba373b9ba460df8872"
                 },
                 "sha384": {
-                  "base64": "ZBTQmtPVLAKE3yVm97YKjdnSV5UmsjU0SHYZGH7D66XpnKuZGT/B+w6E1aE7OHdY",
-                  "hex": "6414d09ad3d52c0284df2566f7b60a8dd9d2579526b23534487619187ec3eba5e99cab99193fc1fb0e84d5a13b387758"
+                  "base64": "mk4H4F+fhZ8/zPceZwkXCe4c3yZTuntTvy+a+EDdm2lEKEiPq9Bc5QPyrxlhBGYv",
+                  "hex": "9a4e07e05f9f859f3fccf71e67091709ee1cdf2653ba7b53bf2f9af840dd9b694428488fabd05ce503f2af196104662f"
                 },
                 "sha512": {
-                  "base64": "5mrlLkzku4SZY2VjDldVJgtpUTwLbzSY75Utd/DeAOBZX8M1s1IhE6YrWDFoVGQibdDFi4ZLHYGZ9gSBnvZ6Ag==",
-                  "hex": "e66ae52e4ce4bb84996365630e5755260b69513c0b6f3498ef952d77f0de00e0595fc335b3522113a62b5831685464226dd0c58b864b1d8199f604819ef67a02"
+                  "base64": "fNeUVe8r2MnMRFQZxyJhD4RrO4JmsHbYXdhI0RZaXqFjZl1IN4O9KMvhgvRkQQ0K9+5LpkBPmkWTKWOr1bH69Q==",
+                  "hex": "7cd79455ef2bd8c9cc445419c722610f846b3b8266b076d85dd848d1165a5ea163665d483783bd28cbe182f464410d0af7ee4ba6404f9a45932963abd5b1faf5"
                 }
               }
             },
             "components.min.js": {
               "entrypoint": false,
-              "size": 43767,
-              "gzip_size": 10170,
+              "size": 44065,
+              "gzip_size": 10204,
               "hashes": {
                 "sha256": {
-                  "base64": "fLkxM0Jfvs9I0sLMflpKuUZwi4XeWVOfacwf5A53T5E=",
-                  "hex": "7cb93133425fbecf48d2c2cc7e5a4ab946708b85de59539f69cc1fe40e774f91"
+                  "base64": "VJRbJ+zoAWYTCrgR9lgKC0x6auQDU4/V+bEh9pD1aeM=",
+                  "hex": "54945b27ece80166130ab811f6580a0b4c7a6ae403538fd5f9b121f690f569e3"
                 },
                 "sha384": {
-                  "base64": "/80RXLrVGD0EYXUS7MwHTmgpxbRAv8gBVYkDB0PQ8wm6TPTNqAkzau/izdR6ZdlA",
-                  "hex": "ffcd115cbad5183d04617512eccc074e6829c5b440bfc8015589030743d0f309ba4cf4cda809336aefe2cdd47a65d940"
+                  "base64": "uLwBGgKGQo0k0M2LWmT+xeyKxzpqmW0RzRaeCuGQtDdO2j2/YjmwSLK+RL20X+3t",
+                  "hex": "b8bc011a0286428d24d0cd8b5a64fec5ec8ac73a6a996d11cd169e0ae190b4374eda3dbf6239b048b2be44bdb45feded"
                 },
                 "sha512": {
-                  "base64": "NhWPilgI3EY3FkMsnGyaqTcIqMT5Q8/bsRsPPOX3UTa/N+lRXaLCQ5a/q0b5rMQHABa0y56wjZZbUuJVpeQetQ==",
-                  "hex": "36158f8a5808dc463716432c9c6c9aa93708a8c4f943cfdbb11b0f3ce5f75136bf37e9515da2c24396bfab46f9acc4070016b4cb9eb08d965b52e255a5e41eb5"
+                  "base64": "mYmbsSoT5zxCEI6OqVnLKYf4ef2qIULdf+c2KghJcAAn6QL+34Gp2VPQPT161ymZt/6lVJiJB8vLC27SOXY5mA==",
+                  "hex": "99899bb12a13e73c42108e8ea959cb2987f879fdaa2142dd7fe7362a0849700027e902fedf81a9d953d03d3d7ad72999b7fea554988907cbcb0b6ed239763998"
                 }
               }
             },
             "components.min.js.map": {
               "entrypoint": false,
-              "size": 189791,
-              "gzip_size": 40924,
+              "size": 191947,
+              "gzip_size": 41037,
               "hashes": {
                 "sha256": {
-                  "base64": "ghcFhxBmDv1S6wJAlTTRVdNskTvI2SmLFa70Hkmk2pQ=",
-                  "hex": "8217058710660efd52eb02409534d155d36c913bc8d9298b15aef41e49a4da94"
+                  "base64": "llLWrURxcNL1B7jwujaxeTxCjaR1ln8agHChhQAvOPc=",
+                  "hex": "9652d6ad447170d2f507b8f0ba36b1793c428da475967f1a8070a185002f38f7"
                 },
                 "sha384": {
-                  "base64": "a8PACTvZG8JCpLC2oaYKOjgOfIUV0dKt2QgbGnynzw9fBGLGz9SfKrESbLSUDXZQ",
-                  "hex": "6bc3c0093bd91bc242a4b0b6a1a60a3a380e7c8515d1d2add9081b1a7ca7cf0f5f0462c6cfd49f2ab1126cb4940d7650"
+                  "base64": "kSf9cEW5gNiEEpPkUsBEK4qQ+10Re5y3oZ0kS5Y9gF/Q8GknE7Ih1y4gKO2EtNzh",
+                  "hex": "9127fd7045b980d8841293e452c0442b8a90fb5d117b9cb7a19d244b963d805fd0f0692713b221d72e2028ed84b4dce1"
                 },
                 "sha512": {
-                  "base64": "druFDmUzqo2xbEK9Wd+og0XLXRRDWoV0g4O4jBGFpWm5QG/4ORrP3j4pjLwB1rKUjllL9oZ/vIkVT5AV3YlKAg==",
-                  "hex": "76bb850e6533aa8db16c42bd59dfa88345cb5d14435a85748383b88c1185a569b9406ff8391acfde3e298cbc01d6b2948e594bf6867fbc89154f9015dd894a02"
+                  "base64": "5qRgMTYsjo6PJmhRTxDWw3tPuwf1znV3hcJB5smJacJN3oPZMMz6JBG8cEP+L7Kvh32sNi2GbO36rdKI7FStZg==",
+                  "hex": "e6a46031362c8e8e8f2668514f10d6c37b4fbb07f5ce757785c241e6c98969c24dde83d930ccfa2411bc7043fe2fb2af877dac362d866cedfaadd288ec54ad66"
                 }
               }
             }
