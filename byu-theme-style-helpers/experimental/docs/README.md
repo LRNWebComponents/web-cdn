@@ -12,7 +12,13 @@ headings and paragraphs and divs, etc. In these cases, the files are CAPITALIZED
 
 TO USE
 ------------
-You are welcome to download or git clone these files. 
+1. Load the CSS:
+* You are welcome to download or git clone these files. 
+* Reference css files from the cdn.
+
+2. Add the `byu-something` classes to your elements to make use of the styling. All files with lowercase names (i.e. 'byu-button', not 'Font..') have css that has been namespaced with `byu-` prefixes on classes.
+
+None of these files should immediately change any of your styling; the styling will be applied when and where you apply the appropriate classes.
 
 
 FROM THE CDN
@@ -30,6 +36,8 @@ These files can then be accessed via this format:
 ```
 
 ## Example Reference Points
-```https://cdn.byu.edu/byu-theme-style-helpers/latest/buttons.css
+```
+https://cdn.byu.edu/byu-theme-style-helpers/latest/buttons.css
 https://cdn.byu.edu/byu-theme-style-helpers/latest/tables.css
-https://cdn.byu.edu/byu-theme-style-helpers/latest/box-shadows.css```
+https://cdn.byu.edu/byu-theme-style-helpers/latest/box-shadows.css
+```
