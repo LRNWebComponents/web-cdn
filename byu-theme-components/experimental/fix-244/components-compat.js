@@ -491,13 +491,16 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                 this._applyMobileWidth();
                 this._render();
 
-                // close the mobile menu if a link within it is clicked
                 var header = this;
-                this.shadowRoot.querySelector('#navbarMenu').addEventListener('click', function () {
-                    if (header.hasAttribute(ATTR_MOBILE_VIEW) && header.hasAttribute(ATTR_MENU_OPEN) && !header.hasAttribute(ATTR_MENU_KEEP_OPEN)) {
-                        header.removeAttribute(ATTR_MENU_OPEN);
-                    }
-                });
+                setTimeout(function () {
+                    var menu = header.shadowRoot.querySelector('#mobileMenu');
+                    if (menu) menu.addEventListener('click', function openMenuClickHandler() {
+                        console.log(menu.innerHTML);
+                        if (header.hasAttribute(ATTR_MOBILE_VIEW) && header.hasAttribute(ATTR_MENU_OPEN) && !header.hasAttribute(ATTR_MENU_KEEP_OPEN)) {
+                            header.removeAttribute(ATTR_MENU_OPEN);
+                        }
+                    });
+                }, 0);
             }
         }, {
             key: 'attributeChangedCallback',
