@@ -15,6 +15,12 @@ const sources = require('./../sources/index');
 const crypto = require('crypto');
 const zlib = require('zlib');
 
+const AWS = require('aws-sdk');
+const s3Options = {
+    s3Client: new AWS.S3()
+};
+const s3 = require('s3').createClient(s3Options);
+
 /**
  * @typedef {{}} FilesystemChanges
  * @property {string[]} added
@@ -36,11 +42,12 @@ module.exports = function buildFilesystem(config, contentPath, workPath) {
     log.info('==================== Building Filesystem ====================');
     let initialFileHashes;
     return _createScratch()
-        .then(() => _downloadContent())
-        .then(() => _hashFilesystem().then(hashes => initialFileHashes = hashes))
-        .then(() => _deleteVersions())
-        .then(() => _deleteOldExperiments())
         .then(() => _downloadWorkingFiles())
+        .then(() => _installDependencies())
+
+        .then((result) => {
+            throw new Error('bail');
+        })
         .then(() => _clearDestinations())
         .then(() => _copyFiles())
         .then(() => _writeShaFiles())
@@ -51,14 +58,6 @@ module.exports = function buildFilesystem(config, contentPath, workPath) {
     function _createScratch() {
         return fs.emptyDir(contentPath)
             .then(() => fs.emptyDir(workPath));
-    }
-
-    function _downloadContent() {
-        log.info('-------------- Downloading Current CDN Contents --------------');
-        return ghClient.downloadTarball(
-            constants.CDN.GITHUB_ORG, constants.CDN.GITHUB_REPO, constants.CDN.CONTENT_BRANCH,
-            contentPath
-        );
     }
 
     function _hashFilesystem() {
@@ -146,6 +145,13 @@ module.exports = function buildFilesystem(config, contentPath, workPath) {
             log.info(`Downloading contents of ${lib.id}@${ver.ref}`);
             return sources.downloadTarball(lib.sourceInfo, ver, _workDir(lib, ver));
         })
+    }
+
+    function _installDependencies() {
+        log.info('-------------- Installing Library Dependencies --------------');
+        return config.asLibVersions().reduce((result, {lib, version}) => {
+            console.log(`${lib.id}@${version.name}`)
+        }, Promise.resolve());
     }
 
     function _clearDestinations() {

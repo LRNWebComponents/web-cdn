@@ -33,7 +33,8 @@ const experimentExpiration = moment().subtract(constants.RULES.EXPERIMENTAL_DURA
  * @property {!boolean} ignored - 'ignored' means that the version/ref doesn't belong in the CDN
  * @property {?string} reasonIgnored
  * @property {!boolean} skipped - 'skipped' means that the version/ref is in the CDN, but we can't update it right now
- * @property {?string} reasonSkipped
+ * @property {?string} reasonSkipped,
+ * @property {RepoConfig} repoConfig
  */
 
 /**
@@ -295,9 +296,7 @@ class CdnConfig {
             ).catch(() => null);
 
             return Promise.all([repoConfigPromise, contentShaPromise])
-                .then(results => {
-                    let [repoConfig, contentSha] = results;
-
+                .then(([repoConfig, contentSha]) => {
                     return CdnConfig.createLibVersion(
                         realName, ref, manifestVersion, repoConfig, contentSha, forceReload, experimental
                     );
@@ -381,11 +380,11 @@ class CdnConfig {
 
         let sha = ref.commitSha;
         return {
-            name: name,
+            name,
             ref: ref.ref,
             tarballUrl: ref.tarballUrl,
             inManifest: !!manifestSha,
-            manifestSha: manifestSha,
+            manifestSha,
             commitSha: sha,
             link: ref.viewUrl,
             resources: {
@@ -395,11 +394,12 @@ class CdnConfig {
             ignored: !!reasonIgnored,
             skipped: !!reasonSkipped,
             deleted: !!reasonDeleted,
-            messages: messages,
-            canUpdate: canUpdate,
+            messages,
+            canUpdate,
             needsUpdate: canUpdate && (forceReload || sha !== manifestSha || sha !== contentSha),
-            experimental: experimental,
-            lastUpdate: ref.lastUpdate
+            experimental,
+            lastUpdate: ref.lastUpdate,
+            repoConfig
         };
 
         function _getMappings(repoConfig) {

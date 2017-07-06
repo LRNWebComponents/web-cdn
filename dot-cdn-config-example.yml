@@ -15,3 +15,20 @@ build:
     - yarn install
   build:
     - yarn build
+headers:
+  components*.js:
+    Cache-Control: public, max-age=12345, immutable
+  byu-theme-components.*js:
+    Cache-Control: public, max-age=1week
+  byu-theme-components.*css:
+    Cache-Control: public, max-age=1week
+
+branches:
+  master:
+    headers:
+      components*.js:
+        Cache-Control: public, max-age=12345, immutable
+      byu-theme-components.*js:
+        Cache-Control: public, max-age=1week
+      byu-theme-components.*css:
+        Cache-Control: public, max-age=1week

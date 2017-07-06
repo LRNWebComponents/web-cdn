@@ -11,7 +11,7 @@ cp package.json main-config.yml dist/
 
 cd dist
 
-npm install
+yarn install
 
 cd _aws
 
