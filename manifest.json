@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-07-14T18:04:11.662Z",
+  "$built": "2017-07-14T18:05:42.501Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -14863,23 +14863,23 @@
     "byu-feature-card": {
       "source": "github:byuweb/byu-feature-card",
       "aliases": {
-        "latest": "unstable"
+        "1.x.x": "1.0.0",
+        "1.0.x": "1.0.0",
+        "latest": "1.0.0"
       },
       "versions": [
         {
-          "name": "blue-gray-colors",
-          "ref": "blue-gray-colors",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card/tarball/blue-gray-colors",
-          "git_sha": "a39691bac45672840fd5f79bfd782f8401bf8bd9",
-          "link": "https://github.com/byuweb/byu-feature-card/tree/blue-gray-colors",
-          "last_updated": "2017-07-14T17:59:49+00:00",
-          "experimental": true,
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
+          "name": "1.0.0",
+          "ref": "v1.0.0",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card/tarball/v1.0.0",
+          "git_sha": "0cd8eac176efa1691d907cd58c07daae0392a7ee",
+          "link": "https://github.com/byuweb/byu-feature-card/tree/v1.0.0",
+          "last_updated": "2017-07-14T18:03:41+00:00",
+          "messages": [],
           "resources": {
             "byu-feature-card.css": {
-              "entrypoint": false,
+              "entrypoint": true,
+              "description": "Main CSS file",
               "size": 2113,
               "gzip_size": 510,
               "hashes": {
@@ -14917,7 +14917,8 @@
               }
             },
             "byu-feature-card.js": {
-              "entrypoint": false,
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle",
               "size": 6698,
               "gzip_size": 2577,
               "hashes": {
@@ -14936,7 +14937,8 @@
               }
             },
             "byu-feature-card.min.css": {
-              "entrypoint": false,
+              "entrypoint": true,
+              "description": "Main CSS file",
               "size": 2007,
               "gzip_size": 461,
               "hashes": {
@@ -14974,7 +14976,8 @@
               }
             },
             "byu-feature-card.min.js": {
-              "entrypoint": false,
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle",
               "size": 1899,
               "gzip_size": 923,
               "hashes": {
