@@ -712,15 +712,11 @@ class BYUMenu extends HTMLElement {
     }
 }
 
-function addTransparency(item) {
-    item.classList.add('menu-transparent');
-}
-
 function checkTransparency(component) {
     let isTransparent = component.classList.contains('transparent');
     if (isTransparent) {
-        let elements = document.getElementsByClassName('menu-outer-wrapper');
-        elements.forEach(addTransparency);
+        let byuHeader = document.getElementsByTagName('byu-header');
+        byuHeader[0].classList.add('menu-transparent');
     }
 }
 
