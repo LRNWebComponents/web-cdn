@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-07-17T17:18:36.164Z",
+  "$built": "2017-07-17T17:20:47.686Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -3484,7 +3484,9 @@
           "link": "https://github.com/byuweb/byu-theme-components/tree/fixes-274",
           "last_updated": "2017-07-17T17:16:58+00:00",
           "experimental": true,
-          "messages": [],
+          "messages": [
+            "There is no longer a valid .cdn-config.yml present"
+          ],
           "resources": {
             "2017-core-components.css": {
               "entrypoint": false,
@@ -3620,8 +3622,7 @@
               }
             },
             "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file",
+              "entrypoint": false,
               "size": 19340,
               "gzip_size": 2902,
               "hashes": {
@@ -3659,8 +3660,7 @@
               }
             },
             "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle",
+              "entrypoint": false,
               "size": 6698,
               "gzip_size": 2577,
               "hashes": {
@@ -3679,8 +3679,7 @@
               }
             },
             "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file",
+              "entrypoint": false,
               "size": 11323,
               "gzip_size": 2323,
               "hashes": {
@@ -3718,8 +3717,7 @@
               }
             },
             "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle",
+              "entrypoint": false,
               "size": 1903,
               "gzip_size": 919,
               "hashes": {
@@ -4348,9 +4346,9 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/master",
-          "git_sha": "fad1be4597bc9e0bad0cfafec7fca3e8c9b7cfff",
+          "git_sha": "91bc0247cfa5cd7979dd900e21221cb6259ea8a4",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
-          "last_updated": "2017-07-17T16:39:09+00:00",
+          "last_updated": "2017-07-17T17:20:12+00:00",
           "messages": [],
           "resources": {
             "2017-core-components.css": {
@@ -9129,7 +9127,9 @@
           "link": "https://github.com/byuweb/byu-theme-components/tree/fixes-274",
           "last_updated": "2017-07-17T17:16:58+00:00",
           "experimental": true,
-          "messages": [],
+          "messages": [
+            "There is no longer a valid .cdn-config.yml present"
+          ],
           "resources": {
             "2017-core-components.css": {
               "entrypoint": false,
@@ -9265,8 +9265,7 @@
               }
             },
             "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file",
+              "entrypoint": false,
               "size": 19340,
               "gzip_size": 2902,
               "hashes": {
@@ -9304,8 +9303,7 @@
               }
             },
             "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle",
+              "entrypoint": false,
               "size": 6698,
               "gzip_size": 2577,
               "hashes": {
@@ -9324,8 +9322,7 @@
               }
             },
             "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file",
+              "entrypoint": false,
               "size": 11323,
               "gzip_size": 2323,
               "hashes": {
@@ -9363,8 +9360,7 @@
               }
             },
             "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle",
+              "entrypoint": false,
               "size": 1903,
               "gzip_size": 919,
               "hashes": {
@@ -9993,9 +9989,9 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/master",
-          "git_sha": "fad1be4597bc9e0bad0cfafec7fca3e8c9b7cfff",
+          "git_sha": "91bc0247cfa5cd7979dd900e21221cb6259ea8a4",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
-          "last_updated": "2017-07-17T16:39:09+00:00",
+          "last_updated": "2017-07-17T17:20:12+00:00",
           "messages": [],
           "resources": {
             "2017-core-components.css": {
