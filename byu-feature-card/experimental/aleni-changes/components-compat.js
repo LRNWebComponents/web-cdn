@@ -562,7 +562,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 /* 10 */
 /***/function (module, exports, __webpack_require__) {
 
-    module.exports = "<style>" + __webpack_require__(7) + "</style> <div class=\"root\"> <div class=\"title-slotted-content\"> <div class=\"title-container\"> <slot name=\"title\" id=\"title\"></slot> </div> <div class=\"logo-container\"> <img id=\"byu-logo\" alt=\"Card Logo\" src=\"//cdn.byu.edu/shared-icons/unstable/logos/monogram-white.svg\"> </div> </div> <div class=\"first-row\"> <div class=\"left-slot-container\"> <slot name=\"feature-left\" id=\"feature-left\"></slot> </div> <div class=\"right-slot-container\"> <slot name=\"feature-right\" id=\"feature-right\"></slot> </div> </div> <div class=\"center-slot-container\"> <slot name=\"feature-center\" id=\"feature-center\"></slot> </div> </div>";
+    module.exports = "<style>" + __webpack_require__(7) + "</style> <div class=\"root\"> <div class=\"title-slotted-content\"> <div class=\"title-container\"> <slot name=\"title\" id=\"title\"></slot> </div> <div class=\"logo-container\"> <img id=\"byu-logo\" alt=\"Card Logo\" src=\"//cdn.byu.edu/shared-icons/unstable/logos/byu-serif-white.svg\"> </div> </div> <div class=\"first-row\"> <div class=\"left-slot-container\"> <slot name=\"feature-left\" id=\"feature-left\"></slot> </div> <div class=\"right-slot-container\"> <slot name=\"feature-right\" id=\"feature-right\"></slot> </div> </div> <div class=\"center-slot-container\"> <slot name=\"feature-center\" id=\"feature-center\"></slot> </div> </div>";
 
     /***/
 }]
