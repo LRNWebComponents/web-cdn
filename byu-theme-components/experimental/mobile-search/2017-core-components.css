@@ -93,7 +93,7 @@ byu-footer-column:not(.byu-component-rendered) {
   float: left; }
   byu-footer-column:not(.byu-component-rendered) .header {
     width: 100%;
-    margin-bottom: 8px; }
+    margin: 0 0 8px; }
   byu-footer-column:not(.byu-component-rendered) .header > * {
     font-family: "Vitesse A", "Vitesse B", Georgia, serif !important;
     text-transform: uppercase !important;
@@ -106,17 +106,20 @@ byu-footer-column:not(.byu-component-rendered) {
     display: inline-block; }
   byu-footer-column:not(.byu-component-rendered) .content *:not(byu-footer-action-button) {
     font-family: "Gotham A", "Gotham B", Helvetica, sans-serif !important;
-    font-size: 13px !important;
+    font-size: 14px !important;
     font-weight: 400 !important;
     color: #666 !important;
     display: block;
     padding: 11px 0; }
   byu-footer-column:not(.byu-component-rendered) #defaultContent a {
     text-decoration: none !important;
-    outline: none !important; }
+    outline: none !important;
+    color: #666;
+    font-size: 14px; }
   byu-footer-column:not(.byu-component-rendered) #defaultContent a:hover {
     cursor: pointer;
-    color: #002E5D !important; }
+    color: #002E5D !important;
+    font-size: 14px; }
 
 byu-footer-column:not(.byu-component-rendered) [slot="header"] {
   font-family: serif;
@@ -127,7 +130,8 @@ byu-footer-column:not(.byu-component-rendered) [slot="header"] {
   display: block; }
 
 byu-footer-column a {
-  color: #666 !important; }
+  color: #666 !important;
+  text-decoration: none !important; }
 
 byu-footer-column a:hover {
   color: #002E5D !important; }
@@ -464,6 +468,8 @@ byu-social-media-links:not(.byu-component-rendered) {
   byu-social-media-links:not(.byu-component-rendered) > .googleplus, byu-social-media-links:not(.byu-component-rendered) > [slot="googleplus"],
   byu-social-media-links:not(.byu-component-rendered) > .google-plus, byu-social-media-links:not(.byu-component-rendered) > [slot="google-plus"] {
     background-image: url("https://cdn.byu.edu/shared-icons/latest/social/obfuscated/gp.svg"); }
+  byu-social-media-links:not(.byu-component-rendered) > .podcast {
+    background-image: url("https://cdn.byu.edu/shared-icons/latest/social/obfuscated/po.svg"); }
 
 /* --- Color variable names are all lower case. Other variables are camel-case --- */
 /* --- Color variable names are all lower case. Other variables are camel-case --- */
