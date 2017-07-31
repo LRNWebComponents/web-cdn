@@ -75,7 +75,7 @@ exports = module.exports = __webpack_require__(6)();
 
 
 // module
-exports.push([module.i, ":host{padding:0;-moz-box-shadow:0 8px 12px rgba(0,0,0,.2);-webkit-box-shadow:0 8px 12px rgba(0,0,0,.2);box-shadow:0 8px 12px rgba(0,0,0,.2)}.section-first{background:#002e5d;color:#fff}.section-second{padding:15px}:host .content{width:100%;display:flex;justify-content:center}:host .content,:host ::slotted(*){font-family:Gotham A,Gotham B}#title ::slotted(*){color:#002e5d!important;font-size:18px;font-weight:700;text-decoration:none}#location ::slotted(*){font-size:14px}#time ::slotted(*){font-size:14px;text-transform:uppercase}#description ::slotted(*),#title ::slotted(*){font-family:Sentinel A,Sentinel B;line-height:1.2}#weekday{text-transform:uppercase;font-size:14px;padding-bottom:10px}#location ::slotted(*){color:#767676;text-transform:uppercase;font-size:12px;font-weight:500}#date,#date ::slotted(*){display:none}:host([layout=vertical]){max-width:170px;display:flex;flex-wrap:wrap;justify-content:flex-start;margin:15px 8px}:host([layout=vertical]) .section-first{height:160px;width:170px;display:flex;flex-wrap:wrap;justify-content:center}:host([layout=vertical]) .section-second{height:190px;padding:15px 0;display:flex;flex-wrap:wrap;justify-content:center;align-content:space-between;align-self:flex-start}:host([layout=vertical]) .section-second ::slotted(*){justify-content:center}:host([layout=vertical]) #month-name{padding:10px;font-size:22px;text-transform:uppercase;margin-bottom:0}:host([layout=vertical]) #day-number{font-size:60px;margin-bottom:10px;font-weight:700}:host([layout=vertical]) #title ::slotted(*){color:#002e5d!important;font-size:18px;font-weight:700;text-align:center;padding:5px 0 10px;height:120px;width:150px}:host([layout=vertical]) #time ::slotted(*){font-size:14px;padding:8px 0!important}:host([layout=vertical]) #location ::slotted(*){color:#767676;text-align:center;font-weight:500}:host([layout=horizontal]){width:430px;margin:10px 15px;display:flex}:host([layout=horizontal]) .section-first{width:130px;min-height:130px!important}:host([layout=horizontal]) .section-second{width:300px;align-items:space-between}:host([layout=horizontal]) .section-second ::slotted(*){width:290px}:host([layout=horizontal]).extra-wide .section-second ::slotted(*){width:360px}:host([layout=horizontal]) #month-abb{padding:10px 0;font-size:22px;text-transform:uppercase;margin-bottom:0}:host([layout=horizontal]) #day-number{font-size:48px;font-weight:700}:host([layout=horizontal]) #time{padding:10px 0}:host([layout=horizontal]) #time ::slotted(*){color:#fff;padding:5px 0 10px;display:flex;justify-content:center}:host([layout=horizontal]) #title ::slotted(*){padding:5px 0 10px;width:100%;overflow:hidden}:host([layout=horizontal]) #location ::slotted(*){padding-top:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis!important}.section-second ::slotted(*){color:#767676;padding:0;margin:0;display:flex;flex-wrap:wrap;width:100%}:host ::slotted(img){display:none}a,div,p{font-family:Gotham A,Gotham B}h1,h2,h3,h4{font-family:Sentinel A,Sentinel B}", ""]);
+exports.push([module.i, ":host{padding:10px 0;border-bottom:1px solid #e5e5e5;margin-bottom:10px}.section-first{background:#e5e5e5;color:#002e5d}.section-second{padding:15px;color:#767676}:host .content{width:100%}:host .content,:host ::slotted(*){font-family:Gotham A,Gotham B}#title ::slotted(*){color:#002e5d!important;font-size:24px;font-weight:700;text-decoration:none}#price ::slotted(*),.price-label{font-weight:700!important;color:#4d8501}#time{padding:6px 0;margin:0}#time ::slotted(*){font-size:14px;padding:0;margin:0;text-transform:uppercase}#location{padding:0 0 6px}#location ::slotted(*){font-size:14px!important;padding:0;margin:0;text-transform:uppercase}#tickets-link ::slotted(*){text-align:center;background-color:#4d8501!important;padding:9px 15px!important;width:120px;font-size:12px;color:#fff!important;text-decoration:none}#tickets-link ::slotted(:before){content:\"Price: \";display:inline}.section-second{min-height:100px;padding:0 15px 15px;display:block}#title ::slotted(*){line-height:1.2}#weekday{text-transform:uppercase;font-size:14px;padding-bottom:10px}#location ::slotted(*){color:#767676;font-size:12px;font-weight:500}#date,#date ::slotted(*){display:none}#year{letter-spacing:3px}.section-third{padding-top:8px;width:auto;margin-left:auto}:host{display:flex;flex-wrap:wrap;justify-content:flex-start;margin:10px 8px;width:100%}:host .section-first{height:120px;width:120px;display:block;background:#e5e5e5;margin-bottom:15px}:host .section-first .content{display:flex;justify-content:center}:host .section-second ::slotted(*){justify-content:flex-start}:host #month-name{padding:10px 0;font-size:13px;text-transform:uppercase;margin-bottom:0;font-weight:500}:host #day-number{font-size:48px;margin-bottom:5px;font-weight:700}:host #title ::slotted(*){color:#002e5d!important;font-size:18px;font-weight:700;text-align:center;padding:0 0 5px}:host #time ::slotted(*){font-size:14px}:host #location ::slotted(*){color:#767676;font-weight:500;padding:4px 0}:host #link ::slotted(*){color:#002e5d;padding:4px 0;text-decoration:none}:host([type=image]) #image ::slotted(*),:host([type=image]) .section-first{height:100px;width:100px}a,div,p{font-family:Gotham A,Gotham B}h1,h2,h3,h4{font-family:Sentinel A,Sentinel B}", ""]);
 
 // exports
 
@@ -102,13 +102,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__ (0) + "</style> <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cloud.typography.com/75214/6517752/css/fonts.css\" media=\"all\"> <div class=\"section-first\"> <div id=\"date\"> <slot id=\"date-val\" name=\"date\"> </slot> </div> <div id=\"month-abb\" class=\"content\"></div> <div id=\"day-number\" class=\"content\"></div> <div id=\"time\" class=\"content\"> <slot name=\"time\"></slot> </div> </div> <div class=\"section-second\"> <div id=\"title\" class=\"content\"> <slot name=\"title\"></slot> </div> <div id=\"location\" class=\"content\"> <slot name=\"location\"></slot> </div> <div id=\"description\"> <slot class=\"content\" name=\"description\"> </slot> </div> </div>";
+module.exports = "<style>" + __webpack_require__ (0) + "</style> <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cloud.typography.com/75214/6517752/css/fonts.css\" media=\"all\"> <div class=\"section-first\"> <slot id=\"image\" name=\"image\"></slot> </div> <div class=\"section-second\"> <div id=\"title\"> <slot class=\"content\" name=\"title\"> </slot> </div> <div id=\"time\"> <slot class=\"content\" name=\"time\"> </slot> </div> <div id=\"location\"> <slot class=\"content\" name=\"location\"></slot> </div> <div id=\"price\"> <slot class=\"content\" name=\"price\"></slot> </div> <div id=\"link\"> <slot class=\"content\" name=\"link\"></slot> </div> </div> <div class=\"section-third\"> <div id=\"tickets-link\"> <slot class=\"content\" name=\"tickets-link\"></slot> </div> </div>";
 
 /***/ }),
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__ (0) + "</style> <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cloud.typography.com/75214/6517752/css/fonts.css\" media=\"all\"> <div class=\"section-first\"> <div id=\"date\"> <slot id=\"date-val\" name=\"date\"> </slot> </div> <div id=\"month-name\" class=\"content\"></div> <div id=\"day-number\" class=\"content\"></div> <div id=\"weekday\" class=\"content\"></div> </div> <div class=\"section-second\"> <div id=\"title\" class=\"content\"> <slot name=\"title\"></slot> </div> <div id=\"time\" class=\"content\"> <slot name=\"time\"></slot> </div> <div id=\"location\" class=\"content\"> <slot name=\"location\"></slot> </div> </div>";
+module.exports = "<style>" + __webpack_require__ (0) + "</style> <div class=\"section-first\"> <div id=\"date\"> <slot id=\"date-val\" name=\"date\"></slot> </div> <div id=\"month-name\" class=\"content\"></div> <div id=\"day-number\" class=\"content\"></div> <div id=\"year\" class=\"content\"></div> </div> <div class=\"section-second\"> <div id=\"title\" class=\"content\"> <slot name=\"title\"> </slot> </div> <div id=\"time\" class=\"content\"> <slot name=\"time\"> </slot> </div> <div id=\"location\" class=\"content\"> <slot name=\"location\"></slot> </div> <div id=\"price\" class=\"content\"> <slot name=\"price\"></slot> </div> <div id=\"link\" class=\"content\"> <slot name=\"link\"></slot> </div> </div> <div class=\"section-third\"> <div id=\"tickets-link\"> <slot id=\"tickets-link\" class=\"content\" name=\"tickets-link\"></slot> </div> </div>";
 
 /***/ }),
 /* 4 */
@@ -118,8 +118,8 @@ module.exports = "<style>" + __webpack_require__ (0) + "</style> <link type=\"te
 
 const util = __webpack_require__(1);
 // these only need to be created or established once, so they are outside the class
-const verticalTemplate = __webpack_require__(3);
-const horizontalTemplate = __webpack_require__(2);
+const tileTemplate = __webpack_require__(3);
+const imageTemplate = __webpack_require__(2);
 
 var months =["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -127,20 +127,20 @@ var monthAbbs = ["Jan", "Feb", "Mar", "April", "May", "June", "July", "Aug", "Se
 
 var weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday","Friday", "Saturday"];
 
-class ByuCalendarTile extends HTMLElement {
+class ByuCalendarRow extends HTMLElement {
 
     constructor() {
         super();
         this.attachShadow({mode: 'open'});
     }
-    get layout() {
-        return this.getAttribute('layout');
+    get type() {
+        return this.getAttribute('type');
     }
-    set layout(value) {
+    set type(value) {
         if(value){
-            this.setAttribute('layout', value);
+            this.setAttribute('type', value);
         } else {
-            this.removeAttribute('layout');
+            this.removeAttribute('type');
         }
     }
     get date(){
@@ -154,10 +154,11 @@ class ByuCalendarTile extends HTMLElement {
             return null;
         }
     }
-    connectedCallback() {
+    connectedCallback(){
         // identify which template to use
-        let template = this.layout === 'horizontal' ? horizontalTemplate : verticalTemplate;
-        util.applyTemplate(this, 'byu-calendar-tile', template, () => {
+        let template = this.type === 'image' ? imageTemplate : tileTemplate;
+        util.applyTemplate(this, 'byu-calendar-row', template, () => {
+            //apply listeners and such here
 
             var dateOb = this.date;
             console.log(dateOb);
@@ -174,21 +175,28 @@ class ByuCalendarTile extends HTMLElement {
             // get day of week
             var weekday = weekdays[dateOb.getUTCDay()];
 
+            // get year
+            var year = dateOb.getFullYear();
+
             // set those date pieces as values in the tile's divs
-            if (this.layout == 'horizontal') {
-                this.shadowRoot.querySelector('#month-abb').innerHTML = monthAbb;
+            if(this.type == 'image') {
+                //this.shadowRoot.querySelector('month-abb').innerHTML = monthAbb;
+                // idk if need to do stuff here idk
+                this.shadowRoot.querySelector('#weekday').innerHTML = weekday;
             } else {
                 this.shadowRoot.querySelector('#month-name').innerHTML = monthName;
-                this.shadowRoot.querySelector('#weekday').innerHTML = weekday;
+                this.shadowRoot.querySelector('#year').innerHTML = year;
             }
             this.shadowRoot.querySelector('#day-number').innerHTML = day;
 
         });
+
     }
 }
 
-window.customElements.define('byu-calendar-tile', ByuCalendarTile);
-window.ByuCalendarTile = ByuCalendarTile;
+
+window.customElements.define('byu-calendar-row', ByuCalendarRow);
+window.ByuCalendarRow = ByuCalendarRow;
 
 
 
@@ -197,9 +205,9 @@ window.ByuCalendarTile = ByuCalendarTile;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (immutable) */ __webpack_exports__["a"] = applyTemplate;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hash_sum__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_hash_sum___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_hash_sum__);
+/* harmony export (immutable) */ __webpack_exports__["a"] = applyTemplate;
 /*
  *  @license
  *    Copyright 2017 Brigham Young University
