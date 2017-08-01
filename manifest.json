@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-01T16:58:15.077Z",
+  "$built": "2017-08-01T18:52:35.643Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1049,6 +1049,34 @@
         "latest": "unstable"
       },
       "versions": [
+        {
+          "name": "browser-compatibility",
+          "ref": "browser-compatibility",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/browser-compatibility",
+          "git_sha": "8311a7bf19cd007806f305b1901fd07ec2e94bbe",
+          "link": "https://github.com/byuweb/byu-news-components/tree/browser-compatibility",
+          "last_updated": "2017-07-31T19:10:00+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-news-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-news-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
         {
           "name": "unstable",
           "ref": "master",
