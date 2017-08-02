@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-02T19:25:44.570Z",
+  "$built": "2017-08-02T21:41:27.810Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -318,6 +318,34 @@
           "git_sha": "9072b026add6b0fc50626cef5ebec50ca7d1978f",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
           "last_updated": "2017-08-01T16:02:28+00:00",
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "menu-item-width",
+          "ref": "menu-item-width",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/menu-item-width",
+          "git_sha": "013bf546abbb5a18fe53e8fa42d4df8834d62fb3",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/menu-item-width",
+          "last_updated": "2017-08-02T21:40:34+00:00",
+          "experimental": true,
           "messages": [],
           "resources": {
             "byu-theme-components.css": {
@@ -740,6 +768,34 @@
           "git_sha": "9072b026add6b0fc50626cef5ebec50ca7d1978f",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
           "last_updated": "2017-08-01T16:02:28+00:00",
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "menu-item-width",
+          "ref": "menu-item-width",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/menu-item-width",
+          "git_sha": "013bf546abbb5a18fe53e8fa42d4df8834d62fb3",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/menu-item-width",
+          "last_updated": "2017-08-02T21:40:34+00:00",
+          "experimental": true,
           "messages": [],
           "resources": {
             "byu-theme-components.css": {
