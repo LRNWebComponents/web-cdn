@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-02T15:40:34.323Z",
+  "$built": "2017-08-02T15:46:05.199Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -262,6 +262,34 @@
           "git_sha": "94b244becf91a368babd41ef96bf6796d4653b1f",
           "link": "https://github.com/byuweb/byu-theme-components/tree/documentation-update-sticky-footer",
           "last_updated": "2017-08-01T21:24:45+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "full-width-blue-header",
+          "ref": "full-width-blue-header",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/full-width-blue-header",
+          "git_sha": "11cda787f2007bace965b077576b8e55082fc7ed",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/full-width-blue-header",
+          "last_updated": "2017-08-02T15:45:12+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -656,6 +684,34 @@
           "git_sha": "94b244becf91a368babd41ef96bf6796d4653b1f",
           "link": "https://github.com/byuweb/byu-theme-components/tree/documentation-update-sticky-footer",
           "last_updated": "2017-08-01T21:24:45+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "full-width-blue-header",
+          "ref": "full-width-blue-header",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/full-width-blue-header",
+          "git_sha": "11cda787f2007bace965b077576b8e55082fc7ed",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/full-width-blue-header",
+          "last_updated": "2017-08-02T15:45:12+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
