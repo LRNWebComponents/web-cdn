@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-02T21:41:27.810Z",
+  "$built": "2017-08-02T22:05:29.890Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -342,9 +342,9 @@
           "name": "menu-item-width",
           "ref": "menu-item-width",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/menu-item-width",
-          "git_sha": "013bf546abbb5a18fe53e8fa42d4df8834d62fb3",
+          "git_sha": "7f23d96c3a877fbb2f809f03eba031bd28a230c6",
           "link": "https://github.com/byuweb/byu-theme-components/tree/menu-item-width",
-          "last_updated": "2017-08-02T21:40:34+00:00",
+          "last_updated": "2017-08-02T21:55:30+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -792,9 +792,9 @@
           "name": "menu-item-width",
           "ref": "menu-item-width",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/menu-item-width",
-          "git_sha": "013bf546abbb5a18fe53e8fa42d4df8834d62fb3",
+          "git_sha": "7f23d96c3a877fbb2f809f03eba031bd28a230c6",
           "link": "https://github.com/byuweb/byu-theme-components/tree/menu-item-width",
-          "last_updated": "2017-08-02T21:40:34+00:00",
+          "last_updated": "2017-08-02T21:55:30+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -1214,9 +1214,38 @@
     "byu-news-components": {
       "source": "github:byuweb/byu-news-components",
       "aliases": {
-        "latest": "unstable"
+        "0.x.x": "0.1.0",
+        "0.1.x": "0.1.0",
+        "latest": "0.1.0"
       },
       "versions": [
+        {
+          "name": "0.1.0",
+          "ref": "v0.1.0",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/v0.1.0",
+          "git_sha": "de3f9959c4c86bda541dd15a8182fe3be17e28d2",
+          "link": "https://github.com/byuweb/byu-news-components/tree/v0.1.0",
+          "last_updated": "2017-08-02T19:24:49+00:00",
+          "messages": [],
+          "resources": {
+            "byu-news-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-news-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
         {
           "name": "hero-component-view",
           "ref": "hero-component-view",
