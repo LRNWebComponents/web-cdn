@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-03T19:41:29.642Z",
+  "$built": "2017-08-03T19:48:35.004Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1169,6 +1169,34 @@
           "git_sha": "e5ed1de62caef4621eadd5c739d6cc68ab520da3",
           "link": "https://github.com/byuweb/byu-news-components/tree/master",
           "last_updated": "2017-08-03T19:40:43+00:00",
+          "messages": [],
+          "resources": {
+            "byu-news-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-news-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "remove-max-height",
+          "ref": "remove-max-height",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/remove-max-height",
+          "git_sha": "c08a9c251ca379ec615f214601e1b6948eb9f819",
+          "link": "https://github.com/byuweb/byu-news-components/tree/remove-max-height",
+          "last_updated": "2017-08-03T19:47:40+00:00",
+          "experimental": true,
           "messages": [],
           "resources": {
             "byu-news-components.css": {
