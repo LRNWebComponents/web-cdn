@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-03T14:20:53.361Z",
+  "$built": "2017-08-03T15:15:35.124Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -234,6 +234,34 @@
           "git_sha": "caa87da905936a5662dc1e65d39358b53bbb5c7a",
           "link": "https://github.com/byuweb/byu-theme-components/tree/automated-testing",
           "last_updated": "2017-07-06T23:45:50+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "documentation-update-sticky-footer",
+          "ref": "documentation-update-sticky-footer",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/documentation-update-sticky-footer",
+          "git_sha": "aa4a98c62150bbd26215eeb5debe4b5c1f3e9167",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/documentation-update-sticky-footer",
+          "last_updated": "2017-08-03T15:14:39+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -600,6 +628,34 @@
           "git_sha": "caa87da905936a5662dc1e65d39358b53bbb5c7a",
           "link": "https://github.com/byuweb/byu-theme-components/tree/automated-testing",
           "last_updated": "2017-07-06T23:45:50+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "documentation-update-sticky-footer",
+          "ref": "documentation-update-sticky-footer",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/documentation-update-sticky-footer",
+          "git_sha": "aa4a98c62150bbd26215eeb5debe4b5c1f3e9167",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/documentation-update-sticky-footer",
+          "last_updated": "2017-08-03T15:14:39+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
