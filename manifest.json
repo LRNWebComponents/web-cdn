@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-03T15:15:35.124Z",
+  "$built": "2017-08-03T15:36:20.962Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -259,9 +259,9 @@
           "name": "documentation-update-sticky-footer",
           "ref": "documentation-update-sticky-footer",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/documentation-update-sticky-footer",
-          "git_sha": "aa4a98c62150bbd26215eeb5debe4b5c1f3e9167",
+          "git_sha": "ec3c0b2f2016a1e1180da3e0ec76c65a707773a8",
           "link": "https://github.com/byuweb/byu-theme-components/tree/documentation-update-sticky-footer",
-          "last_updated": "2017-08-03T15:14:39+00:00",
+          "last_updated": "2017-08-03T15:17:59+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -653,9 +653,9 @@
           "name": "documentation-update-sticky-footer",
           "ref": "documentation-update-sticky-footer",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/documentation-update-sticky-footer",
-          "git_sha": "aa4a98c62150bbd26215eeb5debe4b5c1f3e9167",
+          "git_sha": "ec3c0b2f2016a1e1180da3e0ec76c65a707773a8",
           "link": "https://github.com/byuweb/byu-theme-components/tree/documentation-update-sticky-footer",
-          "last_updated": "2017-08-03T15:14:39+00:00",
+          "last_updated": "2017-08-03T15:17:59+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -1349,6 +1349,34 @@
           "git_sha": "8c49126ca7f26f2cb93011a72aaf9d5dfbbdcb6c",
           "link": "https://github.com/byuweb/byu-hero-banner/tree/1.0",
           "last_updated": "2017-07-20T15:36:09+00:00",
+          "messages": [],
+          "resources": {
+            "byu-hero-banner.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-hero-banner.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "line-height-fix",
+          "ref": "line-height-fix",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-hero-banner/tarball/line-height-fix",
+          "git_sha": "8cc6dcc3eab6b3f75b2dcd5f1e1324e0eb6df39b",
+          "link": "https://github.com/byuweb/byu-hero-banner/tree/line-height-fix",
+          "last_updated": "2017-08-03T15:35:30+00:00",
+          "experimental": true,
           "messages": [],
           "resources": {
             "byu-hero-banner.css": {
