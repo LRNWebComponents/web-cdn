@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-04T16:04:22.678Z",
+  "$built": "2017-08-04T16:42:51.331Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -345,6 +345,34 @@
           "git_sha": "e0777c799fe01f77175acdfbd3436083cebeac66",
           "link": "https://github.com/byuweb/byu-theme-components/tree/move-search",
           "last_updated": "2017-07-21T19:53:41+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "title-menu-button",
+          "ref": "title-menu-button",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/title-menu-button",
+          "git_sha": "3dd146f0be797a5cbd39364a2f261766d046014d",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/title-menu-button",
+          "last_updated": "2017-08-04T16:42:00+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -711,6 +739,34 @@
           "git_sha": "e0777c799fe01f77175acdfbd3436083cebeac66",
           "link": "https://github.com/byuweb/byu-theme-components/tree/move-search",
           "last_updated": "2017-07-21T19:53:41+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "title-menu-button",
+          "ref": "title-menu-button",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/title-menu-button",
+          "git_sha": "3dd146f0be797a5cbd39364a2f261766d046014d",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/title-menu-button",
+          "last_updated": "2017-08-04T16:42:00+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
