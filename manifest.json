@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-07T15:51:33.555Z",
+  "$built": "2017-08-07T16:32:25.635Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -259,9 +259,9 @@
           "name": "documentation-update-sticky-footer",
           "ref": "documentation-update-sticky-footer",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/documentation-update-sticky-footer",
-          "git_sha": "e53071e2936aeef2a8a06add7c405ff32c585d80",
+          "git_sha": "596164c49329357dc7e9f9639c01eca8fdae8492",
           "link": "https://github.com/byuweb/byu-theme-components/tree/documentation-update-sticky-footer",
-          "last_updated": "2017-08-07T15:50:33+00:00",
+          "last_updated": "2017-08-07T16:10:56+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -345,6 +345,34 @@
           "git_sha": "e0777c799fe01f77175acdfbd3436083cebeac66",
           "link": "https://github.com/byuweb/byu-theme-components/tree/move-search",
           "last_updated": "2017-07-21T19:53:41+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "release-1.2.0",
+          "ref": "release-1.2.0",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/release-1.2.0",
+          "git_sha": "dd7e9e40015f17675bd8fb4a9f0a1e93b0c267e4",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/release-1.2.0",
+          "last_updated": "2017-08-07T14:11:36+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -653,9 +681,9 @@
           "name": "documentation-update-sticky-footer",
           "ref": "documentation-update-sticky-footer",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/documentation-update-sticky-footer",
-          "git_sha": "e53071e2936aeef2a8a06add7c405ff32c585d80",
+          "git_sha": "596164c49329357dc7e9f9639c01eca8fdae8492",
           "link": "https://github.com/byuweb/byu-theme-components/tree/documentation-update-sticky-footer",
-          "last_updated": "2017-08-07T15:50:33+00:00",
+          "last_updated": "2017-08-07T16:10:56+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -739,6 +767,34 @@
           "git_sha": "e0777c799fe01f77175acdfbd3436083cebeac66",
           "link": "https://github.com/byuweb/byu-theme-components/tree/move-search",
           "last_updated": "2017-07-21T19:53:41+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "release-1.2.0",
+          "ref": "release-1.2.0",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/release-1.2.0",
+          "git_sha": "dd7e9e40015f17675bd8fb4a9f0a1e93b0c267e4",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/release-1.2.0",
+          "last_updated": "2017-08-07T14:11:36+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
