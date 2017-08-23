@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-15T23:42:58.449Z",
+  "$built": "2017-08-23T16:56:48.891Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -398,9 +398,9 @@
           "name": "safari-mobile-search",
           "ref": "safari-mobile-search",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/safari-mobile-search",
-          "git_sha": "61eacf7f588d9411c777f2c267b4ef2da8bad566",
+          "git_sha": "a12957be31ee017d151b94bececa35ab50841ea7",
           "link": "https://github.com/byuweb/byu-theme-components/tree/safari-mobile-search",
-          "last_updated": "2017-08-14T18:26:47+00:00",
+          "last_updated": "2017-08-23T16:55:50+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -820,9 +820,9 @@
           "name": "safari-mobile-search",
           "ref": "safari-mobile-search",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/safari-mobile-search",
-          "git_sha": "61eacf7f588d9411c777f2c267b4ef2da8bad566",
+          "git_sha": "a12957be31ee017d151b94bececa35ab50841ea7",
           "link": "https://github.com/byuweb/byu-theme-components/tree/safari-mobile-search",
-          "last_updated": "2017-08-14T18:26:47+00:00",
+          "last_updated": "2017-08-23T16:55:50+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -1238,12 +1238,40 @@
           }
         },
         {
+          "name": "brady/adding_story_component_functionality",
+          "ref": "brady/adding_story_component_functionality",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/brady/adding_story_component_functionality",
+          "git_sha": "e5ef65235b3548abe399bfa6cefb36ee440a03dc",
+          "link": "https://github.com/byuweb/byu-news-components/tree/brady/adding_story_component_functionality",
+          "last_updated": "2017-08-18T18:44:14+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-news-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-news-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
           "name": "component-options",
           "ref": "component-options",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/component-options",
-          "git_sha": "c6928414fff286d3f9f3089510f944a909fddd25",
+          "git_sha": "18b227452b1f047596f2d51c8f1891509349f6ca",
           "link": "https://github.com/byuweb/byu-news-components/tree/component-options",
-          "last_updated": "2017-08-15T23:42:00+00:00",
+          "last_updated": "2017-08-16T22:17:00+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
