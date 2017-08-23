@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-23T16:56:48.891Z",
+  "$built": "2017-08-23T20:01:53.311Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -262,6 +262,34 @@
           "git_sha": "596164c49329357dc7e9f9639c01eca8fdae8492",
           "link": "https://github.com/byuweb/byu-theme-components/tree/documentation-update-sticky-footer",
           "last_updated": "2017-08-07T16:10:56+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "kevin-mobile-test",
+          "ref": "kevin-mobile-test",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/kevin-mobile-test",
+          "git_sha": "eca4581ae4edfb464e4eb4243ded1689d2de4f81",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/kevin-mobile-test",
+          "last_updated": "2017-08-23T20:00:50+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -684,6 +712,34 @@
           "git_sha": "596164c49329357dc7e9f9639c01eca8fdae8492",
           "link": "https://github.com/byuweb/byu-theme-components/tree/documentation-update-sticky-footer",
           "last_updated": "2017-08-07T16:10:56+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "kevin-mobile-test",
+          "ref": "kevin-mobile-test",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/kevin-mobile-test",
+          "git_sha": "eca4581ae4edfb464e4eb4243ded1689d2de4f81",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/kevin-mobile-test",
+          "last_updated": "2017-08-23T20:00:50+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
