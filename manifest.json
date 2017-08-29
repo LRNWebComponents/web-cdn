@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-28T18:37:44.946Z",
+  "$built": "2017-08-29T19:36:31.626Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1349,52 +1349,7 @@
           "last_updated": "2017-08-03T22:06:07+00:00",
           "experimental": true,
           "messages": [],
-          "resources": {
-            "byu-news-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-news-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-news-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-news-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
-        },
-        {
-          "name": "read-more-link-color",
-          "ref": "read-more-link-color",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/read-more-link-color",
-          "git_sha": "fced4c48c9fb5a245dc37395e8606d3db7d439ea",
-          "link": "https://github.com/byuweb/byu-news-components/tree/read-more-link-color",
-          "last_updated": "2017-08-03T22:06:07+00:00",
-          "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-news-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-news-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-news-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-news-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "resources": {}
         },
         {
           "name": "read-more-style",
@@ -1423,19 +1378,6 @@
               "description": "Minified - Examines browser support and downloads the appropriate component bundle"
             }
           }
-        },
-        {
-          "name": "story-link",
-          "ref": "story-link",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/story-link",
-          "git_sha": "ec0c55249c6c1cf0ee65dc18943297aca1ea2078",
-          "link": "https://github.com/byuweb/byu-news-components/tree/story-link",
-          "last_updated": "2017-08-28T18:35:25+00:00",
-          "experimental": true,
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
         }
       ]
     },
