@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-08-31T23:00:09.800Z",
+  "$built": "2017-09-01T00:26:42.201Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1240,6 +1240,34 @@
           "git_sha": "18b227452b1f047596f2d51c8f1891509349f6ca",
           "link": "https://github.com/byuweb/byu-news-components/tree/component-options",
           "last_updated": "2017-08-16T22:17:00+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-news-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-news-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "fix-mobile-view",
+          "ref": "fix-mobile-view",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/fix-mobile-view",
+          "git_sha": "749279f4a722743e80b38b751df64e194297a25f",
+          "link": "https://github.com/byuweb/byu-news-components/tree/fix-mobile-view",
+          "last_updated": "2017-09-01T00:25:43+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
