@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-09-01T00:26:42.201Z",
+  "$built": "2017-09-01T15:45:39.016Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1113,6 +1113,34 @@
         "latest": "unstable"
       },
       "versions": [
+        {
+          "name": "documentation",
+          "ref": "documentation",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-style-helpers/tarball/documentation",
+          "git_sha": "9a43e4ecc9bc97add4f9b6ed5286ef570526ddae",
+          "link": "https://github.com/byuweb/byu-theme-style-helpers/tree/documentation",
+          "last_updated": "2017-09-01T15:44:53+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "box-shadows.css": {
+              "entrypoint": true,
+              "description": "Adds box-shadow classes for elements."
+            },
+            "buttons.css": {
+              "entrypoint": true,
+              "description": "Adds button classes for BYU buttons - several BYU color options available."
+            },
+            "popups-modals.css": {
+              "entrypoint": true,
+              "description": "Adds byu theming if you are using a byu-modal popup element. See online for more documentation."
+            },
+            "tables.css": {
+              "entrypoint": true,
+              "description": "Adds a class to style tables nicely with BYU colors"
+            }
+          }
+        },
         {
           "name": "unstable",
           "ref": "master",
