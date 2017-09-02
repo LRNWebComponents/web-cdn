@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-09-02T22:34:00.886Z",
+  "$built": "2017-09-02T22:34:48.728Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1234,34 +1234,6 @@
           }
         },
         {
-          "name": "fix-mobile-view",
-          "ref": "fix-mobile-view",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/fix-mobile-view",
-          "git_sha": "b70c8f53dfaf57c19c0c3a19a28556195b7acf19",
-          "link": "https://github.com/byuweb/byu-news-components/tree/fix-mobile-view",
-          "last_updated": "2017-09-02T22:33:11+00:00",
-          "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-news-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-news-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-news-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-news-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
-        },
-        {
           "name": "hero-component-view",
           "ref": "hero-component-view",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/hero-component-view",
@@ -1293,9 +1265,9 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/master",
-          "git_sha": "396b97c6e7785da9a192776d8f1d52ef0687560c",
+          "git_sha": "cb555d58d02e31adcf9a09ab51f0c47c959f62b6",
           "link": "https://github.com/byuweb/byu-news-components/tree/master",
-          "last_updated": "2017-08-30T16:15:17+00:00",
+          "last_updated": "2017-09-02T22:34:03+00:00",
           "messages": [],
           "resources": {
             "byu-news-components.css": {
