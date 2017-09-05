@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-09-05T20:16:45.785Z",
+  "$built": "2017-09-05T20:34:25.582Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1318,9 +1318,9 @@
           "name": "override-theme",
           "ref": "override-theme",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/override-theme",
-          "git_sha": "57e09dc8cfc87d8e891138af60156b2163608436",
+          "git_sha": "d5c6420f21a48060dbad6c3a009456fcaaa52c2a",
           "link": "https://github.com/byuweb/byu-news-components/tree/override-theme",
-          "last_updated": "2017-09-05T20:01:17+00:00",
+          "last_updated": "2017-09-05T20:33:38+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -1341,19 +1341,6 @@
               "description": "Minified - Examines browser support and downloads the appropriate component bundle"
             }
           }
-        },
-        {
-          "name": "typo-fix",
-          "ref": "typo-fix",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/typo-fix",
-          "git_sha": "e4fa9a13440f3544164a498bb51dcfdd3f53201c",
-          "link": "https://github.com/byuweb/byu-news-components/tree/typo-fix",
-          "last_updated": "2017-09-05T20:13:07+00:00",
-          "experimental": true,
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
         }
       ]
     },
