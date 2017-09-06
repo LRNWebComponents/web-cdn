@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-09-06T16:56:14.530Z",
+  "$built": "2017-09-06T16:57:08.533Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1114,14 +1114,41 @@
     "byu-news-components": {
       "source": "github:byuweb/byu-news-components",
       "aliases": {
-        "1.x.x": "1.0.0",
-        "1.0.x": "1.0.0",
+        "1.x.x": "1.0.1",
+        "1.0.x": "1.0.1",
         "0.x.x": "0.2.0",
         "0.2.x": "0.2.0",
         "0.1.x": "0.1.0",
-        "latest": "1.0.0"
+        "latest": "1.0.1"
       },
       "versions": [
+        {
+          "name": "1.0.1",
+          "ref": "v1.0.1",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/v1.0.1",
+          "git_sha": "b6da86167efa058d99ce72ba858905021659b0b0",
+          "link": "https://github.com/byuweb/byu-news-components/tree/v1.0.1",
+          "last_updated": "2017-09-06T16:55:36+00:00",
+          "messages": [],
+          "resources": {
+            "byu-news-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-news-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
         {
           "name": "1.0.0",
           "ref": "v1.0.0",
@@ -1313,17 +1340,6 @@
               "description": "Minified - Examines browser support and downloads the appropriate component bundle"
             }
           }
-        },
-        {
-          "name": "override-theme",
-          "ref": "override-theme",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/override-theme",
-          "git_sha": "82ad510b29c14cda677c593aba8caf7cf6f4db08",
-          "link": "https://github.com/byuweb/byu-news-components/tree/override-theme",
-          "last_updated": "2017-09-06T16:51:07+00:00",
-          "experimental": true,
-          "messages": [],
-          "resources": {}
         }
       ]
     },
