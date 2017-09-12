@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-09-12T20:53:52.336Z",
+  "$built": "2017-09-12T21:12:10.655Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1227,14 +1227,42 @@
     "byu-news-components": {
       "source": "github:byuweb/byu-news-components",
       "aliases": {
-        "1.x.x": "1.0.1",
+        "1.x.x": "1.1.0",
+        "1.1.x": "1.1.0",
         "1.0.x": "1.0.1",
         "0.x.x": "0.2.0",
         "0.2.x": "0.2.0",
         "0.1.x": "0.1.0",
-        "latest": "1.0.1"
+        "latest": "1.1.0"
       },
       "versions": [
+        {
+          "name": "1.1.0",
+          "ref": "v1.1.0",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/v1.1.0",
+          "git_sha": "e25fba9cb24e92393145139ba3bd0e020baaa854",
+          "link": "https://github.com/byuweb/byu-news-components/tree/v1.1.0",
+          "last_updated": "2017-09-12T21:09:12+00:00",
+          "messages": [],
+          "resources": {
+            "byu-news-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-news-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
         {
           "name": "1.0.1",
           "ref": "v1.0.1",
@@ -1344,34 +1372,6 @@
           }
         },
         {
-          "name": "brady/adding_story_component_functionality",
-          "ref": "brady/adding_story_component_functionality",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/brady/adding_story_component_functionality",
-          "git_sha": "00c63b283391b8335a57a2a6d608285e46e84876",
-          "link": "https://github.com/byuweb/byu-news-components/tree/brady/adding_story_component_functionality",
-          "last_updated": "2017-09-12T20:52:54+00:00",
-          "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-news-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-news-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-news-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-news-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
-        },
-        {
           "name": "hero-component-view",
           "ref": "hero-component-view",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/hero-component-view",
@@ -1403,9 +1403,9 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-news-components/tarball/master",
-          "git_sha": "5faa1fa661ef4f59d86d7721fe8bfa61c4f6fe35",
+          "git_sha": "e25fba9cb24e92393145139ba3bd0e020baaa854",
           "link": "https://github.com/byuweb/byu-news-components/tree/master",
-          "last_updated": "2017-09-07T18:09:50+00:00",
+          "last_updated": "2017-09-12T21:09:12+00:00",
           "messages": [],
           "resources": {
             "byu-news-components.css": {
