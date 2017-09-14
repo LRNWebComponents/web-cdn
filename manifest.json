@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-09-14T17:22:57.721Z",
+  "$built": "2017-09-14T17:24:14.636Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -271,9 +271,9 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/master",
-          "git_sha": "7a05b4ab691f9dc03f82c94de4c14df29f3e6618",
+          "git_sha": "6fb453bb1a97ab76ec21a54695b96ef0ab0129f6",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
-          "last_updated": "2017-09-14T17:14:39+00:00",
+          "last_updated": "2017-09-14T17:23:33+00:00",
           "messages": [],
           "resources": {
             "byu-theme-components.css": {
@@ -326,29 +326,14 @@
           "name": "para-margins",
           "ref": "para-margins",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/para-margins",
-          "git_sha": "7e10f00e6ac6d99f3ec1688889e5f6774ae9d4f5",
+          "git_sha": "84660c44f5b9e6c240b7ad13296fb1c389978060",
           "link": "https://github.com/byuweb/byu-theme-components/tree/para-margins",
-          "last_updated": "2017-09-14T17:22:04+00:00",
+          "last_updated": "2017-09-14T17:22:43+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "There is no longer a valid .cdn-config.yml present"
+          ],
+          "resources": {}
         },
         {
           "name": "release-1.2.1",
@@ -649,9 +634,9 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/master",
-          "git_sha": "7a05b4ab691f9dc03f82c94de4c14df29f3e6618",
+          "git_sha": "6fb453bb1a97ab76ec21a54695b96ef0ab0129f6",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
-          "last_updated": "2017-09-14T17:14:39+00:00",
+          "last_updated": "2017-09-14T17:23:33+00:00",
           "messages": [],
           "resources": {
             "byu-theme-components.css": {
@@ -704,29 +689,14 @@
           "name": "para-margins",
           "ref": "para-margins",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/para-margins",
-          "git_sha": "7e10f00e6ac6d99f3ec1688889e5f6774ae9d4f5",
+          "git_sha": "84660c44f5b9e6c240b7ad13296fb1c389978060",
           "link": "https://github.com/byuweb/byu-theme-components/tree/para-margins",
-          "last_updated": "2017-09-14T17:22:04+00:00",
+          "last_updated": "2017-09-14T17:22:43+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "There is no longer a valid .cdn-config.yml present"
+          ],
+          "resources": {}
         },
         {
           "name": "release-1.2.1",
