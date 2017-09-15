@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-09-15T19:15:15.504Z",
+  "$built": "2017-09-15T20:54:07.091Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -302,25 +302,9 @@
           "link": "https://github.com/byuweb/byu-theme-components/tree/mobile-footer",
           "last_updated": "2017-07-17T20:26:03+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "Experimental branch hasn't been updated in 2 months"
+          ]
         },
         {
           "name": "release-1.2.1",
@@ -652,25 +636,9 @@
           "link": "https://github.com/byuweb/byu-theme-components/tree/mobile-footer",
           "last_updated": "2017-07-17T20:26:03+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "Experimental branch hasn't been updated in 2 months"
+          ]
         },
         {
           "name": "release-1.2.1",
@@ -1411,6 +1379,34 @@
           "git_sha": "be980c7ab70093dd4998432f5e3c85e7c90d6115",
           "link": "https://github.com/byuweb/byu-feature-card-component/tree/master",
           "last_updated": "2017-07-20T19:23:54+00:00",
+          "messages": [],
+          "resources": {
+            "byu-feature-card.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-feature-card.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "padding-changes",
+          "ref": "padding-changes",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card-component/tarball/padding-changes",
+          "git_sha": "be980c7ab70093dd4998432f5e3c85e7c90d6115",
+          "link": "https://github.com/byuweb/byu-feature-card-component/tree/padding-changes",
+          "last_updated": "2017-07-20T19:23:54+00:00",
+          "experimental": true,
           "messages": [],
           "resources": {
             "byu-feature-card.css": {
