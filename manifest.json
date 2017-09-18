@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-09-15T20:57:04.389Z",
+  "$built": "2017-09-18T13:25:38.472Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -298,13 +298,29 @@
           "name": "mobile-footer",
           "ref": "mobile-footer",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/mobile-footer",
-          "git_sha": "38df6e2e44dcf156b4cca8d9fa0363186fe663cb",
+          "git_sha": "7238d2c02f7311e978d8f6fffe83df625409b71d",
           "link": "https://github.com/byuweb/byu-theme-components/tree/mobile-footer",
-          "last_updated": "2017-07-17T20:26:03+00:00",
+          "last_updated": "2017-09-18T13:25:02+00:00",
           "experimental": true,
-          "messages": [
-            "Experimental branch hasn't been updated in 2 months"
-          ]
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         },
         {
           "name": "release-1.2.1",
@@ -632,13 +648,29 @@
           "name": "mobile-footer",
           "ref": "mobile-footer",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/mobile-footer",
-          "git_sha": "38df6e2e44dcf156b4cca8d9fa0363186fe663cb",
+          "git_sha": "7238d2c02f7311e978d8f6fffe83df625409b71d",
           "link": "https://github.com/byuweb/byu-theme-components/tree/mobile-footer",
-          "last_updated": "2017-07-17T20:26:03+00:00",
+          "last_updated": "2017-09-18T13:25:02+00:00",
           "experimental": true,
-          "messages": [
-            "Experimental branch hasn't been updated in 2 months"
-          ]
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         },
         {
           "name": "release-1.2.1",
