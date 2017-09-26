@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-09-25T18:46:15.587Z",
+  "$built": "2017-09-26T19:07:35.195Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1435,9 +1435,9 @@
           "name": "top-feature",
           "ref": "top-feature",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card-component/tarball/top-feature",
-          "git_sha": "b6e0e37abfb1747882fd664d0ab1157e4ebe9487",
+          "git_sha": "1666b00db94a979b188c69ef5376e7864d3f9716",
           "link": "https://github.com/byuweb/byu-feature-card-component/tree/top-feature",
-          "last_updated": "2017-09-25T18:45:28+00:00",
+          "last_updated": "2017-09-26T19:06:48+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -1529,25 +1529,9 @@
           "link": "https://github.com/byuweb/byu-hero-banner/tree/readme-update",
           "last_updated": "2017-07-28T16:50:47+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-hero-banner.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-hero-banner.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-hero-banner.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-hero-banner.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "Experimental branch hasn't been updated in 2 months"
+          ]
         }
       ]
     }
