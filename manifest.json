@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-09-26T22:25:23.091Z",
+  "$built": "2017-09-27T17:31:25.150Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -329,6 +329,34 @@
           "git_sha": "9d9e3d627565220b3c0724e2156e48b57ab6d8c3",
           "link": "https://github.com/byuweb/byu-theme-components/tree/release-1.2.1",
           "last_updated": "2017-08-30T17:42:50+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "remove-fonts",
+          "ref": "remove-fonts",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/remove-fonts",
+          "git_sha": "4c6d4623da8fff24b859cc5f1d89b2b5e1d67f6d",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/remove-fonts",
+          "last_updated": "2017-08-30T17:39:43+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -679,6 +707,34 @@
           "git_sha": "9d9e3d627565220b3c0724e2156e48b57ab6d8c3",
           "link": "https://github.com/byuweb/byu-theme-components/tree/release-1.2.1",
           "last_updated": "2017-08-30T17:42:50+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "remove-fonts",
+          "ref": "remove-fonts",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/remove-fonts",
+          "git_sha": "4c6d4623da8fff24b859cc5f1d89b2b5e1d67f6d",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/remove-fonts",
+          "last_updated": "2017-08-30T17:39:43+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
