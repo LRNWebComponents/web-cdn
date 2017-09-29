@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-09-29T19:30:33.951Z",
+  "$built": "2017-09-29T20:13:01.893Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1440,6 +1440,34 @@
           "git_sha": "0cd8eac176efa1691d907cd58c07daae0392a7ee",
           "link": "https://github.com/byuweb/byu-feature-card-component/tree/v1.0.0",
           "last_updated": "2017-07-14T18:03:41+00:00",
+          "messages": [],
+          "resources": {
+            "byu-feature-card.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-feature-card.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "hover-shadow",
+          "ref": "hover-shadow",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card-component/tarball/hover-shadow",
+          "git_sha": "da29e1d7e48965a0b61a43a6f5b54897021ab202",
+          "link": "https://github.com/byuweb/byu-feature-card-component/tree/hover-shadow",
+          "last_updated": "2017-09-29T19:29:42+00:00",
+          "experimental": true,
           "messages": [],
           "resources": {
             "byu-feature-card.css": {
