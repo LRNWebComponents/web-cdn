@@ -345,7 +345,7 @@ window.BYUFooter = BYUFooter;
 
 const ATTR_MOBILE_MAX_WIDTH = 'mobile-max-width';
 const ATTR_FULL_WIDTH = 'full-width';
-const ATTR_STRETCH_TOP_BAR = 'stretch-top-bar';
+const ATTR_CONSTRAIN_TOP_BAR = 'constrain-top-bar';
 const ATTR_MAX_WIDTH = 'max-width';
 const ATTR_MOBILE_VIEW = 'mobile-view';
 const ATTR_MENU_OPEN = 'menu-open';
@@ -475,7 +475,7 @@ class BYUHeader extends HTMLElement {
     }
 
     static get observedAttributes() {
-        return [ATTR_MOBILE_MAX_WIDTH, ATTR_MOBILE_VIEW, ATTR_MENU_OPEN, ATTR_HOME_URL, ATTR_MAX_WIDTH, ATTR_STRETCH_TOP_BAR];
+        return [ATTR_MOBILE_MAX_WIDTH, ATTR_MOBILE_VIEW, ATTR_MENU_OPEN, ATTR_HOME_URL, ATTR_MAX_WIDTH, ATTR_CONSTRAIN_TOP_BAR];
     }
 
     attributeChangedCallback(attr, oldValue, newValue) {
@@ -483,7 +483,7 @@ class BYUHeader extends HTMLElement {
             case ATTR_MOBILE_MAX_WIDTH:
                 this._applyMobileWidth();
                 return;
-            case ATTR_STRETCH_TOP_BAR:
+            case ATTR_CONSTRAIN_TOP_BAR:
             case ATTR_MAX_WIDTH:
                 this._applyMaxWidth();
                 return;
@@ -600,15 +600,15 @@ class BYUHeader extends HTMLElement {
         this.setAttribute(ATTR_HOME_URL, val);
     }
 
-    get stretchTopBar() {
-        return this.hasAttribute(ATTR_STRETCH_TOP_BAR);
+    get constrainTopBar() {
+        return this.hasAttribute(ATTR_CONSTRAIN_TOP_BAR);
     }
 
-    set stretchTopBar(value) {
+    set constrainTopBar(value) {
         if (value) {
-            this.setAttribute(ATTR_STRETCH_TOP_BAR, '');
+            this.setAttribute(ATTR_CONSTRAIN_TOP_BAR, '');
         } else {
-            this.removeAttribute(ATTR_STRETCH_TOP_BAR);
+            this.removeAttribute(ATTR_CONSTRAIN_TOP_BAR);
         }
     }
 
@@ -641,11 +641,11 @@ class BYUHeader extends HTMLElement {
 
     _applyMaxWidth() {
         if (!this.inMobileView) {
-            let stretch = this.stretchTopBar;
+            let constrain = this.constrainTopBar;
             let maxWidth = this.maxWidth;
             let needsWidthSetting = this.shadowRoot.querySelectorAll('.needs-width-setting');
             needsWidthSetting.forEach(element => {
-               if (element.classList.contains('stretches') && stretch) {
+               if (element.classList.contains('stretches') && !constrain) {
                    element.style.maxWidth = null;
                    return;
                }
@@ -1064,7 +1064,7 @@ function setupSlotListener(search) {
 
 function handleSlotChange(search, event) {
     let oldInput = search._input;
-    let newInput = lookupSearchInput(search);
+    let newInput = lookupSearchInput(search, search.searchInputSelector);
 
     if (oldInput === newInput) return;
 
@@ -1912,7 +1912,7 @@ exports = module.exports = __webpack_require__(0)();
 
 
 // module
-exports.push([module.i, ".university-footer{background-color:#002e5d;text-align:center;font-family:Gotham A,Gotham B,Helvetica,sans-serif;font-weight:400;font-size:12px;color:#fff;width:100%;padding:21px 0;display:flex;justify-content:center;align-items:center;flex-direction:column}.university-footer a{color:#fff;text-decoration:none}.university-footer a:hover{text-decoration:underline}.university-logo-wrapper{max-width:1200px;width:100%;padding:0 8px;box-sizing:border-box}.university-logo{max-width:100%;width:450px;height:40px;margin:-10px 0}.university-info{display:flex;flex-direction:column;align-items:center}.university-info>:not(:first-of-type){margin-top:.25em}@media (min-width:425px){.university-info{flex-direction:row}.university-info>:not(:first-of-type){margin-top:0}.university-info>:not(:first-of-type):before{display:inline-block;color:#fff;content:\"|\";text-align:center;width:1em}}.site-footer-wrapper{background-color:#e5e5e5}.site-footer{margin:0 auto;height:auto;box-sizing:border-box;padding:0 8px;display:flex;flex-direction:column;flex-wrap:wrap}.site-footer ::slotted(*){flex-grow:1;margin:16px 8px 0}.site-footer ::slotted(.double-wide){flex-grow:2}.site-footer ::slotted(.triple-wide){flex-grow:3}@media (min-width:600px){.site-footer{flex-direction:row}.site-footer ::slotted(*){width:calc(50% - 16px)}.site-footer ::slotted(.double-wide),.site-footer ::slotted(.triple-wide){width:calc(100% - 16px)}}@media (min-width:1024px){.site-footer{flex-wrap:nowrap;justify-content:center}.site-footer ::slotted(*){width:calc(20% - 16px);margin:30px 8px 40px;max-width:calc(30% - 16px)}.site-footer ::slotted(.double-wide){width:calc(40% - 16px);max-width:calc(60% - 16px)}.site-footer ::slotted(.triple-wide){width:calc(60% - 16px);max-width:calc(100% - 30% - 16px)}.site-footer ::slotted(:first-child){margin-left:0}.site-footer ::slotted(:last-child){margin-right:0}}", ""]);
+exports.push([module.i, ".university-footer{background-color:#002e5d;text-align:center;font-family:Gotham A,Gotham B,Helvetica,sans-serif;font-weight:400;font-size:12px;color:#fff;width:100%;padding:21px 0;display:flex;justify-content:center;align-items:center;flex-direction:column}.university-footer a{color:#fff;text-decoration:none}.university-footer a:hover{text-decoration:underline}.university-logo-wrapper{max-width:1200px;width:100%;padding:0 8px;box-sizing:border-box}.university-logo{max-width:100%;width:450px;height:40px;margin:-10px 0}.university-info{display:flex;flex-direction:column;align-items:center}.university-info>:not(:first-of-type){margin-top:.25em}@media (min-width:425px){.university-info{flex-direction:row}.university-info>:not(:first-of-type){margin-top:0}.university-info>:not(:first-of-type):before{display:inline-block;color:#fff;content:\"|\";text-align:center;width:1em}}.site-footer-wrapper{background-color:#e5e5e5}.site-footer{margin:0 auto;height:auto;box-sizing:border-box;padding:0 8px;display:flex;flex-direction:column;flex-wrap:wrap}.site-footer ::slotted(*){flex-grow:1;margin:16px 8px 0}.site-footer ::slotted(.double-wide){flex-grow:2}.site-footer ::slotted(.triple-wide){flex-grow:3}@media (min-width:600px){.site-footer{flex-direction:row}.site-footer ::slotted(*){width:calc(50% - 16px)}.site-footer ::slotted(.double-wide),.site-footer ::slotted(.triple-wide){width:calc(100% - 16px)}}@media (min-width:1024px){.site-footer{flex-wrap:nowrap;justify-content:center}.site-footer ::slotted(*){width:calc(20% - 16px);margin:30px 8px 40px;max-width:calc(30% - 16px)}.site-footer ::slotted(.double-wide){width:calc(40% - 16px);max-width:calc(60% - 16px)}.site-footer ::slotted(.triple-wide){width:calc(60% - 16px);max-width:calc(100% - 30% - 16px)}}:host([full-width]) ::slotted(:first-child){margin-left:0}:host([full-width]) ::slotted(:last-child){margin-right:0}", ""]);
 
 // exports
 
@@ -2270,7 +2270,7 @@ module.exports = "<style>" + __webpack_require__(19) + "</style> <div class=\"si
 /* 34 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "<style>" + __webpack_require__(22) + "</style> <link type=\"text/css\" rel=\"stylesheet\" href=\"https://cloud.typography.com/75214/6517752/css/fonts.css\" media=\"all\"> <nav class=\"outer-nav slot-container needs-width-setting\"> <slot class=\"byu-menu-items\" id=\"byu-menu-items\"></slot> <div class=\"byu-menu-more-menu\"> <a href=\"javascript: void 0\" class=\"byu-menu-more\"> More <div class=\"more-open-button\" aria-label=\"More\"> </div> </a> <div class=\"byu-menu-more-items slot-container\"> <slot class=\"byu-menu-more-slot\" id=\"byu-menu-more-slot\" name=\"more\"></slot> </div> </div> </nav>";
+module.exports = "<style>" + __webpack_require__(22) + "</style> <nav class=\"outer-nav slot-container needs-width-setting\"> <slot class=\"byu-menu-items\" id=\"byu-menu-items\"></slot> <div class=\"byu-menu-more-menu\"> <a href=\"javascript: void 0\" class=\"byu-menu-more\"> More <div class=\"more-open-button\" aria-label=\"More\"> </div> </a> <div class=\"byu-menu-more-items slot-container\"> <slot class=\"byu-menu-more-slot\" id=\"byu-menu-more-slot\" name=\"more\"></slot> </div> </div> </nav>";
 
 /***/ }),
 /* 35 */
