@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-10-03T19:37:46.473Z",
+  "$built": "2017-10-04T16:58:27.338Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -1423,6 +1423,34 @@
           "git_sha": "eeff6927920f8a7b1c3e541bbbc20465af8a3ba1",
           "link": "https://github.com/byuweb/byu-feature-card-component/tree/master",
           "last_updated": "2017-10-02T17:02:04+00:00",
+          "messages": [],
+          "resources": {
+            "byu-feature-card.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-feature-card.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "rburkey87-patch-1",
+          "ref": "rburkey87-patch-1",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card-component/tarball/rburkey87-patch-1",
+          "git_sha": "f669cddb4b3bea0f98c82f150c1554fc440a7b08",
+          "link": "https://github.com/byuweb/byu-feature-card-component/tree/rburkey87-patch-1",
+          "last_updated": "2017-10-04T16:57:46+00:00",
+          "experimental": true,
           "messages": [],
           "resources": {
             "byu-feature-card.css": {
