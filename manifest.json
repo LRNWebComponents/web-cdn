@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-10-05T16:30:44.692Z",
+  "$built": "2017-10-05T16:47:30.670Z",
   "libraries": {
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
@@ -298,9 +298,9 @@
           "name": "footer-specs",
           "ref": "footer-specs",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/footer-specs",
-          "git_sha": "47d523f2be16a06c2e9016717a509a7960840ec5",
+          "git_sha": "62b97786771abbe60ff2a0a76bafc9c1ad96ddf9",
           "link": "https://github.com/byuweb/byu-theme-components/tree/footer-specs",
-          "last_updated": "2017-10-05T16:29:44+00:00",
+          "last_updated": "2017-10-05T16:46:26+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -675,9 +675,9 @@
           "name": "footer-specs",
           "ref": "footer-specs",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/footer-specs",
-          "git_sha": "47d523f2be16a06c2e9016717a509a7960840ec5",
+          "git_sha": "62b97786771abbe60ff2a0a76bafc9c1ad96ddf9",
           "link": "https://github.com/byuweb/byu-theme-components/tree/footer-specs",
-          "last_updated": "2017-10-05T16:29:44+00:00",
+          "last_updated": "2017-10-05T16:46:26+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -1023,10 +1023,17 @@
           "git_sha": "d2fdff5f66a177b719fd7f6c5cae6d13c00ab3f6",
           "link": "https://github.com/byuweb/web-component-polyfills/tree/master",
           "last_updated": "2017-08-07T18:04:50+00:00",
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
+          "messages": [],
+          "resources": {
+            "web-component-polyfills.js": {
+              "entrypoint": true,
+              "description": "Bundle of all Web Component polyfills"
+            },
+            "web-component-polyfills.min.js": {
+              "entrypoint": true,
+              "description": "Minified bundle of all Web Component polyfills"
+            }
+          }
         },
         {
           "name": "use-npm",
