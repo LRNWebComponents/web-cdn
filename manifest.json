@@ -1,7 +1,160 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-10-05T16:47:30.670Z",
+  "$built": "2017-10-05T20:32:28.451Z",
   "libraries": {
+    "demo-lib": {
+      "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
+      "aliases": {
+        "1.x.x": "1.1.0",
+        "1.0.x": "1.0.1",
+        "2.x.x": "2.0.3",
+        "2.0.x": "2.0.3",
+        "1.1.x": "1.1.0",
+        "latest": "2.0.3"
+      },
+      "versions": [
+        {
+          "name": "1.0.1",
+          "ref": "v1.0.1",
+          "tarball_url": "https://api.github.com/repos/ThatJoeMoore/byu-web-cdn-demo-lib/tarball/v1.0.1",
+          "git_sha": "38d6b66980fc2a94b5e629564a8980cc01f6dc5b",
+          "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/v1.0.1",
+          "last_updated": "2017-01-14T05:40:58+00:00",
+          "messages": [],
+          "resources": {
+            "demo.js": {
+              "entrypoint": true,
+              "description": "Main Entrypoint"
+            }
+          }
+        },
+        {
+          "name": "1.0.0",
+          "ref": "v1.0.0",
+          "tarball_url": "https://api.github.com/repos/ThatJoeMoore/byu-web-cdn-demo-lib/tarball/v1.0.0",
+          "git_sha": "bab571b9596eeaea13fc11dfb215615b837bba3c",
+          "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/v1.0.0",
+          "last_updated": "2017-01-14T05:37:03+00:00",
+          "messages": [],
+          "resources": {
+            "demo.js": {
+              "entrypoint": true,
+              "description": "Main Entrypoint"
+            }
+          }
+        },
+        {
+          "name": "2.0.3",
+          "ref": "2.0.3",
+          "tarball_url": "https://api.github.com/repos/ThatJoeMoore/byu-web-cdn-demo-lib/tarball/2.0.3",
+          "git_sha": "a165fca7fdb5cacb47daa8c3698e8603bb543e1a",
+          "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/2.0.3",
+          "last_updated": "2017-02-02T22:52:19+00:00",
+          "messages": [],
+          "resources": {
+            "demo.js": {
+              "entrypoint": true,
+              "description": "Main Entrypoint"
+            },
+            "relocated/test-styles.css": {
+              "entrypoint": true,
+              "description": "Styles!"
+            }
+          }
+        },
+        {
+          "name": "2.0.2",
+          "ref": "2.0.2",
+          "tarball_url": "https://api.github.com/repos/ThatJoeMoore/byu-web-cdn-demo-lib/tarball/2.0.2",
+          "git_sha": "a28a4b90114424aea2003bbe4343e6c280aeae5a",
+          "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/2.0.2",
+          "last_updated": "2017-02-02T22:51:51+00:00",
+          "messages": [],
+          "resources": {
+            "demo.js": {
+              "entrypoint": true,
+              "description": "Main Entrypoint"
+            },
+            "relocated/test-styles.css": {
+              "entrypoint": true,
+              "description": "Styles!"
+            }
+          }
+        },
+        {
+          "name": "2.0.1",
+          "ref": "2.0.1",
+          "tarball_url": "https://api.github.com/repos/ThatJoeMoore/byu-web-cdn-demo-lib/tarball/2.0.1",
+          "git_sha": "de4be2a306dcdeffffc634878ed57596d9fc9e85",
+          "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/2.0.1",
+          "last_updated": "2017-02-01T04:38:31+00:00",
+          "messages": [],
+          "resources": {
+            "demo.js": {
+              "entrypoint": true,
+              "description": "Main Entrypoint"
+            },
+            "relocated/test-styles.css": {
+              "entrypoint": true,
+              "description": "Styles!"
+            }
+          }
+        },
+        {
+          "name": "2.0.0",
+          "ref": "2.0.0",
+          "tarball_url": "https://api.github.com/repos/ThatJoeMoore/byu-web-cdn-demo-lib/tarball/2.0.0",
+          "git_sha": "00f3c6b200c7a97c8ccf5ce6b53540af5db435af",
+          "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/2.0.0",
+          "last_updated": "2017-01-14T05:44:42+00:00",
+          "messages": [],
+          "resources": {
+            "demo.js": {
+              "entrypoint": true,
+              "description": "Main Entrypoint"
+            },
+            "relocated/test-styles.css": {
+              "entrypoint": true,
+              "description": "Styles!"
+            }
+          }
+        },
+        {
+          "name": "1.1.0",
+          "ref": "1.1.0",
+          "tarball_url": "https://api.github.com/repos/ThatJoeMoore/byu-web-cdn-demo-lib/tarball/1.1.0",
+          "git_sha": "288536ecb4a4f0a6c128db208a4d5b46a012ba91",
+          "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/1.1.0",
+          "last_updated": "2017-01-14T05:41:53+00:00",
+          "messages": [],
+          "resources": {
+            "demo.js": {
+              "entrypoint": true,
+              "description": "Main Entrypoint"
+            }
+          }
+        },
+        {
+          "name": "unstable",
+          "ref": "master",
+          "tarball_url": "https://api.github.com/repos/ThatJoeMoore/byu-web-cdn-demo-lib/tarball/master",
+          "git_sha": "6eed603fa472e8e3cc0ee9c54128c8ef902d53f0",
+          "link": "https://github.com/ThatJoeMoore/byu-web-cdn-demo-lib/tree/master",
+          "last_updated": "2017-08-09T23:38:09+00:00",
+          "messages": [],
+          "resources": {
+            "demo.js": {
+              "entrypoint": true,
+              "description": "Main Entrypoint"
+            },
+            "relocated/test-styles.css": {
+              "entrypoint": true,
+              "description": "Styles!"
+            }
+          }
+        }
+      ]
+    },
     "2017-core-components": {
       "source": "github:byuweb/byu-theme-components",
       "aliases": {
@@ -1598,6 +1751,70 @@
           "messages": [
             "Experimental branch hasn't been updated in 2 months"
           ]
+        }
+      ]
+    },
+    "byu-faculty-directory": {
+      "source": "github:byuweb/byu-faculty-directory",
+      "aliases": {
+        "1.x.x": "1.0.0",
+        "1.0.x": "1.0.0",
+        "latest": "1.0.0"
+      },
+      "versions": [
+        {
+          "name": "1.0.0",
+          "ref": "v1.0.0",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-faculty-directory/tarball/v1.0.0",
+          "git_sha": "87e3cdaa8ea3159c71e4b85380270875a5ce1d2a",
+          "link": "https://github.com/byuweb/byu-faculty-directory/tree/v1.0.0",
+          "last_updated": "2017-10-04T21:28:01+00:00",
+          "messages": [],
+          "resources": {
+            "byu-faculty-directory.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-faculty-directory.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-faculty-directory.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-faculty-directory.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "unstable",
+          "ref": "master",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-faculty-directory/tarball/master",
+          "git_sha": "87e3cdaa8ea3159c71e4b85380270875a5ce1d2a",
+          "link": "https://github.com/byuweb/byu-faculty-directory/tree/master",
+          "last_updated": "2017-10-04T21:28:01+00:00",
+          "messages": [],
+          "resources": {
+            "byu-faculty-directory.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-faculty-directory.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-faculty-directory.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-faculty-directory.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         }
       ]
     }
