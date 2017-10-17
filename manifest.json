@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-10-05T20:32:28.451Z",
+  "$built": "2017-10-17T17:57:13.511Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -503,6 +503,34 @@
           }
         },
         {
+          "name": "menu-transparency-fix",
+          "ref": "menu-transparency-fix",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/menu-transparency-fix",
+          "git_sha": "7bbd200712c03d9f1e8278ecf3073b332a2e2d9f",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/menu-transparency-fix",
+          "last_updated": "2017-10-04T19:01:47+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
           "name": "mobile-footer",
           "ref": "mobile-footer",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/mobile-footer",
@@ -880,6 +908,34 @@
           }
         },
         {
+          "name": "menu-transparency-fix",
+          "ref": "menu-transparency-fix",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/menu-transparency-fix",
+          "git_sha": "7bbd200712c03d9f1e8278ecf3073b332a2e2d9f",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/menu-transparency-fix",
+          "last_updated": "2017-10-04T19:01:47+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
           "name": "mobile-footer",
           "ref": "mobile-footer",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/mobile-footer",
@@ -1196,17 +1252,9 @@
           "link": "https://github.com/byuweb/web-component-polyfills/tree/use-npm",
           "last_updated": "2017-08-11T03:07:27+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "web-component-polyfills.js": {
-              "entrypoint": true,
-              "description": "Bundle of all Web Component polyfills"
-            },
-            "web-component-polyfills.min.js": {
-              "entrypoint": true,
-              "description": "Minified bundle of all Web Component polyfills"
-            }
-          }
+          "messages": [
+            "Experimental branch hasn't been updated in 2 months"
+          ]
         }
       ]
     },
