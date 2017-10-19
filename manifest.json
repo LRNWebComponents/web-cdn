@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-10-19T17:29:44.639Z",
+  "$built": "2017-10-19T17:30:29.639Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -503,34 +503,6 @@
           }
         },
         {
-          "name": "menu-transparency-fix",
-          "ref": "menu-transparency-fix",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/menu-transparency-fix",
-          "git_sha": "7ae82cb156cc5883bc48009d6f004aa8388800e0",
-          "link": "https://github.com/byuweb/byu-theme-components/tree/menu-transparency-fix",
-          "last_updated": "2017-10-19T17:13:30+00:00",
-          "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
-        },
-        {
           "name": "mobile-footer",
           "ref": "mobile-footer",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/mobile-footer",
@@ -887,34 +859,6 @@
           "git_sha": "1b9477978834c12dff486342619d2fcfcbc43455",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
           "last_updated": "2017-10-19T17:28:58+00:00",
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
-        },
-        {
-          "name": "menu-transparency-fix",
-          "ref": "menu-transparency-fix",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/menu-transparency-fix",
-          "git_sha": "7ae82cb156cc5883bc48009d6f004aa8388800e0",
-          "link": "https://github.com/byuweb/byu-theme-components/tree/menu-transparency-fix",
-          "last_updated": "2017-10-19T17:13:30+00:00",
-          "experimental": true,
           "messages": [],
           "resources": {
             "byu-theme-components.css": {
