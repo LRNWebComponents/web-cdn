@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-10-20T20:33:01.128Z",
+  "$built": "2017-10-25T13:05:20.641Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -529,6 +529,34 @@
               "description": "Minified - Examines browser support and downloads the appropriate component bundle"
             }
           }
+        },
+        {
+          "name": "update-realease-timeline",
+          "ref": "update-realease-timeline",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/update-realease-timeline",
+          "git_sha": "54b8d1eb8180a2d1b1761d0570dc2abc7a4e3bb8",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/update-realease-timeline",
+          "last_updated": "2017-10-25T13:04:32+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         }
       ]
     },
@@ -886,6 +914,34 @@
           "git_sha": "7238d2c02f7311e978d8f6fffe83df625409b71d",
           "link": "https://github.com/byuweb/byu-theme-components/tree/mobile-footer",
           "last_updated": "2017-09-18T13:25:02+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "update-realease-timeline",
+          "ref": "update-realease-timeline",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/update-realease-timeline",
+          "git_sha": "54b8d1eb8180a2d1b1761d0570dc2abc7a4e3bb8",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/update-realease-timeline",
+          "last_updated": "2017-10-25T13:04:32+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -1449,25 +1505,9 @@
           "link": "https://github.com/byuweb/byu-news-components/tree/news-dev-endpoint",
           "last_updated": "2017-08-25T19:55:57+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-news-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-news-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-news-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-news-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "Experimental branch hasn't been updated in 2 months"
+          ]
         }
       ]
     },
