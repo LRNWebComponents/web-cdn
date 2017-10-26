@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-10-25T16:06:21.504Z",
+  "$built": "2017-10-26T17:39:39.140Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -455,33 +455,18 @@
           "link": "https://github.com/byuweb/byu-theme-components/tree/footer-specs",
           "last_updated": "2017-10-25T16:05:33+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "There is no longer a valid .cdn-config.yml present"
+          ],
+          "resources": {}
         },
         {
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/master",
-          "git_sha": "04b4f2c17dd1e0882ee8934827834c49eafb8ebb",
+          "git_sha": "2d475c816a9813175403fc8d3d8800e5e5402370",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
-          "last_updated": "2017-10-25T14:17:56+00:00",
+          "last_updated": "2017-10-26T17:38:55+00:00",
           "messages": [],
           "resources": {
             "byu-theme-components.css": {
@@ -860,33 +845,18 @@
           "link": "https://github.com/byuweb/byu-theme-components/tree/footer-specs",
           "last_updated": "2017-10-25T16:05:33+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "There is no longer a valid .cdn-config.yml present"
+          ],
+          "resources": {}
         },
         {
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/master",
-          "git_sha": "04b4f2c17dd1e0882ee8934827834c49eafb8ebb",
+          "git_sha": "2d475c816a9813175403fc8d3d8800e5e5402370",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
-          "last_updated": "2017-10-25T14:17:56+00:00",
+          "last_updated": "2017-10-26T17:38:55+00:00",
           "messages": [],
           "resources": {
             "byu-theme-components.css": {
