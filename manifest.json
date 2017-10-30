@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-10-26T17:39:39.140Z",
+  "$built": "2017-10-30T18:05:09.701Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -448,19 +448,6 @@
           ]
         },
         {
-          "name": "footer-specs",
-          "ref": "footer-specs",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/footer-specs",
-          "git_sha": "81e2af9cfd313017250fa91b315ff113833e2880",
-          "link": "https://github.com/byuweb/byu-theme-components/tree/footer-specs",
-          "last_updated": "2017-10-25T16:05:33+00:00",
-          "experimental": true,
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
-        },
-        {
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/master",
@@ -836,19 +823,6 @@
           "messages": [
             "Experimental branch hasn't been updated in 2 months"
           ]
-        },
-        {
-          "name": "footer-specs",
-          "ref": "footer-specs",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/footer-specs",
-          "git_sha": "81e2af9cfd313017250fa91b315ff113833e2880",
-          "link": "https://github.com/byuweb/byu-theme-components/tree/footer-specs",
-          "last_updated": "2017-10-25T16:05:33+00:00",
-          "experimental": true,
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
         },
         {
           "name": "unstable",
@@ -1771,6 +1745,34 @@
           "git_sha": "87e3cdaa8ea3159c71e4b85380270875a5ce1d2a",
           "link": "https://github.com/byuweb/byu-faculty-directory/tree/v1.0.0",
           "last_updated": "2017-10-04T21:28:01+00:00",
+          "messages": [],
+          "resources": {
+            "byu-faculty-directory.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-faculty-directory.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-faculty-directory.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-faculty-directory.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "brady/faculty-directory",
+          "ref": "brady/faculty-directory",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-faculty-directory/tarball/brady/faculty-directory",
+          "git_sha": "6e867aa4184c8c6174af42c4f3f56900b99a3eb7",
+          "link": "https://github.com/byuweb/byu-faculty-directory/tree/brady/faculty-directory",
+          "last_updated": "2017-10-30T18:04:16+00:00",
+          "experimental": true,
           "messages": [],
           "resources": {
             "byu-faculty-directory.css": {
