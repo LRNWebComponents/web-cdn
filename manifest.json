@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-10-30T18:08:07.627Z",
+  "$built": "2017-10-31T21:47:31.294Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -503,6 +503,34 @@
           }
         },
         {
+          "name": "univ-footer-lineheight",
+          "ref": "univ-footer-lineheight",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/univ-footer-lineheight",
+          "git_sha": "d7c2c72ce552c1c80d2d367e3e281e037644e075",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/univ-footer-lineheight",
+          "last_updated": "2017-10-31T21:45:19+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
           "name": "update-realease-timeline",
           "ref": "update-realease-timeline",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/update-realease-timeline",
@@ -858,6 +886,34 @@
           "git_sha": "7238d2c02f7311e978d8f6fffe83df625409b71d",
           "link": "https://github.com/byuweb/byu-theme-components/tree/mobile-footer",
           "last_updated": "2017-09-18T13:25:02+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "univ-footer-lineheight",
+          "ref": "univ-footer-lineheight",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/univ-footer-lineheight",
+          "git_sha": "d7c2c72ce552c1c80d2d367e3e281e037644e075",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/univ-footer-lineheight",
+          "last_updated": "2017-10-31T21:45:19+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -1733,11 +1789,38 @@
     "byu-faculty-directory": {
       "source": "github:byuweb/byu-faculty-directory",
       "aliases": {
-        "1.x.x": "1.0.0",
-        "1.0.x": "1.0.0",
-        "latest": "1.0.0"
+        "1.x.x": "1.0.1",
+        "1.0.x": "1.0.1",
+        "latest": "1.0.1"
       },
       "versions": [
+        {
+          "name": "1.0.1",
+          "ref": "v1.0.1",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-faculty-directory/tarball/v1.0.1",
+          "git_sha": "e7a00c28266a0335bf2098bc22cf4c4de47d165b",
+          "link": "https://github.com/byuweb/byu-faculty-directory/tree/v1.0.1",
+          "last_updated": "2017-10-30T18:07:29+00:00",
+          "messages": [],
+          "resources": {
+            "byu-faculty-directory.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-faculty-directory.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-faculty-directory.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-faculty-directory.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
         {
           "name": "1.0.0",
           "ref": "v1.0.0",
@@ -1764,18 +1847,6 @@
               "description": "Minified - Examines browser support and downloads the appropriate component bundle"
             }
           }
-        },
-        {
-          "name": "brady/faculty-directory",
-          "ref": "brady/faculty-directory",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-faculty-directory/tarball/brady/faculty-directory",
-          "git_sha": "6e867aa4184c8c6174af42c4f3f56900b99a3eb7",
-          "link": "https://github.com/byuweb/byu-faculty-directory/tree/brady/faculty-directory",
-          "last_updated": "2017-10-30T18:04:16+00:00",
-          "experimental": true,
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ]
         },
         {
           "name": "unstable",
