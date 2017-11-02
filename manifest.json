@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-10-31T21:59:26.291Z",
+  "$built": "2017-11-02T16:47:08.015Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1282,6 +1282,34 @@
         "latest": "unstable"
       },
       "versions": [
+        {
+          "name": "footer-height",
+          "ref": "footer-height",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-style-helpers/tarball/footer-height",
+          "git_sha": "9515d83ccc2af0bfa3f39b04fd8c644a9bef1f8a",
+          "link": "https://github.com/byuweb/byu-theme-style-helpers/tree/footer-height",
+          "last_updated": "2017-11-02T16:46:26+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "box-shadows.css": {
+              "entrypoint": true,
+              "description": "Adds box-shadow classes for elements."
+            },
+            "buttons.css": {
+              "entrypoint": true,
+              "description": "Adds button classes for BYU buttons - several BYU color options available."
+            },
+            "popups-modals.css": {
+              "entrypoint": true,
+              "description": "Adds byu theming if you are using a byu-modal popup element. See online for more documentation."
+            },
+            "tables.css": {
+              "entrypoint": true,
+              "description": "Adds a class to style tables nicely with BYU colors"
+            }
+          }
+        },
         {
           "name": "unstable",
           "ref": "master",
