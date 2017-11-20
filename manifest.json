@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-11-09T23:50:48.002Z",
+  "$built": "2017-11-20T19:41:02.801Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -510,25 +510,9 @@
           "link": "https://github.com/byuweb/byu-theme-components/tree/mobile-footer",
           "last_updated": "2017-09-18T13:25:02+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "Experimental branch hasn't been updated in 2 months"
+          ]
         }
       ]
     },
@@ -887,25 +871,9 @@
           "link": "https://github.com/byuweb/byu-theme-components/tree/mobile-footer",
           "last_updated": "2017-09-18T13:25:02+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "Experimental branch hasn't been updated in 2 months"
+          ]
         }
       ]
     },
@@ -1603,9 +1571,9 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card-component/tarball/master",
-          "git_sha": "eeff6927920f8a7b1c3e541bbbc20465af8a3ba1",
+          "git_sha": "3c2f87dddf0ab875107317ec20a564daf6e646de",
           "link": "https://github.com/byuweb/byu-feature-card-component/tree/master",
-          "last_updated": "2017-10-02T17:02:04+00:00",
+          "last_updated": "2017-11-20T19:40:25+00:00",
           "messages": [],
           "resources": {
             "byu-feature-card.css": {
