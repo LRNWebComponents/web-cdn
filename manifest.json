@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-11-20T19:41:02.801Z",
+  "$built": "2017-11-21T18:47:35.703Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1547,6 +1547,34 @@
           "git_sha": "0cd8eac176efa1691d907cd58c07daae0392a7ee",
           "link": "https://github.com/byuweb/byu-feature-card-component/tree/v1.0.0",
           "last_updated": "2017-07-14T18:03:41+00:00",
+          "messages": [],
+          "resources": {
+            "byu-feature-card.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-feature-card.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "documentation",
+          "ref": "documentation",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card-component/tarball/documentation",
+          "git_sha": "5861f3b2d25e76e0ddc266d528bed037b3e2ba07",
+          "link": "https://github.com/byuweb/byu-feature-card-component/tree/documentation",
+          "last_updated": "2017-11-21T18:46:59+00:00",
+          "experimental": true,
           "messages": [],
           "resources": {
             "byu-feature-card.css": {
