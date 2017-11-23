@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-11-21T18:49:08.924Z",
+  "$built": "2017-11-23T21:24:20.974Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -448,6 +448,34 @@
           ]
         },
         {
+          "name": "border-radius-fix",
+          "ref": "border-radius-fix",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/border-radius-fix",
+          "git_sha": "776d30394536c2fa691a07f50f207aefcc1b8f68",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/border-radius-fix",
+          "last_updated": "2017-11-23T21:23:28+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
           "name": "footer-action-text",
           "ref": "footer-action-text",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/footer-action-text",
@@ -807,6 +835,34 @@
           "messages": [
             "Experimental branch hasn't been updated in 2 months"
           ]
+        },
+        {
+          "name": "border-radius-fix",
+          "ref": "border-radius-fix",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/border-radius-fix",
+          "git_sha": "776d30394536c2fa691a07f50f207aefcc1b8f68",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/border-radius-fix",
+          "last_updated": "2017-11-23T21:23:28+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         },
         {
           "name": "footer-action-text",
