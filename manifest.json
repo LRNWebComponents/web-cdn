@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-11-27T15:59:12.830Z",
+  "$built": "2017-11-28T23:51:04.710Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -541,6 +541,34 @@
           "messages": [
             "Experimental branch hasn't been updated in 2 months"
           ]
+        },
+        {
+          "name": "release-1.2.2",
+          "ref": "release-1.2.2",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/release-1.2.2",
+          "git_sha": "4898df1b93c906e0b8418e226bac117b00d5e543",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/release-1.2.2",
+          "last_updated": "2017-11-27T15:58:30+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         }
       ]
     },
@@ -930,6 +958,34 @@
           "messages": [
             "Experimental branch hasn't been updated in 2 months"
           ]
+        },
+        {
+          "name": "release-1.2.2",
+          "ref": "release-1.2.2",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/release-1.2.2",
+          "git_sha": "4898df1b93c906e0b8418e226bac117b00d5e543",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/release-1.2.2",
+          "last_updated": "2017-11-27T15:58:30+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         }
       ]
     },
