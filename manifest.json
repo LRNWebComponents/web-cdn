@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-11-30T22:48:14.804Z",
+  "$built": "2017-11-30T23:09:31.343Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1729,9 +1729,9 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-hero-banner/tarball/master",
-          "git_sha": "6ae0670b9590a373f48ca5e4f6236faaf73d08a5",
+          "git_sha": "5a75777480f6d06b545f1cb0ab69c2fe129e04b0",
           "link": "https://github.com/byuweb/byu-hero-banner/tree/master",
-          "last_updated": "2017-08-03T20:54:45+00:00",
+          "last_updated": "2017-11-30T23:08:50+00:00",
           "messages": [],
           "resources": {
             "byu-hero-banner.css": {
@@ -1763,6 +1763,34 @@
           "messages": [
             "Experimental branch hasn't been updated in 2 months"
           ]
+        },
+        {
+          "name": "right-aligned",
+          "ref": "right-aligned",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-hero-banner/tarball/right-aligned",
+          "git_sha": "d18ea7a3e95040ad4ba740ea37ab936970e20a3d",
+          "link": "https://github.com/byuweb/byu-hero-banner/tree/right-aligned",
+          "last_updated": "2017-11-30T22:49:32+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-hero-banner.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-hero-banner.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         },
         {
           "name": "video-option",
