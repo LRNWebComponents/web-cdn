@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-11-30T18:35:03.447Z",
+  "$built": "2017-11-30T20:59:08.924Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -487,6 +487,34 @@
           ]
         },
         {
+          "name": "more-menu-fix",
+          "ref": "more-menu-fix",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/more-menu-fix",
+          "git_sha": "f3f97867d1a85f53f7b35eb4bfb3df1161f4f6a6",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/more-menu-fix",
+          "last_updated": "2017-11-30T20:58:26+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
           "name": "release-1.2.2",
           "ref": "release-1.2.2",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/release-1.2.2",
@@ -846,6 +874,34 @@
           "messages": [
             "Experimental branch hasn't been updated in 2 months"
           ]
+        },
+        {
+          "name": "more-menu-fix",
+          "ref": "more-menu-fix",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/more-menu-fix",
+          "git_sha": "f3f97867d1a85f53f7b35eb4bfb3df1161f4f6a6",
+          "link": "https://github.com/byuweb/byu-theme-components/tree/more-menu-fix",
+          "last_updated": "2017-11-30T20:58:26+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         },
         {
           "name": "release-1.2.2",
