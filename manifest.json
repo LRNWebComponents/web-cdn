@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-11-30T21:13:50.506Z",
+  "$built": "2017-11-30T22:48:14.804Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1763,6 +1763,34 @@
           "messages": [
             "Experimental branch hasn't been updated in 2 months"
           ]
+        },
+        {
+          "name": "video-option",
+          "ref": "video-option",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-hero-banner/tarball/video-option",
+          "git_sha": "970f56cf77ecc8ab4cd445f224006068a8aa63d6",
+          "link": "https://github.com/byuweb/byu-hero-banner/tree/video-option",
+          "last_updated": "2017-11-30T22:47:22+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-hero-banner.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-hero-banner.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         }
       ]
     },
