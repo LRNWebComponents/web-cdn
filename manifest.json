@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-11-30T00:00:58.925Z",
+  "$built": "2017-11-30T18:35:03.447Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -880,9 +880,21 @@
     "byu-card": {
       "source": "github:byuweb/byu-card",
       "aliases": {
-        "latest": "unstable"
+        "1.x.x": "1.0.1",
+        "1.0.x": "1.0.1",
+        "latest": "1.0.1"
       },
       "versions": [
+        {
+          "name": "1.0.1",
+          "ref": "v1.0.1",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-card/tarball/v1.0.1",
+          "git_sha": "f607c1041dcae03ae784e4ffb996ba2ce50d43ee",
+          "link": "https://github.com/byuweb/byu-card/tree/v1.0.1",
+          "last_updated": "2017-09-26T22:24:45+00:00",
+          "messages": [],
+          "resources": {}
+        },
         {
           "name": "v.1.0.0",
           "ref": "v.1.0.0",
