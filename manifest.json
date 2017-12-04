@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-12-02T22:10:12.871Z",
+  "$built": "2017-12-04T14:09:50.982Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -490,9 +490,9 @@
           "name": "more-menu-fix",
           "ref": "more-menu-fix",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/more-menu-fix",
-          "git_sha": "f80be1fc762c0362da0426ed3348867961fef111",
+          "git_sha": "1ef17a61cc5ff5d32ade6809e14894cf74677fc6",
           "link": "https://github.com/byuweb/byu-theme-components/tree/more-menu-fix",
-          "last_updated": "2017-12-02T22:09:24+00:00",
+          "last_updated": "2017-12-04T14:09:00+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -879,9 +879,9 @@
           "name": "more-menu-fix",
           "ref": "more-menu-fix",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/more-menu-fix",
-          "git_sha": "f80be1fc762c0362da0426ed3348867961fef111",
+          "git_sha": "1ef17a61cc5ff5d32ade6809e14894cf74677fc6",
           "link": "https://github.com/byuweb/byu-theme-components/tree/more-menu-fix",
-          "last_updated": "2017-12-02T22:09:24+00:00",
+          "last_updated": "2017-12-04T14:09:00+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -1670,25 +1670,9 @@
           "link": "https://github.com/byuweb/byu-feature-card-component/tree/rburkey87-patch-1",
           "last_updated": "2017-10-04T16:57:46+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-feature-card.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-feature-card.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-feature-card.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-feature-card.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "Experimental branch hasn't been updated in 2 months"
+          ]
         }
       ]
     },
