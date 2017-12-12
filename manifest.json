@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-12-12T22:55:47.220Z",
+  "$built": "2017-12-12T22:56:41.159Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -451,9 +451,9 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/master",
-          "git_sha": "8e0cd9118cad2cfc82d8ad86f34bc92bf231927f",
+          "git_sha": "efbc36a6b07b9701f675b50e427c236d8845fa2b",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
-          "last_updated": "2017-12-05T18:03:30+00:00",
+          "last_updated": "2017-12-12T22:56:13+00:00",
           "messages": [],
           "resources": {
             "byu-theme-components.css": {
@@ -840,9 +840,9 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/master",
-          "git_sha": "8e0cd9118cad2cfc82d8ad86f34bc92bf231927f",
+          "git_sha": "efbc36a6b07b9701f675b50e427c236d8845fa2b",
           "link": "https://github.com/byuweb/byu-theme-components/tree/master",
-          "last_updated": "2017-12-05T18:03:30+00:00",
+          "last_updated": "2017-12-12T22:56:13+00:00",
           "messages": [],
           "resources": {
             "byu-theme-components.css": {
@@ -1447,7 +1447,6 @@
           "last_updated": "2017-08-02T17:15:51+00:00",
           "experimental": true,
           "messages": [
-            "There is no longer a valid .cdn-config.yml present",
             "Experimental branch hasn't been updated in 2 months"
           ]
         },
@@ -1458,10 +1457,25 @@
           "git_sha": "bf44b9540b322a9d9d239b4d2478106164f00c8d",
           "link": "https://github.com/byuweb/byu-news-components/tree/master",
           "last_updated": "2017-09-13T03:33:31+00:00",
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
+          "messages": [],
+          "resources": {
+            "byu-news-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-news-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         },
         {
           "name": "news-dev-endpoint",
@@ -1826,10 +1840,25 @@
           "link": "https://github.com/byuweb/byu-hero-banner/tree/video-option",
           "last_updated": "2017-12-12T22:40:14+00:00",
           "experimental": true,
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
+          "messages": [],
+          "resources": {
+            "byu-hero-banner.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-hero-banner.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         }
       ]
     },
@@ -1902,10 +1931,25 @@
           "git_sha": "e7a00c28266a0335bf2098bc22cf4c4de47d165b",
           "link": "https://github.com/byuweb/byu-faculty-directory/tree/master",
           "last_updated": "2017-10-30T18:07:29+00:00",
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
+          "messages": [],
+          "resources": {
+            "byu-faculty-directory.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-faculty-directory.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-faculty-directory.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-faculty-directory.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         }
       ]
     }
