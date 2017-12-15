@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-12-15T23:24:16.748Z",
+  "$built": "2017-12-15T23:47:53.869Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1733,11 +1733,39 @@
     "byu-hero-banner": {
       "source": "github:byuweb/byu-hero-banner",
       "aliases": {
-        "1.x.x": "1.1.0",
+        "1.x.x": "1.2.0",
+        "1.2.x": "1.2.0",
         "1.1.x": "1.1.0",
-        "latest": "1.1.0"
+        "latest": "1.2.0"
       },
       "versions": [
+        {
+          "name": "1.2.0",
+          "ref": "v1.2.0",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-hero-banner/tarball/v1.2.0",
+          "git_sha": "e3c75f92aac547ea1aa7793ef237b6edca0e0660",
+          "link": "https://github.com/byuweb/byu-hero-banner/tree/v1.2.0",
+          "last_updated": "2017-12-15T23:46:14+00:00",
+          "messages": [],
+          "resources": {
+            "byu-hero-banner.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-hero-banner.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
         {
           "name": "1.1.0",
           "ref": "v1.1.0",
@@ -1823,9 +1851,9 @@
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-hero-banner/tarball/master",
-          "git_sha": "3cb714938115a1a4d2b2703e5e7bf4b12a6ffab0",
+          "git_sha": "e3c75f92aac547ea1aa7793ef237b6edca0e0660",
           "link": "https://github.com/byuweb/byu-hero-banner/tree/master",
-          "last_updated": "2017-12-12T22:55:20+00:00",
+          "last_updated": "2017-12-15T23:46:14+00:00",
           "messages": [],
           "resources": {
             "byu-hero-banner.css": {
