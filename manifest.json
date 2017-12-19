@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-12-18T17:14:24.897Z",
+  "$built": "2017-12-19T01:28:31.220Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -549,53 +549,10 @@
           "link": "https://github.com/byuweb/byu-theme-components/tree/more-menu-fix",
           "last_updated": "2017-12-04T14:09:00+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
-        },
-        {
-          "name": "release-1.2.2",
-          "ref": "release-1.2.2",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/release-1.2.2",
-          "git_sha": "bd73530b88b923982cd9958f40147138fd1fc00c",
-          "link": "https://github.com/byuweb/byu-theme-components/tree/release-1.2.2",
-          "last_updated": "2017-12-12T18:54:39+00:00",
-          "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "There is no longer a valid .cdn-config.yml present"
+          ],
+          "resources": {}
         }
       ]
     },
@@ -993,53 +950,10 @@
           "link": "https://github.com/byuweb/byu-theme-components/tree/more-menu-fix",
           "last_updated": "2017-12-04T14:09:00+00:00",
           "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
-        },
-        {
-          "name": "release-1.2.2",
-          "ref": "release-1.2.2",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-theme-components/tarball/release-1.2.2",
-          "git_sha": "bd73530b88b923982cd9958f40147138fd1fc00c",
-          "link": "https://github.com/byuweb/byu-theme-components/tree/release-1.2.2",
-          "last_updated": "2017-12-12T18:54:39+00:00",
-          "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "There is no longer a valid .cdn-config.yml present"
+          ],
+          "resources": {}
         }
       ]
     },
