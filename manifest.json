@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-12-19T22:31:48.180Z",
+  "$built": "2017-12-19T22:48:31.499Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -226,10 +226,25 @@
           "git_sha": "d2577dc95cd3e98303a3ba4c79bf6b42f5537623",
           "link": "https://github.com/byuweb/byu-theme-components/tree/v1.2.0",
           "last_updated": "2017-08-29T21:42:19+00:00",
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         },
         {
           "name": "1.1.1",
@@ -400,10 +415,25 @@
           "git_sha": "8ea9824f8f7d36ec784cffef517b03b0b6f2f20d",
           "link": "https://github.com/byuweb/byu-theme-components/tree/v1.0.1",
           "last_updated": "2017-05-11T16:17:12+00:00",
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
+          "messages": [],
+          "resources": {
+            "byu-theme-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-theme-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-theme-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         },
         {
           "name": "1.0.0",
@@ -1832,9 +1862,9 @@
           "name": "title-only",
           "ref": "title-only",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-hero-banner/tarball/title-only",
-          "git_sha": "701212685d1f9f2a9dea7e4e8eb91f3e35d26e17",
+          "git_sha": "a6322c028d52ebb60104a79a27567845332ec303",
           "link": "https://github.com/byuweb/byu-hero-banner/tree/title-only",
-          "last_updated": "2017-12-19T22:31:09+00:00",
+          "last_updated": "2017-12-19T22:47:54+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
