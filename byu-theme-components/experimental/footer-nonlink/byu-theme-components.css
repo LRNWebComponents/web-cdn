@@ -47,8 +47,8 @@ byu-footer-action-button:not(.byu-component-rendered) {
   color: #FFF;
   display: inline-block;
   text-align: center;
-  line-height: 2.1em;
-  height: 45px;
+  line-height: 20px;
+  padding: 13px 0;
   width: auto;
   min-width: 125px;
   margin: 10px 0 20px 0;
@@ -62,7 +62,6 @@ byu-footer-action-button:not(.byu-component-rendered) > * {
   color: #FFF !important;
   display: inline-block !important;
   position: relative !important;
-  height: 100% !important;
   width: 100% !important;
   margin: 0 20px !important;
   left: -20px !important;
@@ -90,6 +89,7 @@ byu-footer-column:not(.byu-component-rendered) {
     text-transform: uppercase !important;
     color: #002E5D !important;
     font-size: 20px !important;
+    line-height: 20px !important;
     border-bottom: 1px solid #C5C5C5 !important;
     padding-bottom: 3px !important;
     font-weight: 400 !important;
@@ -98,6 +98,7 @@ byu-footer-column:not(.byu-component-rendered) {
   byu-footer-column:not(.byu-component-rendered) .content *:not(byu-footer-action-button) {
     font-family: "Gotham A", "Gotham B", Helvetica, sans-serif !important;
     font-size: 14px !important;
+    line-height: 14px !important;
     font-weight: 400 !important;
     color: #141414 !important;
     display: block;
@@ -110,7 +111,8 @@ byu-footer-column:not(.byu-component-rendered) {
   byu-footer-column:not(.byu-component-rendered) #defaultContent a:hover {
     cursor: pointer;
     color: #005EB8 !important;
-    font-size: 14px; }
+    font-size: 14px;
+    line-height: 14px; }
 
 byu-footer-column:not(.byu-component-rendered) [slot="header"] {
   font-family: serif;
@@ -394,6 +396,9 @@ byu-search:not(.byu-component-rendered):after {
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
   height: 32px;
   width: 32px;
   float: right; }
