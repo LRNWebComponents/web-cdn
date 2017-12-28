@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2017-12-28T15:30:38.955Z",
+  "$built": "2017-12-28T15:31:28.253Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1677,12 +1677,39 @@
     "byu-hero-banner": {
       "source": "github:byuweb/byu-hero-banner",
       "aliases": {
-        "1.x.x": "1.2.0",
-        "1.2.x": "1.2.0",
+        "1.x.x": "1.2.1",
+        "1.2.x": "1.2.1",
         "1.1.x": "1.1.0",
-        "latest": "1.2.0"
+        "latest": "1.2.1"
       },
       "versions": [
+        {
+          "name": "1.2.1",
+          "ref": "v1.2.1",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-hero-banner/tarball/v1.2.1",
+          "git_sha": "dc9f110f0edceef25fc18db073f9be50b7243f08",
+          "link": "https://github.com/byuweb/byu-hero-banner/tree/v1.2.1",
+          "last_updated": "2017-12-28T15:30:04+00:00",
+          "messages": [],
+          "resources": {
+            "byu-hero-banner.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-hero-banner.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
         {
           "name": "1.2.0",
           "ref": "v1.2.0",
