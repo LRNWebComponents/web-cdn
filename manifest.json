@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2018-01-09T17:59:36.609Z",
+  "$built": "2018-01-09T18:01:49.209Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1920,6 +1920,34 @@
           "git_sha": "d18ea7a3e95040ad4ba740ea37ab936970e20a3d",
           "link": "https://github.com/byuweb/byu-hero-banner/tree/right-aligned",
           "last_updated": "2017-11-30T22:49:32+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-hero-banner.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-hero-banner.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "text-fix-nonchrome-browsers",
+          "ref": "text-fix-nonchrome-browsers",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-hero-banner/tarball/text-fix-nonchrome-browsers",
+          "git_sha": "dc9f110f0edceef25fc18db073f9be50b7243f08",
+          "link": "https://github.com/byuweb/byu-hero-banner/tree/text-fix-nonchrome-browsers",
+          "last_updated": "2017-12-28T15:30:04+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
