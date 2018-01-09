@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2018-01-09T17:49:18.028Z",
+  "$built": "2018-01-09T17:59:01.687Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1920,34 +1920,6 @@
           "git_sha": "d18ea7a3e95040ad4ba740ea37ab936970e20a3d",
           "link": "https://github.com/byuweb/byu-hero-banner/tree/right-aligned",
           "last_updated": "2017-11-30T22:49:32+00:00",
-          "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-hero-banner.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-hero-banner.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-hero-banner.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-hero-banner.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
-        },
-        {
-          "name": "title-only",
-          "ref": "title-only",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-hero-banner/tarball/title-only",
-          "git_sha": "7e9a966cf88d2c44c3a6a165cc86d968ca14cd5d",
-          "link": "https://github.com/byuweb/byu-hero-banner/tree/title-only",
-          "last_updated": "2017-12-20T19:42:09+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
