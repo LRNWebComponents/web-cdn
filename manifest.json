@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2018-01-18T18:58:20.078Z",
+  "$built": "2018-01-26T04:00:56.375Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -830,25 +830,10 @@
           "git_sha": "8fdd1588c8fb22a212c51bc216d8d9a70e9fbfe8",
           "link": "https://github.com/byuweb/byu-theme-components/tree/v1.0.2",
           "last_updated": "2017-05-26T22:09:40+00:00",
-          "messages": [],
-          "resources": {
-            "byu-theme-components.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-theme-components.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-theme-components.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "There is no longer a valid .cdn-config.yml present"
+          ],
+          "resources": {}
         },
         {
           "name": "1.0.1",
@@ -1586,25 +1571,10 @@
           "git_sha": "1cc2633cd35d33b153003ea5c3a5725a5f99bc2a",
           "link": "https://github.com/byuweb/byu-feature-card-component/tree/v1.0.3",
           "last_updated": "2017-07-18T16:08:11+00:00",
-          "messages": [],
-          "resources": {
-            "byu-feature-card.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-feature-card.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-feature-card.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-feature-card.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "There is no longer a valid .cdn-config.yml present"
+          ],
+          "resources": {}
         },
         {
           "name": "1.0.2",
@@ -1613,25 +1583,10 @@
           "git_sha": "6d14f9667eea37d8c1b04912810bb190b1ec4907",
           "link": "https://github.com/byuweb/byu-feature-card-component/tree/v1.0.2",
           "last_updated": "2017-07-18T18:24:09+00:00",
-          "messages": [],
-          "resources": {
-            "byu-feature-card.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-feature-card.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-feature-card.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-feature-card.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "There is no longer a valid .cdn-config.yml present"
+          ],
+          "resources": {}
         },
         {
           "name": "1.0.1",
@@ -1725,6 +1680,34 @@
           "messages": [
             "Experimental branch hasn't been updated in 2 months"
           ]
+        },
+        {
+          "name": "slim-no-title",
+          "ref": "slim-no-title",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card-component/tarball/slim-no-title",
+          "git_sha": "b040bb8c23b66c19df06c493a9a40817386beb54",
+          "link": "https://github.com/byuweb/byu-feature-card-component/tree/slim-no-title",
+          "last_updated": "2018-01-26T04:00:06+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-feature-card.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-feature-card.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         }
       ]
     },
@@ -1744,25 +1727,10 @@
           "git_sha": "67d5b773da10e3204b51c3c4790145c67999c7c9",
           "link": "https://github.com/byuweb/byu-hero-banner/tree/v1.2.2",
           "last_updated": "2018-01-09T19:02:03+00:00",
-          "messages": [],
-          "resources": {
-            "byu-hero-banner.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-hero-banner.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-hero-banner.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-hero-banner.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
+          "messages": [
+            "There is no longer a valid .cdn-config.yml present"
+          ],
+          "resources": {}
         },
         {
           "name": "1.2.1",
