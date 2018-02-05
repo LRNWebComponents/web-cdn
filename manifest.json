@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2018-01-31T17:43:13.621Z",
+  "$built": "2018-02-05T17:33:36.721Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1707,6 +1707,34 @@
           }
         },
         {
+          "name": "left-right",
+          "ref": "left-right",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card-component/tarball/left-right",
+          "git_sha": "b4323f1c5689aa725737c651dfdd31fa03558910",
+          "link": "https://github.com/byuweb/byu-feature-card-component/tree/left-right",
+          "last_updated": "2018-02-02T23:53:52+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-feature-card.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-feature-card.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
           "name": "unstable",
           "ref": "master",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card-component/tarball/master",
@@ -1926,6 +1954,34 @@
           "git_sha": "8c49126ca7f26f2cb93011a72aaf9d5dfbbdcb6c",
           "link": "https://github.com/byuweb/byu-hero-banner/tree/1.0",
           "last_updated": "2017-07-20T15:36:09+00:00",
+          "messages": [],
+          "resources": {
+            "byu-hero-banner.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-hero-banner.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "dynamic-height",
+          "ref": "dynamic-height",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-hero-banner/tarball/dynamic-height",
+          "git_sha": "67d5b773da10e3204b51c3c4790145c67999c7c9",
+          "link": "https://github.com/byuweb/byu-hero-banner/tree/dynamic-height",
+          "last_updated": "2018-01-09T19:02:03+00:00",
+          "experimental": true,
           "messages": [],
           "resources": {
             "byu-hero-banner.css": {
