@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2018-02-05T23:46:22.048Z",
+  "$built": "2018-02-05T23:57:29.847Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1408,10 +1408,25 @@
           "git_sha": "b6da86167efa058d99ce72ba858905021659b0b0",
           "link": "https://github.com/byuweb/byu-news-components/tree/v1.0.1",
           "last_updated": "2017-09-06T16:55:36+00:00",
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
+          "messages": [],
+          "resources": {
+            "byu-news-components.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-news-components.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-news-components.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         },
         {
           "name": "1.0.0",
@@ -1590,10 +1605,25 @@
           "git_sha": "1cc2633cd35d33b153003ea5c3a5725a5f99bc2a",
           "link": "https://github.com/byuweb/byu-feature-card-component/tree/v1.0.3",
           "last_updated": "2017-07-18T16:08:11+00:00",
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
+          "messages": [],
+          "resources": {
+            "byu-feature-card.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-feature-card.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-feature-card.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         },
         {
           "name": "1.0.2",
@@ -1747,9 +1777,9 @@
           "name": "slim-no-title",
           "ref": "slim-no-title",
           "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card-component/tarball/slim-no-title",
-          "git_sha": "aa8ffb4442a276c1213227b691303a42909742d2",
+          "git_sha": "1702b21f2b4dd88de6b98005f0d7d5ce74215698",
           "link": "https://github.com/byuweb/byu-feature-card-component/tree/slim-no-title",
-          "last_updated": "2018-02-05T23:45:40+00:00",
+          "last_updated": "2018-02-05T23:56:31+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
@@ -1843,10 +1873,25 @@
           "git_sha": "dc9f110f0edceef25fc18db073f9be50b7243f08",
           "link": "https://github.com/byuweb/byu-hero-banner/tree/v1.2.1",
           "last_updated": "2017-12-28T15:30:04+00:00",
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
+          "messages": [],
+          "resources": {
+            "byu-hero-banner.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-hero-banner.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         },
         {
           "name": "1.2.0",
@@ -1909,9 +1954,7 @@
           "git_sha": "5a75777480f6d06b545f1cb0ab69c2fe129e04b0",
           "link": "https://github.com/byuweb/byu-hero-banner/tree/1.1.0",
           "last_updated": "2017-11-30T23:08:50+00:00",
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
+          "messages": [],
           "resources": {
             "byu-hero-banner.css": {
               "entrypoint": true,
@@ -1966,10 +2009,25 @@
           "link": "https://github.com/byuweb/byu-hero-banner/tree/dynamic-height",
           "last_updated": "2018-02-05T19:45:03+00:00",
           "experimental": true,
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
+          "messages": [],
+          "resources": {
+            "byu-hero-banner.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-hero-banner.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         },
         {
           "name": "unstable",
@@ -2030,10 +2088,25 @@
           "link": "https://github.com/byuweb/byu-hero-banner/tree/text-fix-nonchrome-browsers",
           "last_updated": "2018-01-09T18:51:04+00:00",
           "experimental": true,
-          "messages": [
-            "There is no longer a valid .cdn-config.yml present"
-          ],
-          "resources": {}
+          "messages": [],
+          "resources": {
+            "byu-hero-banner.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-hero-banner.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
         }
       ]
     },
