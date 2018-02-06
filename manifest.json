@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2018-02-06T19:28:42.884Z",
+  "$built": "2018-02-06T19:29:32.904Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1772,34 +1772,6 @@
           "messages": [
             "Experimental branch hasn't been updated in 2 months"
           ]
-        },
-        {
-          "name": "slim-no-title",
-          "ref": "slim-no-title",
-          "tarball_url": "https://api.github.com/repos/byuweb/byu-feature-card-component/tarball/slim-no-title",
-          "git_sha": "1702b21f2b4dd88de6b98005f0d7d5ce74215698",
-          "link": "https://github.com/byuweb/byu-feature-card-component/tree/slim-no-title",
-          "last_updated": "2018-02-05T23:56:31+00:00",
-          "experimental": true,
-          "messages": [],
-          "resources": {
-            "byu-feature-card.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-feature-card.js": {
-              "entrypoint": true,
-              "description": "Examines browser support and downloads the appropriate component bundle"
-            },
-            "byu-feature-card.min.css": {
-              "entrypoint": true,
-              "description": "Main CSS file"
-            },
-            "byu-feature-card.min.js": {
-              "entrypoint": true,
-              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
-            }
-          }
         }
       ]
     },
