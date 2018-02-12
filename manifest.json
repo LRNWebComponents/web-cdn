@@ -1,6 +1,6 @@
 {
   "$cdn-version": "0.5.0",
-  "$built": "2018-02-07T17:46:10.156Z",
+  "$built": "2018-02-12T16:26:41.922Z",
   "libraries": {
     "demo-lib": {
       "source": "github:ThatJoeMoore/byu-web-cdn-demo-lib",
@@ -1968,6 +1968,34 @@
           "git_sha": "c1f20bcc46cff1654fb01135355c0ae8cc947a74",
           "link": "https://github.com/byuweb/byu-hero-banner/tree/dynamic-height",
           "last_updated": "2018-02-05T19:45:03+00:00",
+          "experimental": true,
+          "messages": [],
+          "resources": {
+            "byu-hero-banner.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.js": {
+              "entrypoint": true,
+              "description": "Examines browser support and downloads the appropriate component bundle"
+            },
+            "byu-hero-banner.min.css": {
+              "entrypoint": true,
+              "description": "Main CSS file"
+            },
+            "byu-hero-banner.min.js": {
+              "entrypoint": true,
+              "description": "Minified - Examines browser support and downloads the appropriate component bundle"
+            }
+          }
+        },
+        {
+          "name": "issue-18-fix",
+          "ref": "issue-18-fix",
+          "tarball_url": "https://api.github.com/repos/byuweb/byu-hero-banner/tarball/issue-18-fix",
+          "git_sha": "ae2f69995d6a76a4ceccdf8b69a442e493d2952b",
+          "link": "https://github.com/byuweb/byu-hero-banner/tree/issue-18-fix",
+          "last_updated": "2018-02-05T21:26:49+00:00",
           "experimental": true,
           "messages": [],
           "resources": {
